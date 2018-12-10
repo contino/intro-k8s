@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql
+  labels:
+    app: mysql
+data:
+  my.cnf: |
+    # Apply this config only on the master.
+    [mysqld]
+    log-bin
+    skip-grant-tables
