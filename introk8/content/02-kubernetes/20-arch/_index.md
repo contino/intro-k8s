@@ -19,7 +19,7 @@ weight = 20
   * Kubelet
   * Container Runtime
 
-![High Level](./img/highlevel.png)
+![High Level](/images/arch/highlevel.png)
 
 ___
 
@@ -37,7 +37,7 @@ ___
   
 * Scheduler: Bind pod to Node
 
-![Master](./img/master.png)
+![Master](/images/arch//master.png)
 
 
 
@@ -45,7 +45,7 @@ ___
 
 ## Node
 
-![Node](./img/node.png)
+![Node](/images/arch//node.png)
 
 Kubelet:
   * cAdvisor (metrics, logs...)
@@ -64,7 +64,7 @@ ___
 
 ## Data Flow
 
-![](./img/flow.png)
+![](/images/arch/flow.png)
 
 * CNI: Network Plugin in Kubelet that allows to talk to networking to get IPs for Pods and Services.
 

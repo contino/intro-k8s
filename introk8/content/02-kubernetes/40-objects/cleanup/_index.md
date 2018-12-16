@@ -7,36 +7,38 @@ chapter = true
 
 ### Deleting all resources used
 
+All in one go
 ```
-#pods and services
+kubectl delete po,svc,pv,deploy,rs,qouta,namespace,configmaps,secrets,ing,daemonsets --all 
+```
+
+Pods and Services
+```
 kubectl delete po,svc --all   
 ```
 
-
+PersistentVolume
 ```
-#PersistentVolume
 kubectl delete pv --all   
 ```
 
-
+Deployments
 ```
-#controllers
 kubectl delete deploy --all
 ```
 
+Replicaset
 ```
-#replicaset
 kubectl delete rs --all
 ```
 
+Resource quotas
 ```
-#resource quotas
 kubectl delete quota --all
 ```
 
+Namespace
 ```
-#namespace
 kubectl delete namespace <insert-namespace-name-here>
-
 ```
 

@@ -14,4 +14,4 @@ Please Introduce Yourself
 * What would you like to learn?
 
 
-![Awesome](./awesome.png)
+![Awesome](../../../static/images/awesome.png)

@@ -1,17 +1,8 @@
 +++
-title = "Storage"
+title = "Exercises"
 date = 2018-12-09T17:00:31-05:00
-weight = 46
-chapter = true
+weight = 47
 +++
-
-### Storage
-
-#[Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
-
-
-
-## Exercises
 
 Create the persistent and the claim
 ```bash

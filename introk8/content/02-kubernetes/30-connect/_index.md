@@ -9,15 +9,13 @@ chapter = true
 
 
 ### Prerequisites ###
-```
-Install Google Cloud SDK: https://cloud.google.com/sdk/install
-Install kubectl: gcloud components install kubectl
-```
+
+[Follow the Requirements](/00-introduction/requirements)
 
 ### Google SDK Setup ###
+Follow the verification steps
 ```
 gcloud auth login
-(follow the verification steps)
 ```
 
 ### Configure SDK ###

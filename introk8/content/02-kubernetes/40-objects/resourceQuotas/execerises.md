@@ -1,17 +1,8 @@
 +++
-title = "ResourceQoutas"
+title = "Exercises"
 date = 2018-12-09T17:00:31-05:00
-weight = 44
-chapter = true
+weight = 45
 +++
-
-
-### Resource Quotas
-
-
-
-[Resource Quotas](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/quota-memory-cpu-namespace/)
-
 
 Deploy default resources quotas for your namespace
 ```bash

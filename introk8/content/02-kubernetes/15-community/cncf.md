@@ -6,3 +6,8 @@ chapter = true
 +++
 
 ### CNCF
+
+![](/images/cncf-landscape.png)
+
+
+![](/images/graduated.png)
