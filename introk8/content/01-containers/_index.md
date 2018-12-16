@@ -2,22 +2,22 @@
 title = "Containers"
 date = 2018-12-09T14:15:57-05:00
 weight = 10
-chapter = true
+
 pre = "<b>2. </b>"
 +++
 
-### 2. Containers
 
-Intro
 
-History
+1. [Intro](/01-containers/intro/index.html)
 
-Primitives
+2. [History](/01-containers/history/index.html)
 
-Docker
+3. [Primitives](/01-containers/primitives/index.html)
 
-Network
+4. [Docker](/01-containers/docker/index.html)
 
-Storage
+5. [Network](/01-containers/network/index.html)
+
+6. [Storage](/01-containers/storage/index.html)
 
 

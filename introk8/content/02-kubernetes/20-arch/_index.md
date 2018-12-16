@@ -1,49 +1,51 @@
 +++
-title = "Arch"
+title = "Architecture"
 date = 2018-12-09T17:00:54-05:00
 weight = 20
-chapter = true
+
 +++
 
-## [Architecture](https://kubernetes.io/docs/concepts/architecture/)
+## [High level Architecture](https://kubernetes.io/docs/concepts/architecture/)
 
-### High level
-
-![High Level](./img/highlevel.png)
-
-User:
+* User:
   * Kubectl (CLI tool)
   * UI: Dashboard
-
-Master:
+* Master:
   * API Server
   * Etcd
   * Scheduler
   * Controller Manager
-
-Nodes:
+* Nodes:
   * Kubelet
   * Container Runtime
 
+![High Level](./img/highlevel.png)
 
-![Master](./img/master.png)
+___
 
-API data store: Etcd (Cluster State)
+## Master
 
-Controller Manager :
+* API data store: Etcd (Cluster State)
+
+* Controller Manager :
   * Node Controller
   * Deployment Controller
   * ReplicaSet Controller
   * Replication Controller
   * Endpoints Controller
   * Service Account & Token Controller
+  
+* Scheduler: Bind pod to Node
 
-Scheduler: Bind pod to Node
+![Master](./img/master.png)
 
 
-### Node
 
-![](./img/node.png)
+___
+
+## Node
+
+![Node](./img/node.png)
 
 Kubelet:
   * cAdvisor (metrics, logs...)
@@ -58,8 +60,9 @@ Pod:
 Kube-proxy:
   * Used to reach services and allow communication between Nodes.
 
+___
 
-### Data Flow
+## Data Flow
 
 ![](./img/flow.png)
 
