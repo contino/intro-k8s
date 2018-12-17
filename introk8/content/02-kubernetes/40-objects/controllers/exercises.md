@@ -6,6 +6,8 @@ weight = 46
 
 In these exercises we will be working with these controllers, later we will working with Endpoints, since they are directly related to Services.
 
+{{%attachments style="blue" title="Kubernetes yaml files" pattern=".*(yaml)"/%}}
+   
 [Deployment Controller](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) - Responsible for the controlled deployment of pods and ReplicaSets.
 
 [ReplicaSets](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) -  is the newest version of the Replication Controller. The only difference between a ReplicaSet and a Replication Controller right now is the selector support.
