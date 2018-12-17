@@ -26,3 +26,6 @@ hugo server
 Navigate to 
 
 [http://localhost:1313](http://localhost:1313)
+
+
+This site usues the Learning there demo'ed [here](https://learn.netlify.com/en/)
