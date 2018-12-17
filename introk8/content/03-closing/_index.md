@@ -10,3 +10,6 @@ pre = "<b>4. </b>"
 
 # Closing remarks
 
+
+![](/images/partyparrot.gif)
+
