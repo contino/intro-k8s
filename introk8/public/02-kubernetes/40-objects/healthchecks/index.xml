@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Healthchecks on Introduction to Kubernetes</title>
+    <link>http://example.org/02-kubernetes/40-objects/healthchecks/</link>
+    <description>Recent content in Healthchecks on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
+    
+	<atom:link href="http://example.org/02-kubernetes/40-objects/healthchecks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exercises</title>
+      <link>http://example.org/02-kubernetes/40-objects/healthchecks/execerises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/healthchecks/execerises/</guid>
+      <description>Exercises If you deleted the PV from the previous exercise please recreate it
+kubectl apply -f mysql-pv.yaml  Mysql conf needed for testing
+kubectl create -f mysql-config.yaml  Start the Mysql deployment
+kubectl apply -f mysql-health.yaml  Get the pod name
+POD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath=&#39;{.items[0].metadata.name}&#39;)  Describe pod should display a healthy pod
+kubectl describe pod $POD_NAME  Breaking the readiness probe
+kubectl exec $POD_NAME -c mysql -- mv /usr/bin/mysql /usr/bin/mysql.</description>
+    </item>
+    
+  </channel>
+</rss>

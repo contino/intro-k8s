@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Introduction to Kubernetes</title>
+    <link>http://example.org/02-kubernetes/40-objects/storage/</link>
+    <description>Recent content in Storage on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
+    
+	<atom:link href="http://example.org/02-kubernetes/40-objects/storage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exercises</title>
+      <link>http://example.org/02-kubernetes/40-objects/storage/excerises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/storage/excerises/</guid>
+      <description> Create the persistent and the claim
+kubectl apply -f mysql-pv.yaml  Create a pod that will use it.
+kubectl apply -f mysql-pod.yaml  Clean up kubectl delete -f mysql-pv.yaml kubectl delete -f mysql-pod.yaml  </description>
+    </item>
+    
+  </channel>
+</rss>

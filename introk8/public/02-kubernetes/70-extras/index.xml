@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Extras on Introduction to Kubernetes</title>
+    <link>http://example.org/02-kubernetes/70-extras/</link>
+    <description>Recent content in Extras on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 17:13:35 -0500</lastBuildDate>
+    
+	<atom:link href="http://example.org/02-kubernetes/70-extras/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monitoring</title>
+      <link>http://example.org/02-kubernetes/70-extras/monitoring/</link>
+      <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/70-extras/monitoring/</guid>
+      <description> Monitoring </description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>http://example.org/02-kubernetes/70-extras/security/</link>
+      <pubDate>Sun, 09 Dec 2018 17:13:49 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/70-extras/security/</guid>
+      <description> Security </description>
+    </item>
+    
+  </channel>
+</rss>

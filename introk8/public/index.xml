@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction to Kubernetes</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:43 -0500</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cncf</title>
+      <link>http://example.org/02-kubernetes/15-community/cncf/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:43 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/15-community/cncf/</guid>
+      <description> CNCF </description>
+    </item>
+    
+    <item>
+      <title>Sig</title>
+      <link>http://example.org/02-kubernetes/15-community/sig/</link>
+      <pubDate>Sun, 09 Dec 2018 17:14:26 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/15-community/sig/</guid>
+      <description> sig </description>
+    </item>
+    
+    <item>
+      <title>Adarsh</title>
+      <link>http://example.org/00-introduction/whoami/adarsh/</link>
+      <pubDate>Sun, 09 Dec 2018 14:25:28 -0500</pubDate>
+      
+      <guid>http://example.org/00-introduction/whoami/adarsh/</guid>
+      <description>Adarsh Shah
+Tech Principal @ Contino
+Practice Lead (Cloud Native Soft Dev)
+Twitter: @shahadarsh
+Website: https://shahadarsh.com</description>
+    </item>
+    
+    <item>
+      <title>James</title>
+      <link>http://example.org/00-introduction/whoami/james/</link>
+      <pubDate>Sun, 09 Dec 2018 14:25:28 -0500</pubDate>
+      
+      <guid>http://example.org/00-introduction/whoami/james/</guid>
+      <description>James Strong
+Senior DevOps Consultant @ Contino
+Twitter: @strongjz
+Website: https://www.linkedin.com/in/strongjames/</description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>http://example.org/02-kubernetes/40-objects/namespaces/execerises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/namespaces/execerises/</guid>
+      <description>Update createNamespace.yaml with what your namespace is
+Create your namespace
+kubectl create -f ./createNamespace.yaml  Verify your namespace exists
+$ kubectl get namespaces NAME STATUS AGE default Active 1d kube-system Active 1d kube-public Active 1d  Set your namespace to the default
+kubectl config set-context $(kubectl config current-context) --namespace=&amp;lt;insert-namespace-name-here&amp;gt;  Validate it
+kubectl config view | grep namespace:  </description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>http://example.org/02-kubernetes/40-objects/pods/execerises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/pods/execerises/</guid>
+      <description>Start a pod from a manifest kubectl apply -f single-pod-nginx.yaml  Verify the state of the pod kubectl get pods NAME READY STATUS RESTARTS AGE nginx 1/1 Running 0 44s  Get more details of the pod kubectl describe pod nginx  Accessing your pod kubectl port-forward nginx 8080:80  Logs kubectl logs -f nginx  Navigate to http://localhost:8080 in your web browser
+Multi container pod Start a pod from a manifest kubectl apply -f multi-pod.</description>
+    </item>
+    
+    <item>
+      <title>Labels and Selectors</title>
+      <link>http://example.org/02-kubernetes/40-objects/pods/labels_selectors/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/pods/labels_selectors/</guid>
+      <description>Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.
+Selectors Label Selectors help client/user identify a set of objects.
+spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql  Demo Create labels &amp;amp; use selector to identify set of objects</description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>http://example.org/02-kubernetes/40-objects/resourcequotas/execerises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/resourcequotas/execerises/</guid>
+      <description>Deploy default resources quotas for your namespace
+kubectl create -f quotas.yaml kubectl describe quota  Verify qoutas
+kubectl get resourcequota mem-cpu-rq --output=yaml  Deploy specific limits and requests for pods
+kubectl create -f pod-limits.yaml kubectl describe limits mem-limit-range  Deploy pods with only limits
+kubectl create -f pod-only-limit.yaml Error from server (Forbidden): error when creating &amp;quot;pod-only-limit.yaml&amp;quot;: pods &amp;quot;only-limits&amp;quot; is forbidden: failed quota: mem-cpu-rq: must specify limits.cpu,requests.cpu  Deploy pods with only requests</description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>http://example.org/02-kubernetes/40-objects/controllers/exercises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/controllers/exercises/</guid>
+      <description>In these exercises we will be working with these controllers, later we will working with Endpoints, since they are directly related to Services.
+Deployment Controller - Responsible for the controlled deployment of pods and ReplicaSets.
+ReplicaSets - is the newest version of the Replication Controller. The only difference between a ReplicaSet and a Replication Controller right now is the selector support.
+ReplicaSets Create the replicaset
+kubectl apply -f replicaset.yaml  Get the status of the replicaset</description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>http://example.org/02-kubernetes/40-objects/storage/excerises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/storage/excerises/</guid>
+      <description> Create the persistent and the claim
+kubectl apply -f mysql-pv.yaml  Create a pod that will use it.
+kubectl apply -f mysql-pod.yaml  Clean up kubectl delete -f mysql-pv.yaml kubectl delete -f mysql-pod.yaml  </description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>http://example.org/02-kubernetes/40-objects/services/excerises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/services/excerises/</guid>
+      <description>Pod Deployment with health checks, PersistentVolume and claim, Since we have created the mysql pod several times, here is a yaml file that creates it all.
+Create a secret for the password between Wordpress and MYSQL kubectl create secret generic mysql-pass --from-literal=password=YOUR_PASSWORD  Verify it is there
+kubectl get secrets  Deploy mysql
+kubectl apply -f mysql-all.yaml  Verify mysql deployed properly
+kubectl get deploy  Services Deploy the service for mysql</description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>http://example.org/02-kubernetes/40-objects/healthchecks/execerises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/healthchecks/execerises/</guid>
+      <description>Exercises If you deleted the PV from the previous exercise please recreate it
+kubectl apply -f mysql-pv.yaml  Mysql conf needed for testing
+kubectl create -f mysql-config.yaml  Start the Mysql deployment
+kubectl apply -f mysql-health.yaml  Get the pod name
+POD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath=&#39;{.items[0].metadata.name}&#39;)  Describe pod should display a healthy pod
+kubectl describe pod $POD_NAME  Breaking the readiness probe
+kubectl exec $POD_NAME -c mysql -- mv /usr/bin/mysql /usr/bin/mysql.</description>
+    </item>
+    
+    <item>
+      <title>Configmaps</title>
+      <link>http://example.org/02-kubernetes/40-objects/configmaps/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/configmaps/</guid>
+      <description> Configmaps </description>
+    </item>
+    
+    <item>
+      <title>Daemonsets</title>
+      <link>http://example.org/02-kubernetes/40-objects/daemonsets/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/daemonsets/</guid>
+      <description> Daemonsets </description>
+    </item>
+    
+    <item>
+      <title>ingress</title>
+      <link>http://example.org/02-kubernetes/40-objects/ingress/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/ingress/</guid>
+      <description> Ingress </description>
+    </item>
+    
+    <item>
+      <title>Secrets</title>
+      <link>http://example.org/02-kubernetes/40-objects/secrets/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/40-objects/secrets/</guid>
+      <description> Secrets </description>
+    </item>
+    
+    <item>
+      <title>Monitoring</title>
+      <link>http://example.org/02-kubernetes/70-extras/monitoring/</link>
+      <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/70-extras/monitoring/</guid>
+      <description> Monitoring </description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>http://example.org/02-kubernetes/70-extras/security/</link>
+      <pubDate>Sun, 09 Dec 2018 17:13:49 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/70-extras/security/</guid>
+      <description> Security </description>
+    </item>
+    
+  </channel>
+</rss>

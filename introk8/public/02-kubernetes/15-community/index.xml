@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community on Introduction to Kubernetes</title>
+    <link>http://example.org/02-kubernetes/15-community/</link>
+    <description>Recent content in Community on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 17:14:26 -0500</lastBuildDate>
+    
+	<atom:link href="http://example.org/02-kubernetes/15-community/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cncf</title>
+      <link>http://example.org/02-kubernetes/15-community/cncf/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:43 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/15-community/cncf/</guid>
+      <description> CNCF </description>
+    </item>
+    
+    <item>
+      <title>Sig</title>
+      <link>http://example.org/02-kubernetes/15-community/sig/</link>
+      <pubDate>Sun, 09 Dec 2018 17:14:26 -0500</pubDate>
+      
+      <guid>http://example.org/02-kubernetes/15-community/sig/</guid>
+      <description> sig </description>
+    </item>
+    
+  </channel>
+</rss>

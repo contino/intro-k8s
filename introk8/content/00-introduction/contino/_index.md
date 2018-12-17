@@ -6,4 +6,4 @@ chapter = true
 +++
 
 
-![](./whois.png)
+![](/images/contino/whois.png)

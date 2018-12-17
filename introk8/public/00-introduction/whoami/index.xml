@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Instructors on Introduction to Kubernetes</title>
+    <link>http://example.org/00-introduction/whoami/</link>
+    <description>Recent content in Instructors on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 14:25:28 -0500</lastBuildDate>
+    
+	<atom:link href="http://example.org/00-introduction/whoami/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adarsh</title>
+      <link>http://example.org/00-introduction/whoami/adarsh/</link>
+      <pubDate>Sun, 09 Dec 2018 14:25:28 -0500</pubDate>
+      
+      <guid>http://example.org/00-introduction/whoami/adarsh/</guid>
+      <description>Adarsh Shah
+Tech Principal @ Contino
+Practice Lead (Cloud Native Soft Dev)
+Twitter: @shahadarsh
+Website: https://shahadarsh.com</description>
+    </item>
+    
+    <item>
+      <title>James</title>
+      <link>http://example.org/00-introduction/whoami/james/</link>
+      <pubDate>Sun, 09 Dec 2018 14:25:28 -0500</pubDate>
+      
+      <guid>http://example.org/00-introduction/whoami/james/</guid>
+      <description>James Strong
+Senior DevOps Consultant @ Contino
+Twitter: @strongjz
+Website: https://www.linkedin.com/in/strongjames/</description>
+    </item>
+    
+  </channel>
+</rss>
