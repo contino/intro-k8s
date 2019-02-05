@@ -7,3 +7,8 @@ chapter = true
 
 ### Container Primitives
 
+* cgroups
+* namespaces
+
+
+

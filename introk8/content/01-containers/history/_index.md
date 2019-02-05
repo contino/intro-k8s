@@ -7,3 +7,14 @@ chapter = true
 
 ### History
 
+* One Applications per physical server
+
+![](/images/docker/app2.png)
+
+* Hypervisor-based Virtualization
+
+![](/images/docker/vm.png)
+
+* Containers
+
+![](/images/docker/containers.png)
