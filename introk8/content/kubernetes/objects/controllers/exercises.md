@@ -1,7 +1,7 @@
 +++
 title = "Exercises"
 date = 2018-12-09T17:00:31-05:00
-weight = 46
+weight = 441
 +++
 
 In these exercises we will be working with these controllers, later we will working with Endpoints, since they are directly related to Services.

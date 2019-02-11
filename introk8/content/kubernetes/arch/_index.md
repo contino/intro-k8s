@@ -1,7 +1,7 @@
 +++
 title = "Architecture"
 date = 2018-12-09T17:00:54-05:00
-weight = 20
+weight = 200
 
 +++
 

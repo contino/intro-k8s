@@ -1,7 +1,7 @@
 +++
 title = "Connect"
 date = 2018-12-09T17:04:27-05:00
-weight = 30
+weight = 300
 chapter = true
 +++
 
