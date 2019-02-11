@@ -10,5 +10,5 @@ pre = "<b>1. </b>"
 2. [Agenda](agenda/index.html)
 3. [Contino](contino/index.html)
 4. [Instructors](whoami/index.html)
-5. [Requirements](00-introduction/requirements/index.html)
+5. [Requirements](introduction/requirements/index.html)
 

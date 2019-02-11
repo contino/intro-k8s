@@ -1,0 +1,17 @@
++++
+title = "Objects"
+date = 2018-12-09T17:00:31-05:00
+weight = 40
+chapter = true
++++
+
+### Kubernetes Objects
+
+1. [Namespaces](/kubernetes/objects/namespaces)
+2. [Pods](/kubernetes/objects/pods)
+3. [Resource Quotas](/kubernetes/objects/resource-quotas)
+4. [Controllers](/kubernetes/objects/controllers)
+5. [Storage](/kubernetes/objects/storage)
+6. [Service](/kubernetes/objects/services)
+7. [Healthchecks](/kubernetes/objects/healthchecks)
+8. [Cleanup](/kubernetes/objects/cleanup)

@@ -7,10 +7,10 @@ chapter = true
 
 ### Container Primitives
 
-* cgroups
+* Controls (cgroups)
 * namespaces
 
-####cgroups 
+#### Control Groups 
 (abbreviated from control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage:
 
 * CPU 
@@ -20,6 +20,7 @@ chapter = true
 
 #### Namespaces
 A feature of the Linux kernel that isolate and virtualize system resources of a collection of processes. Examples of resources that can be virtualized include: 
+
 * process IDs
 * hostnames
 * user IDs
