@@ -8,11 +8,3 @@ weight = 200
 ## [High level Architecture](https://kubernetes.io/docs/concepts/architecture/)
 
 ![](/images/arch/highlevel.png)
-
-
-## Master Nodes
-
-## Worker Nodes
-
-## Data Flow
-

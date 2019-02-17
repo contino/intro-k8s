@@ -5,16 +5,6 @@ weight = 106
 chapter = true
 +++
 
-### CNCF Landscape
+# CNCF Landscape
 
 ![](/images/cncf-landscape.png)
-
-### Project lists
-
-![](/images/graduated.png)
-
-Sigs https://github.com/kubernetes/community/blob/master/sig-list.md 
-
-Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes 
-
-Slack http://slack.k8s.io/ 
