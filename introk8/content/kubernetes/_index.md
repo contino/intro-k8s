@@ -8,7 +8,8 @@ pre = "<b>3. </b>"
 
 1. [History](/kubernetes/history)
 2. [Community](/kubernetes/community)
-    * [CNCF Projects](/kubernetes/community/projects)
+    * [CNCF Graduated Projects](/kubernetes/community/projects_grad)
+    * [CNCF Incubating Projects](/kubernetes/community/projects_inc)        
     * [Get Involved](/kubernetes/community/involvement)
 3. [Connect to Cluster](/kubernetes/onnect)
 4. [Kubernetes Objects](/kubernetes/objects)
