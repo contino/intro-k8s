@@ -10,13 +10,9 @@ chapter = true
 
 * Docker uses iptables to provide network isolation
 * Explicitly publish a port for connectivity to it
+* Containers do not have a public IPv4 address
+* They are allocated a private address
+* Services running on a container must be exposed port by port
+* Container ports have to be mapped to the host port to avoid conflicts
 
-Docker Networking options
-
-Flag value   | Description
-| :---       |    :----   
--p 8080:80	| Map TCP port 80 in the container to port 8080 on the Docker host.
--p 192.168.1.100:8080:80	| Map TCP port 80 in the container to port 8080 on the Docker host for connections to host IP 192.168.1.100.
--p 8080:80/udp	| Map UDP port 80 in the container to port 8080 on the Docker host.
--p 8080:80/tcp -p 8080:80/udp	| Map TCP port 80 in the container to TCP port 8080 on the Docker host, and map UDP port 80 in the container to UDP port 8080 on the Docker host.
-
+[More information here](https://success.docker.com/article/networking)

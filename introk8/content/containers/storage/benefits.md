@@ -1,13 +1,12 @@
 +++
 title = "Storage"
 date = 2018-12-09T17:21:32-05:00
-weight = 601
+weight = 603
 chapter = true
 +++
 
-# Storage
+# Benefits of Volumes
 
-#### Benefits of Volumes
 * De-couple the data that is stored, from the container which created the data
 * Good for sharing data between containers
 * Can setup a data containers which has a volume you mount in other containers

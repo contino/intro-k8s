@@ -5,8 +5,7 @@ weight = 601
 chapter = true
 +++
 
-# Storage
-### Layers
+# Layers
 
 * An image is a collection of files and some meta data
 * Images are comprised of multiple layers

@@ -14,4 +14,7 @@ chapter = true
 5. [Storage](/kubernetes/objects/storage)
 6. [Service](/kubernetes/objects/services)
 7. [Healthchecks](/kubernetes/objects/healthchecks)
-8. [Cleanup](/kubernetes/objects/cleanup)
+8. [Secrets](/kubernetes/objects/secrets)
+9. [ConfigMaps](/kubernetes/objects/configmaps)
+10. [Ingress](/kubernetes/objects/ingress)
+11. [Cleanup](/kubernetes/objects/cleanup)

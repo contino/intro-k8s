@@ -11,8 +11,6 @@ chapter = true
 
 #### Volumes
 
-#### Volumes and Copy on write
-
 #### Benefits of Volumes
 
 #### Docker Volume command
