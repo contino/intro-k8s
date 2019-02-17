@@ -14,3 +14,5 @@ chapter = true
 * Every image contains a base layer
 * Docker uses a copy on write system
 * Layers are read only
+
+![](/images/docker/layers.png)
