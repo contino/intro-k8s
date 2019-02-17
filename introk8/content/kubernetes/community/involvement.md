@@ -1,8 +1,7 @@
 +++
 title = "Involvement"
 date = 2018-12-09T17:00:43-05:00
-weight = 108
-chapter = true
+weight = 109
 +++
 
 # Get Involved today
@@ -11,5 +10,7 @@ chapter = true
 
 * Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes 
 
-* Slack http://slack.k8s.io/ 
+* Slack 
+    * k8 http://slack.k8s.io/
+    * CNCF https://slack.cncf.io/ 
 
