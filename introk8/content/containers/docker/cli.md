@@ -5,6 +5,8 @@ weight = 405
 chapter = true
 +++
 
+# Docker
+
 #### Docker cli
 
 * docker ps
@@ -12,5 +14,7 @@ chapter = true
 * docker logs
 * docker exec
 
-https://www.katacoda.com/contino/courses/docker/basics 
+[Official Documentation](https://docs.docker.com/engine/reference/commandline/cli/)
+
+[More exercises](https://www.katacoda.com/contino/courses/docker/basics) 
 

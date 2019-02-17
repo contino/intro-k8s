@@ -5,8 +5,9 @@ weight = 400
 chapter = true
 +++
 
+# Docker
 
-#### Benefits of Docker
-#### Docker Platform
+#### Benefits
+#### Platform
 #### Dockerfile 
 #### Docker cli

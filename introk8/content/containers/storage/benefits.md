@@ -5,7 +5,7 @@ weight = 601
 chapter = true
 +++
 
-### Storage
+# Storage
 
 #### Benefits of Volumes
 * De-couple the data that is stored, from the container which created the data

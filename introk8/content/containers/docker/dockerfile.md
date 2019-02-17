@@ -5,7 +5,10 @@ weight = 403
 chapter = true
 +++
 
-#### Dockerfile 
+# Docker
+
+####  Dockerfile
+ 
 * Instructions specify what to do when building the image
 * FROM instruction specifies what the base image should be 
 * RUN instruction specifies a command to execute

@@ -5,8 +5,6 @@ weight = 103
 chapter = true
 +++
 
-### Containers
+# Containers
 
 ![](/images/docker/containers.png)
-
-![](/images/docker/layer.png)

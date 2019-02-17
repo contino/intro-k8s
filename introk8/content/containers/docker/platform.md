@@ -5,11 +5,11 @@ weight = 402
 chapter = true
 +++
 
-#### Docker Platform
-* Docker Engine
-* Docker Hub
-* Docker Trusted Registry
-* Docker Machine
-* Docker Swarm
-* Docker Compose
-* Kitematic
+# Docker
+
+![](/images/docker/platform.png) 
+
+
+
+
+

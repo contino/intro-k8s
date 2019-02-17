@@ -5,7 +5,7 @@ weight = 102
 chapter = true
 +++
 
-### The Hypervisor
+# The Hypervisor
 
 ![](/images/docker/vm.png)
 

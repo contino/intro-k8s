@@ -5,9 +5,8 @@ weight = 601
 chapter = true
 +++
 
-### Storage
-
-#### Docker Volume command
+# Storage
+### Docker Volume command
 
 The docker volume command contains a number of sub commands used to create and manage volumes
 Commands are 

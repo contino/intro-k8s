@@ -5,7 +5,10 @@ weight = 401
 chapter = true
 +++
 
-#### Benefits of Docker
+# Docker
+
+#### Benefits
+
 * Separation of concerns
 * Developers focus on building their apps 
 * System admins focus on deployment

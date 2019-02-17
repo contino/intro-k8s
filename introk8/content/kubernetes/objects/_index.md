@@ -5,7 +5,7 @@ weight = 400
 chapter = true
 +++
 
-### Kubernetes Objects
+# Kubernetes API Objects
 
 1. [Namespaces](/kubernetes/objects/namespaces)
 2. [Pods](/kubernetes/objects/pods)

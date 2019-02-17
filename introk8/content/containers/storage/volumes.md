@@ -5,8 +5,7 @@ weight = 602
 chapter = true
 +++
 
-### Storage
-
+# Storage
 ### Volumes
 A Volume is a designated directory in a container, which is designed to persist data, independent of the container’s life cycle
 
