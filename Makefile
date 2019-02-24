@@ -3,7 +3,7 @@ HUGO_VERSION = 0.49
 DOCKER_IMAGE = k8-hugo-devnexus
 DOCKER_RUN   = $(DOCKER) run --rm --interactive --tty --volume $(PWD):/src
 
-.PHONY: all build build-preview serve
+.PHONY: all build build-preview serve docker-all
 
 all: build ## Build site with production settings and put deliverables in ./public
 
@@ -21,6 +21,7 @@ non-production-build: ## Build the non-production site, which adds noindex heade
 serve: ## Boot the development server.
 	hugo server --ignoreCache --disableFastRender
 
+docker-all: docker-image docker-build docker-serve
 docker-image:
 	$(DOCKER) build . --tag $(DOCKER_IMAGE) --build-arg HUGO_VERSION=$(HUGO_VERSION)
 
