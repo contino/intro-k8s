@@ -1,7 +1,7 @@
 +++
 title = "Exercises"
 date = 2018-12-09T17:00:31-05:00
-weight = 451
+weight = 455
 +++
 
 {{%attachments style="blue" title="Kubernetes yaml files" pattern=".*(yaml)"/%}}
