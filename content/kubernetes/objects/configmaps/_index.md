@@ -1,9 +1,9 @@
 +++
-title = "Secrets"
+title = "Configmaps"
 date = 2018-12-09T17:05:14-05:00
-weight =494
+weight = 470
 chapter = true
-
 +++
 
-### Secrets
+### Configmaps
+

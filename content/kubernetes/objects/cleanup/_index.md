@@ -1,8 +1,8 @@
 +++
 title = "Cleanup"
 date = 2018-12-09T17:00:31-05:00
-weight = 480
-chapter = true
+weight = 499
+
 +++
 
 ### Deleting all resources used

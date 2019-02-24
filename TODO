@@ -1,37 +1,20 @@
+
 k8 monitor
+
 options for running k8
+
 secrets
+
 ingres
+
 daemonsets
+
 configmaps
-move clean to the end of k8
 
 k8 services
-k8 storage
+
 k8 RQ
-break up k8 arch page
 
 Docker exercises
-
-sig
-
-do i need anything more on the community
-
-docker volume pic
-docker layer pic
-
-docker Storage navigation
-
-Container networking
-
-need more docker cli
-
-dockerfile examples probably from exercises
-
-docker info needs nav
-
-does container intro need anything? nav?
-
-agenda nav needs fixed
 
 hosting? just github pages?
