@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction/agenda/</loc>
+    <lastmod>2018-12-09T16:59:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction/</loc>
+    <lastmod>2018-12-09T14:15:48-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction/introduction/</loc>
+    <lastmod>2018-12-09T16:59:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/</loc>
+    <lastmod>2018-12-09T14:15:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/</loc>
+    <lastmod>2018-12-09T14:16:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/closing/</loc>
+    <lastmod>2018-12-09T17:13:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction/contino/</loc>
+    <lastmod>2018-12-09T16:59:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction/whoami/</loc>
+    <lastmod>2018-12-09T14:25:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction/requirements/</loc>
+    <lastmod>2018-12-09T16:52:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/history/</loc>
+    <lastmod>2018-12-09T17:22:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/history/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/history/history/</loc>
+    <lastmod>2018-12-09T17:20:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/history/hyper/</loc>
+    <lastmod>2018-12-09T17:20:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/history/containers/</loc>
+    <lastmod>2018-12-09T17:20:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/history/layers/</loc>
+    <lastmod>2018-12-09T17:20:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/community/</loc>
+    <lastmod>2018-12-09T17:00:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/community/projects_grad/</loc>
+    <lastmod>2018-12-09T17:00:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/community/projects_inc/</loc>
+    <lastmod>2018-12-09T17:00:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/community/involvement/</loc>
+    <lastmod>2018-12-09T17:00:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/arch/</loc>
+    <lastmod>2018-12-09T17:00:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/arch/master/</loc>
+    <lastmod>2018-12-09T17:00:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/arch/node/</loc>
+    <lastmod>2018-12-09T17:00:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/arch/data/</loc>
+    <lastmod>2018-12-09T17:00:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/primitives/</loc>
+    <lastmod>2018-12-09T17:21:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/connect/</loc>
+    <lastmod>2018-12-09T17:04:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/docker/</loc>
+    <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/docker/benefits/</loc>
+    <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/docker/platform/</loc>
+    <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/docker/dockerfile/</loc>
+    <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/docker/cli/</loc>
+    <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/namespaces/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/namespaces/exercises/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/pods/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/pods/exercises/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/pods/labels_selectors/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/resourcequotas/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/resourcequotas/exercises/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/controllers/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/controllers/exercises/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/storage/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/storage/exercises/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/services/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/services/exercises/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/healthchecks/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/healthchecks/exercises/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/cleanup/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/configmaps/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/daemonsets/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/ingress/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/objects/secrets/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/network/</loc>
+    <lastmod>2018-12-09T17:21:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/network/dockernetop/</loc>
+    <lastmod>2018-12-09T17:21:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/network/docker0/</loc>
+    <lastmod>2018-12-09T17:21:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/network/docker0-dig/</loc>
+    <lastmod>2018-12-09T17:21:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/storage/</loc>
+    <lastmod>2018-12-09T17:21:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/running/</loc>
+    <lastmod>2018-12-09T17:11:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/storage/layers/</loc>
+    <lastmod>2018-12-09T17:21:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/storage/volumes/</loc>
+    <lastmod>2018-12-09T17:21:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/storage/benefits/</loc>
+    <lastmod>2018-12-09T17:21:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/containers/storage/commands/</loc>
+    <lastmod>2018-12-09T17:21:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/extras/</loc>
+    <lastmod>2018-12-09T17:13:35-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/extras/monitoring/</loc>
+    <lastmod>2018-12-09T17:13:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kubernetes/extras/security/</loc>
+    <lastmod>2018-12-09T17:13:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
