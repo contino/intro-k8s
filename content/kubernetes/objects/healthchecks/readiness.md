@@ -1,7 +1,7 @@
 +++
-title = "Healthchecks"
+title = "Readiness"
 date = 2018-12-09T17:00:31-05:00
-weight = 493
+weight = 495
 
 +++
 
@@ -11,9 +11,13 @@ weight = 493
 ## Readiness
 Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.
 
-
-## Liveliness
-
-Liveliness checks inform the kubelet that the pod is running. If this check fails the kubelet will attempt to restart the pod.
-
+```yaml
+readinessProbe:
+    exec:
+      command:
+      - cat
+      - /tmp/healthy
+    initialDelaySeconds: 5
+    periodSeconds: 5
+```
 
