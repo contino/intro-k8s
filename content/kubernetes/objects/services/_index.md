@@ -8,7 +8,7 @@ weight = 490
 
 ### What
 
-Service: Service is a named abstraction of software service, consisting of a port that the proxy listens on,
+Service: a named abstraction of software service, consisting of a port that the proxy listens on,
 and the selector that determines which pods will answer requests.
 
 ### Why

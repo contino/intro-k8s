@@ -7,3 +7,19 @@ chapter = true
 +++
 
 ### Ingress
+ 
+#### What
+
+Ingress is a K8 object that allows external access to resources inside the cluster
+ 
+#### Why
+
+Services, Pods and other objects are only accessible inside the cluster
+
+```
+                                internet
+                                    |
+                               [ Ingress ]
+                               --|-----|--
+                               [ Services ]
+```
