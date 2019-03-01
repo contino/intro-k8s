@@ -10,5 +10,5 @@ weight = 41
 
 Register an account at github.com and clone these repos
 
-* [Docker Exercises](https://github.com/contino)
-* [Kubernetes Exercises](https://github.com/contino)
+* [Docker Exercises](https://github.com/shahadarsh/docker-k8s-workshop)
+* [Kubernetes Exercises](https://github.com/contino/k8s-workshop)

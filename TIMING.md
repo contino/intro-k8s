@@ -17,9 +17,10 @@
 
 10:30 - 10:45 Break 
 
-10:45 - 11 Exercise Portion for Docker Adarsh
+10:45 - 11:15 Exercise Portion for Docker Adarsh
 
-11 - Kubernetes 
+
+11:15 - Kubernetes 
 
 1. History James
 2. Community James
@@ -29,26 +30,38 @@
 
 3. Connect to Cluster - James 
 
-11:15
+11:30
 
 1. Kubernetes Objects
     * Namespaces 10 mins J
     * Pods 10 mins J
     * Resource Quotas 10 mins J
 
-11:45
+12:00
 
 Break for lunch 
 
 Continue K8 Objects
-    * Controllers Adarsh
-    * Storage James 
-    * Service Adarsh
-    * Healthchecks 
-    * Cleanup
 
-2. Options for Running Kubernetes
+1 - 1:20    * Controllers Adarsh
+1:20 - 1:40  * Storage James
+1:40 - 2    * Secrets Adarsh
+2 - 2:15    * Ingress James
 
+Break 15  
+
+2:30 - 3    * Service Adarsh
+3 - 3:15    * Healthchecks James
+    
+3:30-4 Mircoservices Exerises  
+
+4 - 4:15 2. Options for Running Kubernetes - Adarsh
+    
 3. Extras
-    * Monitoring
-    * Security
+
+4:15 - 4:20   * Monitoring James
+4:20 - 4:25     * Logging - Adarsh
+4:25 - 4:30 * Security - James
+ 
+Cleanup
+Close
