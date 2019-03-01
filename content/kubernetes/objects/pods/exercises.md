@@ -4,9 +4,9 @@ date = 2018-12-09T17:00:31-05:00
 weight = 421
 +++
 
-### Start a pod from a manifest
+[Kubernetes github repo](/introduction/requirements/#github-https-github-com)
 
-{{%attachments style="blue" title="Kubernetes yaml files" pattern=".*(yaml)"/%}}
+### Start a pod from a manifest
 
 ```bash
 kubectl apply -f single-pod-nginx.yaml

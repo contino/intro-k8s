@@ -5,13 +5,10 @@ weight = 10
 chapter = true
 +++
 
-### Who are you
-
-Please Introduce Yourself 
+### Please Introduce Yourself 
 
 * Name
 * Role & Company
-* What would you like to learn?
-
+* What would you like to learn today?
 
 ![Awesome](/images/awesome.png)

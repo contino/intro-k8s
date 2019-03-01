@@ -4,20 +4,26 @@ date = 2018-12-09T16:52:57-05:00
 weight = 40
 +++
 
+**To complete this workshop you will need the following installed locally** 
+
+**Required**: Docker, git, gcloud, kbectl, gmail account, github account
+
+Optional: devops debate slack account
+
 
 ## [Docker](https://docker.io)
 
-### Windows 
+#### Windows 
 
-* [Directions](https://docs.docker.com/docker-for-windows/install/)
+   * [Directions](https://docs.docker.com/docker-for-windows/install/)
     
-* [Installer](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
+   * [Installer](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
 
-### Mac
+#### Mac
  
-* [Directions](https://docs.docker.com/v17.12/docker-for-mac/install/)
-* [Installer](https://download.docker.com/mac/stable/Docker.dmg)
-
+   * [Directions](https://docs.docker.com/v17.12/docker-for-mac/install/)
+   * [Installer](https://download.docker.com/mac/stable/Docker.dmg)
+   
 ___
 
 ## [gcloud](https://cloud.google.com/sdk/docs/#install_the_latest_cloud_tools_version_cloudsdk_current_version)
@@ -26,8 +32,7 @@ ___
     Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter.
     After installation has completed, accept the following options:
 
-
-### Windows
+#### Windows
 
 1. Download the Cloud SDK installer. The installer is signed by Google Inc.
 
@@ -39,7 +44,7 @@ ___
        Run gcloud init
 
 
-### Mac
+#### Mac
 
 1. Double Check Python 2 is installed.
 
@@ -61,15 +66,12 @@ python -V
 ./google-cloud-sdk/install.sh
 ```
 
-4. Initialize the install
-
-Open a new terminal so that the changes take effect.
-Run gcloud init to initialize the SDK:
+4. Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:
 
 ```
 ./google-cloud-sdk/bin/gcloud init
 ```
-
+    
 ___
 
 
@@ -81,14 +83,23 @@ You can install kubectl as part of the Google Cloud SDK.
     
 Run the kubectl installation command:
 ```
-    gcloud components install kubectl
+gcloud components install kubectl
 ```
 
 Test to ensure the version you installed is sufficiently up-to-date:
 
 ```
-    kubectl version
+kubectl version
 ```
 
+## [Git](git-scm.com)
 
+Download git client from [Git Scm](git-scm.com)
+
+## [Slack](https://devopsdebate.slack.com)
+
+We will be using to ask/answer questions during and after the workshop. 
+Other DevOps engineers are members of this slack community as well
+
+[Devops Debate account](https://devopsdebate.slack.com)
 
