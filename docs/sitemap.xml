@@ -3,447 +3,447 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://contino.github.io/</loc>
+    <loc>https://contino.github.io/intro-k8/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/introduction/</loc>
+    <loc>https://contino.github.io/intro-k8/introduction/</loc>
     <lastmod>2018-12-09T14:15:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/introduction/introduction/</loc>
+    <loc>https://contino.github.io/intro-k8/introduction/introduction/</loc>
     <lastmod>2018-12-09T16:59:09-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/</loc>
     <lastmod>2018-12-09T14:15:57-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/</loc>
     <lastmod>2018-12-09T14:16:03-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/closing/</loc>
+    <loc>https://contino.github.io/intro-k8/closing/</loc>
     <lastmod>2018-12-09T17:13:09-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/history/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/history/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/introduction/agenda/</loc>
+    <loc>https://contino.github.io/intro-k8/introduction/agenda/</loc>
     <lastmod>2018-12-09T16:59:28-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/introduction/contino/</loc>
+    <loc>https://contino.github.io/intro-k8/introduction/contino/</loc>
     <lastmod>2018-12-09T16:59:09-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/introduction/whoami/</loc>
+    <loc>https://contino.github.io/intro-k8/introduction/whoami/</loc>
     <lastmod>2018-12-09T14:25:28-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/introduction/requirements/</loc>
+    <loc>https://contino.github.io/intro-k8/introduction/requirements/</loc>
     <lastmod>2018-12-09T16:52:57-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/introduction/requirements/github/</loc>
+    <loc>https://contino.github.io/intro-k8/introduction/requirements/github/</loc>
     <lastmod>2018-12-09T16:52:57-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/history/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/history/</loc>
     <lastmod>2018-12-09T17:22:06-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/history/history/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/history/history/</loc>
     <lastmod>2018-12-09T17:20:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/history/hyper/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/history/hyper/</loc>
     <lastmod>2018-12-09T17:20:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/history/containers/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/history/containers/</loc>
     <lastmod>2018-12-09T17:20:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/history/layers/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/history/layers/</loc>
     <lastmod>2018-12-09T17:20:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/community/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/community/</loc>
     <lastmod>2018-12-09T17:00:43-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/community/projects_grad/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/community/projects_grad/</loc>
     <lastmod>2018-12-09T17:00:43-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/community/projects_inc/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/community/projects_inc/</loc>
     <lastmod>2018-12-09T17:00:43-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/community/involvement/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/community/involvement/</loc>
     <lastmod>2018-12-09T17:00:43-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/primitives/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/primitives/</loc>
     <lastmod>2018-12-09T17:21:13-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/arch/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/arch/</loc>
     <lastmod>2018-12-09T17:00:54-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/arch/master/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/arch/master/</loc>
     <lastmod>2018-12-09T17:00:54-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/arch/node/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/arch/node/</loc>
     <lastmod>2018-12-09T17:00:54-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/arch/data/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/arch/data/</loc>
     <lastmod>2018-12-09T17:00:54-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/network/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/network/</loc>
     <lastmod>2018-12-09T17:21:25-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/connect/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/connect/</loc>
     <lastmod>2018-12-09T17:04:27-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/network/dockernetop/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/network/dockernetop/</loc>
     <lastmod>2018-12-09T17:21:25-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/network/docker0/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/network/docker0/</loc>
     <lastmod>2018-12-09T17:21:25-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/network/docker0-dig/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/network/docker0-dig/</loc>
     <lastmod>2018-12-09T17:21:25-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/storage/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/storage/</loc>
     <lastmod>2018-12-09T17:21:32-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/storage/layers/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/storage/layers/</loc>
     <lastmod>2018-12-09T17:21:32-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/storage/volumes/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/storage/volumes/</loc>
     <lastmod>2018-12-09T17:21:32-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/storage/benefits/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/storage/benefits/</loc>
     <lastmod>2018-12-09T17:21:32-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/storage/commands/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/storage/commands/</loc>
     <lastmod>2018-12-09T17:21:32-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/namespaces/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/namespaces/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/namespaces/exercises/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/namespaces/exercises/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/pods/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/pods/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/pods/exercises/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/pods/labels_selectors/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/resourcequotas/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/resourcequotas/resources/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/resourcequotas/exercises/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/exercises/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/controllers/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/controllers/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/controllers/updates/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/controllers/updates/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/controllers/exercises/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/storage/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/storage/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/storage/volumes/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/storage/volumes/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/storage/pv/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/storage/pv/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/storage/pvc/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/storage/pvc/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/storage/classes/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/storage/classes/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/storage/exercises/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/secrets/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/secrets/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/secrets/secret/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/secrets/secret/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/secrets/file/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/secrets/file/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/secrets/env/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/secrets/env/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/configmaps/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/ingress/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/ingress/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/ingress/controller/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/ingress/controller/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/ingress/rules/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/ingress/rules/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/services/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/services/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/services/diag/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/services/exercises/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/healthchecks/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/daemonsets/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/daemonsets/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/healthchecks/liveliness/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/liveliness/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/healthchecks/readiness/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/readiness/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/objects/healthchecks/exercises/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/exercises/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/docker/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/docker/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/micro/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/micro/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/docker/benefits/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/docker/benefits/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/docker/platform/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/docker/platform/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/docker/dockerfile/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/docker/dockerfile/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/docker/cli/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/docker/cli/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/containers/docker/exercise/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/docker/exercise/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/cleanup/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/cleanup/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/running/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/running/</loc>
     <lastmod>2018-12-09T17:11:44-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/extras/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/extras/</loc>
     <lastmod>2018-12-09T17:13:35-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/extras/monitoring/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/extras/monitoring/</loc>
     <lastmod>2018-12-09T17:13:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/extras/logging/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/extras/logging/</loc>
     <lastmod>2018-12-09T17:13:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/extras/logging-kc/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/extras/logging-kc/</loc>
     <lastmod>2018-12-09T17:13:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/extras/logging-node/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/extras/logging-node/</loc>
     <lastmod>2018-12-09T17:13:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/extras/logging-cluster/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/extras/logging-cluster/</loc>
     <lastmod>2018-12-09T17:13:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/extras/security/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/extras/security/</loc>
     <lastmod>2018-12-09T17:13:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/kubernetes/extras/security1/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/extras/security1/</loc>
     <lastmod>2018-12-09T17:13:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/categories/</loc>
+    <loc>https://contino.github.io/intro-k8/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://contino.github.io/tags/</loc>
+    <loc>https://contino.github.io/intro-k8/tags/</loc>
     <priority>0</priority>
   </url>
   

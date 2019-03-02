@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker Intro on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/containers/docker/</link>
+    <link>https://contino.github.io/intro-k8/containers/docker/</link>
     <description>Recent content in Docker Intro on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 17:21:05 -0500</lastBuildDate>
     
-	<atom:link href="https://contino.github.io/containers/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://contino.github.io/intro-k8/containers/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Benefits of Docker</title>
-      <link>https://contino.github.io/containers/docker/benefits/</link>
+      <link>https://contino.github.io/intro-k8/containers/docker/benefits/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/containers/docker/benefits/</guid>
+      <guid>https://contino.github.io/intro-k8/containers/docker/benefits/</guid>
       <description> Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  </description>
     </item>
     
     <item>
       <title>Platform</title>
-      <link>https://contino.github.io/containers/docker/platform/</link>
+      <link>https://contino.github.io/intro-k8/containers/docker/platform/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/containers/docker/platform/</guid>
+      <guid>https://contino.github.io/intro-k8/containers/docker/platform/</guid>
       <description> Docker </description>
     </item>
     
     <item>
       <title>Dockerfile</title>
-      <link>https://contino.github.io/containers/docker/dockerfile/</link>
+      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/containers/docker/dockerfile/</guid>
+      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile/</guid>
       <description>Docker Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\”</description>
     </item>
     
     <item>
       <title>CLI</title>
-      <link>https://contino.github.io/containers/docker/cli/</link>
+      <link>https://contino.github.io/intro-k8/containers/docker/cli/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/containers/docker/cli/</guid>
+      <guid>https://contino.github.io/intro-k8/containers/docker/cli/</guid>
       <description>Docker Docker cli  docker ps docker images docker logs docker exec  Official Documentation
 More exercises</description>
     </item>
     
     <item>
       <title>Docker Exercise</title>
-      <link>https://contino.github.io/containers/docker/exercise/</link>
+      <link>https://contino.github.io/intro-k8/containers/docker/exercise/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/containers/docker/exercise/</guid>
+      <guid>https://contino.github.io/intro-k8/containers/docker/exercise/</guid>
       <description>Docker Exercise Git clone Docker Exercises</description>
     </item>
     

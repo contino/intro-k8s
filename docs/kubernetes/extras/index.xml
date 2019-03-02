@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Extras on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/kubernetes/extras/</link>
+    <link>https://contino.github.io/intro-k8/kubernetes/extras/</link>
     <description>Recent content in Extras on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 17:13:35 -0500</lastBuildDate>
     
-	<atom:link href="https://contino.github.io/kubernetes/extras/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://contino.github.io/intro-k8/kubernetes/extras/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Monitoring</title>
-      <link>https://contino.github.io/kubernetes/extras/monitoring/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/extras/monitoring/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/extras/monitoring/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/extras/monitoring/</guid>
       <description> Monitoring </description>
     </item>
     
     <item>
       <title>Logging</title>
-      <link>https://contino.github.io/kubernetes/extras/logging/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/extras/logging/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/extras/logging/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging/</guid>
       <description> kubectl logs Node level Cluster Level Side Car  </description>
     </item>
     
     <item>
       <title>Logging - Pod</title>
-      <link>https://contino.github.io/kubernetes/extras/logging-kc/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/extras/logging-kc/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/extras/logging-kc/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging-kc/</guid>
       <description> Logging  kubectl logs  apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, &#39;i=0; while true; do echo &amp;quot;$i: $(date)&amp;quot;; i=$((i+1)); sleep 1; done&#39;]  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001  </description>
     </item>
     
     <item>
       <title>Logging - Node</title>
-      <link>https://contino.github.io/kubernetes/extras/logging-node/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/extras/logging-node/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/extras/logging-node/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging-node/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Logging - Cluster</title>
-      <link>https://contino.github.io/kubernetes/extras/logging-cluster/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/extras/logging-cluster/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/extras/logging-cluster/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging-cluster/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Security - Containers</title>
-      <link>https://contino.github.io/kubernetes/extras/security/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/extras/security/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:49 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/extras/security/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/extras/security/</guid>
       <description> Container security primitives  SElinux AppArmor Seccomp https://docs.docker.com/engine/security/seccomp/#run-without-the-default-seccomp-profile  Container Pipeline  Establish a pipeline to build a standard image Have a versioning policy Allow to only run images based of the standard image Use the same OS as the host Keep the image small Use a private registry Don’t embed secrets into images, use Hashicorp Vault https://www.cisecurity.org/benchmark/docker/ https://github.com/docker/docker-bench-security  </description>
     </item>
     
     <item>
       <title>Security - K8</title>
-      <link>https://contino.github.io/kubernetes/extras/security1/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/extras/security1/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:49 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/extras/security1/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/extras/security1/</guid>
       <description> K8 Security  RBAC NetworkPolicy TLS Image Scanning Aquasec/Twistlock Integrating with HashiCorp Vault other public cloud secret stores Investigate using a container based OS (CoreOS, Atomic Linux) Harden and tweak Make sure to pass https://github.com/dev-sec/linux-baseline  Vendors to add  Aquasec https://www.aquasec.com/ Twistlock https://www.twistlock.com/ Sysdig Falco https://www.sysdig.org/falco/  </description>
     </item>
     

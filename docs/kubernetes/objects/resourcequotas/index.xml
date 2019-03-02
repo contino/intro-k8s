@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resource Quotas on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/kubernetes/objects/resourcequotas/</link>
+    <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/</link>
     <description>Recent content in Resource Quotas on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
     
-	<atom:link href="https://contino.github.io/kubernetes/objects/resourcequotas/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Resource Quotas</title>
-      <link>https://contino.github.io/kubernetes/objects/resourcequotas/resources/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/objects/resourcequotas/resources/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/</guid>
       <description>Compute Resources  CPU Memory Storage  requests.storage persistentvolumeclaims storage-class-name.storageclass.storage.k8s.io/requests.storage storage-class-name.storageclass.storage.k8s.io/persistentvolumeclaims  Object Count
  configmaps persistentvolumeclaims pods replicationcontrollers resourcequotas services services.loadbalancers services.nodeports secrets  Priority - low, medium, high
   More info</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/kubernetes/objects/resourcequotas/exercises/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/exercises/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/objects/resourcequotas/exercises/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/exercises/</guid>
       <description>Kubernetes yaml files   pod-limits.yaml  (0 ko)   pod-no-quotas.yaml  (0 ko)   pod-only-limit.yaml  (0 ko)   pod-only-request.yaml  (0 ko)   quotas.yaml  (0 ko)    Deploy default resources quotas for your namespace
 kubectl create -f quotas.yaml kubectl describe quota  Verify qoutas
 kubectl get resourcequota mem-cpu-rq --output=yaml  Deploy specific limits and requests for pods

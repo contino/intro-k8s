@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/tags/</link>
+    <link>https://contino.github.io/intro-k8/tags/</link>
     <description>Recent content in Tags on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://contino.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://contino.github.io/intro-k8/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

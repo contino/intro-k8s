@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pods on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/kubernetes/objects/pods/</link>
+    <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/</link>
     <description>Recent content in Pods on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
     
-	<atom:link href="https://contino.github.io/kubernetes/objects/pods/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/pods/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/kubernetes/objects/pods/exercises/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/objects/pods/exercises/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/</guid>
       <description>Kubernetes github repo
 Start a pod from a manifest kubectl apply -f single-pod-nginx.yaml  Verify the state of the pod kubectl get pods NAME READY STATUS RESTARTS AGE nginx 1/1 Running 0 44s  Get more details of the pod kubectl describe pod nginx  Accessing your pod kubectl port-forward nginx 8080:80  Logs kubectl logs -f nginx  Navigate to http://localhost:8080 in your web browser
 Multi container pod Start a pod from a manifest kubectl apply -f multi-pod.</description>
@@ -24,10 +24,10 @@ Multi container pod Start a pod from a manifest kubectl apply -f multi-pod.</des
     
     <item>
       <title>Labels and Selectors</title>
-      <link>https://contino.github.io/kubernetes/objects/pods/labels_selectors/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/kubernetes/objects/pods/labels_selectors/</guid>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/</guid>
       <description>Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.
 Selectors Label Selectors help client/user identify a set of objects.
 spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql  Demo Create labels &amp;amp; use selector to identify set of objects</description>
