@@ -1,3 +1,4 @@
+publishDir = "docs/"
 baseURL = "https://contino.github.io/intro-k8/"
 languageCode = "en-us"
 title = "Introduction to Kubernetes"
@@ -9,4 +10,3 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
   themeVariant = "blue"
 
-publishDir = "docs"

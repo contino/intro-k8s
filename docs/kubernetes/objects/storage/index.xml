@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Introduction to Kubernetes</title>
+    <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/</link>
+    <description>Recent content in Storage on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
+    
+	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/storage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Volumes</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/volumes/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/volumes/</guid>
+      <description>Several volume types are supported
+ awsElasticBlockStore azureDisk gcePersistentDisk hostPath secret configmaps  awsElasticBlockStore example yaml:
+apiVersion: v1 kind: Pod metadata: name: test-ebs spec: containers: - image: k8s.gcr.io/test-webserver name: test-container volumeMounts: - mountPath: /test-ebs name: test-volume volumes: - name: test-volume # This AWS EBS volume must already exist. awsElasticBlockStore: volumeID: &amp;lt;volume-id&amp;gt; fsType: ext4  </description>
+    </item>
+    
+    <item>
+      <title>Persistent Volume</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/pv/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/pv/</guid>
+      <description>Persistent Volumes (PV&amp;rsquo;s) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.
+Provisioning - Static or Dynamic
+Types of PV&amp;rsquo;s
+ GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: &amp;quot;/mnt/data&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>Persistent Volume Claims</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/pvc/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/pvc/</guid>
+      <description>Persistent Volume Claims (PVC&amp;rsquo;s) - Allow pods to requests and attache Persistent Volumes available in the cluster.
+When used in with Dynamic provision and Storage Classes, PVC&amp;rsquo;s can automatically make storage available on demand.
+Types of PVC&amp;rsquo;s
+ GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: &amp;quot;/var/www/html&amp;quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim  </description>
+    </item>
+    
+    <item>
+      <title>Storage Classes</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/classes/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/classes/</guid>
+      <description>Storage classes allow cluster administrators to provide varing levels of support and types of storage to applications in a cluster
+Example: Storage class that will provision an AWS EBS Volumes when referenced a PVC
+kind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provisioner: kubernetes.io/aws-ebs parameters: type: gp2 reclaimPolicy: Retain mountOptions: - debug volumeBindingMode: Immediate  </description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</guid>
+      <description>   Kubernetes yaml files   mysql-pod.yaml  (0 ko)   mysql-pv.yaml  (0 ko)    Create the persistent and the claim
+kubectl apply -f mysql-pv.yaml  Create a pod that will use it.
+kubectl apply -f mysql-pod.yaml  Clean up kubectl delete -f mysql-pv.yaml kubectl delete -f mysql-pod.yaml  </description>
+    </item>
+    
+  </channel>
+</rss>
