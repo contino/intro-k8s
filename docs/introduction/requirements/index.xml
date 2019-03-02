@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Requirements on Introduction to Kubernetes</title>
-    <link>/introduction/requirements/</link>
+    <link>https://contino.github.io/intro-k8/introduction/requirements/</link>
     <description>Recent content in Requirements on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 16:52:57 -0500</lastBuildDate>
     
-	<atom:link href="/introduction/requirements/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://contino.github.io/intro-k8/introduction/requirements/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Exercises</title>
-      <link>/introduction/requirements/github/</link>
+      <link>https://contino.github.io/intro-k8/introduction/requirements/github/</link>
       <pubDate>Sun, 09 Dec 2018 16:52:57 -0500</pubDate>
       
-      <guid>/introduction/requirements/github/</guid>
+      <guid>https://contino.github.io/intro-k8/introduction/requirements/github/</guid>
       <description> To complete this workshop you will need these repos cloned locally
 Github Register an account at github.com and clone these repos
  Docker Exercises Kubernetes Exercises  </description>
