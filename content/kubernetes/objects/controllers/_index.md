@@ -21,18 +21,3 @@ Service Account & Token Controllers: Create default accounts and API access toke
 [Replication Controller](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/) - Responsible for maintaining the correct number of pods for every replication controller object in the system.
 
 [Endpoints Controller](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#endpoints-v1-core) - Populates the Endpoints object (that is, joins Services & Pods). When services are created, the Endpoint controller manages the connection between services and the pods back the service.
-
-
-## Deployments
-* Scaling 
-* Rolling 
-
-## ReplicaSet
-* Desired state
-
-## Strategies:
-* Recreate
-* RollingUpdate (default)
-* Blue/Green
-* Canary
-* A/B Testing

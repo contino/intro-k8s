@@ -3,29 +3,14 @@ k8 monitor
 
 options for running k8
 
-secrets
-
-ingres
-
-daemonsets
-
 configmaps
-
-k8 services
-
-k8 RQ
-
-Docker exercises
 
 hosting? just github pages?
 
-
-
-    Docker Exercise page after Docker intro
-    Reformat Controllers page
-    Finishing monitoring
-    Fix Cluster logging page
-    Network and stroage before docker intro
-    Add microservice after k8
-    remove servicemesh
+Reformat Controllers page
+Finishing monitoring
+Fix Cluster logging page
+Network and stroage before docker intro
+Add microservice after k8
+remove servicemesh
 

@@ -26,5 +26,6 @@ pre = "<b>3. </b>"
     * [Cleanup](/kubernetes/objects/cleanup)
 5. [Options for Running Kubernetes](/kubernetes/running)
 6. [Extras](/kubernetes/extras)
+    * [Logging](/kubernetes/extras/logging)
     * [Monitoring](/kubernetes/extras/monitoring)
     * [Security](/kubernetes/extras/security)
