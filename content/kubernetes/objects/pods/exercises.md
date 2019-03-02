@@ -4,7 +4,7 @@ date = 2018-12-09T17:00:31-05:00
 weight = 421
 +++
 
-[Kubernetes github repo](/introduction/requirements/#github-https-github-com)
+[Kubernetes github repo](/intro-k8/introduction/requirements/#github-https-github-com)
 
 ### Start a pod from a manifest
 

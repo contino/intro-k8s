@@ -7,4 +7,4 @@ weight = 200
 
 ## [High level Architecture](https://kubernetes.io/docs/concepts/architecture/)
 
-![](/images/arch/highlevel.png)
+![](/intro-k8/images/arch/highlevel.png)

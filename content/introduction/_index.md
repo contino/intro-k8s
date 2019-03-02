@@ -6,9 +6,9 @@ pre = "<b>1. </b>"
 +++
 
 
-1. [Who are you?](/introduction/)
-2. [Agenda](/introduction/agenda/)
-3. [Contino](/introduction/contino/)
-4. [Instructors](/introduction/whoami/)
-5. [Requirements](/introduction/requirements/)
+1. [Who are you?](/intro-k8/introduction/)
+2. [Agenda](/intro-k8/introduction/agenda/)
+3. [Contino](/intro-k8/introduction/contino/)
+4. [Instructors](/intro-k8/introduction/whoami/)
+5. [Requirements](/intro-k8/introduction/requirements/)
 

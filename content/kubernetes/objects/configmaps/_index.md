@@ -11,4 +11,4 @@ weight = 470
 ### Why
 
 
-### ![](/images/kubernetes/cm.png) 
+### ![](/intro-k8/images/kubernetes/cm.png) 

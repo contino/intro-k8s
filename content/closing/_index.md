@@ -11,7 +11,7 @@ pre = "<b>4. </b>"
 # Closing remarks
 
 
-![](/images/partyparrot.gif )
+![](/intro-k8/images/partyparrot.gif )
 
 Contact Us:
 

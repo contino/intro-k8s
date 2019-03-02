@@ -8,4 +8,4 @@ chapter = true
 
 # Container Networking
 
-![](/images/docker/docker0-1.png)
+![](/intro-k8/images/docker/docker0-1.png)

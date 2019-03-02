@@ -15,4 +15,4 @@ chapter = true
 * Docker uses a copy on write system
 * Layers are read only
 
-![](/images/docker/layers.png)
+![](/intro-k8/images/docker/layers.png)

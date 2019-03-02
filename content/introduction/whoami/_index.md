@@ -7,7 +7,7 @@ chapter = true
 
 Adarsh Shah   |James Strong
 | :---        |    :----:   
-![](/images/adarsh.png) |![](/images/james.png)
+![](/intro-k8/images/adarsh.png) |![](/intro-k8/images/james.png)
 Technical Principal @ [Contino](https://contino.io) | Technical Principal @ [Contino](https://contino.io)
 Practice Lead (Cloud Native Soft Dev) | 
 Twitter: [@shahadarsh](https://twitter.com/shahadarsh) | Twitter: [@strongjz](https://twitter.com/strongjz)

@@ -17,4 +17,4 @@ Storage like compute is another resource that must be managed. Kubernetes offers
 The Ephemeral nature of pods and containers lead to the need for data to be have a decoupled lifecycle outside of
 containers and pods.
 
-### ![](/images/kubernetes/pv.png) 
+### ![](/intro-k8/images/kubernetes/pv.png) 

@@ -15,4 +15,4 @@ Limits - This pod only gets this much to run
 Kubernetes being a multi-tenant environment, some applications may hog resources and starve others, Resource Qoatas discourage this behavior 
 
 
-### ![](/images/kubernetes/rq.png) 
+### ![](/intro-k8/images/kubernetes/rq.png) 

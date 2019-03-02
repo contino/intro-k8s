@@ -13,4 +13,4 @@ A Volume is a designated directory in a container, which is designed to persist 
 * Can be mapped to a host folder
 * Can be shared between containers
 
-![](/images/docker/volume.png)
+![](/intro-k8/images/docker/volume.png)

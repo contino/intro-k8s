@@ -7,14 +7,14 @@ pre = "<b>2. </b>"
 +++
 
 
-1. [History](/containers/history/)
+1. [History](/intro-k8/containers/history/)
 
-2. [Primitives](/containers/primitives/)
+2. [Primitives](/intro-k8/containers/primitives/)
 
-3. [Network](/containers/network/)
+3. [Network](/intro-k8/containers/network/)
 
-4. [Storage](/containers/storage/)
+4. [Storage](/intro-k8/containers/storage/)
 
-5. [Docker](/containers/docker/)
+5. [Docker](/intro-k8/containers/docker/)
 
 

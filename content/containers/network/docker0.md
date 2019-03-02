@@ -16,4 +16,4 @@ chapter = true
 * Each new container gets one interface that is automatically attached to the docker0 bridge
 
 
-![](/images/docker/docker0.png)
+![](/intro-k8/images/docker/docker0.png)

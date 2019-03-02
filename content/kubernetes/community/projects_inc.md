@@ -5,5 +5,5 @@ weight = 108
 +++
 
 
-![](/images/incubating.png)
+![](/intro-k8/images/incubating.png)
  

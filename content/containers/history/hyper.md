@@ -7,5 +7,5 @@ chapter = true
 
 # The Hypervisor
 
-![](/images/docker/vm.png)
+![](/intro-k8/images/docker/vm.png)
 
