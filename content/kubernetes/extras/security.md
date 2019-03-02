@@ -1,7 +1,7 @@
 +++
 title = "Security - Containers"
 date = 2018-12-09T17:13:49-05:00
-weight = 706
+weight = 806
 +++
 
 ### Container security primitives

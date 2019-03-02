@@ -1,8 +1,7 @@
 +++
 title = "Cleanup"
 date = 2018-12-09T17:00:31-05:00
-weight = 499
-
+weight = 600
 +++
 
 ### Deleting all resources used
@@ -35,10 +34,5 @@ kubectl delete rs --all
 Resource quotas
 ```
 kubectl delete quota --all
-```
-
-Namespace
-```
-kubectl delete namespace <insert-namespace-name-here>
 ```
 
