@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://contino.github.io/intro-k8/"
 languageCode = "en-us"
 title = "Introduction to Kubernetes"
 
