@@ -3,6 +3,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Introduction to Kubernetes"
 theme = "learn"
+canonifyURLs = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
