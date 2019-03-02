@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/kubernetes/objects/services/</link>
+    <link>https://contino.github.io/kubernetes/objects/services/</link>
     <description>Recent content in Services on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
     
-	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/services/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://contino.github.io/kubernetes/objects/services/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Service Daigram</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</link>
+      <link>https://contino.github.io/kubernetes/objects/services/diag/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</guid>
+      <guid>https://contino.github.io/kubernetes/objects/services/diag/</guid>
       <description>  </description>
     </item>
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/</link>
+      <link>https://contino.github.io/kubernetes/objects/services/exercises/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/</guid>
+      <guid>https://contino.github.io/kubernetes/objects/services/exercises/</guid>
       <description>Kubernetes yaml files   app.yaml  (1 ko)   mysql-all.yaml  (1 ko)   mysql-service.yaml  (0 ko)    Pod Deployment with health checks, PersistentVolume and claim Since we have created the mysql pod several times, here is a yaml file that creates it all.
 Create a secret for the password between Wordpress and MYSQL kubectl create secret generic mysql-pass --from-literal=password=YOUR_PASSWORD  Verify it is there</description>
     </item>

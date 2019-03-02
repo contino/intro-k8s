@@ -1,5 +1,5 @@
 publishDir = "docs/"
-baseURL = "https://contino.github.io/intro-k8/"
+baseURL = "https://contino.github.io/"
 languageCode = "en-us"
 title = "Introduction to Kubernetes"
 theme = "learn"

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/containers/network/</link>
+    <link>https://contino.github.io/containers/network/</link>
     <description>Recent content in Network on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 17:21:25 -0500</lastBuildDate>
     
-	<atom:link href="https://contino.github.io/intro-k8/containers/network/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://contino.github.io/containers/network/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Docker Network options</title>
-      <link>https://contino.github.io/intro-k8/containers/network/dockernetop/</link>
+      <link>https://contino.github.io/containers/network/dockernetop/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:25 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/network/dockernetop/</guid>
+      <guid>https://contino.github.io/containers/network/dockernetop/</guid>
       <description>Docker Networking options    Flag value Description     -p 8080:80 Map TCP port 80 in the container to port 8080 on the Docker host.   -p 192.168.1.100:8080:80 Map TCP port 80 in the container to port 8080 on the Docker host for connections to host IP 192.168.1.100.   -p 8080:80/udp Map UDP port 80 in the container to port 8080 on the Docker host.</description>
     </item>
     
     <item>
       <title>Docker0 </title>
-      <link>https://contino.github.io/intro-k8/containers/network/docker0/</link>
+      <link>https://contino.github.io/containers/network/docker0/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:25 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/network/docker0/</guid>
+      <guid>https://contino.github.io/containers/network/docker0/</guid>
       <description> Container Networking  When Docker starts, it creates a virtual interface called docker0 on the host machine docker0 is assigned a random IP address and subnet from the private range defined by RFC 1918 It passes or switches packets between two connected devices just like a physical bridge or switch  Host to container Container to container  Each new container gets one interface that is automatically attached to the docker0 bridge  </description>
     </item>
     
     <item>
       <title>Docker0 Diagram</title>
-      <link>https://contino.github.io/intro-k8/containers/network/docker0-dig/</link>
+      <link>https://contino.github.io/containers/network/docker0-dig/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:25 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/network/docker0-dig/</guid>
+      <guid>https://contino.github.io/containers/network/docker0-dig/</guid>
       <description> Container Networking </description>
     </item>
     
