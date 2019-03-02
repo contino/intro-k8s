@@ -1,6 +1,6 @@
 DOCKER       = docker
 HUGO_VERSION = 0.49
-DOCKER_IMAGE = k8-hugo-devnexus
+DOCKER_IMAGE = k8-hugo
 DOCKER_RUN   = $(DOCKER) run --rm --interactive --tty --volume $(PWD):/src
 
 .PHONY: all build build-preview serve docker-all

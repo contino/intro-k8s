@@ -1,16 +1,12 @@
 baseURL = "https://contino.github.io/intro-k8/"
 languageCode = "en-us"
 title = "Introduction to Kubernetes"
-
-# Change the default theme to be use when building the site with Hugo
 theme = "learn"
 
-# For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-  # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "blue"
 
 publishDir = "docs"

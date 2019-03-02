@@ -1,13 +1,11 @@
-# intro-k8-dev-nexus
-Introduction to Kubernetes for 2018 Dev Nexus
-
-
+# intro-k8
+Introduction to Kubernetes
 
 ## Running the site locally using Hugo
 
-The Kubernetes documentation is built using the [Hugo](https://gohugo.io) static site generator. See the [official Hugo documentation](https://gohugo.io/getting-started/installing/) for Hugo installation instructions.
+The documentation is built using the [Hugo](https://gohugo.io) static site generator. See the [official Hugo documentation](https://gohugo.io/getting-started/installing/) for Hugo installation instructions.
 
-> Building and running the site requires the Hugo version specified by the `HUGO_VERSION` environment variable in the [`netlify.toml`](netlify.toml#L9) file.
+> Building and running the site requires the Hugo version specified by the `HUGO_VERSION`
 
 To run the site locally when you have Hugo installed:
 
@@ -19,13 +17,13 @@ This will start the local Hugo server on port 1313. Open up your browser to http
 
 ## Building the site using Docker
 
-You can build the Kubernetes docs using [Docker](https://docker.com). To get started, make sure that you have Docker running and build the image locally:
+You can build the docs using [Docker](https://docker.com). To get started, make sure that you have Docker running and build the image locally:
 
 ```bash
 make docker-image
 ```
 
-Once the `kubernetes-hugo` image has been built locally, you can run the site locally:
+Once the `k8-hugo` image has been built locally, you can run the site locally:
 
 ```bash
 make docker-serve
