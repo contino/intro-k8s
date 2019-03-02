@@ -1,9 +1,10 @@
 publishDir = "docs/"
-baseURL = "https://contino.github.io/intro-k8"
+baseURL = "https://contino.github.io/intro-k8/"
 languageCode = "en-us"
 title = "Introduction to Kubernetes"
 theme = "learn"
 canonifyURLs = true
+
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
