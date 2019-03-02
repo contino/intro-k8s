@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Introduction to Kubernetes</title>
+    <link>https://contino.github.io/intro-k8/containers/storage/</link>
+    <description>Recent content in Storage on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 17:21:32 -0500</lastBuildDate>
+    
+	<atom:link href="https://contino.github.io/intro-k8/containers/storage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Layers</title>
+      <link>https://contino.github.io/intro-k8/containers/storage/layers/</link>
+      <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/containers/storage/layers/</guid>
+      <description> Layers  An image is a collection of files and some meta data Images are comprised of multiple layers A layer is also just another image Each image contains software you want to run Every image contains a base layer Docker uses a copy on write system Layers are read only  </description>
+    </item>
+    
+    <item>
+      <title>Volumes</title>
+      <link>https://contino.github.io/intro-k8/containers/storage/volumes/</link>
+      <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/containers/storage/volumes/</guid>
+      <description> Volumes A Volume is a designated directory in a container, which is designed to persist data, independent of the container’s life cycle
+ Volume changes are excluded when updating an image Persist when a container is deleted Can be mapped to a host folder Can be shared between containers  </description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>https://contino.github.io/intro-k8/containers/storage/benefits/</link>
+      <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/containers/storage/benefits/</guid>
+      <description> Benefits of Volumes  De-couple the data that is stored, from the container which created the data Good for sharing data between containers Can setup a data containers which has a volume you mount in other containers Share directories between multiple containers Bypassing the copy on write system to achieve native disk I/O performance Share a host directory with a container Share a single file between the host and container  </description>
+    </item>
+    
+    <item>
+      <title>Volume CLI</title>
+      <link>https://contino.github.io/intro-k8/containers/storage/commands/</link>
+      <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/containers/storage/commands/</guid>
+      <description> Docker Volume command The docker volume command contains a number of sub commands used to create and manage volumes Commands are
+ docker volume create docker volume ls docker volume inspect docker volume rm  </description>
+    </item>
+    
+  </channel>
+</rss>

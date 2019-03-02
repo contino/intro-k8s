@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Healthchecks on Introduction to Kubernetes</title>
+    <link>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/</link>
+    <description>Recent content in Healthchecks on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
+    
+	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Liveliness</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/liveliness/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/liveliness/</guid>
+      <description> Readiness and Liveliness Liveliness Liveliness checks inform the kubelet that the pod is running. If this check fails the kubelet will attempt to restart the pod.
+apiVersion: v1 kind: Pod metadata: labels: test: liveness name: liveness-exec spec: containers: - name: liveness image: k8s.gcr.io/busybox args: - /bin/sh - -c - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600 livenessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5  </description>
+    </item>
+    
+    <item>
+      <title>Readiness</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/readiness/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/readiness/</guid>
+      <description> Readiness and Liveliness Readiness Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.
+readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5  </description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/exercises/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/exercises/</guid>
+      <description>Exercises   Kubernetes yaml files   mysql-config.yaml  (0 ko)   mysql-health.yaml  (1 ko)   mysql-pv.yaml  (0 ko)    If you deleted the PV from the previous exercise please recreate it
+kubectl apply -f mysql-pv.yaml  Mysql conf needed for testing
+kubectl create -f mysql-config.yaml  Start the Mysql deployment
+kubectl apply -f mysql-health.yaml  Get the pod name
+POD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath=&#39;{.</description>
+    </item>
+    
+  </channel>
+</rss>

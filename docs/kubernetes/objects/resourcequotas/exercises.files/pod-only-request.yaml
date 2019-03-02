@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: only-requests
+spec:
+  containers:
+  - name: only-requests
+    image: nginx
+    resources:
+      requests:
+        memory: "128Mi"
