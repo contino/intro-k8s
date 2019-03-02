@@ -11,12 +11,10 @@ pre = "<b>2. </b>"
 
 2. [Primitives](/containers/primitives/)
 
-3. [Docker Intro](/containers/intro/)
+3. [Network](/containers/network/)
 
-4. [Docker](/containers/docker/)
+4. [Storage](/containers/storage/)
 
-5. [Network](/containers/network/)
-
-6. [Storage](/containers/storage/)
+5. [Docker](/containers/docker/)
 
 

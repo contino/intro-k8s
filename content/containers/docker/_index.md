@@ -1,7 +1,7 @@
 +++
 title = "Docker Intro"
 date = 2018-12-09T17:21:05-05:00
-weight = 400
+weight = 500
 chapter = true
 +++
 
@@ -11,3 +11,4 @@ chapter = true
 #### Platform
 #### Dockerfile 
 #### Docker cli
+#### Docker Exercise

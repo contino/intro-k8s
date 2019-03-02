@@ -1,7 +1,7 @@
 +++
 title = "Docker0 Diagram"
 date = 2018-12-09T17:21:25-05:00
-weight = 503
+weight = 303
 chapter = true
 
 +++
