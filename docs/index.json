@@ -84,6 +84,13 @@
 	"content": " To complete this workshop you will need these repos cloned locally\nGithub Register an account at github.com and clone these repos\n Docker Exercises Kubernetes Exercises  "
 },
 {
+	"uri": "https://contino.github.io/intro-k8/introduction/requirements/connecting/",
+	"title": "Connecting",
+	"tags": [],
+	"description": "",
+	"content": "CLUSTER_NAME = k8s-workshop   Set up the gcloud sdk\ngcloud init  Set gcloud project env var ```bash PROJECT_ID=${1:-devnexus-k8s-workshop};\n  gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;\n * Check to make sure account can see ```bash glcoud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster bash kubectl cluster-info   "
+},
+{
 	"uri": "https://contino.github.io/intro-k8/containers/history/",
 	"title": "History",
 	"tags": [],
@@ -585,7 +592,7 @@
 	"title": "Monitoring",
 	"tags": [],
 	"description": "",
-	"content": " Monitoring "
+	"content": " Monitoring cAdvisor\nPrometheus\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/logging/",

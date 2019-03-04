@@ -7,3 +7,6 @@ chapter = true
 
 ### Monitoring
 
+cAdvisor
+
+Prometheus

@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
-    <title>Exercises :: Introduction to Kubernetes</title>
+    <title>Connecting :: Introduction to Kubernetes</title>
 
     
     <link href="/intro-k8/css/nucleus.css?1551742205" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/intro-k8/kubernetes/objects/resourcequotas/exercises/">
+  <body class="" data-url="/intro-k8/introduction/requirements/connecting/">
     <nav id="sidebar" class="">
 
 
@@ -77,7 +77,7 @@
   
     
     <li data-nav-id="/intro-k8/introduction/" title="Introduction" class="dd-item 
-        
+        parent
         
         
         ">
@@ -200,7 +200,7 @@
   
     
     <li data-nav-id="/intro-k8/introduction/requirements/" title="Requirements" class="dd-item 
-        
+        parent
         
         
         ">
@@ -243,7 +243,7 @@
  
   
     
-      <li data-nav-id="/intro-k8/introduction/requirements/connecting/" title="Connecting" class="dd-item ">
+      <li data-nav-id="/intro-k8/introduction/requirements/connecting/" title="Connecting" class="dd-item active">
         <a href="/intro-k8/introduction/requirements/connecting/">
         Connecting
         
@@ -777,7 +777,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/" title="Kubernetes" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1034,7 +1034,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/" title="Objects" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1186,7 +1186,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/resourcequotas/" title="Resource Quotas" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1229,7 +1229,7 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/resourcequotas/exercises/" title="Exercises" class="dd-item active">
+      <li data-nav-id="/intro-k8/kubernetes/objects/resourcequotas/exercises/" title="Exercises" class="dd-item ">
         <a href="/intro-k8/kubernetes/objects/resourcequotas/exercises/">
         Exercises
         
@@ -2226,13 +2226,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/kubernetes/'>Kubernetes</a> > <a href='/intro-k8/kubernetes/objects/'>Objects</a> > <a href='/intro-k8/kubernetes/objects/resourcequotas/'>Resource Quotas</a> > Exercises
-          
-         
+            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/introduction/'>Introduction</a> > <a href='/intro-k8/introduction/requirements/'>Requirements</a> > Connecting
           
          
           
@@ -2247,17 +2241,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#please-delete-quotas">Please Delete Quotas!</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -2269,138 +2253,49 @@
         
         <div id="body-inner">
           
-            <h1>Exercises</h1>
+            <h1>Connecting</h1>
           
 
         
 
 
-
-
-<section class="attachments blue">
-	<label>
-		<i class="fas fa-paperclip" aria-hidden="true"></i>
-		Kubernetes yaml files
-	</label>
-	
-		
-	
-	<div class="attachments-files">
-	
-		
-		
-			
-				<li>
-					<a href="/intro-k8/kubernetes/objects/resourcequotas/exercises.files/pod-limits.yaml" >
-						pod-limits.yaml
-					</a>
-					(0 ko)
-				</li>
-			
-		
-	
-		
-		
-			
-				<li>
-					<a href="/intro-k8/kubernetes/objects/resourcequotas/exercises.files/pod-no-quotas.yaml" >
-						pod-no-quotas.yaml
-					</a>
-					(0 ko)
-				</li>
-			
-		
-	
-		
-		
-			
-				<li>
-					<a href="/intro-k8/kubernetes/objects/resourcequotas/exercises.files/pod-only-limit.yaml" >
-						pod-only-limit.yaml
-					</a>
-					(0 ko)
-				</li>
-			
-		
-	
-		
-		
-			
-				<li>
-					<a href="/intro-k8/kubernetes/objects/resourcequotas/exercises.files/pod-only-request.yaml" >
-						pod-only-request.yaml
-					</a>
-					(0 ko)
-				</li>
-			
-		
-	
-		
-		
-			
-				<li>
-					<a href="/intro-k8/kubernetes/objects/resourcequotas/exercises.files/quotas.yaml" >
-						quotas.yaml
-					</a>
-					(0 ko)
-				</li>
-			
-		
-	
-	<div>
-	
-</section>
-
-
-
-<p>Deploy default resources quotas for your namespace</p>
-
-<pre><code class="language-bash">kubectl create -f quotas.yaml
-
-kubectl describe quota
+<pre><code class="language-bash">CLUSTER_NAME = k8s-workshop
 </code></pre>
 
-<p>Verify qoutas</p>
+<ul>
+<li><p>Set up the gcloud sdk</p>
 
-<pre><code class="language-bash">kubectl get resourcequota mem-cpu-rq --output=yaml
+<pre><code class="language-bash">gcloud init
+</code></pre></li>
+
+<li><p>Set gcloud project env var
+```bash
+PROJECT_ID=${1:-devnexus-k8s-workshop};</p></li>
+</ul>
+
+<p>gcloud config set project ${PROJECT_ID};
+gcloud config set compute/region us-east1;
+gcloud config set compute/zone us-east1-b;</p>
+
+<pre><code>
+* Check to make sure account can see 
+```bash
+glcoud container clusters list
 </code></pre>
 
-<p>Deploy specific limits and requests for pods</p>
+<ul>
+<li>Get the cluster credentials</li>
+</ul>
 
-<pre><code class="language-bash">kubectl create -f pod-limits.yaml
-
-kubectl describe limits mem-limit-range
+<pre><code class="language-bash">gcloud container clusters get-credentials ${CLUSTER_NAME};
 </code></pre>
 
-<p>Deploy pods with only limits</p>
-
-<pre><code class="language-bash">kubectl create -f pod-only-limit.yaml
-
-Error from server (Forbidden): error when creating &quot;pod-only-limit.yaml&quot;: pods &quot;only-limits&quot; is forbidden: failed quota: mem-cpu-rq: must specify limits.cpu,requests.cpu
-
-</code></pre>
-
-<p>Deploy pods with only requests</p>
-
-<pre><code class="language-bash">kubectl create -f pod-only-request.yaml
-
-Error from server (Forbidden): error when creating &quot;pod-only-request.yaml&quot;: pods &quot;only-requests&quot; is forbidden: failed quota: mem-cpu-rq: must specify limits.cpu,requests.cpu
-
-</code></pre>
-
-<p>Deploy pod with neither and see defaults applied from the namespace</p>
-
-<pre><code class="language-bash">kubectl create -f pod-no-quotas.yaml
-
-Error from server (Forbidden): error when creating &quot;pod-no-quotas.yaml&quot;: pods &quot;no-quotas&quot; is forbidden: failed quota: mem-cpu-rq: must specify limits.cpu,requests.cpu
-</code></pre>
-
-<h3 id="please-delete-quotas">Please Delete Quotas!</h3>
-
-<pre><code class="language-bash">kubectl delete -f quotas.yaml
-
-kubectl delete -f pod-limits.yaml
-</code></pre>
+<ul>
+<li>Make kubectl can see the cluster
+<code>bash
+kubectl cluster-info
+</code></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -2439,8 +2334,6 @@ kubectl delete -f pod-limits.yaml
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -2456,6 +2349,9 @@ kubectl delete -f pod-limits.yaml
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2521,6 +2417,7 @@ kubectl delete -f pod-limits.yaml
             
                 
                     
+                    
                 
                 
 
@@ -2533,6 +2430,9 @@ kubectl delete -f pod-limits.yaml
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2550,55 +2450,6 @@ kubectl delete -f pod-limits.yaml
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -2610,51 +2461,6 @@ kubectl delete -f pod-limits.yaml
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -2667,80 +2473,18 @@ kubectl delete -f pod-limits.yaml
             
                 
                     
+                        
+                        
+                    
                 
                 
 
                     
-                    
-                    
-
-                    
-            
-        
                     
                         
-            
-            
-                
-                    
-                
-                
-
-                    
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
                     
                         
             
@@ -2826,124 +2570,6 @@ kubectl delete -f pod-limits.yaml
             
             
                 
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -3081,57 +2707,6 @@ kubectl delete -f pod-limits.yaml
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
             
             
@@ -3196,30 +2771,10 @@ kubectl delete -f pod-limits.yaml
             
         
                     
-            
-        
-                    
                         
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -3237,6 +2792,119 @@ kubectl delete -f pod-limits.yaml
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -3257,8 +2925,228 @@ kubectl delete -f pod-limits.yaml
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -3910,10 +3798,10 @@ kubectl delete -f pod-limits.yaml
 	 
 	 
 		
-			<a class="nav nav-prev" href="/intro-k8/kubernetes/objects/resourcequotas/resources/" title="Resource Quotas"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/intro-k8/introduction/requirements/github/" title="Exercises"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/intro-k8/kubernetes/objects/controllers/" title="Controllers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/intro-k8/containers/" title="Containers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
