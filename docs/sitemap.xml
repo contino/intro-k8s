@@ -298,6 +298,21 @@
   </url>
   
   <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/volumes/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/envvar/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/objects/ingress/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>

@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
-    <title>Docker0  :: Introduction to Kubernetes</title>
+    <title>Configmaps :: Introduction to Kubernetes</title>
 
     
     <link href="/intro-k8/css/nucleus.css?1551659960" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/intro-k8/containers/network/docker0/">
+  <body class="" data-url="/intro-k8/kubernetes/objects/configmaps/configmap/">
     <nav id="sidebar" class="">
 
 
@@ -260,7 +260,7 @@
   
     
     <li data-nav-id="/intro-k8/containers/" title="Containers" class="dd-item 
-        parent
+        
         
         
         ">
@@ -421,7 +421,7 @@
   
     
     <li data-nav-id="/intro-k8/containers/network/" title="Network" class="dd-item 
-        parent
+        
         
         
         ">
@@ -464,7 +464,7 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/network/docker0/" title="Docker0 " class="dd-item active">
+      <li data-nav-id="/intro-k8/containers/network/docker0/" title="Docker0 " class="dd-item ">
         <a href="/intro-k8/containers/network/docker0/">
         Docker0 
         
@@ -758,7 +758,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/" title="Kubernetes" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1015,7 +1015,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/" title="Objects" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1531,7 +1531,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/" title="Configmaps" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1555,7 +1555,7 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/configmap/" title="Configmaps" class="dd-item ">
+      <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/configmap/" title="Configmaps" class="dd-item active">
         <a href="/intro-k8/kubernetes/objects/configmaps/configmap/">
         Configmaps
         
@@ -2187,6 +2187,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -2205,7 +2207,13 @@
             
           
           
-            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/containers/'>Containers</a> > <a href='/intro-k8/containers/network/'>Network</a> > Docker0 
+            
+            
+          
+          
+            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/kubernetes/'>Kubernetes</a> > <a href='/intro-k8/kubernetes/objects/'>Objects</a> > <a href='/intro-k8/kubernetes/objects/configmaps/'>Configmaps</a> > Configmaps
+          
+         
           
          
           
@@ -2218,36 +2226,46 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Configmaps</h1>
           
 
         
 
 
-
-
-<h1 id="container-networking">Container Networking</h1>
-
-<ul>
-<li>When Docker starts, it creates a virtual interface called docker0 on the host machine</li>
-<li>docker0 is assigned a random IP address and subnet from the private range defined by RFC 1918</li>
-<li>It passes or switches packets between two connected devices just like a physical bridge or switch
-
-<ul>
-<li>Host to container</li>
-<li>Container to container</li>
-</ul></li>
-<li>Each new container gets one interface that is automatically attached to the docker0 bridge</li>
-</ul>
-
-<p><img src="/intro-k8/images/docker/docker0.png" alt="" /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>apiVersion: v1
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>data:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>  game.properties: <span style="color:#e6db74">|
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#e6db74">    enemies=aliens
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span><span style="color:#e6db74">    lives=3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#e6db74">    enemies.cheat=true
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#e6db74">    enemies.cheat.level=noGoodRotten
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#e6db74">    secret.code.passphrase=UUDDLRLRBABAS
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#e6db74">    secret.code.allowed=true
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span><span style="color:#e6db74">    secret.code.lives=30</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>  ui.properties: <span style="color:#e6db74">|
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#e6db74">    color.good=purple
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span><span style="color:#e6db74">    color.bad=yellow
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span><span style="color:#e6db74">    allow.textmode=true
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span><span style="color:#e6db74">    how.nice.to.look=fairlyNice</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>kind: ConfigMap
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>metadata:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>  name: game-config
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>  namespace: default
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>  </code></pre></div>
 
 
 <footer class=" footline" >
@@ -2255,8 +2273,6 @@
 </footer>
 
 
-        
-            </div> 
         
         </div> 
         
@@ -2405,7 +2421,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2420,9 +2435,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2520,7 +2532,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2533,26 +2544,6 @@
             
             
                 
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -2570,8 +2561,21 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -2771,6 +2775,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2785,6 +2790,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2946,6 +2954,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2960,6 +2969,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3297,6 +3309,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -3309,6 +3322,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -3325,6 +3339,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3739,10 +3756,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/intro-k8/containers/network/dockernetop/" title="Docker Network options"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/intro-k8/kubernetes/objects/configmaps/" title="Configmaps"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/intro-k8/containers/network/docker0-dig/" title="Docker0 Diagram" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/intro-k8/kubernetes/objects/configmaps/volumes/" title="Configmaps - Volume" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

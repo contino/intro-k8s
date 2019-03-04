@@ -11,5 +11,32 @@
 	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/configmaps/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Configmaps</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/</guid>
+      <description>1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5lives=3 6enemies.cheat=true 7enemies.cheat.level=noGoodRotten 8secret.code.passphrase=UUDDLRLRBABAS 9secret.code.allowed=true 10secret.code.lives=30 11 ui.properties: | 12color.good=purple 13color.bad=yellow 14allow.textmode=true 15how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  </description>
+    </item>
+    
+    <item>
+      <title>Configmaps - Volume</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/volumes/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/volumes/</guid>
+      <description>1apiVersion: v1 2kind: Pod 3metadata: 4 name: dapi-test-pod 5spec: 6 containers: 7 - name: test-container 8 image: k8s.gcr.io/busybox 9 command: [ &amp;#34;/bin/sh&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;ls /etc/config/&amp;#34; ] 10 volumeMounts: 11 - name: config-volume 12 mountPath: /etc/config 13 volumes: 14 - name: config-volume 15 configMap: 16 name: special-config 17 restartPolicy: Never </description>
+    </item>
+    
+    <item>
+      <title>Configmaps - Env Var</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/envvar/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/envvar/</guid>
+      <description>1apiVersion: v1 2kind: Pod 3metadata: 4 name: dapi-test-pod 5spec: 6 containers: 7 - name: test-container 8 image: k8s.gcr.io/busybox 9 command: [ &amp;#34;/bin/sh&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;echo $(SPECIAL_LEVEL_KEY) $(SPECIAL_TYPE_KEY)&amp;#34; ] 10 env: 11 - name: SPECIAL_LEVEL_KEY 12 valueFrom: 13 configMapKeyRef: 14 name: special-config 15 key: SPECIAL_LEVEL 16 - name: SPECIAL_TYPE_KEY 17 valueFrom: 18 configMapKeyRef: 19 name: special-config 20 key: SPECIAL_TYPE 21 restartPolicy: Never </description>
+    </item>
+    
   </channel>
 </rss>
