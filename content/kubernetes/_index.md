@@ -6,7 +6,7 @@ weight = 15
 pre = "<b>3. </b>"
 +++
 
-1. [History](/kubernetes/history)
+1. [History](/intro-k8/kubernetes/history)
 2. [Community](/intro-k8/kubernetes/community)
     * [CNCF Graduated Projects](/intro-k8/kubernetes/community/projects_grad)
     * [CNCF Incubating Projects](/intro-k8/kubernetes/community/projects_inc)        

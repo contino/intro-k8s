@@ -1,7 +1,7 @@
 +++
 title = "Exercises"
 date = 2018-12-09T16:52:57-05:00
-weight = 41
+weight = 11
 +++
 
 **To complete this workshop you will need these repos cloned locally** 
@@ -10,5 +10,5 @@ weight = 41
 
 Register an account at github.com and clone these repos
 
-* [Docker Exercises](https://github.com/shahadarsh/docker-k8s-workshop)
+* [Microservices Exercises](https://github.com/shahadarsh/docker-k8s-workshop)
 * [Kubernetes Exercises](https://github.com/contino/k8s-workshop)

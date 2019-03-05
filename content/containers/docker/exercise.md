@@ -7,4 +7,4 @@ chapter = true
 
 # Docker Exercise
 
-Git clone [Docker Exercises](https://github.com/shahadarsh/docker-k8s-workshop)
+Git clone [Microservices Exercises](https://github.com/shahadarsh/docker-k8s-workshop)

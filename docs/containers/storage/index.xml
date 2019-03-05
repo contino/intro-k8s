@@ -17,7 +17,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/storage/layers/</guid>
-      <description> Layers  An image is a collection of files and some meta data Images are comprised of multiple layers A layer is also just another image Each image contains software you want to run Every image contains a base layer Docker uses a copy on write system Layers are read only  </description>
+      <description> Layers </description>
     </item>
     
     <item>
@@ -26,8 +26,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/storage/volumes/</guid>
-      <description> Volumes A Volume is a designated directory in a container, which is designed to persist data, independent of the container’s life cycle
- Volume changes are excluded when updating an image Persist when a container is deleted Can be mapped to a host folder Can be shared between containers  </description>
+      <description> Volumes </description>
     </item>
     
     <item>

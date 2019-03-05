@@ -19,7 +19,7 @@
       <guid>https://contino.github.io/intro-k8/introduction/requirements/github/</guid>
       <description> To complete this workshop you will need these repos cloned locally
 Github Register an account at github.com and clone these repos
- Docker Exercises Kubernetes Exercises  </description>
+ Microservices Exercises Kubernetes Exercises  </description>
     </item>
     
     <item>
@@ -167,7 +167,7 @@ Github Register an account at github.com and clone these repos
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/storage/layers/</guid>
-      <description> Layers  An image is a collection of files and some meta data Images are comprised of multiple layers A layer is also just another image Each image contains software you want to run Every image contains a base layer Docker uses a copy on write system Layers are read only  </description>
+      <description> Layers </description>
     </item>
     
     <item>
@@ -176,8 +176,7 @@ Github Register an account at github.com and clone these repos
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/storage/volumes/</guid>
-      <description> Volumes A Volume is a designated directory in a container, which is designed to persist data, independent of the container’s life cycle
- Volume changes are excluded when updating an image Persist when a container is deleted Can be mapped to a host folder Can be shared between containers  </description>
+      <description> Volumes </description>
     </item>
     
     <item>
@@ -474,12 +473,12 @@ POD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath=&#39;{.</description>
     </item>
     
     <item>
-      <title>Platform</title>
+      <title>Docker Platform</title>
       <link>https://contino.github.io/intro-k8/containers/docker/platform/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/platform/</guid>
-      <description> Docker </description>
+      <description></description>
     </item>
     
     <item>
@@ -488,7 +487,7 @@ POD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath=&#39;{.</description>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile/</guid>
-      <description>Docker Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\”</description>
+      <description>Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\”</description>
     </item>
     
     <item>
@@ -507,7 +506,7 @@ More exercises</description>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/exercise/</guid>
-      <description>Docker Exercise Git clone Docker Exercises</description>
+      <description>Docker Exercise Git clone Microservices Exercises</description>
     </item>
     
     <item>

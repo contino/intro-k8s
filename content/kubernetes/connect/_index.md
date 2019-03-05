@@ -10,7 +10,7 @@ chapter = true
 
 ### Prerequisites ###
 
-[Follow the Requirements](/introduction/requirements)
+[Follow the Requirements](/intro-k8/introduction/requirements)
 
 ### Google SDK Setup ###
 Follow the verification steps

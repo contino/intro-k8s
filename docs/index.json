@@ -11,14 +11,14 @@
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": " Who are you? Agenda Contino Instructors Requirements  "
+	"content": " Requirements Instructors Contino Who are you? Agenda  "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/introduction/introduction/",
-	"title": "Introduction",
+	"uri": "https://contino.github.io/intro-k8/introduction/requirements/",
+	"title": "Requirements",
 	"tags": [],
 	"description": "",
-	"content": " Please Introduce Yourself\u000b  Name Role \u0026amp; Company\u000b What would you like to learn today?  "
+	"content": " To complete this workshop you will need the following installed locally\nRequired: Docker, git, gcloud, kbectl, gmail account, github account\nOptional: devops debate slack account\nDocker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.  python -V   Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n  ./google-cloud-sdk/install.sh   Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:  ./google-cloud-sdk/bin/gcloud init  kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/",
@@ -26,6 +26,20 @@
 	"tags": [],
 	"description": "",
 	"content": " History\n Primitives\n Network\n Storage\n Docker\n  "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/introduction/requirements/github/",
+	"title": "Exercises",
+	"tags": [],
+	"description": "",
+	"content": " To complete this workshop you will need these repos cloned locally\nGithub Register an account at github.com and clone these repos\n Microservices Exercises Kubernetes Exercises  "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/introduction/requirements/connecting/",
+	"title": "Connecting",
+	"tags": [],
+	"description": "",
+	"content": "CLUSTER_NAME = k8s-workshop   Set up the gcloud sdk  gcloud init   Set gcloud project env var  PROJECT_ID=${1:-devnexus-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  glcoud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/",
@@ -46,21 +60,7 @@
 	"title": "History",
 	"tags": [],
 	"description": "",
-	"content": " Kubernetes History Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.\n“Kubernetes was built to radically change the way that applications are built and deployed in the cloud. Fundamentally, it was designed to give developers more velocity, efficiency, and agility”\nKelsey Hightower, Brendan Burns \u0026amp; Joe Beda -Kubernetes Up and Running Book\n Kubernetes is heavily influenced by Google’s Borg system Released in 2015 when Google partnered with Linux foundation to form CNCF Often called K8s which is a Numeronym K[ubernete]s → K[8]s → K8s Kubernetes - Greek for helmsman or pilot  "
-},
-{
-	"uri": "https://contino.github.io/intro-k8/introduction/agenda/",
-	"title": "Agenda",
-	"tags": [],
-	"description": "",
-	"content": " Introduction  Who are you? Agenda Contino Instructors Requirements  Containers  Intro History Primitives Docker Network Storage  Kubernetes  History Community  CNCF Graduated Projects CNCF Incubating Projects\n Get Involved  Connect to Cluster Kubernetes Objects  Namespaces Pods Resource Quotas Controllers Storage Secrets ConfigMaps Ingress Service Healthchecks Cleanup  Options for Running Kubernetes Extras  Monitoring Security    "
-},
-{
-	"uri": "https://contino.github.io/intro-k8/introduction/contino/",
-	"title": "Contino",
-	"tags": [],
-	"description": "",
-	"content": ""
+	"content": " Kubernetes History Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.\n Kubernetes is heavily influenced by Google’s Borg system Released in 2015 when Google partnered with Linux foundation to form CNCF Often called K8s which is a Numeronym K[ubernete]s → K[8]s → K8s Kubernetes - Greek for helmsman or pilot  “Kubernetes was built to radically change the way that applications are built and deployed in the cloud. Fundamentally, it was designed to give developers more velocity, efficiency, and agility”\nKelsey Hightower, Brendan Burns \u0026amp; Joe Beda -Kubernetes Up and Running Book\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/whoami/",
@@ -70,25 +70,25 @@
 	"content": "   Adarsh Shah James Strong         Technical Principal @ Contino Technical Principal @ Contino   Practice Lead (Cloud Native Soft Dev)    Twitter: @shahadarsh Twitter: @strongjz   Website: https://shahadarsh.com https://www.linkedin.com/in/strongjames/    "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/introduction/requirements/",
-	"title": "Requirements",
+	"uri": "https://contino.github.io/intro-k8/introduction/contino/",
+	"title": "Contino",
 	"tags": [],
 	"description": "",
-	"content": " To complete this workshop you will need the following installed locally\nRequired: Docker, git, gcloud, kbectl, gmail account, github account\nOptional: devops debate slack account\nDocker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.  python -V   Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n  ./google-cloud-sdk/install.sh   Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:  ./google-cloud-sdk/bin/gcloud init  kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
+	"content": ""
 },
 {
-	"uri": "https://contino.github.io/intro-k8/introduction/requirements/github/",
-	"title": "Exercises",
+	"uri": "https://contino.github.io/intro-k8/introduction/introduction/",
+	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": " To complete this workshop you will need these repos cloned locally\nGithub Register an account at github.com and clone these repos\n Docker Exercises Kubernetes Exercises  "
+	"content": " Please Introduce Yourself\u000b  Name Role \u0026amp; Company\u000b What would you like to learn today?  "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/introduction/requirements/connecting/",
-	"title": "Connecting",
+	"uri": "https://contino.github.io/intro-k8/introduction/agenda/",
+	"title": "Agenda",
 	"tags": [],
 	"description": "",
-	"content": "CLUSTER_NAME = k8s-workshop   Set up the gcloud sdk  gcloud init   Set gcloud project env var  PROJECT_ID=${1:-devnexus-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  glcoud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info  "
+	"content": " Introduction  Requirements Instructors Contino Who are you? Agenda  Containers  Intro History Primitives Docker Network Storage  Kubernetes  History Community  CNCF Graduated Projects CNCF Incubating Projects\n Get Involved  Connect to Cluster Kubernetes Objects  Namespaces Pods Resource Quotas Controllers Storage Secrets ConfigMaps Ingress Service Healthchecks Cleanup  Options for Running Kubernetes Extras  Monitoring Security    "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/history/",
@@ -242,14 +242,14 @@
 	"title": "Layers",
 	"tags": [],
 	"description": "",
-	"content": " Layers  An image is a collection of files and some meta data Images are comprised of multiple layers A layer is also just another image Each image contains software you want to run Every image contains a base layer Docker uses a copy on write system Layers are read only  "
+	"content": " Layers "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/volumes/",
 	"title": "Volumes",
 	"tags": [],
 	"description": "",
-	"content": " Volumes A Volume is a designated directory in a container, which is designed to persist data, independent of the container’s life cycle\n Volume changes are excluded when updating an image Persist when a container is deleted Can be mapped to a host folder Can be shared between containers  "
+	"content": " Volumes "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/benefits/",
@@ -540,17 +540,17 @@
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/platform/",
-	"title": "Platform",
+	"title": "Docker Platform",
 	"tags": [],
 	"description": "",
-	"content": " Docker "
+	"content": ""
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/dockerfile/",
 	"title": "Dockerfile",
 	"tags": [],
 	"description": "",
-	"content": " Docker Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “\u0026amp;\u0026amp;” and “\\”\n Use the caching system to your advantage The order of statements is important Add files that are least likely to change first and the ones most likely to change last  "
+	"content": " Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “\u0026amp;\u0026amp;” and “\\”\n Use the caching system to your advantage The order of statements is important Add files that are least likely to change first and the ones most likely to change last  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/cli/",
@@ -564,7 +564,7 @@
 	"title": "Docker Exercise",
 	"tags": [],
 	"description": "",
-	"content": " Docker Exercise Git clone Docker Exercises\n"
+	"content": " Docker Exercise Git clone Microservices Exercises\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/cleanup/",

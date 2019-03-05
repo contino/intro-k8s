@@ -1,14 +1,14 @@
 +++
 title = "Agenda"
 date = 2018-12-09T16:59:28-05:00
-weight = 20
+weight = 50
 +++
 1. [Introduction](/intro-k8/introduction/index.html)
-    * [Who are you?](/intro-k8/introduction/introduction/)
-    * [Agenda](/intro-k8/introduction//agenda/)
-    * [Contino](/intro-k8/introduction/contino)
-    * [Instructors](/intro-k8/introduction//whoami)
-    * [Requirements](/intro-k8/introduction/requirements) 
+    * [Requirements](/intro-k8/introduction/requirements/)
+    * [Instructors](/intro-k8/introduction/whoami/)
+    * [Contino](/intro-k8/introduction/contino/)
+    * [Who are you?](/intro-k8/introduction/)
+    * [Agenda](/intro-k8/introduction/agenda/)
 2. [Containers](/intro-k8/containers)
     * [Intro](/intro-k8/containers/intro)
     * [History](/intro-k8/containers/history)

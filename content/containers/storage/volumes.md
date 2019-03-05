@@ -6,11 +6,5 @@ chapter = true
 +++
 
 # Volumes
-A Volume is a designated directory in a container, which is designed to persist data, independent of the container’s life cycle
-
-* Volume changes are excluded when updating an image
-* Persist when a container is deleted
-* Can be mapped to a host folder
-* Can be shared between containers
 
 ![](/intro-k8/images/docker/volume.png)

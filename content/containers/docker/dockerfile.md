@@ -5,10 +5,8 @@ weight = 503
 chapter = true
 +++
 
-# Docker
+# [Dockerfile](https://github.com/shahadarsh/docker-k8s-workshop/blob/master/exercises/docker/conference-details-service/Dockerfile)
 
-####  Dockerfile
- 
 * Instructions specify what to do when building the image
 * FROM instruction specifies what the base image should be 
 * RUN instruction specifies a command to execute

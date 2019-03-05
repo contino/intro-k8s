@@ -1,7 +1,7 @@
 +++
 title = "Instructors"
 date = 2018-12-09T14:25:28-05:00
-weight = 30
+weight = 20
 chapter = true
 +++
 
