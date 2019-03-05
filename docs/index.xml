@@ -515,7 +515,7 @@ More exercises</description>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/extras/monitoring/</guid>
-      <description> Monitoring  cAdvisor
+      <description> cAdvisor
  Prometheus
  Datadog
   </description>

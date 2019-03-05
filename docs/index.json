@@ -592,7 +592,7 @@
 	"title": "Monitoring",
 	"tags": [],
 	"description": "",
-	"content": " Monitoring  cAdvisor\n Prometheus\n Datadog\n  "
+	"content": " cAdvisor\n Prometheus\n Datadog\n  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/logging/",
