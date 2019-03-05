@@ -412,7 +412,7 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-examp
     </item>
     
     <item>
-      <title>Service Daigram</title>
+      <title>Service Diagram</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
@@ -515,8 +515,10 @@ More exercises</description>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/extras/monitoring/</guid>
-      <description>Monitoring cAdvisor
-Prometheus</description>
+      <description> Monitoring  cAdvisor
+ Prometheus
+ Datadog
+  </description>
     </item>
     
     <item>

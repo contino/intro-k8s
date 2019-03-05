@@ -470,7 +470,7 @@
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/services/diag/",
-	"title": "Service Daigram",
+	"title": "Service Diagram",
 	"tags": [],
 	"description": "",
 	"content": "  "
@@ -578,7 +578,7 @@
 	"title": "Running",
 	"tags": [],
 	"description": "",
-	"content": " Options for Running Kubernetes "
+	"content": " Options for Running Kubernetes  GKP EKS AKS On prem  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/",
@@ -592,7 +592,7 @@
 	"title": "Monitoring",
 	"tags": [],
 	"description": "",
-	"content": " Monitoring cAdvisor\nPrometheus\n"
+	"content": " Monitoring  cAdvisor\n Prometheus\n Datadog\n  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/logging/",

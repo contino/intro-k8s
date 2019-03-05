@@ -7,3 +7,7 @@ weight = 700
 
 ### Options for Running Kubernetes
 
+* GKP
+* EKS
+* AKS
+* On prem

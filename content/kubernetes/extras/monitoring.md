@@ -7,6 +7,8 @@ chapter = true
 
 ### Monitoring
 
-cAdvisor
+* [cAdvisor](https://github.com/google/cadvisor)
 
-Prometheus
+* [Prometheus](https://prometheus.io/)
+
+* [Datadog](https://docs.datadoghq.com/integrations/kubernetes/)
