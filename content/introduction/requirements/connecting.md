@@ -42,3 +42,28 @@ gcloud container clusters get-credentials ${CLUSTER_NAME};
 ```bash
 kubectl cluster-info
 ```
+
+* Allow docker to push to GCR
+```bash
+gcloud auth configure-docker
+The following settings will be added to your Docker config file
+located at [/Users/contino/.docker/config.json]:
+ {
+  "credHelpers": {
+    "gcr.io": "gcloud",
+    "us.gcr.io": "gcloud",
+    "eu.gcr.io": "gcloud",
+    "asia.gcr.io": "gcloud",
+    "staging-k8s.gcr.io": "gcloud",
+    "marketplace.gcr.io": "gcloud"
+  }
+}
+
+Do you want to continue (Y/n)?  Y
+
+Docker configuration file updated.
+
+docker pull nginx
+docker tag nginx us.gcr.io/PROJECT_NAME/nginx:your_name
+docker push us.gcr.io/PROJECT_NAME/nginx:your_name
+```
