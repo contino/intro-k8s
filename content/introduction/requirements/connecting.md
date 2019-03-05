@@ -46,6 +46,8 @@ kubectl cluster-info
 * Allow docker to push to GCR
 ```bash
 gcloud auth configure-docker
+```
+```bash
 The following settings will be added to your Docker config file
 located at [/Users/contino/.docker/config.json]:
  {
@@ -63,6 +65,9 @@ Do you want to continue (Y/n)?  Y
 
 Docker configuration file updated.
 
+```
+* Test
+```bash
 docker pull nginx
 docker tag nginx us.gcr.io/PROJECT_NAME/nginx:your_name
 docker push us.gcr.io/PROJECT_NAME/nginx:your_name

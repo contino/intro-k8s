@@ -8,5 +8,5 @@ theme = "learn"
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-  themeVariant = "blue"
+  themeVariant = "mine"
 
