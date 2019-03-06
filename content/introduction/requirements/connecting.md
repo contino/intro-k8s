@@ -28,7 +28,7 @@ gcloud config set compute/zone us-east1-b;
 * Check to make sure account can see 
 
 ```bash
-glcoud container clusters list
+gcloud container clusters list
 ```
 
 * Get the cluster credentials 
