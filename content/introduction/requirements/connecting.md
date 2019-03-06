@@ -47,6 +47,7 @@ kubectl cluster-info
 ```bash
 gcloud auth configure-docker
 ```
+ 
 ```bash
 The following settings will be added to your Docker config file
 located at [/Users/contino/.docker/config.json]:
@@ -64,8 +65,8 @@ located at [/Users/contino/.docker/config.json]:
 Do you want to continue (Y/n)?  Y
 
 Docker configuration file updated.
-
 ```
+ 
 * Test
 ```bash
 docker pull nginx
