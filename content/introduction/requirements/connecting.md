@@ -6,7 +6,7 @@ weight = 13
 
 
 ```bash
-CLUSTER_NAME = k8s-workshop
+CLUSTER_NAME=dexnexus-k8s-cluster
 ```
 
 * Set up the gcloud sdk
@@ -28,7 +28,7 @@ gcloud config set compute/zone us-east1-b;
 * Check to make sure account can see 
 
 ```bash
-glcoud container clusters list
+gcloud container clusters list
 ```
 
 * Get the cluster credentials 
@@ -47,6 +47,7 @@ kubectl cluster-info
 ```bash
 gcloud auth configure-docker
 ```
+ 
 ```bash
 The following settings will be added to your Docker config file
 located at [/Users/contino/.docker/config.json]:
@@ -64,11 +65,11 @@ located at [/Users/contino/.docker/config.json]:
 Do you want to continue (Y/n)?  Y
 
 Docker configuration file updated.
-
 ```
+ 
 * Test
 ```bash
 docker pull nginx
-docker tag nginx us.gcr.io/PROJECT_NAME/nginx:your_name
-docker push us.gcr.io/PROJECT_NAME/nginx:your_name
+docker tag nginx us.gcr.io/${PROJECT_ID}/nginx:your_name
+docker push us.gcr.io/${PROJECT_ID}/nginx:your_name
 ```
