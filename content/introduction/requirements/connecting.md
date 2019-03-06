@@ -70,6 +70,6 @@ Docker configuration file updated.
 * Test
 ```bash
 docker pull nginx
-docker tag nginx us.gcr.io/PROJECT_NAME/nginx:your_name
-docker push us.gcr.io/PROJECT_NAME/nginx:your_name
+docker tag nginx us.gcr.io/${PROJECT_ID}/nginx:your_name
+docker push us.gcr.io/${PROJECT_ID}/nginx:your_name
 ```
