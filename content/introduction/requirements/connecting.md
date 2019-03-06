@@ -6,7 +6,7 @@ weight = 13
 
 
 ```bash
-CLUSTER_NAME=devnexus-k8s-workshop
+CLUSTER_NAME=dexnexus-k8s-cluster
 ```
 
 * Set up the gcloud sdk
