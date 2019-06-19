@@ -5,8 +5,10 @@ weight = 13
 +++
 
 
+* Set env var of Cluster name
+
 ```bash
-CLUSTER_NAME=dexnexus-k8s-cluster
+CLUSTER_NAME=k8s-workshop
 ```
 
 * Set up the gcloud sdk
@@ -18,7 +20,7 @@ gcloud init
 * Set gcloud project env var
 
 ```bash
-PROJECT_ID=${1:-devnexus-k8s-workshop};
+PROJECT_ID=${1:-k8s-workshop};
 
 gcloud config set project ${PROJECT_ID};
 gcloud config set compute/region us-east1;
@@ -44,11 +46,10 @@ kubectl cluster-info
 ```
 
 * Allow docker to push to GCR
+
 ```bash
 gcloud auth configure-docker
-```
- 
-```bash
+
 The following settings will be added to your Docker config file
 located at [/Users/contino/.docker/config.json]:
  {
@@ -68,6 +69,7 @@ Docker configuration file updated.
 ```
  
 * Test
+
 ```bash
 docker pull nginx
 docker tag nginx us.gcr.io/${PROJECT_ID}/nginx:your_name

@@ -1,0 +1,36 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: schedule-svc
+spec:
+  template:
+    metadata:
+      labels:
+        app: schedule-svc
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: server
+        image: shahadarsh/schedule-svc:1.0
+        ports:
+        - containerPort: 8080 
+        resources:
+          requests:
+            cpu: 100m
+            memory: 64Mi
+          limits:
+            cpu: 200m
+            memory: 128Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: schedule-svc 
+spec:
+  type: ClusterIP
+  selector:
+    app: schedule-svc 
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080

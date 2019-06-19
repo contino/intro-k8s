@@ -7,6 +7,4 @@ chapter = true
 
 # Container History
 
-#### 1. In the beginning
-#### 2. Hypervisors
-#### 3. Containers
+{{% children style="h3" %}}

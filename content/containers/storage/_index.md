@@ -7,10 +7,5 @@ chapter = true
 
 # Storage
 
-#### Layers
+{{% children style="h3" %}}
 
-#### Volumes
-
-#### Benefits of Volumes
-
-#### Docker Volume command

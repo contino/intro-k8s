@@ -6,16 +6,17 @@ chapter = true
 pre = "<b>4. </b>"
 +++
 
-### Chapter 4
-
 # Closing remarks
 
 
-![](/intro-k8/images/partyparrot.gif )
+![](/intro-k8/images/partyparrot.gif)
 
 Contact Us:
 
-|Twitter: [@shahadarsh](https://twitter.com/shahadarsh) | Twitter: [@strongjz](https://twitter.com/strongjz) |
-|Email: [adarsh.shah@contino.io](mailto:adarsh.shah@contino.io) | Email: [james.strong@contino.io](mailto:james.strong@contino.io) |
+| Henry Gallo                                           | James Strong                                              |
+| :---                                                  |    :----                                                  |
+| | [@strongjz](https://twitter.com/strongjz) |
+|[henry.gallo@contino.io](mailto:henry.gallo@contino.io) | [james.strong@contino.io](mailto:james.strong@contino.io) |
+
 
 [contino.io](https://www.contino.io/)
