@@ -12,23 +12,12 @@
     
     
     <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/introduction/requirements/github/</link>
-      <pubDate>Sun, 09 Dec 2018 16:52:57 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/introduction/requirements/github/</guid>
-      <description> To complete this workshop you will need these repos cloned locally
-Github Register an account at github.com and clone these repos
- Microservices Exercises Kubernetes Exercises  </description>
-    </item>
-    
-    <item>
       <title>Connecting</title>
       <link>https://contino.github.io/intro-k8/introduction/requirements/connecting/</link>
       <pubDate>Sun, 09 Dec 2018 16:52:57 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/introduction/requirements/connecting/</guid>
-      <description>CLUSTER_NAME = k8s-workshop   Set up the gcloud sdk  gcloud init   Set gcloud project env var  PROJECT_ID=${1:-devnexus-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  glcoud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR bash gcloud auth configure-docker  ```bash The following settings will be added to your Docker config file located at [/Users/contino/.</description>
+      <description>Set env var of Cluster name  CLUSTER_NAME=k8s-workshop   Set up the gcloud sdk  gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.</description>
     </item>
     
     <item>
@@ -368,7 +357,7 @@ apiVersion: v1 kind: Secret metadata: name: mysecret type: Opaque data: username
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/</guid>
-      <description>1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5lives=3 6enemies.cheat=true 7enemies.cheat.level=noGoodRotten 8secret.code.passphrase=UUDDLRLRBABAS 9secret.code.allowed=true 10secret.code.lives=30 11 ui.properties: | 12color.good=purple 13color.bad=yellow 14allow.textmode=true 15how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  </description>
+      <description>1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5 lives=3 6 enemies.cheat=true 7 enemies.cheat.level=noGoodRotten 8 secret.code.passphrase=UUDDLRLRBABAS 9 secret.code.allowed=true 10 secret.code.lives=30 11 ui.properties: | 12color.good=purple 13 color.bad=yellow 14 allow.textmode=true 15 how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  </description>
     </item>
     
     <item>

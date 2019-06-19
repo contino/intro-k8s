@@ -6,7 +6,7 @@ weight = 470
 
 ### What
 
-In order to keep the immutablity of a docker image, the configuration must live outside the container image, 
+In order to keep the immutability of a docker image, the configuration must live outside the container image, 
 K8 config maps enable this. 
 
 ### Why

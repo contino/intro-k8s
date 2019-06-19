@@ -7,8 +7,4 @@ chapter = true
 
 # Docker
 
-#### Benefits
-#### Platform
-#### Dockerfile 
-#### Docker cli
-#### Docker Exercise
+{{% children style="h3" %}}

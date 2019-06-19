@@ -1,0 +1,24 @@
+{{ define "home" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ $.conference_name }}</title>
+</head>
+<body>
+    <header>
+        {{ $.conference_name }}
+    </header>
+    <main role="main">
+        <section>
+            <div class="container">
+                <h1> Schedule </h1>
+                <p>
+                    {{ $.schedule }} 
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+{{ end }}
