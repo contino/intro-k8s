@@ -4,19 +4,32 @@ date = 2018-12-09T16:52:57-05:00
 weight = 10
 +++
 
-**To complete this workshop you will need the following installed locally** 
+**To complete this workshop you will need the following installed** 
 
 **Required**: Docker, git, gcloud, kubectl, gmail account, github account
 
 Optional: devops debate slack account
 
-# Gcloud console (recommended)
+## GCloud console (recommended)
+
+Log into https://console.cloud.google.com
+
+Navigate to https://console.cloud.google.com/compute/instances?project=us-k8s-workshop
+
+Find your instance with your name on it
+
+under connect click Dropped down and select Open in browser Window
+
+![](/intro-k8/images/connect.png)
+
+A New browser window should pop and give your a terminal prompt 
+
+![](/intro-k8/images/shell.png)
 
 
+## Local install 
 
-# Local install 
-
-## [Docker](https://docker.io)
+### [Docker](https://docker.io)
 
 #### Windows 
 

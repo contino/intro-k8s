@@ -17,7 +17,8 @@
       <pubDate>Sun, 09 Dec 2018 16:52:57 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/introduction/requirements/connecting/</guid>
-      <description>Set env var of Cluster name  CLUSTER_NAME=k8s-workshop   Set up the gcloud sdk  gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.</description>
+      <description>Set env var of Cluster name  CLUSTER_NAME=k8s-workshop  OPTIONAL if using gcloud console * Set up the gcloud sdk
+gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.</description>
     </item>
     
     <item>
@@ -165,7 +166,7 @@
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/namespaces/exercises/</guid>
-      <description>  Kubernetes yaml files   createNamespace.yaml  (0 ko)    Update createNamespace.yaml with your namespace
+      <description>   Kubernetes yaml files   createNamespace.yaml  (0 ko)    Update createNamespace.yaml with your namespace
 Create your namespace
 kubectl create -f ./createNamespace.yaml  Verify your namespace exists
 $ kubectl get namespaces NAME STATUS AGE default Active 1d kube-system Active 1d kube-public Active 1d YOUR_NAME_SPACE Active 1d  Set your namespace to the default

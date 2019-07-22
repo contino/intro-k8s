@@ -17,7 +17,8 @@
       <pubDate>Sun, 09 Dec 2018 16:52:57 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/introduction/requirements/connecting/</guid>
-      <description>Set env var of Cluster name  CLUSTER_NAME=k8s-workshop   Set up the gcloud sdk  gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.</description>
+      <description>Set env var of Cluster name  CLUSTER_NAME=k8s-workshop  OPTIONAL if using gcloud console * Set up the gcloud sdk
+gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.</description>
     </item>
     
   </channel>

@@ -5,13 +5,13 @@ weight = 20
 chapter = true
 +++
 
-| Henry Gallo                                           | James Strong                                              |
-| :---                                                  |    :----                                                  |
-| ![](/intro-k8/images/henry.png)                       | ![](/intro-k8/images/james.png)                           |
-| Technical Principal @ [Contino](https://contino.io)   | Technical Principal @ [Contino](https://contino.io)       |
-|                                                       | Certified Kubernetes Admin                                |
-|                                                       | [@strongjz](https://twitter.com/strongjz)                 |
-| https://www.linkedin.com/in/henry-gallo/              |       https://jamesstrong.dev                             |
+| Henry Gallo                                           | James Strong                                              | Matt Garber                                              |
+| :---                                                  | :----                                                     | :----                                                    |
+| ![](/intro-k8/images/henry.png)                       | ![](/intro-k8/images/james.png)                           | ![](/intro-k8/images/garber.jpg)                         |
+| Technical Principal @ [Contino](https://contino.io)   | Technical Principal @ [Contino](https://contino.io)       | Senior Consultant @ [Contino](https://contino.io)        |
+|                                                       | Certified Kubernetes Admin                                |                                                          | 
+|                                                       | [@strongjz](https://twitter.com/strongjz)                 |                                                          | 
+| https://www.linkedin.com/in/henry-gallo/              | https://jamesstrong.dev                                   |                                                          |
 
 
 

@@ -11,14 +11,14 @@
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": " Requirements   Instructors   Contino   Introduction   Agenda   "
+	"content": "  Requirements   Instructors   Contino   Introduction   Agenda   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/requirements/",
 	"title": "Requirements",
 	"tags": [],
 	"description": "",
-	"content": " To complete this workshop you will need the following installed locally\nRequired: Docker, git, gcloud, kubectl, gmail account, github account\nOptional: devops debate slack account\nGcloud console (recommended) Local install Docker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.\npython -V  Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n./google-cloud-sdk/install.sh  Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:\n./google-cloud-sdk/bin/gcloud init   kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
+	"content": " To complete this workshop you will need the following installed\nRequired: Docker, git, gcloud, kubectl, gmail account, github account\nOptional: devops debate slack account\nGCloud console (recommended) Log into https://console.cloud.google.com\nNavigate to https://console.cloud.google.com/compute/instances?project=us-k8s-workshop\nFind your instance with your name on it\nunder connect click Dropped down and select Open in browser Window\nA New browser window should pop and give your a terminal prompt\nLocal install Docker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.\npython -V  Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n./google-cloud-sdk/install.sh  Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:\n./google-cloud-sdk/bin/gcloud init   kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/",
@@ -32,14 +32,14 @@
 	"title": "Connecting",
 	"tags": [],
 	"description": "",
-	"content": " Set env var of Cluster name  CLUSTER_NAME=k8s-workshop   Set up the gcloud sdk  gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.docker/config.json]: { \u0026quot;credHelpers\u0026quot;: { \u0026quot;gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;us.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;eu.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;asia.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;staging-k8s.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;marketplace.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot; } } Do you want to continue (Y/n)? Y Docker configuration file updated.   Test  docker pull nginx docker tag nginx us.gcr.io/${PROJECT_ID}/nginx:your_name docker push us.gcr.io/${PROJECT_ID}/nginx:your_name  "
+	"content": " Set env var of Cluster name  CLUSTER_NAME=k8s-workshop  OPTIONAL if using gcloud console * Set up the gcloud sdk\ngcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.docker/config.json]: { \u0026quot;credHelpers\u0026quot;: { \u0026quot;gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;us.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;eu.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;asia.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;staging-k8s.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;marketplace.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot; } } Do you want to continue (Y/n)? Y Docker configuration file updated.   Test  docker pull nginx docker tag nginx us.gcr.io/${PROJECT_ID}/nginx:your_name docker push us.gcr.io/${PROJECT_ID}/nginx:your_name  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/",
 	"title": "Kubernetes",
 	"tags": [],
 	"description": "",
-	"content": " History   Community   Architecture   Connect   Kubernetes API Objects   Microservices Exercise   Cleanup   Running   Extras   "
+	"content": "  History   Community   Graduated Projects   Incubating Projects   Involvement   Architecture   Master   Node   Data Flow   Connect   Kubernetes API Objects   Namespaces   Exercises   Pods   Exercises   Labels and Selectors   Resource Quotas   Resource Quotas   Exercises   Controllers   Controllers Updates   Exercises   Storage   Volumes   Persistent Volume   Persistent Volume Claims   Storage Classes   Exercises   Secrets   Secrets Uses - Secret   Secrets Uses - File   Secrets Uses - Env Var   Configmaps   Configmaps   Configmaps - Volume   Configmaps - Env Var   ingress   Ingress Controllers   Ingress Rules   Services   Service Diagram   Exercises   Healthchecks   Liveliness   Readiness   Exercises   Daemonsets   Microservices Exercise   Cleanup   Running   Extras   Monitoring   Logging   Logging - Pod   Logging - Node   Logging - Cluster   Security - Containers   Security - K8   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/closing/",
@@ -60,7 +60,7 @@
 	"title": "Instructors",
 	"tags": [],
 	"description": "",
-	"content": "   Henry Gallo James Strong         Technical Principal @ Contino Technical Principal @ Contino    Certified Kubernetes Admin    @strongjz   https://www.linkedin.com/in/henry-gallo/ https://jamesstrong.dev    "
+	"content": "   Henry Gallo James Strong Matt Garber          Technical Principal @ Contino Technical Principal @ Contino Senior Consultant @ Contino    Certified Kubernetes Admin     @strongjz    https://www.linkedin.com/in/henry-gallo/ https://jamesstrong.dev     "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/contino/",
@@ -214,7 +214,7 @@
 	"title": "Kubernetes API Objects",
 	"tags": [],
 	"description": "",
-	"content": " Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   ingress   Services   Healthchecks   Daemonsets   "
+	"content": " Kubernetes API Objects  Namespaces   Exercises   Pods   Exercises   Labels and Selectors   Resource Quotas   Resource Quotas   Exercises   Controllers   Controllers Updates   Exercises   Storage   Volumes   Persistent Volume   Persistent Volume Claims   Storage Classes   Exercises   Secrets   Secrets Uses - Secret   Secrets Uses - File   Secrets Uses - Env Var   Configmaps   Configmaps   Configmaps - Volume   Configmaps - Env Var   ingress   Ingress Controllers   Ingress Rules   Services   Service Diagram   Exercises   Healthchecks   Liveliness   Readiness   Exercises   Daemonsets   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/layers/",
@@ -249,7 +249,7 @@
 	"title": "Exercises",
 	"tags": [],
 	"description": "",
-	"content": "  Kubernetes yaml files   createNamespace.yaml  (0 ko)    Update createNamespace.yaml with your namespace\nCreate your namespace\nkubectl create -f ./createNamespace.yaml  Verify your namespace exists\n$ kubectl get namespaces NAME STATUS AGE default Active 1d kube-system Active 1d kube-public Active 1d YOUR_NAME_SPACE Active 1d  Set your namespace to the default\nkubectl config set-context $(kubectl config current-context) --namespace=\u0026lt;insert-namespace-name-here\u0026gt;  Validate it\nkubectl config view | grep namespace:  "
+	"content": "   Kubernetes yaml files   createNamespace.yaml  (0 ko)    Update createNamespace.yaml with your namespace\nCreate your namespace\nkubectl create -f ./createNamespace.yaml  Verify your namespace exists\n$ kubectl get namespaces NAME STATUS AGE default Active 1d kube-system Active 1d kube-public Active 1d YOUR_NAME_SPACE Active 1d  Set your namespace to the default\nkubectl config set-context $(kubectl config current-context) --namespace=\u0026lt;insert-namespace-name-here\u0026gt;  Validate it\nkubectl config view | grep namespace:  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/",
@@ -501,7 +501,7 @@
 	"title": "Microservices Exercise",
 	"tags": [],
 	"description": "",
-	"content": "{{%attachments style=\u0026ldquo;blue\u0026rdquo; title=\u0026ldquo;Related files\u0026rdquo; pattern=\u0026rdquo;*\u0026ldquo;/%}}\nGit clone Exercises\nCode Exercises\n"
+	"content": "Git clone Exercises\nDeploying all three services\ncd Exercises/docker-exercises  Make sure we have credentials for the GCP cluster\n gcloud container clusters list gcloud container clusters get-credentials NAME_CLUSTER  Schedule Service\ncd schedule-service kubectl create -f schedule-svc.yaml  Conference web details\ncd ../conference-details-service kubectl create -f conf-details-svc.yaml  Conference Website\ncd ../conference-website kubectl create -f conf-website.yaml  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/benefits/",
@@ -564,7 +564,7 @@
 	"title": "Extras",
 	"tags": [],
 	"description": "",
-	"content": " Monitoring   Logging   Logging - Pod   Logging - Node   Logging - Cluster   Security - Containers   Security - K8   "
+	"content": "  Monitoring   Logging   Logging - Pod   Logging - Node   Logging - Cluster   Security - Containers   Security - K8   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/monitoring/",

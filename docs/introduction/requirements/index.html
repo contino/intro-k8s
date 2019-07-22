@@ -7,26 +7,27 @@
     <meta name="description" content="">
 
 
-    <link rel="shortcut icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
-<link rel="icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/intro-k8/images/favicon.png" type="image/png">
+
     <title>Requirements :: Introduction to Kubernetes</title>
 
     
-    <link href="/intro-k8/css/nucleus.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/fontawesome-all.min.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/hybrid.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/featherlight.min.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/perfect-scrollbar.min.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/auto-complete.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/theme.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/hugo-theme.css?1563821890" rel="stylesheet">
+    <link href="/intro-k8/css/nucleus.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/fontawesome-all.min.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/hybrid.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/featherlight.min.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/perfect-scrollbar.min.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/auto-complete.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/theme.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/hugo-theme.css?1563823742" rel="stylesheet">
     
-      <link href="/intro-k8/css/theme-mine.css?1563821890" rel="stylesheet">
+      <link href="/intro-k8/css/theme-mine.css?1563823742" rel="stylesheet">
     
 
-    <script src="/intro-k8/js/jquery-2.x.min.js?1563821890"></script>
+    <script src="/intro-k8/js/jquery-3.3.1.min.js?1563823742"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -49,18 +50,18 @@
     
         <div class="searchbox">
     <label for="search-by"><i class="fas fa-search"></i></label>
-    <input data-search-input id="search-by" type="text" placeholder="Search...">
-    <span data-search-clear=""><i class="fas fa-close"></i></span>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1563821890"></script>
-<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1563821890"></script>
+<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1563823742"></script>
+<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1563823742"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
     
 </script>
-<script type="text/javascript" src="/intro-k8/js/search.js?1563821890"></script>
+<script type="text/javascript" src="/intro-k8/js/search.js?1563823742"></script>
 
     
   </div>
@@ -2180,12 +2181,12 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#gcloud-console-recommended">Gcloud console (recommended)</a></li>
+<li>
+<ul>
+<li><a href="#gcloud-console-recommended">GCloud console (recommended)</a></li>
 <li><a href="#local-install">Local install</a>
 <ul>
 <li><a href="#docker-https-docker-io"><a href="https://docker.io">Docker</a></a>
-<ul>
-<li>
 <ul>
 <li><a href="#windows">Windows</a></li>
 <li><a href="#mac">Mac</a></li>
@@ -2212,11 +2213,16 @@
               </div>
             </div>
             
-
+        <div id="head-tags">
+        
+        </div>
         
         <div id="body-inner">
           
-            <h1>Requirements</h1>
+            <h1>
+              
+              Requirements
+            </h1>
           
 
         
@@ -2224,17 +2230,33 @@
 
 
 
-<p><strong>To complete this workshop you will need the following installed locally</strong></p>
+	
+
+<p><strong>To complete this workshop you will need the following installed</strong></p>
 
 <p><strong>Required</strong>: Docker, git, gcloud, kubectl, gmail account, github account</p>
 
 <p>Optional: devops debate slack account</p>
 
-<h1 id="gcloud-console-recommended">Gcloud console (recommended)</h1>
+<h2 id="gcloud-console-recommended">GCloud console (recommended)</h2>
 
-<h1 id="local-install">Local install</h1>
+<p>Log into <a href="https://console.cloud.google.com">https://console.cloud.google.com</a></p>
 
-<h2 id="docker-https-docker-io"><a href="https://docker.io">Docker</a></h2>
+<p>Navigate to <a href="https://console.cloud.google.com/compute/instances?project=us-k8s-workshop">https://console.cloud.google.com/compute/instances?project=us-k8s-workshop</a></p>
+
+<p>Find your instance with your name on it</p>
+
+<p>under connect click Dropped down and select Open in browser Window</p>
+
+<p><img src="/intro-k8/images/connect.png" alt="" /></p>
+
+<p>A New browser window should pop and give your a terminal prompt</p>
+
+<p><img src="/intro-k8/images/shell.png" alt="" /></p>
+
+<h2 id="local-install">Local install</h2>
+
+<h3 id="docker-https-docker-io"><a href="https://docker.io">Docker</a></h3>
 
 <h4 id="windows">Windows</h4>
 
@@ -2326,6 +2348,9 @@
 Other DevOps engineers are members of this slack community as well</p>
 
 <p><a href="https://devopsdebate.slack.com">Devops Debate account</a></p>
+
+
+
 
 
 <footer class=" footline" >
@@ -3785,20 +3810,20 @@ Other DevOps engineers are members of this slack community as well</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/intro-k8/js/clipboard.min.js?1563821890"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.min.js?1563821890"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1563821890"></script>
-    <script src="/intro-k8/js/jquery.sticky.js?1563821890"></script>
-    <script src="/intro-k8/js/featherlight.min.js?1563821890"></script>
-    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1563821890"></script>
-    <script src="/intro-k8/js/highlight.pack.js?1563821890"></script>
+    <script src="/intro-k8/js/clipboard.min.js?1563823742"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.min.js?1563823742"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1563823742"></script>
+    <script src="/intro-k8/js/jquery.sticky.js?1563823742"></script>
+    <script src="/intro-k8/js/featherlight.min.js?1563823742"></script>
+    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1563823742"></script>
+    <script src="/intro-k8/js/highlight.pack.js?1563823742"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/intro-k8/js/modernizr.custom.71422.js?1563821890"></script>
-    <script src="/intro-k8/js/learn.js?1563821890"></script>
-    <script src="/intro-k8/js/hugo-learn.js?1563821890"></script>
+    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1563823742"></script>
+    <script src="/intro-k8/js/learn.js?1563823742"></script>
+    <script src="/intro-k8/js/hugo-learn.js?1563823742"></script>
 
-    <link href="/intro-k8/mermaid/mermaid.css?1563821890" type="text/css" rel="stylesheet" />
-    <script src="/intro-k8/mermaid/mermaid.js?1563821890"></script>
+    <link href="/intro-k8/mermaid/mermaid.css?1563823742" rel="stylesheet" />
+    <script src="/intro-k8/mermaid/mermaid.js?1563823742"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

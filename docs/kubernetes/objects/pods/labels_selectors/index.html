@@ -7,26 +7,27 @@
     <meta name="description" content="">
 
 
-    <link rel="shortcut icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
-<link rel="icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/intro-k8/images/favicon.png" type="image/png">
+
     <title>Labels and Selectors :: Introduction to Kubernetes</title>
 
     
-    <link href="/intro-k8/css/nucleus.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/fontawesome-all.min.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/hybrid.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/featherlight.min.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/perfect-scrollbar.min.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/auto-complete.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/theme.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/hugo-theme.css?1563821890" rel="stylesheet">
+    <link href="/intro-k8/css/nucleus.css?1563823743" rel="stylesheet">
+    <link href="/intro-k8/css/fontawesome-all.min.css?1563823743" rel="stylesheet">
+    <link href="/intro-k8/css/hybrid.css?1563823743" rel="stylesheet">
+    <link href="/intro-k8/css/featherlight.min.css?1563823743" rel="stylesheet">
+    <link href="/intro-k8/css/perfect-scrollbar.min.css?1563823743" rel="stylesheet">
+    <link href="/intro-k8/css/auto-complete.css?1563823743" rel="stylesheet">
+    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1563823743" rel="stylesheet">
+    <link href="/intro-k8/css/theme.css?1563823743" rel="stylesheet">
+    <link href="/intro-k8/css/hugo-theme.css?1563823743" rel="stylesheet">
     
-      <link href="/intro-k8/css/theme-mine.css?1563821890" rel="stylesheet">
+      <link href="/intro-k8/css/theme-mine.css?1563823743" rel="stylesheet">
     
 
-    <script src="/intro-k8/js/jquery-2.x.min.js?1563821890"></script>
+    <script src="/intro-k8/js/jquery-3.3.1.min.js?1563823743"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -49,18 +50,18 @@
     
         <div class="searchbox">
     <label for="search-by"><i class="fas fa-search"></i></label>
-    <input data-search-input id="search-by" type="text" placeholder="Search...">
-    <span data-search-clear=""><i class="fas fa-close"></i></span>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1563821890"></script>
-<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1563821890"></script>
+<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1563823743"></script>
+<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1563823743"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
     
 </script>
-<script type="text/javascript" src="/intro-k8/js/search.js?1563821890"></script>
+<script type="text/javascript" src="/intro-k8/js/search.js?1563823743"></script>
 
     
   </div>
@@ -2210,14 +2211,20 @@
               </div>
             </div>
             
-
+        <div id="head-tags">
+        
+        </div>
         
         <div id="body-inner">
           
-            <h1>Labels and Selectors</h1>
+            <h1>
+              
+              Labels and Selectors
+            </h1>
           
 
         
+
 
 
 
@@ -3719,20 +3726,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/intro-k8/js/clipboard.min.js?1563821890"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.min.js?1563821890"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1563821890"></script>
-    <script src="/intro-k8/js/jquery.sticky.js?1563821890"></script>
-    <script src="/intro-k8/js/featherlight.min.js?1563821890"></script>
-    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1563821890"></script>
-    <script src="/intro-k8/js/highlight.pack.js?1563821890"></script>
+    <script src="/intro-k8/js/clipboard.min.js?1563823743"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.min.js?1563823743"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1563823743"></script>
+    <script src="/intro-k8/js/jquery.sticky.js?1563823743"></script>
+    <script src="/intro-k8/js/featherlight.min.js?1563823743"></script>
+    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1563823743"></script>
+    <script src="/intro-k8/js/highlight.pack.js?1563823743"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/intro-k8/js/modernizr.custom.71422.js?1563821890"></script>
-    <script src="/intro-k8/js/learn.js?1563821890"></script>
-    <script src="/intro-k8/js/hugo-learn.js?1563821890"></script>
+    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1563823743"></script>
+    <script src="/intro-k8/js/learn.js?1563823743"></script>
+    <script src="/intro-k8/js/hugo-learn.js?1563823743"></script>
 
-    <link href="/intro-k8/mermaid/mermaid.css?1563821890" type="text/css" rel="stylesheet" />
-    <script src="/intro-k8/mermaid/mermaid.js?1563821890"></script>
+    <link href="/intro-k8/mermaid/mermaid.css?1563823743" rel="stylesheet" />
+    <script src="/intro-k8/mermaid/mermaid.js?1563823743"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -7,26 +7,27 @@
     <meta name="description" content="">
 
 
-    <link rel="shortcut icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
-<link rel="icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/intro-k8/images/favicon.png" type="image/png">
+
     <title>Kubernetes :: Introduction to Kubernetes</title>
 
     
-    <link href="/intro-k8/css/nucleus.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/fontawesome-all.min.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/hybrid.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/featherlight.min.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/perfect-scrollbar.min.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/auto-complete.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/theme.css?1563821890" rel="stylesheet">
-    <link href="/intro-k8/css/hugo-theme.css?1563821890" rel="stylesheet">
+    <link href="/intro-k8/css/nucleus.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/fontawesome-all.min.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/hybrid.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/featherlight.min.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/perfect-scrollbar.min.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/auto-complete.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/theme.css?1563823742" rel="stylesheet">
+    <link href="/intro-k8/css/hugo-theme.css?1563823742" rel="stylesheet">
     
-      <link href="/intro-k8/css/theme-mine.css?1563821890" rel="stylesheet">
+      <link href="/intro-k8/css/theme-mine.css?1563823742" rel="stylesheet">
     
 
-    <script src="/intro-k8/js/jquery-2.x.min.js?1563821890"></script>
+    <script src="/intro-k8/js/jquery-3.3.1.min.js?1563823742"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -49,18 +50,18 @@
     
         <div class="searchbox">
     <label for="search-by"><i class="fas fa-search"></i></label>
-    <input data-search-input id="search-by" type="text" placeholder="Search...">
-    <span data-search-clear=""><i class="fas fa-close"></i></span>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1563821890"></script>
-<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1563821890"></script>
+<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1563823742"></script>
+<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1563823742"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
     
 </script>
-<script type="text/javascript" src="/intro-k8/js/search.js?1563821890"></script>
+<script type="text/javascript" src="/intro-k8/js/search.js?1563823742"></script>
 
     
   </div>
@@ -2180,364 +2181,1601 @@
               </div>
             </div>
             
-
+        <div id="head-tags">
+        
+        </div>
         
         <div id="body-inner">
           
-            <h1>Kubernetes</h1>
+            <h1>
+              
+              Kubernetes
+            </h1>
           
 
         
 
 
+
+
+	
+
+
+
+
+
+
 <ul class="children children-h3">
-    
-    
-        
-    
-    
+	
 
-    
-        
-    
-        
-  
+	
+		
+			
+		
+	
 
+	
 
-    
-    
+	
+		
+	
+		
+			
+				
+					
+					
 
 <h3>
 <a href="/intro-k8/kubernetes/history/" >History</a>
 </h3>
 
+				
 
+				
+			
+			
 
+				
 
+				
+					
+				
 
+				
 
+				
+					
+	
 
-            
-        
+				
 
-        
-            
-
-    
-    
-    
-
-    
-        
-    
-
-    
-
-            
-
-        
-    
-        
-  
-
-
-    
-    
+				
+			
+		
+	
+		
+			
+				
+					
+					
 
 <h3>
 <a href="/intro-k8/kubernetes/community/" >Community</a>
 </h3>
 
+				
 
+				
+			
+			
 
+				
 
+				
+					
+				
 
+				
 
+				
+					
+	
+		
+			
+				
+					
+					
 
-            
-        
+<h4>
+<a href="/intro-k8/kubernetes/community/projects_grad/" >Graduated Projects</a>
+</h4>
 
-        
-            
+				
 
-    
-    
-    
+				
+			
+			
 
-    
-        
-    
+				
 
-    
+				
+					
+				
 
-            
+				
 
-        
-    
-        
-  
+				
+					
+	
 
+				
 
-    
-    
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/community/projects_inc/" >Incubating Projects</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/community/involvement/" >Involvement</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
 
 <h3>
 <a href="/intro-k8/kubernetes/arch/" >Architecture</a>
 </h3>
 
+				
 
+				
+			
+			
 
+				
 
+				
+					
+				
 
+				
 
+				
+					
+	
+		
+			
+				
+					
+					
 
-            
-        
+<h4>
+<a href="/intro-k8/kubernetes/arch/master/" >Master</a>
+</h4>
 
-        
-            
+				
 
-    
-    
-    
+				
+			
+			
 
-    
-        
-    
+				
 
-    
+				
+					
+				
 
-            
+				
 
-        
-    
-        
-  
+				
+					
+	
 
+				
 
-    
-    
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/arch/node/" >Node</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/arch/data/" >Data Flow</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
 
 <h3>
 <a href="/intro-k8/kubernetes/connect/" >Connect</a>
 </h3>
 
+				
 
+				
+			
+			
 
+				
 
+				
+					
+				
 
+				
 
+				
+					
+	
 
-            
-        
+				
 
-        
-            
-
-    
-    
-    
-
-    
-        
-    
-
-    
-
-            
-
-        
-    
-        
-  
-
-
-    
-    
+				
+			
+		
+	
+		
+			
+				
+					
+					
 
 <h3>
 <a href="/intro-k8/kubernetes/objects/" >Kubernetes API Objects</a>
 </h3>
 
+				
 
+				
+			
+			
 
+				
 
+				
+					
+				
 
+				
 
+				
+					
+	
+		
+			
+				
+					
+					
 
-            
-        
+<h4>
+<a href="/intro-k8/kubernetes/objects/namespaces/" >Namespaces</a>
+</h4>
 
-        
-            
+				
 
-    
-    
-        
-    
-    
+				
+			
+			
 
-    
-        
-    
+				
 
-    
+				
+					
+				
 
-            
+				
 
-        
-    
-        
-  
+				
+					
+	
+		
+			
+				
+					
+					
 
+<h5>
+<a href="/intro-k8/kubernetes/objects/namespaces/exercises/" >Exercises</a>
+</h5>
 
-    
-    
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/pods/" >Pods</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/pods/exercises/" >Exercises</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/pods/labels_selectors/" >Labels and Selectors</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/resourcequotas/" >Resource Quotas</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/resourcequotas/resources/" >Resource Quotas</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/resourcequotas/exercises/" >Exercises</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/controllers/" >Controllers</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/controllers/updates/" >Controllers Updates</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/controllers/exercises/" >Exercises</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/storage/" >Storage</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/storage/volumes/" >Volumes</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/storage/pv/" >Persistent Volume</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/storage/pvc/" >Persistent Volume Claims</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/storage/classes/" >Storage Classes</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/storage/exercises/" >Exercises</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/secrets/" >Secrets</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/secrets/secret/" >Secrets Uses - Secret</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/secrets/file/" >Secrets Uses - File</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/secrets/env/" >Secrets Uses - Env Var</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/configmaps/" >Configmaps</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/configmaps/configmap/" >Configmaps</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/configmaps/volumes/" >Configmaps - Volume</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/configmaps/envvar/" >Configmaps - Env Var</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/ingress/" >ingress</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/ingress/controller/" >Ingress Controllers</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/ingress/rules/" >Ingress Rules</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/services/" >Services</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/services/diag/" >Service Diagram</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/services/exercises/" >Exercises</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/healthchecks/" >Healthchecks</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/healthchecks/liveliness/" >Liveliness</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/healthchecks/readiness/" >Readiness</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h5>
+<a href="/intro-k8/kubernetes/objects/healthchecks/exercises/" >Exercises</a>
+</h5>
+
+				
+
+				
+			
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/objects/daemonsets/" >Daemonsets</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
 
 <h3>
 <a href="/intro-k8/kubernetes/micro/" >Microservices Exercise</a>
 </h3>
 
+				
 
+				
+			
+			
 
+				
 
+				
+					
+				
 
+				
 
+				
+					
+	
 
-            
-        
+				
 
-        
-            
-
-    
-    
-    
-
-    
-        
-    
-
-    
-
-            
-
-        
-    
-        
-  
-
-
-    
-    
+				
+			
+		
+	
+		
+			
+				
+					
+					
 
 <h3>
 <a href="/intro-k8/kubernetes/cleanup/" >Cleanup</a>
 </h3>
 
+				
 
+				
+			
+			
 
+				
 
+				
+					
+				
 
+				
 
+				
+					
+	
 
-            
-        
+				
 
-        
-            
-
-    
-    
-    
-
-    
-        
-    
-
-    
-
-            
-
-        
-    
-        
-  
-
-
-    
-    
+				
+			
+		
+	
+		
+			
+				
+					
+					
 
 <h3>
 <a href="/intro-k8/kubernetes/running/" >Running</a>
 </h3>
 
+				
 
+				
+			
+			
 
+				
 
+				
+					
+				
 
+				
 
+				
+					
+	
 
-            
-        
+				
 
-        
-            
-
-    
-    
-    
-
-    
-        
-    
-
-    
-
-            
-
-        
-    
-        
-  
-
-
-    
-    
+				
+			
+		
+	
+		
+			
+				
+					
+					
 
 <h3>
 <a href="/intro-k8/kubernetes/extras/" >Extras</a>
 </h3>
 
+				
 
+				
+			
+			
 
+				
 
+				
+					
+				
 
+				
 
+				
+					
+	
+		
+			
+				
+					
+					
 
-            
-        
+<h4>
+<a href="/intro-k8/kubernetes/extras/monitoring/" >Monitoring</a>
+</h4>
 
-        
-            
+				
 
-    
-    
-    
+				
+			
+			
 
-    
-        
-    
+				
 
-    
+				
+					
+				
 
-            
+				
 
-        
-    
+				
+					
+	
 
-    
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/extras/logging/" >Logging</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/extras/logging-kc/" >Logging - Pod</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/extras/logging-node/" >Logging - Node</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/extras/logging-cluster/" >Logging - Cluster</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/extras/security/" >Security - Containers</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+		
+			
+				
+					
+					
+
+<h4>
+<a href="/intro-k8/kubernetes/extras/security1/" >Security - K8</a>
+</h4>
+
+				
+
+				
+			
+			
+
+				
+
+				
+					
+				
+
+				
+
+				
+					
+	
+
+				
+
+				
+			
+		
+	
+
+				
+
+				
+			
+		
+	
+
+	
 </ul>
+
+
+
+
+
+
+
 
 
 <footer class=" footline" >
@@ -3999,20 +5237,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/intro-k8/js/clipboard.min.js?1563821890"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.min.js?1563821890"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1563821890"></script>
-    <script src="/intro-k8/js/jquery.sticky.js?1563821890"></script>
-    <script src="/intro-k8/js/featherlight.min.js?1563821890"></script>
-    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1563821890"></script>
-    <script src="/intro-k8/js/highlight.pack.js?1563821890"></script>
+    <script src="/intro-k8/js/clipboard.min.js?1563823742"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.min.js?1563823742"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1563823742"></script>
+    <script src="/intro-k8/js/jquery.sticky.js?1563823742"></script>
+    <script src="/intro-k8/js/featherlight.min.js?1563823742"></script>
+    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1563823742"></script>
+    <script src="/intro-k8/js/highlight.pack.js?1563823742"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/intro-k8/js/modernizr.custom.71422.js?1563821890"></script>
-    <script src="/intro-k8/js/learn.js?1563821890"></script>
-    <script src="/intro-k8/js/hugo-learn.js?1563821890"></script>
+    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1563823742"></script>
+    <script src="/intro-k8/js/learn.js?1563823742"></script>
+    <script src="/intro-k8/js/hugo-learn.js?1563823742"></script>
 
-    <link href="/intro-k8/mermaid/mermaid.css?1563821890" type="text/css" rel="stylesheet" />
-    <script src="/intro-k8/mermaid/mermaid.js?1563821890"></script>
+    <link href="/intro-k8/mermaid/mermaid.css?1563823742" rel="stylesheet" />
+    <script src="/intro-k8/mermaid/mermaid.js?1563823742"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

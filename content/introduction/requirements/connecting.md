@@ -11,11 +11,13 @@ weight = 13
 CLUSTER_NAME=k8s-workshop
 ```
 
+**OPTIONAL if using gcloud console**
 * Set up the gcloud sdk
 
 ```bash
 gcloud init
 ```
+
 
 * Set gcloud project env var
 
