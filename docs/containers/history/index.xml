@@ -38,14 +38,5 @@
       <description> Containers </description>
     </item>
     
-    <item>
-      <title>Layers</title>
-      <link>https://contino.github.io/intro-k8/containers/history/layers/</link>
-      <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/containers/history/layers/</guid>
-      <description> Container Layers </description>
-    </item>
-    
   </channel>
 </rss>

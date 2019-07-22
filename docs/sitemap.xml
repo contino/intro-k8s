@@ -83,11 +83,6 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/containers/history/layers/</loc>
-    <lastmod>2018-12-09T17:20:59-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/community/</loc>
     <lastmod>2018-12-09T17:00:43-05:00</lastmod>
   </url>
@@ -143,11 +138,6 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/containers/network/dockernetop/</loc>
-    <lastmod>2018-12-09T17:21:25-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://contino.github.io/intro-k8/containers/network/docker0/</loc>
     <lastmod>2018-12-09T17:21:25-05:00</lastmod>
   </url>
@@ -179,11 +169,6 @@
   
   <url>
     <loc>https://contino.github.io/intro-k8/containers/storage/benefits/</loc>
-    <lastmod>2018-12-09T17:21:32-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://contino.github.io/intro-k8/containers/storage/commands/</loc>
     <lastmod>2018-12-09T17:21:32-05:00</lastmod>
   </url>
   
@@ -388,7 +373,12 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/containers/docker/dockerfile/</loc>
+    <loc>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</loc>
+    <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   

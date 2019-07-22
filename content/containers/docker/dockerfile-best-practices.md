@@ -1,11 +1,11 @@
 +++
-title = "Dockerfile"
+title = "Dockerfile Best Practices"
 date = 2018-12-09T17:21:05-05:00
-weight = 503
+weight = 504
 chapter = true
 +++
 
-# [Dockerfile](https://github.com/shahadarsh/docker-k8s-workshop/blob/master/exercises/docker/conference-details-service/Dockerfile)
+# Dockerfile
 
 * Instructions specify what to do when building the image
 * FROM instruction specifies what the base image should be 

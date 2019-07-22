@@ -30,31 +30,41 @@
     </item>
     
     <item>
-      <title>Dockerfile</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile/</link>
+      <title>Dockerfile Example</title>
+      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile/</guid>
+      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</guid>
+      <description> Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \ 8	&amp;amp;&amp;amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \ 9	&amp;amp;&amp;amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [&amp;#34;mvn&amp;#34;, &amp;#34;dependency:go-offline&amp;#34;] 15 16ADD [&amp;#34;src&amp;#34;, &amp;#34;/work/src&amp;#34;] 17RUN [&amp;#34;mvn&amp;#34;, &amp;#34;package&amp;#34;] 18 19EXPOSE 8080 20ENTRYPOINT [&amp;#34;java&amp;#34;, &amp;#34;-cp&amp;#34;, &amp;#34;target/classes:target/dependency/*&amp;#34;, &amp;#34;com.kumuluz.ee.EeApplication&amp;#34;] </description>
+    </item>
+    
+    <item>
+      <title>Dockerfile Best Practices</title>
+      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</link>
+      <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</guid>
       <description>Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\”</description>
     </item>
     
     <item>
-      <title>CLI</title>
+      <title>Docker cli</title>
       <link>https://contino.github.io/intro-k8/containers/docker/cli/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/cli/</guid>
-      <description>Docker Docker cli  docker ps docker images docker logs docker exec  Official Documentation
+      <description>Docker cli  docker ps docker images docker logs docker exec  Official Documentation
 More exercises</description>
     </item>
     
     <item>
-      <title>Docker Exercise</title>
+      <title>Docker Exercises</title>
       <link>https://contino.github.io/intro-k8/containers/docker/exercise/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/exercise/</guid>
-      <description>Docker Exercise Git clone Microservices Exercises</description>
+      <description>git clone https://github.com/contino/intro-k8  Navigate to the Docker exercises
+MacBook-Pro in ~/Documents/code/contino/intro-k8 ± |codelou S:6 U:11 ✗| → cd Exercises/docker-exercises/ l 2019-07-22 14:56:02 ⌚ MacBook-Pro in ~/Documents/code/contino/intro-k8/Exercises/docker-exercises ± |codelou S:6 U:11 ✗| → ls -la total 8 drwxr-xr-x 6 contino staff 192 Jul 22 14:27 . drwxr-xr-x 4 contino staff 128 Jul 22 13:56 .. -rw-r--r-- 1 contino staff 789 Jul 22 14:27 README.md drwxr-xr-x 6 contino staff 192 Jul 22 13:22 conference-details-service drwxr-xr-x 10 contino staff 320 Jul 22 13:22 conference-website drwxr-xr-x 6 contino staff 192 Jul 22 13:22 schedule-service  In order to push images to GCloud Container Registry credentials will be need</description>
     </item>
     
   </channel>

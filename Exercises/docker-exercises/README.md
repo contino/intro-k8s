@@ -9,19 +9,19 @@ gcloud auth configure-docker
 
 Run these commands for all three services 
 
-_Get Project ID from Instructors_ 
+**Project ID = us-k8-workshop** 
 
 [Build](https://docs.docker.com/engine/reference/commandline/build/) Images Locally
 ```bash
-docker build -t YOURNAME_SERVICE us.gcr.io/SERVICENAME:YOURNAME
+docker build -t YOURNAME_SERVICE us.gcr.io/us-k8-workshop/SERVICENAME:YOURNAME
 ```        
 
 [Push](https://docs.docker.com/engine/reference/commandline/push/) Images to GCR Registry 
 ```bash
-docker push us.gcr.io/[PROJECT_ID]/[SERVICENAME]:[YOURNAME]
+docker push us.gcr.io/us-k8-workshop/[SERVICENAME]:[YOURNAME]
 ```
 
 Navigate to Container Registry in Gcloud Console 
 
-https://console.cloud.google.com/gcr/images/[PROJECT_ID]?project=[PROJECT_ID]
+https://console.cloud.google.com/gcr/images/us-k8-workshop?project=us-k8-workshop
 

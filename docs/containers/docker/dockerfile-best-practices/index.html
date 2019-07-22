@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
-    <title>Exercises :: Introduction to Kubernetes</title>
+    <title>Dockerfile Best Practices :: Introduction to Kubernetes</title>
 
     
     <link href="/intro-k8/css/nucleus.css?1563821890" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/intro-k8/kubernetes/objects/controllers/exercises/">
+  <body class="" data-url="/intro-k8/containers/docker/dockerfile-best-practices/">
     <nav id="sidebar" class="">
 
 
@@ -260,7 +260,7 @@
   
     
     <li data-nav-id="/intro-k8/containers/" title="Containers" class="dd-item 
-        
+        parent
         
         
         ">
@@ -565,7 +565,7 @@
   
     
     <li data-nav-id="/intro-k8/containers/docker/" title="Docker Intro" class="dd-item 
-        
+        parent
         
         
         ">
@@ -646,7 +646,7 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/dockerfile-best-practices/" title="Dockerfile Best Practices" class="dd-item ">
+      <li data-nav-id="/intro-k8/containers/docker/dockerfile-best-practices/" title="Dockerfile Best Practices" class="dd-item active">
         <a href="/intro-k8/containers/docker/dockerfile-best-practices/">
         Dockerfile Best Practices
         
@@ -720,7 +720,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/" title="Kubernetes" class="dd-item 
-        parent
+        
         
         
         ">
@@ -977,7 +977,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/" title="Kubernetes API Objects" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1201,7 +1201,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/controllers/" title="Controllers" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1244,7 +1244,7 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/controllers/exercises/" title="Exercises" class="dd-item active">
+      <li data-nav-id="/intro-k8/kubernetes/objects/controllers/exercises/" title="Exercises" class="dd-item ">
         <a href="/intro-k8/kubernetes/objects/controllers/exercises/">
         Exercises
         
@@ -2149,8 +2149,6 @@
                         </a>
                     </span>
                   
-                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
-                  
                   <span class="links">
                  
                  
@@ -2169,13 +2167,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/kubernetes/'>Kubernetes</a> > <a href='/intro-k8/kubernetes/objects/'>Kubernetes API Objects</a> > <a href='/intro-k8/kubernetes/objects/controllers/'>Controllers</a> > Exercises
-          
-         
+            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/containers/'>Containers</a> > <a href='/intro-k8/containers/docker/'>Docker Intro</a> > Dockerfile Best Practices
           
          
           
@@ -2188,215 +2180,37 @@
                   </span>
                 </div>
                 
-                    <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#replicasets">ReplicaSets</a></li>
-<li><a href="#deployment-controller">Deployment Controller</a></li>
-</ul></li>
-<li><a href="#cleanup">Cleanup</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-    </div>
-</div>
-
-                
               </div>
             </div>
             
 
         
+          <div id="chapter">
+        
         <div id="body-inner">
           
-            <h1>Exercises</h1>
-          
 
         
 
 
 
 
-<p>In these exercises we will be working with these controllers, later we will working with Endpoints, since they are directly related to Services.</p>
+<h1 id="dockerfile">Dockerfile</h1>
 
-<section class="attachments blue">
-    <label>
-        <i class="fas fa-paperclip" aria-hidden="true"></i>
-        Kubernetes yaml files
-    </label>
-    
-        
-    
-    <div class="attachments-files">
-    
-        
-        
-            
-                <li>
-                    <a href="/intro-k8/kubernetes/objects/controllers/exercises.files/deploy-nginx-1.9.1-scale.yaml" >
-                        deploy-nginx-1.9.1-scale.yaml
-                    </a>
-                    (0 ko)
-                </li>
-            
-        
-    
-        
-        
-            
-                <li>
-                    <a href="/intro-k8/kubernetes/objects/controllers/exercises.files/deploy-nginx-1.9.1.yaml" >
-                        deploy-nginx-1.9.1.yaml
-                    </a>
-                    (0 ko)
-                </li>
-            
-        
-    
-        
-        
-            
-                <li>
-                    <a href="/intro-k8/kubernetes/objects/controllers/exercises.files/deploy-nginx.yaml" >
-                        deploy-nginx.yaml
-                    </a>
-                    (0 ko)
-                </li>
-            
-        
-    
-        
-        
-            
-                <li>
-                    <a href="/intro-k8/kubernetes/objects/controllers/exercises.files/replicaset.yaml" >
-                        replicaset.yaml
-                    </a>
-                    (0 ko)
-                </li>
-            
-        
-    
-    <div>
-    
-</section>
-
-<p><a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/">Deployment Controller</a> - Responsible for the controlled deployment of pods and ReplicaSets.</p>
-
-<p><a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/">ReplicaSets</a> -  is the newest version of the Replication Controller. The only difference between a ReplicaSet and a Replication Controller right now is the selector support.</p>
-
-<h4 id="replicasets">ReplicaSets</h4>
-
-<p>Create the replicaset</p>
-
-<pre><code class="language-bash">kubectl apply -f replicaset.yaml
-</code></pre>
-
-<p>Get the status of the replicaset</p>
-
-<pre><code>kubectl get replicaset
-</code></pre>
-
-<p>Retrieve detailed information about the replicaset</p>
-
-<pre><code>kubectl describe replicaset frontend
-</code></pre>
-
-<p>See the status of pods deployed with replicaset</p>
-
-<pre><code>kubectl get pods -l tier: frontend
-</code></pre>
-
-<p>Select one of the pods from the ReplicaSet</p>
-
-<pre><code>kubect port-forward &lt;ONE_POD_FROM_REPLICASET&gt; 8080:80
-</code></pre>
-
-<p>In another terminal window run</p>
-
-<pre><code>kubectl logs -f &lt;POD_FROM_REPLICASET&gt;
-</code></pre>
-
-<p>Go to <a href="http://localhost:8080/">http://localhost:8080/</a></p>
-
-<p>You should see logs streaming to the console</p>
-
-<p>Scale a ReplicaSet</p>
-
-<pre><code>kubectl scale --replicas=4 rs/frontend
-</code></pre>
-
-<p>The replicas will run 4 pods now</p>
-
-<pre><code>kubectl describe rs/frontend
-</code></pre>
-
-<pre><code>kubectl get pods -l tier: frontend
-
-</code></pre>
-
-<h4 id="deployment-controller">Deployment Controller</h4>
-
-<p>Create the nginx deployment</p>
-
-<pre><code>kubectl create -f deploy-nginx.yaml
-</code></pre>
-
-<p>Get deployment information</p>
-
-<pre><code>kubectl get deployments
-</code></pre>
-
-<p>Where is the deployment</p>
-
-<pre><code>kubectl rollout status deployment/nginx-deployment
-</code></pre>
-
-<p>Update the deployments</p>
-
-<pre><code>kubectl apply -f deploy-nginx-1.9.1.yaml 
-</code></pre>
-
-<p>Where is the deployment</p>
-
-<pre><code>kubectl rollout status deployment/nginx-deployment
-</code></pre>
-
-<p>History of deployment</p>
-
-<pre><code>kubectl get replicaset
-</code></pre>
-
-<p>View the pods in the deployment</p>
-
-<pre><code>kubectl get pods
-</code></pre>
-
-<p>Get more detailed information about the deployment</p>
-
-<pre><code>kubectl describe deployment nginx-deployment
-</code></pre>
-
-<p>Scale the deployment</p>
-
-<pre><code>kubectl apply -f deploy-nginx-1.9.1-scale.yaml 
-</code></pre>
-
-<h3 id="cleanup">Cleanup</h3>
-
-<pre><code class="language-bash">kubectl delete -f replicaset.yaml
-
-kubectl delete -f deploy-nginx.yaml
-
-</code></pre>
+<ul>
+<li>Instructions specify what to do when building the image</li>
+<li>FROM instruction specifies what the base image should be</li>
+<li>RUN instruction specifies a command to execute</li>
+<li>Comments start with “#”</li>
+<li>Remember, each line in a Dockerfile creates a new layer if it changes the state of the image</li>
+<li>You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile</li>
+<li>Don’t install unnecessary packages</li>
+<li>One ENTRYPOINT per Dockerfile</li>
+<li>Combine similar commands into one by using “&amp;&amp;” and “\”<br /></li>
+<li>Use the caching system to your advantage</li>
+<li>The order of statements is important</li>
+<li>Add files that are least likely to change first and the ones most likely to change last</li>
+</ul>
 
 
 <footer class=" footline" >
@@ -2404,6 +2218,8 @@ kubectl delete -f deploy-nginx.yaml
 </footer>
 
 
+        
+            </div> 
         
         </div> 
         
@@ -2552,6 +2368,7 @@ kubectl delete -f deploy-nginx.yaml
             
                 
                     
+                    
                 
                 
 
@@ -2567,133 +2384,8 @@ kubectl delete -f deploy-nginx.yaml
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -2767,19 +2459,6 @@ kubectl delete -f deploy-nginx.yaml
                     
 
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
             
         
                     
@@ -2795,143 +2474,6 @@ kubectl delete -f deploy-nginx.yaml
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -3037,169 +2579,6 @@ kubectl delete -f deploy-nginx.yaml
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -3233,6 +2612,171 @@ kubectl delete -f deploy-nginx.yaml
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -3253,8 +2797,276 @@ kubectl delete -f deploy-nginx.yaml
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -3858,10 +3670,10 @@ kubectl delete -f deploy-nginx.yaml
 	 
 	 
 		
-			<a class="nav nav-prev" href="/intro-k8/kubernetes/objects/controllers/updates/" title="Controllers Updates"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/intro-k8/containers/docker/dockerfile-example/" title="Dockerfile Example"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/intro-k8/kubernetes/objects/storage/" title="Storage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/intro-k8/containers/docker/cli/" title="Docker cli" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

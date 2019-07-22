@@ -7,21 +7,10 @@ chapter = true
 
 ### Connecting to your GKE Cluster ###
 
-
 ### Prerequisites ###
 
 [Follow the Requirements](/intro-k8/introduction/requirements)
 
-### Google SDK Setup ###
-Follow the verification steps
-```
-gcloud auth login
-```
-
-### Configure SDK ###
-```
-./gcloud-setup.sh
-```
 
 ### Retrieve Cluster Credentials (make sure there's no conflict with a pre-existing KUBECONFIG var) ###
 ```

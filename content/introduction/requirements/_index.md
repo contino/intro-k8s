@@ -6,10 +6,15 @@ weight = 10
 
 **To complete this workshop you will need the following installed locally** 
 
-**Required**: Docker, git, gcloud, kbectl, gmail account, github account
+**Required**: Docker, git, gcloud, kubectl, gmail account, github account
 
 Optional: devops debate slack account
 
+# Gcloud console (recommended)
+
+
+
+# Local install 
 
 ## [Docker](https://docker.io)
 

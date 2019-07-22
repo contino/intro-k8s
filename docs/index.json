@@ -18,14 +18,14 @@
 	"title": "Requirements",
 	"tags": [],
 	"description": "",
-	"content": " To complete this workshop you will need the following installed locally\nRequired: Docker, git, gcloud, kbectl, gmail account, github account\nOptional: devops debate slack account\nDocker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.\npython -V  Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n./google-cloud-sdk/install.sh  Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:\n./google-cloud-sdk/bin/gcloud init   kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
+	"content": " To complete this workshop you will need the following installed locally\nRequired: Docker, git, gcloud, kubectl, gmail account, github account\nOptional: devops debate slack account\nGcloud console (recommended) Local install Docker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.\npython -V  Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n./google-cloud-sdk/install.sh  Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:\n./google-cloud-sdk/bin/gcloud init   kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/",
 	"title": "Containers",
 	"tags": [],
 	"description": "",
-	"content": " History   Primitives   Network   Storage   Docker Intro   "
+	"content": " Containers  History   Primitives   Network   Storage   Docker Intro   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/requirements/connecting/",
@@ -88,7 +88,7 @@
 	"title": "History",
 	"tags": [],
 	"description": "",
-	"content": " Container History  Beginning   Hypervisor   Containers   Layers   "
+	"content": " Container History  Beginning   Hypervisor   Containers   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/history/history/",
@@ -110,13 +110,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Containers "
-},
-{
-	"uri": "https://contino.github.io/intro-k8/containers/history/layers/",
-	"title": "Layers",
-	"tags": [],
-	"description": "",
-	"content": " Container Layers "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/community/",
@@ -193,14 +186,7 @@
 	"title": "Connect",
 	"tags": [],
 	"description": "",
-	"content": " Connecting to your GKE Cluster Prerequisites Follow the Requirements\nGoogle SDK Setup Follow the verification steps\ngcloud auth login  Configure SDK ./gcloud-setup.sh  Retrieve Cluster Credentials (make sure there\u0026rsquo;s no conflict with a pre-existing KUBECONFIG var) gcloud container clusters get-credentials \u0026lt;cluster-name\u0026gt; --region \u0026lt;region\u0026gt;  Confirm Cluster Connectivity kubectl cluster-info  "
-},
-{
-	"uri": "https://contino.github.io/intro-k8/containers/network/dockernetop/",
-	"title": "Docker Network options",
-	"tags": [],
-	"description": "",
-	"content": " Docker Networking options    Flag value Description     -p 8080:80 Map TCP port 80 in the container to port 8080 on the Docker host.   -p 192.168.1.100:8080:80 Map TCP port 80 in the container to port 8080 on the Docker host for connections to host IP 192.168.1.100.   -p 8080:80/udp Map UDP port 80 in the container to port 8080 on the Docker host.   -p 8080:80/tcp -p 8080:80/udp Map TCP port 80 in the container to TCP port 8080 on the Docker host, and map UDP port 80 in the container to UDP port 8080 on the Docker host.    "
+	"content": " Connecting to your GKE Cluster Prerequisites Follow the Requirements\nRetrieve Cluster Credentials (make sure there\u0026rsquo;s no conflict with a pre-existing KUBECONFIG var) gcloud container clusters get-credentials \u0026lt;cluster-name\u0026gt; --region \u0026lt;region\u0026gt;  Confirm Cluster Connectivity kubectl cluster-info  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/network/docker0/",
@@ -221,7 +207,7 @@
 	"title": "Storage",
 	"tags": [],
 	"description": "",
-	"content": " Storage  Layers   Volumes   Storage   Volume CLI   "
+	"content": " Storage  Layers   Volumes   Storage   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/",
@@ -250,13 +236,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Benefits of Volumes  De-couple the data that is stored, from the container which created the data Good for sharing data between containers Can setup a data containers which has a volume you mount in other containers Share directories between multiple containers Bypassing the copy on write system to achieve native disk I/O performance Share a host directory with a container Share a single file between the host and container  "
-},
-{
-	"uri": "https://contino.github.io/intro-k8/containers/storage/commands/",
-	"title": "Volume CLI",
-	"tags": [],
-	"description": "",
-	"content": " Docker Volume command The docker volume command contains a number of sub commands used to create and manage volumes Commands are\n docker volume create docker volume ls docker volume inspect docker volume rm  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/namespaces/",
@@ -515,7 +494,7 @@
 	"title": "Docker Intro",
 	"tags": [],
 	"description": "",
-	"content": " Docker  Benefits of Docker   Docker Platform   Dockerfile   CLI   Docker Exercise   "
+	"content": " Docker  Benefits of Docker   Docker Platform   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/micro/",
@@ -539,25 +518,32 @@
 	"content": ""
 },
 {
-	"uri": "https://contino.github.io/intro-k8/containers/docker/dockerfile/",
-	"title": "Dockerfile",
+	"uri": "https://contino.github.io/intro-k8/containers/docker/dockerfile-example/",
+	"title": "Dockerfile Example",
+	"tags": [],
+	"description": "",
+	"content": " Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \\ 8\t\u0026amp;\u0026amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \\ 9\t\u0026amp;\u0026amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [\u0026#34;mvn\u0026#34;, \u0026#34;dependency:go-offline\u0026#34;] 15 16ADD [\u0026#34;src\u0026#34;, \u0026#34;/work/src\u0026#34;] 17RUN [\u0026#34;mvn\u0026#34;, \u0026#34;package\u0026#34;] 18 19EXPOSE 8080 20ENTRYPOINT [\u0026#34;java\u0026#34;, \u0026#34;-cp\u0026#34;, \u0026#34;target/classes:target/dependency/*\u0026#34;, \u0026#34;com.kumuluz.ee.EeApplication\u0026#34;] "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/",
+	"title": "Dockerfile Best Practices",
 	"tags": [],
 	"description": "",
 	"content": " Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “\u0026amp;\u0026amp;” and “\\”\n Use the caching system to your advantage The order of statements is important Add files that are least likely to change first and the ones most likely to change last  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/cli/",
-	"title": "CLI",
+	"title": "Docker cli",
 	"tags": [],
 	"description": "",
-	"content": " Docker Docker cli  docker ps docker images docker logs docker exec  Official Documentation\nMore exercises\n"
+	"content": " Docker cli  docker ps docker images docker logs docker exec  Official Documentation\nMore exercises\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/exercise/",
-	"title": "Docker Exercise",
+	"title": "Docker Exercises",
 	"tags": [],
 	"description": "",
-	"content": " Docker Exercise Git clone Microservices Exercises\n"
+	"content": "git clone https://github.com/contino/intro-k8  Navigate to the Docker exercises\nMacBook-Pro in ~/Documents/code/contino/intro-k8 ± |codelou S:6 U:11 ✗| → cd Exercises/docker-exercises/ l 2019-07-22 14:56:02 ⌚ MacBook-Pro in ~/Documents/code/contino/intro-k8/Exercises/docker-exercises ± |codelou S:6 U:11 ✗| → ls -la total 8 drwxr-xr-x 6 contino staff 192 Jul 22 14:27 . drwxr-xr-x 4 contino staff 128 Jul 22 13:56 .. -rw-r--r-- 1 contino staff 789 Jul 22 14:27 README.md drwxr-xr-x 6 contino staff 192 Jul 22 13:22 conference-details-service drwxr-xr-x 10 contino staff 320 Jul 22 13:22 conference-website drwxr-xr-x 6 contino staff 192 Jul 22 13:22 schedule-service  In order to push images to GCloud Container Registry credentials will be need\nDocker login for GCR\ngcloud auth configure-docker  Run these commands for all three services, conference-details-services, conference-website, schedule-service\nProject ID = us-k8-workshop\nBuild Images Locally\ncd SERVICENAME docker build -t YOURNAME_SERVICE us.gcr.io/us-k8-workshop/SERVICENAME:YOURNAME  Push Images to GCR Registry\ndocker push us.gcr.io/us-k8-workshop/[SERVICENAME]:[YOURNAME]  Navigate to Container Registry in GCloud Console\nhttps://console.cloud.google.com/gcr/images/us-k8-workshop?project=us-k8-workshop\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/cleanup/",
