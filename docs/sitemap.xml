@@ -13,18 +13,13 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/introduction/requirements/</loc>
-    <lastmod>2018-12-09T16:52:57-05:00</lastmod>
+    <loc>https://contino.github.io/intro-k8/introduction/whoami/</loc>
+    <lastmod>2018-12-09T14:25:28-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://contino.github.io/intro-k8/containers/</loc>
     <lastmod>2018-12-09T14:15:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://contino.github.io/intro-k8/introduction/requirements/connecting/</loc>
-    <lastmod>2018-12-09T16:52:57-05:00</lastmod>
   </url>
   
   <url>
@@ -43,8 +38,8 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/introduction/whoami/</loc>
-    <lastmod>2018-12-09T14:25:28-05:00</lastmod>
+    <loc>https://contino.github.io/intro-k8/introduction/introduction/</loc>
+    <lastmod>2018-12-09T16:59:09-05:00</lastmod>
   </url>
   
   <url>
@@ -53,13 +48,18 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/introduction/introduction/</loc>
-    <lastmod>2018-12-09T16:59:09-05:00</lastmod>
+    <loc>https://contino.github.io/intro-k8/introduction/agenda/</loc>
+    <lastmod>2018-12-09T16:59:28-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/introduction/agenda/</loc>
-    <lastmod>2018-12-09T16:59:28-05:00</lastmod>
+    <loc>https://contino.github.io/intro-k8/introduction/requirements/</loc>
+    <lastmod>2018-12-09T16:52:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/introduction/requirements/connecting/</loc>
+    <lastmod>2018-12-09T16:52:57-05:00</lastmod>
   </url>
   
   <url>

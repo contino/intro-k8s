@@ -6,4 +6,4 @@ weight = 15
 pre = "<b>3. </b>"
 +++
 
-{{% children style="h3" depth="3"  %}}
+{{% children style="h2" depth="1"  %}}

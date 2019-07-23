@@ -1,7 +1,8 @@
 +++
 title = "Agenda"
 date = 2018-12-09T16:59:28-05:00
-weight = 50
+weight = 40
+chapter = true
 +++
 1. [Introduction](/intro-k8/introduction/index.html)
     * [Requirements](/intro-k8/introduction/requirements/)

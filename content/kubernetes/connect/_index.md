@@ -5,9 +5,9 @@ weight = 300
 chapter = true
 +++
 
-### Connecting to your GKE Cluster ###
+## Connecting to your GKE Cluster
 
-### Prerequisites ###
+### Prerequisites 
 
 [Follow the Requirements](/intro-k8/introduction/requirements)
 
@@ -17,7 +17,7 @@ chapter = true
 gcloud container clusters get-credentials <cluster-name> --region <region>
 ```
 
-### Confirm Cluster Connectivity ###
+### Confirm Cluster Connectivity
 ```
 kubectl cluster-info
 ```

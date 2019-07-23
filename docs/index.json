@@ -11,14 +11,14 @@
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": "  Requirements   Instructors   Contino   Introduction   Agenda   "
+	"content": "  Instructors   Introduction   Contino   Agenda   Requirements   "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/introduction/requirements/",
-	"title": "Requirements",
+	"uri": "https://contino.github.io/intro-k8/introduction/whoami/",
+	"title": "Instructors",
 	"tags": [],
 	"description": "",
-	"content": " To complete this workshop you will need the following installed\nRequired: Docker, git, gcloud, kubectl, gmail account, github account\nOptional: devops debate slack account\nGCloud console (recommended) Log into https://console.cloud.google.com\nNavigate to https://console.cloud.google.com/compute/instances?project=us-k8s-workshop\nFind your instance with your name on it\nunder connect click Dropped down and select Open in browser Window\nA New browser window should pop and give your a terminal prompt\nLocal install Docker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.\npython -V  Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n./google-cloud-sdk/install.sh  Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:\n./google-cloud-sdk/bin/gcloud init   kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
+	"content": "   Henry Gallo James Strong Matt Garber          Technical Principal @ Contino Technical Principal @ Contino Senior Consultant @ Contino    Certified Kubernetes Admin     @strongjz    https://www.linkedin.com/in/henry-gallo/ https://jamesstrong.dev     "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/",
@@ -26,13 +26,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Containers  History   Primitives   Network   Storage   Docker Intro   "
-},
-{
-	"uri": "https://contino.github.io/intro-k8/introduction/requirements/connecting/",
-	"title": "Connecting",
-	"tags": [],
-	"description": "",
-	"content": " Set env var of Cluster name  CLUSTER_NAME=k8s-workshop  OPTIONAL if using gcloud console * Set up the gcloud sdk\ngcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.docker/config.json]: { \u0026quot;credHelpers\u0026quot;: { \u0026quot;gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;us.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;eu.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;asia.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;staging-k8s.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;marketplace.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot; } } Do you want to continue (Y/n)? Y Docker configuration file updated.   Test  docker pull nginx docker tag nginx us.gcr.io/${PROJECT_ID}/nginx:your_name docker push us.gcr.io/${PROJECT_ID}/nginx:your_name  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/",
@@ -56,11 +49,11 @@
 	"content": " Kubernetes History Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.\n Kubernetes is heavily influenced by Google’s Borg system Released in 2015 when Google partnered with Linux foundation to form CNCF Often called K8s which is a Numeronym K[ubernete]s → K[8]s → K8s Kubernetes - Greek for helmsman or pilot  “Kubernetes was built to radically change the way that applications are built and deployed in the cloud. Fundamentally, it was designed to give developers more velocity, efficiency, and agility”\nKelsey Hightower, Brendan Burns \u0026amp; Joe Beda -Kubernetes Up and Running Book\n"
 },
 {
-	"uri": "https://contino.github.io/intro-k8/introduction/whoami/",
-	"title": "Instructors",
+	"uri": "https://contino.github.io/intro-k8/introduction/introduction/",
+	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": "   Henry Gallo James Strong Matt Garber          Technical Principal @ Contino Technical Principal @ Contino Senior Consultant @ Contino    Certified Kubernetes Admin     @strongjz    https://www.linkedin.com/in/henry-gallo/ https://jamesstrong.dev     "
+	"content": " Please Introduce Yourself\u000b  Name Role \u0026amp; Company\u000b What would you like to learn today?  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/contino/",
@@ -70,18 +63,25 @@
 	"content": ""
 },
 {
-	"uri": "https://contino.github.io/intro-k8/introduction/introduction/",
-	"title": "Introduction",
-	"tags": [],
-	"description": "",
-	"content": " Please Introduce Yourself\u000b  Name Role \u0026amp; Company\u000b What would you like to learn today?  "
-},
-{
 	"uri": "https://contino.github.io/intro-k8/introduction/agenda/",
 	"title": "Agenda",
 	"tags": [],
 	"description": "",
 	"content": " Introduction  Requirements Instructors Contino Who are you? Agenda  Containers  Intro History Primitives Docker Network Storage  Kubernetes  History Community  CNCF Graduated Projects CNCF Incubating Projects\n Get Involved  Connect to Cluster Kubernetes Objects  Namespaces Pods Resource Quotas Controllers Storage Secrets ConfigMaps Ingress Service Healthchecks Cleanup  Options for Running Kubernetes Extras  Monitoring Security    "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/introduction/requirements/",
+	"title": "Requirements",
+	"tags": [],
+	"description": "",
+	"content": " To complete this workshop you will need the following installed\nRequired: Docker, git, gcloud, kubectl, gmail account, github account\nOptional: devops debate slack account\nGCloud console (recommended) Log into https://console.cloud.google.com\nNavigate to https://console.cloud.google.com/compute/instances?project=us-k8s-workshop\nFind your instance with your name on it\nunder connect click Dropped down and select Open in browser Window\nA New browser window should pop and give your a terminal prompt\nLocal install Docker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.\npython -V  Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n./google-cloud-sdk/install.sh  Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:\n./google-cloud-sdk/bin/gcloud init   kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
+},
+{
+	"uri": "https://contino.github.io/intro-k8/introduction/requirements/connecting/",
+	"title": "Connecting",
+	"tags": [],
+	"description": "",
+	"content": " Set env var of Cluster name  CLUSTER_NAME=k8s-workshop  OPTIONAL if using gcloud console * Set up the gcloud sdk\ngcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.docker/config.json]: { \u0026quot;credHelpers\u0026quot;: { \u0026quot;gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;us.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;eu.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;asia.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;staging-k8s.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;marketplace.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot; } } Do you want to continue (Y/n)? Y Docker configuration file updated.   Test  docker pull nginx docker tag nginx us.gcr.io/${PROJECT_ID}/nginx:your_name docker push us.gcr.io/${PROJECT_ID}/nginx:your_name  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/history/",
