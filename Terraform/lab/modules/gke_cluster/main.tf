@@ -1,12 +1,7 @@
-provider "google" {
-  credentials = "${file("terraform-iam.json")}"
-  project     = "${var.project}"
-}
-
 resource "google_container_cluster" "demo_cluster" {
-  name               = "dexnexus-k8s-cluster"
-  zone               = "us-east1-b"
-  initial_node_count = 8
+  name = "demo-cluster"
+  location = var.zone
+  initial_node_count = var.node_count
 
   # Setting an empty username and password explicitly disables basic auth
   master_auth {
