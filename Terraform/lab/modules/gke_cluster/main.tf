@@ -1,6 +1,6 @@
 resource "google_container_cluster" "demo_cluster" {
-  name               = "demo-cluster"
-  location           = var.zone
+  name = "demo-cluster"
+  location = var.zone
   initial_node_count = var.node_count
 
   # Setting an empty username and password explicitly disables basic auth

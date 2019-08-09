@@ -5,7 +5,7 @@ variable "user_accnt_permissions" {
 }
 
 variable "svc_accnt_permissions" {
- type = "list"
+  type = "list"
 }
 
 variable "role_name" {
