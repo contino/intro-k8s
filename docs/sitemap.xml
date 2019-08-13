@@ -213,13 +213,33 @@
   </url>
   
   <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/objects/storage/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/init/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/job/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/objects/storage/volumes/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/cron/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
@@ -230,6 +250,11 @@
   <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/objects/storage/pvc/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/statefulsets/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
@@ -343,18 +368,8 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/</loc>
-    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://contino.github.io/intro-k8/containers/docker/benefits/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/init/</loc>
-    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
@@ -363,18 +378,8 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/job/</loc>
-    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/cron/</loc>
-    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
@@ -383,17 +388,12 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/statefulsets/</loc>
-    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://contino.github.io/intro-k8/containers/docker/cli/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/exercises-kata/</loc>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
