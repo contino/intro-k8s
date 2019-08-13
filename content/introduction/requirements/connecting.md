@@ -1,7 +1,8 @@
 +++
-title = "Connecting"
+title = "Connecting GCP"
 date = 2018-12-09T16:52:57-05:00
-weight = 13
+weight = 53
+draft = true
 +++
 
 
@@ -11,11 +12,13 @@ weight = 13
 CLUSTER_NAME=k8s-workshop
 ```
 
+**OPTIONAL if using gcloud console**
 * Set up the gcloud sdk
 
 ```bash
 gcloud init
 ```
+
 
 * Set gcloud project env var
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Microservices Exercise on Introduction to Kubernetes</title>
+    <title>Debugging Exercise on Introduction to Kubernetes</title>
     <link>https://contino.github.io/intro-k8/kubernetes/micro/</link>
-    <description>Recent content in Microservices Exercise on Introduction to Kubernetes</description>
+    <description>Recent content in Debugging Exercise on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 17:21:05 -0500</lastBuildDate>

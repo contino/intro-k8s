@@ -1,13 +1,11 @@
 +++
-title = "CLI"
+title = "Docker cli"
 date = 2018-12-09T17:21:05-05:00
 weight = 505
 chapter = true
 +++
 
-# Docker
-
-#### Docker cli
+# Docker cli
 
 * docker ps
 * docker images 
@@ -16,5 +14,4 @@ chapter = true
 
 [Official Documentation](https://docs.docker.com/engine/reference/commandline/cli/)
 
-[More exercises](https://www.katacoda.com/contino/courses/docker/basics) 
 

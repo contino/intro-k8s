@@ -31,7 +31,8 @@ apiVersion: v1 kind: Pod metadata: name: test-ebs spec: containers: - image: k8s
       <description>Persistent Volumes (PV&amp;rsquo;s) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.
 Provisioning - Static or Dynamic
 Types of PV&amp;rsquo;s
- GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: &amp;quot;/mnt/data&amp;quot;  </description>
+ GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS
+kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: &amp;quot;/mnt/data&amp;quot;   </description>
     </item>
     
     <item>
@@ -43,7 +44,8 @@ Types of PV&amp;rsquo;s
       <description>Persistent Volume Claims (PVC&amp;rsquo;s) - Allow pods to requests and attache Persistent Volumes available in the cluster.
 When used in with Dynamic provision and Storage Classes, PVC&amp;rsquo;s can automatically make storage available on demand.
 Types of PVC&amp;rsquo;s
- GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: &amp;quot;/var/www/html&amp;quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim  </description>
+ GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS
+kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: &amp;quot;/var/www/html&amp;quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim   </description>
     </item>
     
     <item>
@@ -55,17 +57,6 @@ Types of PVC&amp;rsquo;s
       <description>Storage classes allow cluster administrators to provide varing levels of support and types of storage to applications in a cluster
 Example: Storage class that will provision an AWS EBS Volumes when referenced a PVC
 kind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provisioner: kubernetes.io/aws-ebs parameters: type: gp2 reclaimPolicy: Retain mountOptions: - debug volumeBindingMode: Immediate  </description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</guid>
-      <description>   Kubernetes yaml files   mysql-pod.yaml  (0 ko)   mysql-pv.yaml  (0 ko)    Create the persistent and the claim
-kubectl apply -f mysql-pv.yaml  Create a pod that will use it.
-kubectl apply -f mysql-pod.yaml  Clean up kubectl delete -f mysql-pv.yaml kubectl delete -f mysql-pod.yaml  </description>
     </item>
     
   </channel>

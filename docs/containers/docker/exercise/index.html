@@ -3,30 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.49" />
     <meta name="description" content="">
 
 
-    <link rel="shortcut icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
-<link rel="icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
-    <title>Docker Exercise :: Introduction to Kubernetes</title>
+    <link rel="icon" href="/intro-k8/images/favicon.png" type="image/png">
+
+    <title>Docker Exercises :: Introduction to Kubernetes</title>
 
     
-    <link href="/intro-k8/css/nucleus.css?1560958531" rel="stylesheet">
-    <link href="/intro-k8/css/fontawesome-all.min.css?1560958531" rel="stylesheet">
-    <link href="/intro-k8/css/hybrid.css?1560958531" rel="stylesheet">
-    <link href="/intro-k8/css/featherlight.min.css?1560958531" rel="stylesheet">
-    <link href="/intro-k8/css/perfect-scrollbar.min.css?1560958531" rel="stylesheet">
-    <link href="/intro-k8/css/auto-complete.css?1560958531" rel="stylesheet">
-    <link href="/intro-k8/css/theme.css?1560958531" rel="stylesheet">
-    <link href="/intro-k8/css/hugo-theme.css?1560958531" rel="stylesheet">
+    <link href="/intro-k8/css/nucleus.css?1565687453" rel="stylesheet">
+    <link href="/intro-k8/css/fontawesome-all.min.css?1565687453" rel="stylesheet">
+    <link href="/intro-k8/css/hybrid.css?1565687453" rel="stylesheet">
+    <link href="/intro-k8/css/featherlight.min.css?1565687453" rel="stylesheet">
+    <link href="/intro-k8/css/perfect-scrollbar.min.css?1565687453" rel="stylesheet">
+    <link href="/intro-k8/css/auto-complete.css?1565687453" rel="stylesheet">
+    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1565687453" rel="stylesheet">
+    <link href="/intro-k8/css/theme.css?1565687453" rel="stylesheet">
+    <link href="/intro-k8/css/hugo-theme.css?1565687453" rel="stylesheet">
     
-      <link href="/intro-k8/css/theme-mine.css?1560958531" rel="stylesheet">
+      <link href="/intro-k8/css/theme-mine.css?1565687453" rel="stylesheet">
     
 
-    <script src="/intro-k8/js/jquery-2.x.min.js?1560958531"></script>
+    <script src="/intro-k8/js/jquery-3.3.1.min.js?1565687453"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -49,18 +50,18 @@
     
         <div class="searchbox">
     <label for="search-by"><i class="fas fa-search"></i></label>
-    <input data-search-input id="search-by" type="text" placeholder="Search...">
-    <span data-search-clear=""><i class="fas fa-close"></i></span>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1560958531"></script>
-<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1560958531"></script>
+<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1565687453"></script>
+<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1565687453"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
     
 </script>
-<script type="text/javascript" src="/intro-k8/js/search.js?1560958531"></script>
+<script type="text/javascript" src="/intro-k8/js/search.js?1565687453"></script>
 
     
   </div>
@@ -95,6 +96,102 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/whoami/" title="Instructors" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/whoami/">
+          Instructors
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/introduction/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/introduction/">
+          Introduction
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/contino/" title="Contino" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/contino/">
+          Contino
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/agenda/" title="Agenda" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/agenda/">
+          Agenda
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
           
             
             
@@ -142,102 +239,6 @@
           
         
         </ul>
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/intro-k8/introduction/whoami/" title="Instructors" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/intro-k8/introduction/whoami/">
-          Instructors
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/intro-k8/introduction/contino/" title="Contino" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/intro-k8/introduction/contino/">
-          Contino
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/intro-k8/introduction/introduction/" title="Introduction" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/intro-k8/introduction/introduction/">
-          Introduction
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/intro-k8/introduction/agenda/" title="Agenda" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/intro-k8/introduction/agenda/">
-          Agenda
-          
-      </a>
-      
               
     </li>
   
@@ -361,25 +362,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intro-k8/containers/history/layers/" title="Layers" class="dd-item ">
-        <a href="/intro-k8/containers/history/layers/">
-        Layers
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -437,25 +419,6 @@
           
           
         
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intro-k8/containers/network/dockernetop/" title="Docker Network options" class="dd-item ">
-        <a href="/intro-k8/containers/network/dockernetop/">
-        Docker Network options
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
           
             
             
@@ -586,25 +549,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intro-k8/containers/storage/commands/" title="Volume CLI" class="dd-item ">
-        <a href="/intro-k8/containers/storage/commands/">
-        Volume CLI
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -684,9 +628,9 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/dockerfile/" title="Dockerfile" class="dd-item ">
-        <a href="/intro-k8/containers/docker/dockerfile/">
-        Dockerfile
+      <li data-nav-id="/intro-k8/containers/docker/dockerfile-example/" title="Dockerfile Example" class="dd-item ">
+        <a href="/intro-k8/containers/docker/dockerfile-example/">
+        Dockerfile Example
         
         </a>
     </li>
@@ -703,9 +647,28 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/cli/" title="CLI" class="dd-item ">
+      <li data-nav-id="/intro-k8/containers/docker/dockerfile-best-practices/" title="Dockerfile Best Practices" class="dd-item ">
+        <a href="/intro-k8/containers/docker/dockerfile-best-practices/">
+        Dockerfile Best Practices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/docker/cli/" title="Docker cli" class="dd-item ">
         <a href="/intro-k8/containers/docker/cli/">
-        CLI
+        Docker cli
         
         </a>
     </li>
@@ -722,9 +685,9 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/exercise/" title="Docker Exercise" class="dd-item active">
+      <li data-nav-id="/intro-k8/containers/docker/exercise/" title="Docker Exercises" class="dd-item active">
         <a href="/intro-k8/containers/docker/exercise/">
-        Docker Exercise
+        Docker Exercises
         
         </a>
     </li>
@@ -2187,6 +2150,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -2205,7 +2170,7 @@
             
           
           
-            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/containers/'>Containers</a> > <a href='/intro-k8/containers/docker/'>Docker Intro</a> > Docker Exercise
+            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/containers/'>Containers</a> > <a href='/intro-k8/containers/docker/'>Docker Intro</a> > Docker Exercises
           
          
           
@@ -2218,24 +2183,77 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
               </div>
             </div>
             
-
+        <div id="head-tags">
         
-          <div id="chapter">
+        </div>
         
         <div id="body-inner">
+          
+            <h1>
+              
+              Docker Exercises
+            </h1>
           
 
         
 
 
 
+<pre><code class="language-bash">git clone https://github.com/contino/intro-k8
+</code></pre>
 
-<h1 id="docker-exercise">Docker Exercise</h1>
+<p>Navigate to the Docker exercises</p>
 
-<p>Git clone <a href="https://github.com/shahadarsh/docker-k8s-workshop">Microservices Exercises</a></p>
+<pre><code class="language-bash">MacBook-Pro in ~/Documents/code/contino/intro-k8
+± |codelou S:6 U:11 ✗| → cd Exercises/docker-exercises/
+l
+ 2019-07-22 14:56:02 ⌚  MacBook-Pro in ~/Documents/code/contino/intro-k8/Exercises/docker-exercises
+± |codelou S:6 U:11 ✗| → ls -la
+total 8
+drwxr-xr-x   6 contino  staff  192 Jul 22 14:27 .
+drwxr-xr-x   4 contino  staff  128 Jul 22 13:56 ..
+-rw-r--r--   1 contino  staff  789 Jul 22 14:27 README.md
+drwxr-xr-x   6 contino  staff  192 Jul 22 13:22 conference-details-service
+drwxr-xr-x  10 contino  staff  320 Jul 22 13:22 conference-website
+drwxr-xr-x   6 contino  staff  192 Jul 22 13:22 schedule-service
+
+</code></pre>
+
+<p>In order to push images to GCloud Container Registry credentials will be need</p>
+
+<p><a href="https://docs.docker.com/engine/reference/commandline/login/">Docker login</a> for GCR</p>
+
+<pre><code class="language-bash">gcloud auth configure-docker
+</code></pre>
+
+<p>Run these commands for all three services, conference-details-services, conference-website, schedule-service</p>
+
+<p><strong>Project ID = us-k8-workshop</strong></p>
+
+<p><a href="https://docs.docker.com/engine/reference/commandline/build/">Build</a> Images Locally</p>
+
+<pre><code class="language-bash">cd SERVICENAME
+docker build -t YOURNAME_SERVICE us.gcr.io/us-k8-workshop/SERVICENAME:YOURNAME
+</code></pre>
+
+<p><a href="https://docs.docker.com/engine/reference/commandline/push/">Push</a> Images to GCR Registry</p>
+
+<pre><code class="language-bash">docker push us.gcr.io/us-k8-workshop/[SERVICENAME]:[YOURNAME]
+</code></pre>
+
+<p>Navigate to Container Registry in GCloud Console</p>
+
+<p><a href="https://console.cloud.google.com/gcr/images/us-k8-workshop?project=us-k8-workshop">https://console.cloud.google.com/gcr/images/us-k8-workshop?project=us-k8-workshop</a></p>
 
 
 <footer class=" footline" >
@@ -2243,8 +2261,6 @@
 </footer>
 
 
-        
-            </div> 
         
         </div> 
         
@@ -2302,22 +2318,6 @@
                     
 
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -2382,6 +2382,22 @@
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -2419,22 +2435,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -2548,22 +2548,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -2579,22 +2563,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -2668,6 +2636,22 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -3727,7 +3711,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/intro-k8/containers/docker/cli/" title="CLI"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/intro-k8/containers/docker/cli/" title="Docker cli"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/intro-k8/kubernetes/" title="Kubernetes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -3740,20 +3724,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/intro-k8/js/clipboard.min.js?1560958531"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.min.js?1560958531"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1560958531"></script>
-    <script src="/intro-k8/js/jquery.sticky.js?1560958531"></script>
-    <script src="/intro-k8/js/featherlight.min.js?1560958531"></script>
-    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1560958531"></script>
-    <script src="/intro-k8/js/highlight.pack.js?1560958531"></script>
+    <script src="/intro-k8/js/clipboard.min.js?1565687453"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.min.js?1565687453"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1565687453"></script>
+    <script src="/intro-k8/js/jquery.sticky.js?1565687453"></script>
+    <script src="/intro-k8/js/featherlight.min.js?1565687453"></script>
+    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1565687453"></script>
+    <script src="/intro-k8/js/highlight.pack.js?1565687453"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/intro-k8/js/modernizr.custom.71422.js?1560958531"></script>
-    <script src="/intro-k8/js/learn.js?1560958531"></script>
-    <script src="/intro-k8/js/hugo-learn.js?1560958531"></script>
+    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1565687453"></script>
+    <script src="/intro-k8/js/learn.js?1565687453"></script>
+    <script src="/intro-k8/js/hugo-learn.js?1565687453"></script>
 
-    <link href="/intro-k8/mermaid/mermaid.css?1560958531" type="text/css" rel="stylesheet" />
-    <script src="/intro-k8/mermaid/mermaid.js?1560958531"></script>
+    <link href="/intro-k8/mermaid/mermaid.css?1565687453" rel="stylesheet" />
+    <script src="/intro-k8/mermaid/mermaid.js?1565687453"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

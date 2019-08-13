@@ -7,4 +7,4 @@ chapter = true
 
 # Kubernetes API Objects
 
-{{% children style="h3" depth="3"  %}}
+{{% children style="h3" depth="1"  %}}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jobs, Cron and Init on Introduction to Kubernetes</title>
+    <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/</link>
+    <description>Recent content in Jobs, Cron and Init on Introduction to Kubernetes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 17:05:14 -0500</lastBuildDate>
+    
+	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Init</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/init/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/init/</guid>
+      <description> What Why  </description>
+    </item>
+    
+    <item>
+      <title>Jobs</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/job/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/job/</guid>
+      <description> What Why ) </description>
+    </item>
+    
+    <item>
+      <title>Cron</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/cron/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/cron/</guid>
+      <description> What Why  </description>
+    </item>
+    
+    <item>
+      <title>Statefulsets</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/statefulsets/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/statefulsets/</guid>
+      <description> What Why ) </description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/exercises-kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/exercises-kata/</guid>
+      <description>Job, CronJobs, and Init Katacoda Exercises
+ Create Count down job Create parrell jobs Deploy a cronjob Work with init containers  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,30 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.49" />
     <meta name="description" content="">
 
 
-    <link rel="shortcut icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
-<link rel="icon" href="/intro-k8/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/intro-k8/images/favicon.png" type="image/png">
+
     <title>Exercises :: Introduction to Kubernetes</title>
 
     
-    <link href="/intro-k8/css/nucleus.css?1560958530" rel="stylesheet">
-    <link href="/intro-k8/css/fontawesome-all.min.css?1560958530" rel="stylesheet">
-    <link href="/intro-k8/css/hybrid.css?1560958530" rel="stylesheet">
-    <link href="/intro-k8/css/featherlight.min.css?1560958530" rel="stylesheet">
-    <link href="/intro-k8/css/perfect-scrollbar.min.css?1560958530" rel="stylesheet">
-    <link href="/intro-k8/css/auto-complete.css?1560958530" rel="stylesheet">
-    <link href="/intro-k8/css/theme.css?1560958530" rel="stylesheet">
-    <link href="/intro-k8/css/hugo-theme.css?1560958530" rel="stylesheet">
+    <link href="/intro-k8/css/nucleus.css?1565690429" rel="stylesheet">
+    <link href="/intro-k8/css/fontawesome-all.min.css?1565690429" rel="stylesheet">
+    <link href="/intro-k8/css/hybrid.css?1565690429" rel="stylesheet">
+    <link href="/intro-k8/css/featherlight.min.css?1565690429" rel="stylesheet">
+    <link href="/intro-k8/css/perfect-scrollbar.min.css?1565690429" rel="stylesheet">
+    <link href="/intro-k8/css/auto-complete.css?1565690429" rel="stylesheet">
+    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1565690429" rel="stylesheet">
+    <link href="/intro-k8/css/theme.css?1565690429" rel="stylesheet">
+    <link href="/intro-k8/css/hugo-theme.css?1565690429" rel="stylesheet">
     
-      <link href="/intro-k8/css/theme-mine.css?1560958530" rel="stylesheet">
+      <link href="/intro-k8/css/theme-mine.css?1565690429" rel="stylesheet">
     
 
-    <script src="/intro-k8/js/jquery-2.x.min.js?1560958530"></script>
+    <script src="/intro-k8/js/jquery-3.3.1.min.js?1565690429"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -49,18 +50,18 @@
     
         <div class="searchbox">
     <label for="search-by"><i class="fas fa-search"></i></label>
-    <input data-search-input id="search-by" type="text" placeholder="Search...">
-    <span data-search-clear=""><i class="fas fa-close"></i></span>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1560958530"></script>
-<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1560958530"></script>
+<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1565690429"></script>
+<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1565690429"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
     
 </script>
-<script type="text/javascript" src="/intro-k8/js/search.js?1560958530"></script>
+<script type="text/javascript" src="/intro-k8/js/search.js?1565690429"></script>
 
     
   </div>
@@ -103,59 +104,6 @@
  
   
     
-    <li data-nav-id="/intro-k8/introduction/requirements/" title="Requirements" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/intro-k8/introduction/requirements/">
-          Requirements
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-          
-          
-        
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intro-k8/introduction/requirements/connecting/" title="Connecting" class="dd-item ">
-        <a href="/intro-k8/introduction/requirements/connecting/">
-        Connecting
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
     <li data-nav-id="/intro-k8/introduction/whoami/" title="Instructors" class="dd-item 
         
         
@@ -163,30 +111,6 @@
         ">
       <a href="/intro-k8/introduction/whoami/">
           Instructors
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/intro-k8/introduction/contino/" title="Contino" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/intro-k8/introduction/contino/">
-          Contino
           
       </a>
       
@@ -228,6 +152,30 @@
  
   
     
+    <li data-nav-id="/intro-k8/introduction/contino/" title="Contino" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/contino/">
+          Contino
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
     <li data-nav-id="/intro-k8/introduction/agenda/" title="Agenda" class="dd-item 
         
         
@@ -235,6 +183,30 @@
         ">
       <a href="/intro-k8/introduction/agenda/">
           Agenda
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/requirements/" title="Requirements Katacoda" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/requirements/">
+          Requirements Katacoda
           
       </a>
       
@@ -361,25 +333,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intro-k8/containers/history/layers/" title="Layers" class="dd-item ">
-        <a href="/intro-k8/containers/history/layers/">
-        Layers
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -437,25 +390,6 @@
           
           
         
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intro-k8/containers/network/dockernetop/" title="Docker Network options" class="dd-item ">
-        <a href="/intro-k8/containers/network/dockernetop/">
-        Docker Network options
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
           
             
             
@@ -586,25 +520,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intro-k8/containers/storage/commands/" title="Volume CLI" class="dd-item ">
-        <a href="/intro-k8/containers/storage/commands/">
-        Volume CLI
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -684,9 +599,9 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/dockerfile/" title="Dockerfile" class="dd-item ">
-        <a href="/intro-k8/containers/docker/dockerfile/">
-        Dockerfile
+      <li data-nav-id="/intro-k8/containers/docker/dockerfile-example/" title="Dockerfile Example" class="dd-item ">
+        <a href="/intro-k8/containers/docker/dockerfile-example/">
+        Dockerfile Example
         
         </a>
     </li>
@@ -703,9 +618,28 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/cli/" title="CLI" class="dd-item ">
+      <li data-nav-id="/intro-k8/containers/docker/dockerfile-best-practices/" title="Dockerfile Best Practices" class="dd-item ">
+        <a href="/intro-k8/containers/docker/dockerfile-best-practices/">
+        Dockerfile Best Practices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/docker/cli/" title="Docker cli" class="dd-item ">
         <a href="/intro-k8/containers/docker/cli/">
-        CLI
+        Docker cli
         
         </a>
     </li>
@@ -722,9 +656,9 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/exercise/" title="Docker Exercise" class="dd-item ">
-        <a href="/intro-k8/containers/docker/exercise/">
-        Docker Exercise
+      <li data-nav-id="/intro-k8/containers/docker/exercise-kata/" title="Docker Exercises on Katacoda" class="dd-item ">
+        <a href="/intro-k8/containers/docker/exercise-kata/">
+        Docker Exercises on Katacoda
         
         </a>
     </li>
@@ -990,30 +924,6 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/connect/" title="Connect" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/intro-k8/kubernetes/connect/">
-          Connect
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
     <li data-nav-id="/intro-k8/kubernetes/objects/" title="Kubernetes API Objects" class="dd-item 
         parent
         
@@ -1051,35 +961,6 @@
           
       </a>
       
-      
-        <ul>
-          
-          
-          
-          
-        
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/intro-k8/kubernetes/objects/namespaces/exercises/" title="Exercises" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/namespaces/exercises/">
-        Exercises
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -1119,8 +1000,27 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/exercises/" title="Exercises" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/exercises/">
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/labels_selectors/" title="Labels and Selectors" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/labels_selectors/">
+        Labels and Selectors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/exercises-gcp/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/exercises-gcp/">
         Exercises
         
         </a>
@@ -1138,9 +1038,9 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/labels_selectors/" title="Labels and Selectors" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/labels_selectors/">
-        Labels and Selectors
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/exercises-kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/exercises-kata/">
+        Exercises
         
         </a>
     </li>
@@ -1621,13 +1521,13 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/ingress/" title="ingress" class="dd-item 
+    <li data-nav-id="/intro-k8/kubernetes/objects/ingress/" title="Ingress" class="dd-item 
         
         
         
         ">
       <a href="/intro-k8/kubernetes/objects/ingress/">
-          ingress
+          Ingress
           
       </a>
       
@@ -2246,55 +2146,64 @@
               </div>
             </div>
             
-
+        <div id="head-tags">
+        
+        </div>
         
         <div id="body-inner">
           
-            <h1>Exercises</h1>
+            <h1>
+              
+              Exercises
+            </h1>
           
 
         
+
+
 
 
 
 
 <section class="attachments blue">
-    <label>
-        <i class="fas fa-paperclip" aria-hidden="true"></i>
-        Kubernetes yaml files
-    </label>
-    
-        
-    
-    <div class="attachments-files">
-    
-        
-        
-            
-                <li>
-                    <a href="/intro-k8/kubernetes/objects/storage/exercises.files/mysql-pod.yaml" >
-                        mysql-pod.yaml
-                    </a>
-                    (0 ko)
-                </li>
-            
-        
-    
-        
-        
-            
-                <li>
-                    <a href="/intro-k8/kubernetes/objects/storage/exercises.files/mysql-pv.yaml" >
-                        mysql-pv.yaml
-                    </a>
-                    (0 ko)
-                </li>
-            
-        
-    
-    <div>
-    
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Kubernetes yaml files
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+				<li>
+					<a href="/intro-k8/kubernetes/objects/storage/exercises.files/mysql-pod.yaml" >
+						mysql-pod.yaml
+					</a>
+					(0 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/intro-k8/kubernetes/objects/storage/exercises.files/mysql-pv.yaml" >
+						mysql-pv.yaml
+					</a>
+					(0 ko)
+				</li>
+			
+		
+	
+	<div>
+	
 </section>
+
+
 
 <p>Create the persistent and the claim</p>
 
@@ -2378,22 +2287,6 @@ kubectl delete -f mysql-pod.yaml
                     
 
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -2540,22 +2433,6 @@ kubectl delete -f mysql-pod.yaml
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -2587,22 +2464,6 @@ kubectl delete -f mysql-pod.yaml
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -2700,22 +2561,6 @@ kubectl delete -f mysql-pod.yaml
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -2731,6 +2576,22 @@ kubectl delete -f mysql-pod.yaml
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2986,6 +2847,25 @@ kubectl delete -f mysql-pod.yaml
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -3002,25 +2882,6 @@ kubectl delete -f mysql-pod.yaml
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -3044,22 +2905,6 @@ kubectl delete -f mysql-pod.yaml
                     
             
         
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -3820,20 +3665,20 @@ kubectl delete -f mysql-pod.yaml
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/intro-k8/js/clipboard.min.js?1560958530"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.min.js?1560958530"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1560958530"></script>
-    <script src="/intro-k8/js/jquery.sticky.js?1560958530"></script>
-    <script src="/intro-k8/js/featherlight.min.js?1560958530"></script>
-    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1560958530"></script>
-    <script src="/intro-k8/js/highlight.pack.js?1560958530"></script>
+    <script src="/intro-k8/js/clipboard.min.js?1565690429"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.min.js?1565690429"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1565690429"></script>
+    <script src="/intro-k8/js/jquery.sticky.js?1565690429"></script>
+    <script src="/intro-k8/js/featherlight.min.js?1565690429"></script>
+    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1565690429"></script>
+    <script src="/intro-k8/js/highlight.pack.js?1565690429"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/intro-k8/js/modernizr.custom.71422.js?1560958530"></script>
-    <script src="/intro-k8/js/learn.js?1560958530"></script>
-    <script src="/intro-k8/js/hugo-learn.js?1560958530"></script>
+    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1565690429"></script>
+    <script src="/intro-k8/js/learn.js?1565690429"></script>
+    <script src="/intro-k8/js/hugo-learn.js?1565690429"></script>
 
-    <link href="/intro-k8/mermaid/mermaid.css?1560958530" type="text/css" rel="stylesheet" />
-    <script src="/intro-k8/mermaid/mermaid.js?1560958530"></script>
+    <link href="/intro-k8/mermaid/mermaid.css?1565690429" rel="stylesheet" />
+    <script src="/intro-k8/mermaid/mermaid.js?1565690429"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

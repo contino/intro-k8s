@@ -11,19 +11,5 @@
 	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/namespaces/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/namespaces/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/namespaces/exercises/</guid>
-      <description>  Kubernetes yaml files   createNamespace.yaml  (0 ko)    Update createNamespace.yaml with your namespace
-Create your namespace
-kubectl create -f ./createNamespace.yaml  Verify your namespace exists
-$ kubectl get namespaces NAME STATUS AGE default Active 1d kube-system Active 1d kube-public Active 1d YOUR_NAME_SPACE Active 1d  Set your namespace to the default
-kubectl config set-context $(kubectl config current-context) --namespace=&amp;lt;insert-namespace-name-here&amp;gt;  Validate it
-kubectl config view | grep namespace:  </description>
-    </item>
-    
   </channel>
 </rss>

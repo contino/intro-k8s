@@ -12,17 +12,6 @@
     
     
     <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/</guid>
-      <description>Kubernetes github repo
-Start a pod from a manifest kubectl apply -f single-pod-nginx.yaml  Verify the state of the pod kubectl get pods NAME READY STATUS RESTARTS AGE nginx 1/1 Running 0 44s  Get more details of the pod kubectl describe pod nginx  Accessing your pod kubectl port-forward nginx 8080:80  Logs kubectl logs -f nginx  Navigate to http://localhost:8080 in your web browser
-Multi container pod Start a pod from a manifest kubectl apply -f multi-pod.</description>
-    </item>
-    
-    <item>
       <title>Labels and Selectors</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
@@ -31,6 +20,27 @@ Multi container pod Start a pod from a manifest kubectl apply -f multi-pod.</des
       <description>Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.
 Selectors Label Selectors help client/user identify a set of objects.
 spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql  Demo Create labels &amp;amp; use selector to identify set of objects</description>
+    </item>
+    
+    <item>
+      <title>Affinity and Anti-Affinity</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/</guid>
+      <description>Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are
+ the language is more expressive (not just “AND of exact match”) you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: &amp;ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/</guid>
+      <description>Pod Exercises 1
+Pod Exercises 2
+ Create pods Set up node selectors Assign nodes to pods with selectors and affinifty  </description>
     </item>
     
   </channel>

@@ -1,0 +1,3745 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.56.1" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/intro-k8/images/favicon.png" type="image/png">
+
+    <title>Services Exercise :: Introduction to Kubernetes</title>
+
+    
+    <link href="/intro-k8/css/nucleus.css?1565711701" rel="stylesheet">
+    <link href="/intro-k8/css/fontawesome-all.min.css?1565711701" rel="stylesheet">
+    <link href="/intro-k8/css/hybrid.css?1565711701" rel="stylesheet">
+    <link href="/intro-k8/css/featherlight.min.css?1565711701" rel="stylesheet">
+    <link href="/intro-k8/css/perfect-scrollbar.min.css?1565711701" rel="stylesheet">
+    <link href="/intro-k8/css/auto-complete.css?1565711701" rel="stylesheet">
+    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1565711701" rel="stylesheet">
+    <link href="/intro-k8/css/theme.css?1565711701" rel="stylesheet">
+    <link href="/intro-k8/css/hugo-theme.css?1565711701" rel="stylesheet">
+    
+      <link href="/intro-k8/css/theme-mine.css?1565711701" rel="stylesheet">
+    
+
+    <script src="/intro-k8/js/jquery-3.3.1.min.js?1565711701"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/intro-k8/kubernetes/objects/services/exercises_kata/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="contino" href="/intro-k8/">
+	<img src = "/intro-k8/images/contino/Contino_Logo_white_PRINT.png" alt = "Contino" />
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1565711701"></script>
+<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1565711701"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
+    
+</script>
+<script type="text/javascript" src="/intro-k8/js/search.js?1565711701"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/">
+          <b>1. </b>Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/whoami/" title="Instructors" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/whoami/">
+          Instructors
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/introduction/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/introduction/">
+          Introduction
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/contino/" title="Contino" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/contino/">
+          Contino
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/agenda/" title="Agenda" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/agenda/">
+          Agenda
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/introduction/requirements/" title="Requirements" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/introduction/requirements/">
+          Requirements
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/containers/" title="Containers" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/containers/">
+          <b>2. </b>Containers
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/containers/history/" title="History" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/containers/history/">
+          History
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/history/history/" title="Beginning" class="dd-item ">
+        <a href="/intro-k8/containers/history/history/">
+        Beginning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/history/hyper/" title="Hypervisor" class="dd-item ">
+        <a href="/intro-k8/containers/history/hyper/">
+        Hypervisor
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/history/containers/" title="Containers" class="dd-item ">
+        <a href="/intro-k8/containers/history/containers/">
+        Containers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/containers/primitives/" title="Primitives" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/containers/primitives/">
+          Primitives
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/containers/network/" title="Network" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/containers/network/">
+          Network
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/network/docker0/" title="Docker0 " class="dd-item ">
+        <a href="/intro-k8/containers/network/docker0/">
+        Docker0 
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/network/docker0-dig/" title="Docker0 Diagram" class="dd-item ">
+        <a href="/intro-k8/containers/network/docker0-dig/">
+        Docker0 Diagram
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/containers/storage/" title="Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/containers/storage/">
+          Storage
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/storage/layers/" title="Layers" class="dd-item ">
+        <a href="/intro-k8/containers/storage/layers/">
+        Layers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/storage/volumes/" title="Volumes" class="dd-item ">
+        <a href="/intro-k8/containers/storage/volumes/">
+        Volumes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/storage/benefits/" title="Storage" class="dd-item ">
+        <a href="/intro-k8/containers/storage/benefits/">
+        Storage
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/containers/docker/" title="Docker Intro" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/containers/docker/">
+          Docker Intro
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/docker/benefits/" title="Benefits of Docker" class="dd-item ">
+        <a href="/intro-k8/containers/docker/benefits/">
+        Benefits of Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/docker/platform/" title="Docker Platform" class="dd-item ">
+        <a href="/intro-k8/containers/docker/platform/">
+        Docker Platform
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/docker/dockerfile-example/" title="Dockerfile Example" class="dd-item ">
+        <a href="/intro-k8/containers/docker/dockerfile-example/">
+        Dockerfile Example
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/docker/dockerfile-best-practices/" title="Dockerfile Best Practices" class="dd-item ">
+        <a href="/intro-k8/containers/docker/dockerfile-best-practices/">
+        Dockerfile Best Practices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/docker/cli/" title="Docker cli" class="dd-item ">
+        <a href="/intro-k8/containers/docker/cli/">
+        Docker cli
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/containers/docker/exercise-kata/" title="Docker Exercises" class="dd-item ">
+        <a href="/intro-k8/containers/docker/exercise-kata/">
+        Docker Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/" title="Kubernetes" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/">
+          <b>3. </b>Kubernetes
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/history/" title="History" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/history/">
+          History
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/community/" title="Community" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/community/">
+          Community
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/community/projects_grad/" title="Graduated Projects" class="dd-item ">
+        <a href="/intro-k8/kubernetes/community/projects_grad/">
+        Graduated Projects
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/community/projects_inc/" title="Incubating Projects" class="dd-item ">
+        <a href="/intro-k8/kubernetes/community/projects_inc/">
+        Incubating Projects
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/community/involvement/" title="Involvement" class="dd-item ">
+        <a href="/intro-k8/kubernetes/community/involvement/">
+        Involvement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/arch/" title="Architecture" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/arch/">
+          Architecture
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/arch/master/" title="Master" class="dd-item ">
+        <a href="/intro-k8/kubernetes/arch/master/">
+        Master
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/arch/node/" title="Node" class="dd-item ">
+        <a href="/intro-k8/kubernetes/arch/node/">
+        Node
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/arch/data/" title="Data Flow" class="dd-item ">
+        <a href="/intro-k8/kubernetes/arch/data/">
+        Data Flow
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/" title="Kubernetes API Objects" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/">
+          Kubernetes API Objects
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/namespaces/" title="Namespaces" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/namespaces/">
+          Namespaces
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/pods/" title="Pods" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/pods/">
+          Pods
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/labels_selectors/" title="Labels and Selectors" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/labels_selectors/">
+        Labels and Selectors
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/affinity/" title="Affinity and Anti-Affinity" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/affinity/">
+        Affinity and Anti-Affinity
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/exercises-kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/exercises-kata/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/" title="Specialized Objects" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/pods/specialized/">
+          Specialized Objects
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/init/" title="Init Containers" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/specialized/init/">
+        Init Containers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/job/" title="Jobs" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/specialized/job/">
+        Jobs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/cron/" title="Cron" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/specialized/cron/">
+        Cron
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/statefulsets/" title="Statefulsets" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/specialized/statefulsets/">
+        Statefulsets
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/resourcequotas/" title="Resource Quotas" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/resourcequotas/">
+          Resource Quotas
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/resourcequotas/resources/" title="Details" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/resourcequotas/resources/">
+        Details
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/controllers/" title="Controllers" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/controllers/">
+          Controllers
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/controllers/updates/" title="Controllers Updates" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/controllers/updates/">
+        Controllers Updates
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/controllers/exercises_kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/controllers/exercises_kata/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/storage/" title="Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/storage/">
+          Storage
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/storage/volumes/" title="Volumes" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/storage/volumes/">
+        Volumes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/storage/pv/" title="Persistent Volume" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/storage/pv/">
+        Persistent Volume
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/storage/pvc/" title="Persistent Volume Claims" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/storage/pvc/">
+        Persistent Volume Claims
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/storage/classes/" title="Storage Classes" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/storage/classes/">
+        Storage Classes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/secrets/" title="Secrets" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/secrets/">
+          Secrets
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/secrets/secret/" title="Secrets Uses - Secret" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/secrets/secret/">
+        Secrets Uses - Secret
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/secrets/file/" title="Secrets Uses - File" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/secrets/file/">
+        Secrets Uses - File
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/secrets/env/" title="Secrets Uses - Env Var" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/secrets/env/">
+        Secrets Uses - Env Var
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/" title="Configmaps" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/configmaps/">
+          Configmaps
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/configmap/" title="Configmaps" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/configmaps/configmap/">
+        Configmaps
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/volumes/" title="Configmaps - Volume" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/configmaps/volumes/">
+        Configmaps - Volume
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/envvar/" title="Configmaps - Env Var" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/configmaps/envvar/">
+        Configmaps - Env Var
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/ingress/" title="Ingress" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/ingress/">
+          Ingress
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/ingress/controller/" title="Ingress Controllers" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/ingress/controller/">
+        Ingress Controllers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/ingress/rules/" title="Ingress Rules" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/ingress/rules/">
+        Ingress Rules
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/ingress/exercises_kata/" title="Ingress Exercises" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/ingress/exercises_kata/">
+        Ingress Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/services/" title="Services" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/services/">
+          Services
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/services/diag/" title="Service Diagram" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/services/diag/">
+        Service Diagram
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/services/exercises_kata/" title="Services Exercise" class="dd-item active">
+        <a href="/intro-k8/kubernetes/objects/services/exercises_kata/">
+        Services Exercise
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/healthchecks/" title="Healthchecks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/healthchecks/">
+          Healthchecks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/healthchecks/liveliness/" title="Liveliness" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/healthchecks/liveliness/">
+        Liveliness
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/healthchecks/readiness/" title="Readiness" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/healthchecks/readiness/">
+        Readiness
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/objects/daemonsets/" title="Daemonsets" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/objects/daemonsets/">
+          Daemonsets
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/micro/" title="Debugging Exercise" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/micro/">
+          Debugging Exercise
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/running/" title="Running" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/running/">
+          Running
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/extras/" title="Extras" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/extras/">
+          Extras
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/extras/monitoring/" title="Monitoring" class="dd-item ">
+        <a href="/intro-k8/kubernetes/extras/monitoring/">
+        Monitoring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/extras/logging/" title="Logging" class="dd-item ">
+        <a href="/intro-k8/kubernetes/extras/logging/">
+        Logging
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/extras/logging-kc/" title="Logging - Pod" class="dd-item ">
+        <a href="/intro-k8/kubernetes/extras/logging-kc/">
+        Logging - Pod
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/extras/logging-node/" title="Logging - Node" class="dd-item ">
+        <a href="/intro-k8/kubernetes/extras/logging-node/">
+        Logging - Node
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/extras/logging-cluster/" title="Logging - Cluster" class="dd-item ">
+        <a href="/intro-k8/kubernetes/extras/logging-cluster/">
+        Logging - Cluster
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/extras/security/" title="Security - Containers" class="dd-item ">
+        <a href="/intro-k8/kubernetes/extras/security/">
+        Security - Containers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/extras/security1/" title="Security - K8" class="dd-item ">
+        <a href="/intro-k8/kubernetes/extras/security1/">
+        Security - K8
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/closing/" title="Closing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/closing/">
+          <b>4. </b>Closing
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <center>
+
+    <p> Presented by <a href="https://contino.io">Contino</a></p>
+</center>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/kubernetes/'>Kubernetes</a> > <a href='/intro-k8/kubernetes/objects/'>Kubernetes API Objects</a> > <a href='/intro-k8/kubernetes/objects/services/'>Services</a> > Services Exercise
+          
+         
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Services Exercise
+            </h1>
+          
+
+        
+
+
+
+<p><a href="https://www.katacoda.com/contino/courses/kubernetes/services">Services on Katacoda Link</a></p>
+
+<ul>
+<li>Create all three types of services</li>
+<li>Deploy a Cloud Loadbalancer</li>
+<li>Create a deployment</li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/intro-k8/kubernetes/objects/services/diag/" title="Service Diagram"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/intro-k8/kubernetes/objects/healthchecks/" title="Healthchecks" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/intro-k8/js/clipboard.min.js?1565711701"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.min.js?1565711701"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1565711701"></script>
+    <script src="/intro-k8/js/jquery.sticky.js?1565711701"></script>
+    <script src="/intro-k8/js/featherlight.min.js?1565711701"></script>
+    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1565711701"></script>
+    <script src="/intro-k8/js/highlight.pack.js?1565711701"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1565711701"></script>
+    <script src="/intro-k8/js/learn.js?1565711701"></script>
+    <script src="/intro-k8/js/hugo-learn.js?1565711701"></script>
+
+    <link href="/intro-k8/mermaid/mermaid.css?1565711701" rel="stylesheet" />
+    <script src="/intro-k8/mermaid/mermaid.js?1565711701"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+
+</script>
+  </body>
+</html>
+

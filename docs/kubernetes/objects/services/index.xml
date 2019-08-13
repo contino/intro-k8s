@@ -21,13 +21,13 @@
     </item>
     
     <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/</link>
+      <title>Services Exercise</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/</guid>
-      <description>Kubernetes yaml files   app.yaml  (1 ko)   mysql-all.yaml  (1 ko)   mysql-service.yaml  (0 ko)    Pod Deployment with health checks, PersistentVolume and claim Since we have created the mysql pod several times, here is a yaml file that creates it all.
-Create a secret for the password between Wordpress and MYSQL kubectl create secret generic mysql-pass --from-literal=password=YOUR_PASSWORD  Verify it is there</description>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</guid>
+      <description>Services on Katacoda Link
+ Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  </description>
     </item>
     
   </channel>

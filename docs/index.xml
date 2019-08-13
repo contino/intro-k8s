@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Connecting</title>
-      <link>https://contino.github.io/intro-k8/introduction/requirements/connecting/</link>
-      <pubDate>Sun, 09 Dec 2018 16:52:57 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/introduction/requirements/connecting/</guid>
-      <description>Set env var of Cluster name  CLUSTER_NAME=k8s-workshop   Set up the gcloud sdk  gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.</description>
-    </item>
-    
-    <item>
       <title>Beginning</title>
       <link>https://contino.github.io/intro-k8/containers/history/history/</link>
       <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
@@ -45,15 +36,6 @@
       
       <guid>https://contino.github.io/intro-k8/containers/history/containers/</guid>
       <description> Containers </description>
-    </item>
-    
-    <item>
-      <title>Layers</title>
-      <link>https://contino.github.io/intro-k8/containers/history/layers/</link>
-      <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/containers/history/layers/</guid>
-      <description> Container Layers </description>
     </item>
     
     <item>
@@ -124,15 +106,6 @@
     </item>
     
     <item>
-      <title>Docker Network options</title>
-      <link>https://contino.github.io/intro-k8/containers/network/dockernetop/</link>
-      <pubDate>Sun, 09 Dec 2018 17:21:25 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/containers/network/dockernetop/</guid>
-      <description>Docker Networking options    Flag value Description     -p 8080:80 Map TCP port 80 in the container to port 8080 on the Docker host.   -p 192.168.1.100:8080:80 Map TCP port 80 in the container to port 8080 on the Docker host for connections to host IP 192.168.1.100.   -p 8080:80/udp Map UDP port 80 in the container to port 8080 on the Docker host.</description>
-    </item>
-    
-    <item>
       <title>Docker0 </title>
       <link>https://contino.github.io/intro-k8/containers/network/docker0/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:25 -0500</pubDate>
@@ -178,41 +151,6 @@
     </item>
     
     <item>
-      <title>Volume CLI</title>
-      <link>https://contino.github.io/intro-k8/containers/storage/commands/</link>
-      <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/containers/storage/commands/</guid>
-      <description> Docker Volume command The docker volume command contains a number of sub commands used to create and manage volumes Commands are
- docker volume create docker volume ls docker volume inspect docker volume rm  </description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/namespaces/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/namespaces/exercises/</guid>
-      <description>  Kubernetes yaml files   createNamespace.yaml  (0 ko)    Update createNamespace.yaml with your namespace
-Create your namespace
-kubectl create -f ./createNamespace.yaml  Verify your namespace exists
-$ kubectl get namespaces NAME STATUS AGE default Active 1d kube-system Active 1d kube-public Active 1d YOUR_NAME_SPACE Active 1d  Set your namespace to the default
-kubectl config set-context $(kubectl config current-context) --namespace=&amp;lt;insert-namespace-name-here&amp;gt;  Validate it
-kubectl config view | grep namespace:  </description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/</guid>
-      <description>Kubernetes github repo
-Start a pod from a manifest kubectl apply -f single-pod-nginx.yaml  Verify the state of the pod kubectl get pods NAME READY STATUS RESTARTS AGE nginx 1/1 Running 0 44s  Get more details of the pod kubectl describe pod nginx  Accessing your pod kubectl port-forward nginx 8080:80  Logs kubectl logs -f nginx  Navigate to http://localhost:8080 in your web browser
-Multi container pod Start a pod from a manifest kubectl apply -f multi-pod.</description>
-    </item>
-    
-    <item>
       <title>Labels and Selectors</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
@@ -224,7 +162,28 @@ spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metad
     </item>
     
     <item>
-      <title>Resource Quotas</title>
+      <title>Affinity and Anti-Affinity</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/</guid>
+      <description>Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are
+ the language is more expressive (not just “AND of exact match”) you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: &amp;ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/</guid>
+      <description>Pod Exercises 1
+Pod Exercises 2
+ Create pods Set up node selectors Assign nodes to pods with selectors and affinifty  </description>
+    </item>
+    
+    <item>
+      <title>Details</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
@@ -232,18 +191,6 @@ spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metad
       <description>Compute Resources  CPU Memory Storage  requests.storage persistentvolumeclaims storage-class-name.storageclass.storage.k8s.io/requests.storage storage-class-name.storageclass.storage.k8s.io/persistentvolumeclaims  Object Count
  configmaps persistentvolumeclaims pods replicationcontrollers resourcequotas services services.loadbalancers services.nodeports secrets  Priority - low, medium, high
   More info</description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/exercises/</guid>
-      <description>Kubernetes yaml files   pod-limits.yaml  (0 ko)   pod-no-quotas.yaml  (0 ko)   pod-only-limit.yaml  (0 ko)   pod-only-request.yaml  (0 ko)   quotas.yaml  (0 ko)    Deploy default resources quotas for your namespace
-kubectl create -f quotas.yaml kubectl describe quota  Verify qoutas
-kubectl get resourcequota mem-cpu-rq --output=yaml  Deploy specific limits and requests for pods
-kubectl create -f pod-limits.</description>
     </item>
     
     <item>
@@ -257,13 +204,34 @@ kubectl create -f pod-limits.</description>
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises/</guid>
-      <description>In these exercises we will be working with these controllers, later we will working with Endpoints, since they are directly related to Services.
-  Kubernetes yaml files   deploy-nginx-1.9.1-scale.yaml  (0 ko)   deploy-nginx-1.9.1.yaml  (0 ko)   deploy-nginx.yaml  (0 ko)   replicaset.yaml  (0 ko)    Deployment Controller - Responsible for the controlled deployment of pods and ReplicaSets.
-ReplicaSets - is the newest version of the Replication Controller.</description>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</guid>
+      <description>Deployments on Katacoda
+ Create a deployment Scale up a deployment Work with replica sets  </description>
+    </item>
+    
+    <item>
+      <title>Init Containers</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/init/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/init/</guid>
+      <description> What Specialized containers that run before app containers in a Pod. Init containers can contain utilities or setup scripts not present in an app image.
+Why Set up application requirements before application containers starts.
+ </description>
+    </item>
+    
+    <item>
+      <title>Jobs</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/job/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/job/</guid>
+      <description> What A Job creates one or more Pods and ensures that a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions.
+Why Specalized tasks that need to run to commpletion or do some calculation.
+) </description>
     </item>
     
     <item>
@@ -278,6 +246,17 @@ apiVersion: v1 kind: Pod metadata: name: test-ebs spec: containers: - image: k8s
     </item>
     
     <item>
+      <title>Cron</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/cron/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/cron/</guid>
+      <description> What A Cron Job creates Jobs on a time-based schedule.
+Why Batch replacement, application or cluster maintenance
+ </description>
+    </item>
+    
+    <item>
       <title>Persistent Volume</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/pv/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
@@ -286,7 +265,8 @@ apiVersion: v1 kind: Pod metadata: name: test-ebs spec: containers: - image: k8s
       <description>Persistent Volumes (PV&amp;rsquo;s) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.
 Provisioning - Static or Dynamic
 Types of PV&amp;rsquo;s
- GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: &amp;quot;/mnt/data&amp;quot;  </description>
+ GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS
+kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: &amp;quot;/mnt/data&amp;quot;   </description>
     </item>
     
     <item>
@@ -298,7 +278,19 @@ Types of PV&amp;rsquo;s
       <description>Persistent Volume Claims (PVC&amp;rsquo;s) - Allow pods to requests and attache Persistent Volumes available in the cluster.
 When used in with Dynamic provision and Storage Classes, PVC&amp;rsquo;s can automatically make storage available on demand.
 Types of PVC&amp;rsquo;s
- GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: &amp;quot;/var/www/html&amp;quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim  </description>
+ GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS
+kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: &amp;quot;/var/www/html&amp;quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim   </description>
+    </item>
+    
+    <item>
+      <title>Statefulsets</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/statefulsets/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/statefulsets/</guid>
+      <description> What Manages the deployment and scaling of a set of Pods , and provides guarantees about the ordering and uniqueness of these Pods.
+Why If your application requires the below artributes, a statefulset would a better option
+ Stable, unique network identifiers. Stable, persistent storage. Ordered, graceful deployment and scaling. Ordered, automated rolling updates.  ) </description>
     </item>
     
     <item>
@@ -310,17 +302,6 @@ Types of PVC&amp;rsquo;s
       <description>Storage classes allow cluster administrators to provide varing levels of support and types of storage to applications in a cluster
 Example: Storage class that will provision an AWS EBS Volumes when referenced a PVC
 kind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provisioner: kubernetes.io/aws-ebs parameters: type: gp2 reclaimPolicy: Retain mountOptions: - debug volumeBindingMode: Immediate  </description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</guid>
-      <description>   Kubernetes yaml files   mysql-pod.yaml  (0 ko)   mysql-pv.yaml  (0 ko)    Create the persistent and the claim
-kubectl apply -f mysql-pv.yaml  Create a pod that will use it.
-kubectl apply -f mysql-pod.yaml  Clean up kubectl delete -f mysql-pv.yaml kubectl delete -f mysql-pod.yaml  </description>
     </item>
     
     <item>
@@ -401,6 +382,16 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-examp
     </item>
     
     <item>
+      <title>Ingress Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</guid>
+      <description>Ingress Exercises Link
+ Deploy an ingress controller Deploy service Create an ingress rule  </description>
+    </item>
+    
+    <item>
       <title>Service Diagram</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
@@ -410,13 +401,13 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-examp
     </item>
     
     <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/</link>
+      <title>Services Exercise</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/</guid>
-      <description>Kubernetes yaml files   app.yaml  (1 ko)   mysql-all.yaml  (1 ko)   mysql-service.yaml  (0 ko)    Pod Deployment with health checks, PersistentVolume and claim Since we have created the mysql pod several times, here is a yaml file that creates it all.
-Create a secret for the password between Wordpress and MYSQL kubectl create secret generic mysql-pass --from-literal=password=YOUR_PASSWORD  Verify it is there</description>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</guid>
+      <description>Services on Katacoda Link
+ Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  </description>
     </item>
     
     <item>
@@ -440,19 +431,6 @@ readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 perio
     </item>
     
     <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/exercises/</guid>
-      <description>Exercises   Kubernetes yaml files   mysql-config.yaml  (0 ko)   mysql-health.yaml  (1 ko)   mysql-pv.yaml  (0 ko)    If you deleted the PV from the previous exercise please recreate it
-kubectl apply -f mysql-pv.yaml  Mysql conf needed for testing
-kubectl create -f mysql-config.yaml  Start the Mysql deployment
-kubectl apply -f mysql-health.yaml  Get the pod name
-POD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath=&#39;{.</description>
-    </item>
-    
-    <item>
       <title>Benefits of Docker</title>
       <link>https://contino.github.io/intro-k8/containers/docker/benefits/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
@@ -471,31 +449,50 @@ POD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath=&#39;{.</description>
     </item>
     
     <item>
-      <title>Dockerfile</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile/</link>
+      <title>Dockerfile Example</title>
+      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile/</guid>
+      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</guid>
+      <description> Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \ 8	&amp;amp;&amp;amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \ 9	&amp;amp;&amp;amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [&amp;#34;mvn&amp;#34;, &amp;#34;dependency:go-offline&amp;#34;] 15 16ADD [&amp;#34;src&amp;#34;, &amp;#34;/work/src&amp;#34;] 17RUN [&amp;#34;mvn&amp;#34;, &amp;#34;package&amp;#34;] 18 19EXPOSE 8080 20ENTRYPOINT [&amp;#34;java&amp;#34;, &amp;#34;-cp&amp;#34;, &amp;#34;target/classes:target/dependency/*&amp;#34;, &amp;#34;com.kumuluz.ee.EeApplication&amp;#34;] </description>
+    </item>
+    
+    <item>
+      <title>Dockerfile Best Practices</title>
+      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</link>
+      <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</guid>
       <description>Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\”</description>
     </item>
     
     <item>
-      <title>CLI</title>
+      <title>Docker cli</title>
       <link>https://contino.github.io/intro-k8/containers/docker/cli/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/cli/</guid>
-      <description>Docker Docker cli  docker ps docker images docker logs docker exec  Official Documentation
-More exercises</description>
+      <description>Docker cli  docker ps docker images docker logs docker exec  Official Documentation</description>
     </item>
     
     <item>
-      <title>Docker Exercise</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/exercise/</link>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/</guid>
+      <description>Job, CronJobs, and Init Katacoda Exercises
+ Create Count down job Create parrell jobs Deploy a cronjob Work with init containers  </description>
+    </item>
+    
+    <item>
+      <title>Docker Exercises</title>
+      <link>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/exercise/</guid>
-      <description>Docker Exercise Git clone Microservices Exercises</description>
+      <guid>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</guid>
+      <description>Docker Katacoda Exercises
+ Docker Basics Build an container Update running port  </description>
     </item>
     
     <item>
@@ -525,7 +522,8 @@ More exercises</description>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging-kc/</guid>
-      <description> Logging  kubectl logs  apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, &#39;i=0; while true; do echo &amp;quot;$i: $(date)&amp;quot;; i=$((i+1)); sleep 1; done&#39;]  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001  </description>
+      <description> Logging  kubectl logs
+apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, &#39;i=0; while true; do echo &amp;quot;$i: $(date)&amp;quot;; i=$((i+1)); sleep 1; done&#39;]  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001   </description>
     </item>
     
     <item>

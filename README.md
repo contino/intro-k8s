@@ -33,3 +33,9 @@ Open up your browser to http://localhost:1313 to view the site.
 
 
 This site uses the Learning there demo'ed [here](https://learn.netlify.com/en/)
+
+## Exercises
+
+[Docker Exercises](./Exercises/docker-exercises/README.md)
+
+[Kubernetes Exercises](./Exercises/k8-exercises/README.md)
