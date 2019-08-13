@@ -283,11 +283,6 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/</loc>
-    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/objects/ingress/controller/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
@@ -348,8 +343,18 @@
   </url>
   
   <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://contino.github.io/intro-k8/containers/docker/benefits/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/init/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
@@ -358,8 +363,18 @@
   </url>
   
   <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/job/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/cron/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
@@ -368,18 +383,23 @@
   </url>
   
   <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/statefulsets/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://contino.github.io/intro-k8/containers/docker/cli/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</loc>
-    <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/exercises-kata/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/cleanup/</loc>
-    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+    <loc>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</loc>
+    <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>

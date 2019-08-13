@@ -57,12 +57,12 @@
     </item>
     
     <item>
-      <title>Docker Exercises on Katacoda</title>
+      <title>Docker Exercises</title>
       <link>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</guid>
-      <description> Docker Exercises Docker Katacoda Exercises
+      <description>Docker Katacoda Exercises
  Docker Basics Build an container Update running port  </description>
     </item>
     

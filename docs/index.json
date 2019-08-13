@@ -11,7 +11,7 @@
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": "  Instructors   Introduction   Contino   Agenda   Requirements Katacoda   "
+	"content": "  Instructors   Introduction   Contino   Agenda   Requirements   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/whoami/",
@@ -32,7 +32,7 @@
 	"title": "Kubernetes",
 	"tags": [],
 	"description": "",
-	"content": "  History   Community   Architecture   Kubernetes API Objects   Debugging Exercise   Cleanup   Running   Extras   "
+	"content": "  History   Community   Architecture   Kubernetes API Objects   Debugging Exercise   Running   Extras   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/closing/",
@@ -71,7 +71,7 @@
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/requirements/",
-	"title": "Requirements Katacoda",
+	"title": "Requirements",
 	"tags": [],
 	"description": "",
 	"content": "You will need an account on these platforms\nGithub - Access for code repos\nKatacoda - Access for exercises\nDockerhub - Pushing and pulling docker images\n"
@@ -200,7 +200,7 @@
 	"title": "Kubernetes API Objects",
 	"tags": [],
 	"description": "",
-	"content": " Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   Ingress   Ingress   Services   Healthchecks   Daemonsets   "
+	"content": " Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   Ingress   Services   Healthchecks   Daemonsets   Jobs, Cron and Init   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/layers/",
@@ -392,13 +392,6 @@
 	"content": " What Ingress is a K8 object that allows external access to resources inside the cluster\nWhy Services, Pods and other objects are only accessible inside the cluster\n "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/",
-	"title": "Ingress",
-	"tags": [],
-	"description": "",
-	"content": " What Ingress is a K8 object that allows external access to resources inside the cluster\nWhy Services, Pods and other objects are only accessible inside the cluster\n "
-},
-{
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/ingress/controller/",
 	"title": "Ingress Controllers",
 	"tags": [],
@@ -480,7 +473,14 @@
 	"title": "Docker Intro",
 	"tags": [],
 	"description": "",
-	"content": " Docker  Benefits of Docker   Docker Platform   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises on Katacoda   "
+	"content": " Docker  Benefits of Docker   Docker Platform   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises   "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/",
+	"title": "Jobs, Cron and Init",
+	"tags": [],
+	"description": "",
+	"content": " Specialized Objects  Init   Jobs   Cron   Statefulsets   Exercises   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/benefits/",
@@ -490,11 +490,25 @@
 	"content": " Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  "
 },
 {
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/init/",
+	"title": "Init",
+	"tags": [],
+	"description": "",
+	"content": " What Why  "
+},
+{
 	"uri": "https://contino.github.io/intro-k8/containers/docker/platform/",
 	"title": "Docker Platform",
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/job/",
+	"title": "Jobs",
+	"tags": [],
+	"description": "",
+	"content": " What Why ) "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/dockerfile-example/",
@@ -504,11 +518,25 @@
 	"content": " Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \\ 8\t\u0026amp;\u0026amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \\ 9\t\u0026amp;\u0026amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [\u0026#34;mvn\u0026#34;, \u0026#34;dependency:go-offline\u0026#34;] 15 16ADD [\u0026#34;src\u0026#34;, \u0026#34;/work/src\u0026#34;] 17RUN [\u0026#34;mvn\u0026#34;, \u0026#34;package\u0026#34;] 18 19EXPOSE 8080 20ENTRYPOINT [\u0026#34;java\u0026#34;, \u0026#34;-cp\u0026#34;, \u0026#34;target/classes:target/dependency/*\u0026#34;, \u0026#34;com.kumuluz.ee.EeApplication\u0026#34;] "
 },
 {
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/cron/",
+	"title": "Cron",
+	"tags": [],
+	"description": "",
+	"content": " What Why  "
+},
+{
 	"uri": "https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/",
 	"title": "Dockerfile Best Practices",
 	"tags": [],
 	"description": "",
 	"content": " Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “\u0026amp;\u0026amp;” and “\\”\n Use the caching system to your advantage The order of statements is important Add files that are least likely to change first and the ones most likely to change last  "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/statefulsets/",
+	"title": "Statefulsets",
+	"tags": [],
+	"description": "",
+	"content": " What Why ) "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/cli/",
@@ -518,18 +546,18 @@
 	"content": " Docker cli  docker ps docker images docker logs docker exec  Official Documentation\n"
 },
 {
-	"uri": "https://contino.github.io/intro-k8/containers/docker/exercise-kata/",
-	"title": "Docker Exercises on Katacoda",
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/exercises-kata/",
+	"title": "Exercises",
 	"tags": [],
 	"description": "",
-	"content": " Docker Exercises Docker Katacoda Exercises\n Docker Basics Build an container Update running port  "
+	"content": "Job, CronJobs, and Init Katacoda Exercises\n Create Count down job Create parrell jobs Deploy a cronjob Work with init containers  "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/cleanup/",
-	"title": "Cleanup",
+	"uri": "https://contino.github.io/intro-k8/containers/docker/exercise-kata/",
+	"title": "Docker Exercises",
 	"tags": [],
 	"description": "",
-	"content": " Deleting all resources used All in one go\nkubectl delete po,svc,pv,deploy,rs,qouta,namespace,configmaps,secrets,ing,daemonsets --all  Pods and Services\nkubectl delete po,svc --all  PersistentVolume\nkubectl delete pv --all  Deployments\nkubectl delete deploy --all  Replicaset\nkubectl delete rs --all  Resource quotas\nkubectl delete quota --all  "
+	"content": "Docker Katacoda Exercises\n Docker Basics Build an container Update running port  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/running/",

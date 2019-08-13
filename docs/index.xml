@@ -396,12 +396,30 @@ readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 perio
     </item>
     
     <item>
+      <title>Init</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/init/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/init/</guid>
+      <description> What Why  </description>
+    </item>
+    
+    <item>
       <title>Docker Platform</title>
       <link>https://contino.github.io/intro-k8/containers/docker/platform/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/platform/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Jobs</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/job/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/job/</guid>
+      <description> What Why ) </description>
     </item>
     
     <item>
@@ -414,12 +432,30 @@ readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 perio
     </item>
     
     <item>
+      <title>Cron</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/cron/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/cron/</guid>
+      <description> What Why  </description>
+    </item>
+    
+    <item>
       <title>Dockerfile Best Practices</title>
       <link>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</guid>
       <description>Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\”</description>
+    </item>
+    
+    <item>
+      <title>Statefulsets</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/statefulsets/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/statefulsets/</guid>
+      <description> What Why ) </description>
     </item>
     
     <item>
@@ -432,12 +468,22 @@ readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 perio
     </item>
     
     <item>
-      <title>Docker Exercises on Katacoda</title>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/exercises-kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/exercises-kata/</guid>
+      <description>Job, CronJobs, and Init Katacoda Exercises
+ Create Count down job Create parrell jobs Deploy a cronjob Work with init containers  </description>
+    </item>
+    
+    <item>
+      <title>Docker Exercises</title>
       <link>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</guid>
-      <description> Docker Exercises Docker Katacoda Exercises
+      <description>Docker Katacoda Exercises
  Docker Basics Build an container Update running port  </description>
     </item>
     

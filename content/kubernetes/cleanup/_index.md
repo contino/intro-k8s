@@ -2,6 +2,7 @@
 title = "Cleanup"
 date = 2018-12-09T17:00:31-05:00
 weight = 600
+draft = true
 +++
 
 ### Deleting all resources used
