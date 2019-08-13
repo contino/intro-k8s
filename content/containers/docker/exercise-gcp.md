@@ -1,7 +1,8 @@
 +++
-title = "Docker Exercises"
+title = "Docker Exercises on GCP"
 date = 2018-12-09T17:21:05-05:00
 weight = 506
+draft = true
 +++
 
 ```bash

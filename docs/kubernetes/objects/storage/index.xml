@@ -57,16 +57,5 @@ Example: Storage class that will provision an AWS EBS Volumes when referenced a 
 kind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provisioner: kubernetes.io/aws-ebs parameters: type: gp2 reclaimPolicy: Retain mountOptions: - debug volumeBindingMode: Immediate  </description>
     </item>
     
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</guid>
-      <description>   Kubernetes yaml files   mysql-pod.yaml  (0 ko)   mysql-pv.yaml  (0 ko)    Create the persistent and the claim
-kubectl apply -f mysql-pv.yaml  Create a pod that will use it.
-kubectl apply -f mysql-pod.yaml  Clean up kubectl delete -f mysql-pv.yaml kubectl delete -f mysql-pod.yaml  </description>
-    </item>
-    
   </channel>
 </rss>

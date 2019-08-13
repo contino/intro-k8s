@@ -22,13 +22,12 @@
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises/</guid>
-      <description>In these exercises we will be working with these controllers, later we will working with Endpoints, since they are directly related to Services.
-  Kubernetes yaml files   deploy-nginx-1.9.1-scale.yaml  (0 ko)   deploy-nginx-1.9.1.yaml  (0 ko)   deploy-nginx.yaml  (0 ko)   replicaset.yaml  (0 ko)    Deployment Controller - Responsible for the controlled deployment of pods and ReplicaSets.
-ReplicaSets - is the newest version of the Replication Controller.</description>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</guid>
+      <description>Deployments on Katacoda
+ Create a deployment Scale up a deployment Work with replica sets  </description>
     </item>
     
   </channel>

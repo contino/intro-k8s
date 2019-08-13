@@ -12,16 +12,6 @@
     
     
     <item>
-      <title>Connecting</title>
-      <link>https://contino.github.io/intro-k8/introduction/requirements/connecting/</link>
-      <pubDate>Sun, 09 Dec 2018 16:52:57 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/introduction/requirements/connecting/</guid>
-      <description>Set env var of Cluster name  CLUSTER_NAME=k8s-workshop  OPTIONAL if using gcloud console * Set up the gcloud sdk
-gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.</description>
-    </item>
-    
-    <item>
       <title>Beginning</title>
       <link>https://contino.github.io/intro-k8/containers/history/history/</link>
       <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
@@ -161,31 +151,6 @@ gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud 
     </item>
     
     <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/namespaces/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/namespaces/exercises/</guid>
-      <description>   Kubernetes yaml files   createNamespace.yaml  (0 ko)    Update createNamespace.yaml with your namespace
-Create your namespace
-kubectl create -f ./createNamespace.yaml  Verify your namespace exists
-$ kubectl get namespaces NAME STATUS AGE default Active 1d kube-system Active 1d kube-public Active 1d YOUR_NAME_SPACE Active 1d  Set your namespace to the default
-kubectl config set-context $(kubectl config current-context) --namespace=&amp;lt;insert-namespace-name-here&amp;gt;  Validate it
-kubectl config view | grep namespace:  </description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/</guid>
-      <description>Kubernetes github repo
-Start a pod from a manifest kubectl apply -f single-pod-nginx.yaml  Verify the state of the pod kubectl get pods NAME READY STATUS RESTARTS AGE nginx 1/1 Running 0 44s  Get more details of the pod kubectl describe pod nginx  Accessing your pod kubectl port-forward nginx 8080:80  Logs kubectl logs -f nginx  Navigate to http://localhost:8080 in your web browser
-Multi container pod Start a pod from a manifest kubectl apply -f multi-pod.</description>
-    </item>
-    
-    <item>
       <title>Labels and Selectors</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
@@ -197,7 +162,28 @@ spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metad
     </item>
     
     <item>
-      <title>Resource Quotas</title>
+      <title>Affinity and Anti-Affinity</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/</guid>
+      <description>Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are
+ the language is more expressive (not just “AND of exact match”) you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: &amp;ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/</guid>
+      <description>Pod Exercises 1
+Pod Exercises 2
+ Create pods Set up node selectors Assign nodes to pods with selectors and affinifty  </description>
+    </item>
+    
+    <item>
+      <title>Details</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
@@ -205,18 +191,6 @@ spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metad
       <description>Compute Resources  CPU Memory Storage  requests.storage persistentvolumeclaims storage-class-name.storageclass.storage.k8s.io/requests.storage storage-class-name.storageclass.storage.k8s.io/persistentvolumeclaims  Object Count
  configmaps persistentvolumeclaims pods replicationcontrollers resourcequotas services services.loadbalancers services.nodeports secrets  Priority - low, medium, high
   More info</description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/exercises/</guid>
-      <description>Kubernetes yaml files   pod-limits.yaml  (0 ko)   pod-no-quotas.yaml  (0 ko)   pod-only-limit.yaml  (0 ko)   pod-only-request.yaml  (0 ko)   quotas.yaml  (0 ko)    Deploy default resources quotas for your namespace
-kubectl create -f quotas.yaml kubectl describe quota  Verify qoutas
-kubectl get resourcequota mem-cpu-rq --output=yaml  Deploy specific limits and requests for pods
-kubectl create -f pod-limits.</description>
     </item>
     
     <item>
@@ -230,13 +204,22 @@ kubectl create -f pod-limits.</description>
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises/</link>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises/</guid>
-      <description>In these exercises we will be working with these controllers, later we will working with Endpoints, since they are directly related to Services.
-  Kubernetes yaml files   deploy-nginx-1.9.1-scale.yaml  (0 ko)   deploy-nginx-1.9.1.yaml  (0 ko)   deploy-nginx.yaml  (0 ko)   replicaset.yaml  (0 ko)    Deployment Controller - Responsible for the controlled deployment of pods and ReplicaSets.
-ReplicaSets - is the newest version of the Replication Controller.</description>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/exercises_kata/</guid>
+      <description>Configmaps and Secretes on Katacoda
+   </description>
+    </item>
+    
+    <item>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</guid>
+      <description>Deployments on Katacoda
+ Create a deployment Scale up a deployment Work with replica sets  </description>
     </item>
     
     <item>
@@ -283,17 +266,6 @@ Types of PVC&amp;rsquo;s
       <description>Storage classes allow cluster administrators to provide varing levels of support and types of storage to applications in a cluster
 Example: Storage class that will provision an AWS EBS Volumes when referenced a PVC
 kind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provisioner: kubernetes.io/aws-ebs parameters: type: gp2 reclaimPolicy: Retain mountOptions: - debug volumeBindingMode: Immediate  </description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/</guid>
-      <description>   Kubernetes yaml files   mysql-pod.yaml  (0 ko)   mysql-pv.yaml  (0 ko)    Create the persistent and the claim
-kubectl apply -f mysql-pv.yaml  Create a pod that will use it.
-kubectl apply -f mysql-pod.yaml  Clean up kubectl delete -f mysql-pv.yaml kubectl delete -f mysql-pod.yaml  </description>
     </item>
     
     <item>
@@ -374,6 +346,16 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-examp
     </item>
     
     <item>
+      <title>Ingress Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</guid>
+      <description>Ingress Exercises
+ Deploy an ingress controller Deploy service Create an ingress rule  </description>
+    </item>
+    
+    <item>
       <title>Service Diagram</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
@@ -383,13 +365,12 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-examp
     </item>
     
     <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/</link>
+      <title>Services Exercise</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/</guid>
-      <description>Kubernetes yaml files   app.yaml  (1 ko)   mysql-all.yaml  (1 ko)   mysql-service.yaml  (0 ko)    Pod Deployment with health checks, PersistentVolume and claim Since we have created the mysql pod several times, here is a yaml file that creates it all.
-Create a secret for the password between Wordpress and MYSQL kubectl create secret generic mysql-pass --from-literal=password=YOUR_PASSWORD  Verify it is there</description>
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</guid>
+      <description> Services on Katacoda  Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  </description>
     </item>
     
     <item>
@@ -413,16 +394,18 @@ readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 perio
     </item>
     
     <item>
-      <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/exercises/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      <title>Microservices Exercise</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/micro/_index_gcp/</link>
+      <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/exercises/</guid>
-      <description>Exercises   Kubernetes yaml files   mysql-config.yaml  (0 ko)   mysql-health.yaml  (1 ko)   mysql-pv.yaml  (0 ko)    If you deleted the PV from the previous exercise please recreate it
-kubectl apply -f mysql-pv.yaml  Mysql conf needed for testing
-kubectl create -f mysql-config.yaml  Start the Mysql deployment
-kubectl apply -f mysql-health.yaml  Get the pod name
-POD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath=&#39;{.</description>
+      <guid>https://contino.github.io/intro-k8/kubernetes/micro/_index_gcp/</guid>
+      <description>Git clone Exercises
+Deploying all three services
+cd Exercises/docker-exercises  Make sure we have credentials for the GCP cluster
+ gcloud container clusters list gcloud container clusters get-credentials NAME_CLUSTER  Schedule Service
+cd schedule-service kubectl create -f schedule-svc.yaml  Conference web details
+cd ../conference-details-service kubectl create -f conf-details-svc.yaml  Conference Website
+cd ../conference-website kubectl create -f conf-website.yaml  </description>
     </item>
     
     <item>
@@ -467,18 +450,17 @@ POD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath=&#39;{.</description>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/cli/</guid>
-      <description>Docker cli  docker ps docker images docker logs docker exec  Official Documentation
-More exercises</description>
+      <description>Docker cli  docker ps docker images docker logs docker exec  Official Documentation</description>
     </item>
     
     <item>
-      <title>Docker Exercises</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/exercise/</link>
+      <title>Docker Exercises on Katacoda</title>
+      <link>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/exercise/</guid>
-      <description>git clone https://github.com/contino/intro-k8  Navigate to the Docker exercises
-MacBook-Pro in ~/Documents/code/contino/intro-k8 ± |codelou S:6 U:11 ✗| → cd Exercises/docker-exercises/ l 2019-07-22 14:56:02 ⌚ MacBook-Pro in ~/Documents/code/contino/intro-k8/Exercises/docker-exercises ± |codelou S:6 U:11 ✗| → ls -la total 8 drwxr-xr-x 6 contino staff 192 Jul 22 14:27 . drwxr-xr-x 4 contino staff 128 Jul 22 13:56 .. -rw-r--r-- 1 contino staff 789 Jul 22 14:27 README.md drwxr-xr-x 6 contino staff 192 Jul 22 13:22 conference-details-service drwxr-xr-x 10 contino staff 320 Jul 22 13:22 conference-website drwxr-xr-x 6 contino staff 192 Jul 22 13:22 schedule-service  In order to push images to GCloud Container Registry credentials will be need</description>
+      <guid>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</guid>
+      <description> Docker Exercises Docker Katacoda Exercises
+ Docker Basics Build an container Update running port  </description>
     </item>
     
     <item>

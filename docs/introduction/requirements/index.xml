@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Requirements on Introduction to Kubernetes</title>
+    <title>Requirements Katacoda on Introduction to Kubernetes</title>
     <link>https://contino.github.io/intro-k8/introduction/requirements/</link>
-    <description>Recent content in Requirements on Introduction to Kubernetes</description>
+    <description>Recent content in Requirements Katacoda on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 16:52:57 -0500</lastBuildDate>
     
 	<atom:link href="https://contino.github.io/intro-k8/introduction/requirements/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Connecting</title>
-      <link>https://contino.github.io/intro-k8/introduction/requirements/connecting/</link>
-      <pubDate>Sun, 09 Dec 2018 16:52:57 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/introduction/requirements/connecting/</guid>
-      <description>Set env var of Cluster name  CLUSTER_NAME=k8s-workshop  OPTIONAL if using gcloud console * Set up the gcloud sdk
-gcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.</description>
-    </item>
     
   </channel>
 </rss>

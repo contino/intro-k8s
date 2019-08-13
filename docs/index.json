@@ -11,7 +11,7 @@
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": "  Instructors   Introduction   Contino   Agenda   Requirements   "
+	"content": "  Instructors   Introduction   Contino   Agenda   Requirements Katacoda   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/whoami/",
@@ -32,7 +32,7 @@
 	"title": "Kubernetes",
 	"tags": [],
 	"description": "",
-	"content": "  History   Community   Architecture   Connect   Kubernetes API Objects   Microservices Exercise   Cleanup   Running   Extras   "
+	"content": "  History   Community   Architecture   Kubernetes API Objects   Debugging Exercise   Cleanup   Running   Extras   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/closing/",
@@ -71,17 +71,10 @@
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/requirements/",
-	"title": "Requirements",
+	"title": "Requirements Katacoda",
 	"tags": [],
 	"description": "",
-	"content": " To complete this workshop you will need the following installed\nRequired: Docker, git, gcloud, kubectl, gmail account, github account\nOptional: devops debate slack account\nGCloud console (recommended) Log into https://console.cloud.google.com\nNavigate to https://console.cloud.google.com/compute/instances?project=us-k8s-workshop\nFind your instance with your name on it\nunder connect click Dropped down and select Open in browser Window\nA New browser window should pop and give your a terminal prompt\nLocal install Docker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.  python -V   Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n  ./google-cloud-sdk/install.sh   Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:  ./google-cloud-sdk/bin/gcloud init  kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
-},
-{
-	"uri": "https://contino.github.io/intro-k8/introduction/requirements/connecting/",
-	"title": "Connecting",
-	"tags": [],
-	"description": "",
-	"content": " Set env var of Cluster name  CLUSTER_NAME=k8s-workshop  OPTIONAL if using gcloud console * Set up the gcloud sdk\ngcloud init   Set gcloud project env var  PROJECT_ID=${1:-k8s-workshop}; gcloud config set project ${PROJECT_ID}; gcloud config set compute/region us-east1; gcloud config set compute/zone us-east1-b;   Check to make sure account can see  gcloud container clusters list   Get the cluster credentials  gcloud container clusters get-credentials ${CLUSTER_NAME};   Make kubectl can see the cluster  kubectl cluster-info   Allow docker to push to GCR  gcloud auth configure-docker The following settings will be added to your Docker config file located at [/Users/contino/.docker/config.json]: { \u0026quot;credHelpers\u0026quot;: { \u0026quot;gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;us.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;eu.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;asia.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;staging-k8s.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot;, \u0026quot;marketplace.gcr.io\u0026quot;: \u0026quot;gcloud\u0026quot; } } Do you want to continue (Y/n)? Y Docker configuration file updated.   Test  docker pull nginx docker tag nginx us.gcr.io/${PROJECT_ID}/nginx:your_name docker push us.gcr.io/${PROJECT_ID}/nginx:your_name  "
+	"content": "You will need an account on these platforms\nGithub - Access for code repos\nKatacoda - Access for exercises\nDockerhub - Pushing and pulling docker images\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/history/",
@@ -182,13 +175,6 @@
 	"content": " Container Networking  Docker uses iptables to provide network isolation Explicitly publish a port for connectivity to it Containers do not have a public IPv4 address They are allocated a private address Services running on a container must be exposed port by port Container ports have to be mapped to the host port to avoid conflicts  More information here\n"
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/connect/",
-	"title": "Connect",
-	"tags": [],
-	"description": "",
-	"content": " Connecting to your GKE Cluster Prerequisites Follow the Requirements\nRetrieve Cluster Credentials (make sure there\u0026rsquo;s no conflict with a pre-existing KUBECONFIG var) gcloud container clusters get-credentials \u0026lt;cluster-name\u0026gt; --region \u0026lt;region\u0026gt;  Confirm Cluster Connectivity kubectl cluster-info  "
-},
-{
 	"uri": "https://contino.github.io/intro-k8/containers/network/docker0/",
 	"title": "Docker0 ",
 	"tags": [],
@@ -214,7 +200,7 @@
 	"title": "Kubernetes API Objects",
 	"tags": [],
 	"description": "",
-	"content": " Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   ingress   Services   Healthchecks   Daemonsets   "
+	"content": " Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   Ingress   Services   Healthchecks   Daemonsets   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/layers/",
@@ -245,13 +231,6 @@
 	"content": " Namespaces What Namespaces are virtual clusters inside your Kubernetes cluster that provide logically isolation (kinda) from each other.\nWhy Scope of names Organization of Kubernetes resources\n "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/namespaces/exercises/",
-	"title": "Exercises",
-	"tags": [],
-	"description": "",
-	"content": "   Kubernetes yaml files   createNamespace.yaml  (0 ko)    Update createNamespace.yaml with your namespace\nCreate your namespace\nkubectl create -f ./createNamespace.yaml  Verify your namespace exists\n$ kubectl get namespaces NAME STATUS AGE default Active 1d kube-system Active 1d kube-public Active 1d YOUR_NAME_SPACE Active 1d  Set your namespace to the default\nkubectl config set-context $(kubectl config current-context) --namespace=\u0026lt;insert-namespace-name-here\u0026gt;  Validate it\nkubectl config view | grep namespace:  "
-},
-{
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/",
 	"title": "Pods",
 	"tags": [],
@@ -259,18 +238,25 @@
 	"content": " Pods Pods are a collection of containers that share a namespace, are colocated and scheduled together on Kubenetes nodes.\nA pod is a group of one or more containers, with shared storage/network, and a specification for how to run the containers\n"
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises/",
-	"title": "Exercises",
-	"tags": [],
-	"description": "",
-	"content": " Kubernetes github repo\nStart a pod from a manifest kubectl apply -f single-pod-nginx.yaml  Verify the state of the pod kubectl get pods NAME READY STATUS RESTARTS AGE nginx 1/1 Running 0 44s  Get more details of the pod kubectl describe pod nginx  Accessing your pod kubectl port-forward nginx 8080:80  Logs kubectl logs -f nginx  Navigate to http://localhost:8080 in your web browser\nMulti container pod Start a pod from a manifest kubectl apply -f multi-pod.yaml  kubectl describe pod multi-pod  Accessing your pod kubectl port-forward multi-pod 8080:80  Navigate to http://localhost:8080/date.log in your web browser\nCleanup kubectl delete -f single-pod-nginx.yaml kubectl delete -f multi-pod.yaml  "
-},
-{
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/",
 	"title": "Labels and Selectors",
 	"tags": [],
 	"description": "",
 	"content": " Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.\nSelectors Label Selectors help client/user identify a set of objects.\nspec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql  Demo Create labels \u0026amp; use selector to identify set of objects\n"
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/",
+	"title": "Affinity and Anti-Affinity",
+	"tags": [],
+	"description": "",
+	"content": " Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are\n the language is more expressive (not just “AND of exact match”) you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: \u0026ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node\u0026rdquo;\napiVersion: v1 kind: Pod metadata: name: happypanda labels: app: redis segment: backend company: mycompany disk: ssd spec: affinity: nodeAffinity: preferredDuringSchedulingIgnoredDuringExecution: - weight: 1 preference: matchExpressions: - key: fruit operator: In values: - apple containers: - name: redis image: redis ports: - name: redisport containerPort: 6379 protocol: TCP  "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/",
+	"title": "Exercises",
+	"tags": [],
+	"description": "",
+	"content": "Pod Exercises 1\nPod Exercises 2\n Create pods Set up node selectors Assign nodes to pods with selectors and affinifty  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/",
@@ -281,17 +267,10 @@
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/",
-	"title": "Resource Quotas",
+	"title": "Details",
 	"tags": [],
 	"description": "",
 	"content": " Compute Resources  CPU Memory Storage  requests.storage persistentvolumeclaims storage-class-name.storageclass.storage.k8s.io/requests.storage storage-class-name.storageclass.storage.k8s.io/persistentvolumeclaims  Object Count\n configmaps persistentvolumeclaims pods replicationcontrollers resourcequotas services services.loadbalancers services.nodeports secrets  Priority - low, medium, high\n  More info\n"
-},
-{
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/exercises/",
-	"title": "Exercises",
-	"tags": [],
-	"description": "",
-	"content": "   Kubernetes yaml files   pod-limits.yaml  (0 ko)   pod-no-quotas.yaml  (0 ko)   pod-only-limit.yaml  (0 ko)   pod-only-request.yaml  (0 ko)   quotas.yaml  (0 ko)    Deploy default resources quotas for your namespace\nkubectl create -f quotas.yaml kubectl describe quota  Verify qoutas\nkubectl get resourcequota mem-cpu-rq --output=yaml  Deploy specific limits and requests for pods\nkubectl create -f pod-limits.yaml kubectl describe limits mem-limit-range  Deploy pods with only limits\nkubectl create -f pod-only-limit.yaml Error from server (Forbidden): error when creating \u0026quot;pod-only-limit.yaml\u0026quot;: pods \u0026quot;only-limits\u0026quot; is forbidden: failed quota: mem-cpu-rq: must specify limits.cpu,requests.cpu  Deploy pods with only requests\nkubectl create -f pod-only-request.yaml Error from server (Forbidden): error when creating \u0026quot;pod-only-request.yaml\u0026quot;: pods \u0026quot;only-requests\u0026quot; is forbidden: failed quota: mem-cpu-rq: must specify limits.cpu,requests.cpu  Deploy pod with neither and see defaults applied from the namespace\nkubectl create -f pod-no-quotas.yaml Error from server (Forbidden): error when creating \u0026quot;pod-no-quotas.yaml\u0026quot;: pods \u0026quot;no-quotas\u0026quot; is forbidden: failed quota: mem-cpu-rq: must specify limits.cpu,requests.cpu  Please Delete Quotas! kubectl delete -f quotas.yaml kubectl delete -f pod-limits.yaml  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/controllers/",
@@ -308,11 +287,18 @@
 	"content": " Deployments  Scaling Rolling\u000b  ReplicaSet  Desired state  Strategies:  Recreate RollingUpdate (default) Blue/Green Canary A/B Testing  "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises/",
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/configmaps/exercises_kata/",
 	"title": "Exercises",
 	"tags": [],
 	"description": "",
-	"content": " In these exercises we will be working with these controllers, later we will working with Endpoints, since they are directly related to Services.\n  Kubernetes yaml files   deploy-nginx-1.9.1-scale.yaml  (0 ko)   deploy-nginx-1.9.1.yaml  (0 ko)   deploy-nginx.yaml  (0 ko)   replicaset.yaml  (0 ko)    Deployment Controller - Responsible for the controlled deployment of pods and ReplicaSets.\nReplicaSets - is the newest version of the Replication Controller. The only difference between a ReplicaSet and a Replication Controller right now is the selector support.\nReplicaSets Create the replicaset\nkubectl apply -f replicaset.yaml  Get the status of the replicaset\nkubectl get replicaset  Retrieve detailed information about the replicaset\nkubectl describe replicaset frontend  See the status of pods deployed with replicaset\nkubectl get pods -l tier: frontend  Select one of the pods from the ReplicaSet\nkubect port-forward \u0026lt;ONE_POD_FROM_REPLICASET\u0026gt; 8080:80  In another terminal window run\nkubectl logs -f \u0026lt;POD_FROM_REPLICASET\u0026gt;  Go to http://localhost:8080/\nYou should see logs streaming to the console\nScale a ReplicaSet\nkubectl scale --replicas=4 rs/frontend  The replicas will run 4 pods now\nkubectl describe rs/frontend  kubectl get pods -l tier: frontend  Deployment Controller Create the nginx deployment\nkubectl create -f deploy-nginx.yaml  Get deployment information\nkubectl get deployments  Where is the deployment\nkubectl rollout status deployment/nginx-deployment  Update the deployments\nkubectl apply -f deploy-nginx-1.9.1.yaml  Where is the deployment\nkubectl rollout status deployment/nginx-deployment  History of deployment\nkubectl get replicaset  View the pods in the deployment\nkubectl get pods  Get more detailed information about the deployment\nkubectl describe deployment nginx-deployment  Scale the deployment\nkubectl apply -f deploy-nginx-1.9.1-scale.yaml  Cleanup kubectl delete -f replicaset.yaml kubectl delete -f deploy-nginx.yaml  "
+	"content": "Configmaps and Secretes on Katacoda\n   "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/",
+	"title": "Exercises",
+	"tags": [],
+	"description": "",
+	"content": "Deployments on Katacoda\n Create a deployment Scale up a deployment Work with replica sets  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/storage/",
@@ -348,13 +334,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Storage classes allow cluster administrators to provide varing levels of support and types of storage to applications in a cluster\nExample: Storage class that will provision an AWS EBS Volumes when referenced a PVC\nkind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provisioner: kubernetes.io/aws-ebs parameters: type: gp2 reclaimPolicy: Retain mountOptions: - debug volumeBindingMode: Immediate  "
-},
-{
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/storage/exercises/",
-	"title": "Exercises",
-	"tags": [],
-	"description": "",
-	"content": "   Kubernetes yaml files   mysql-pod.yaml  (0 ko)   mysql-pv.yaml  (0 ko)    Create the persistent and the claim\nkubectl apply -f mysql-pv.yaml  Create a pod that will use it.\nkubectl apply -f mysql-pod.yaml  Clean up kubectl delete -f mysql-pv.yaml kubectl delete -f mysql-pod.yaml  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/secrets/",
@@ -414,7 +393,7 @@
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/ingress/",
-	"title": "ingress",
+	"title": "Ingress",
 	"tags": [],
 	"description": "",
 	"content": " What Ingress is a K8 object that allows external access to resources inside the cluster\nWhy Services, Pods and other objects are only accessible inside the cluster\n "
@@ -434,6 +413,13 @@
 	"content": "Each http rule contains the following information:\n Host list of paths Backend service  Ingress Rule\napiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-example annotations: nginx.ingress.kubernetes.io/rewrite-target: / spec: rules: - host: foo.bar.com http: paths: - path: /foo backend: serviceName: service1 servicePort: 4200 - path: /bar backend: serviceName: service2 servicePort: 8080  "
 },
 {
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/",
+	"title": "Ingress Exercises",
+	"tags": [],
+	"description": "",
+	"content": "Ingress Exercises\n Deploy an ingress controller Deploy service Create an ingress rule  "
+},
+{
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/services/",
 	"title": "Services",
 	"tags": [],
@@ -448,11 +434,11 @@
 	"content": "  "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/services/exercises/",
-	"title": "Exercises",
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/",
+	"title": "Services Exercise",
 	"tags": [],
 	"description": "",
-	"content": "   Kubernetes yaml files   app.yaml  (1 ko)   mysql-all.yaml  (1 ko)   mysql-service.yaml  (0 ko)    Pod Deployment with health checks, PersistentVolume and claim Since we have created the mysql pod several times, here is a yaml file that creates it all.\nCreate a secret for the password between Wordpress and MYSQL kubectl create secret generic mysql-pass --from-literal=password=YOUR_PASSWORD  Verify it is there\nkubectl get secrets  Deploy mysql\nkubectl apply -f mysql-all.yaml  Verify mysql deployed properly\nkubectl get deploy  Services Deploy the service for mysql\nkubectl apply -f mysql-service.yaml  Verify the service has endpoints.\nkubectl get services -o wide  Application Deployment deploy the application that will use mysqld\nkubectl apply -f app.yaml  Verify Service\nkubectl get services wordpress  Clean up kubectl delete -f mysql-all.yaml kubectl delete -f mysql-service.yaml kubectl delete -f app.yaml  "
+	"content": " Services on Katacoda  Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/",
@@ -483,21 +469,21 @@
 	"content": " Readiness and Liveliness Readiness Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.\nreadinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5  "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/exercises/",
-	"title": "Exercises",
+	"uri": "https://contino.github.io/intro-k8/kubernetes/micro/",
+	"title": "Debugging Exercise",
 	"tags": [],
 	"description": "",
-	"content": " Exercises   Kubernetes yaml files   mysql-config.yaml  (0 ko)   mysql-health.yaml  (1 ko)   mysql-pv.yaml  (0 ko)    If you deleted the PV from the previous exercise please recreate it\nkubectl apply -f mysql-pv.yaml  Mysql conf needed for testing\nkubectl create -f mysql-config.yaml  Start the Mysql deployment\nkubectl apply -f mysql-health.yaml  Get the pod name\nPOD_NAME=$(kubectl get pods -l app=mysql -o=jsonpath='{.items[0].metadata.name}')  Describe pod should display a healthy pod\nkubectl describe pod $POD_NAME  Breaking the readiness probe\nkubectl exec $POD_NAME -c mysql -- mv /usr/bin/mysql /usr/bin/mysql.off  Check to see if the pods is running\nkubectl get pods -l app=mysql  Output if the pod is not running\nNAME READY STATUS RESTARTS AGE mysql-6b98cc4475-xgwkp 0/1 Running 0 6m  Get more details about the pod\nkubectl describe pod $POD_NAME  Output from the error\nReadiness probe failed: OCI runtime exec failed: exec failed: container_linux.go:348: starting container process caused \u0026quot;exec: \\\u0026quot;/usr/bin/mysql\\\u0026quot;: stat /usr/bin/mysql: no such file or directory\u0026quot;: unknown  Fix the readiness probe\nkubectl exec $POD_NAME -c mysql -- mv /usr/bin/mysql.off /usr/bin/mysql  Output now that the pods is running again\nNAME READY STATUS RESTARTS AGE mysql-6b98cc4475-xgwkp 1/1 Running 0 6m  "
+	"content": "Debuging exercises\n In this Scenerio you will have to fix a broken service  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/",
 	"title": "Docker Intro",
 	"tags": [],
 	"description": "",
-	"content": " Docker  Benefits of Docker   Docker Platform   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises   "
+	"content": " Docker  Benefits of Docker   Docker Platform   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises on Katacoda   "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/micro/",
+	"uri": "https://contino.github.io/intro-k8/kubernetes/micro/_index_gcp/",
 	"title": "Microservices Exercise",
 	"tags": [],
 	"description": "",
@@ -536,14 +522,14 @@
 	"title": "Docker cli",
 	"tags": [],
 	"description": "",
-	"content": " Docker cli  docker ps docker images docker logs docker exec  Official Documentation\nMore exercises\n"
+	"content": " Docker cli  docker ps docker images docker logs docker exec  Official Documentation\n"
 },
 {
-	"uri": "https://contino.github.io/intro-k8/containers/docker/exercise/",
-	"title": "Docker Exercises",
+	"uri": "https://contino.github.io/intro-k8/containers/docker/exercise-kata/",
+	"title": "Docker Exercises on Katacoda",
 	"tags": [],
 	"description": "",
-	"content": "git clone https://github.com/contino/intro-k8  Navigate to the Docker exercises\nMacBook-Pro in ~/Documents/code/contino/intro-k8 ± |codelou S:6 U:11 ✗| → cd Exercises/docker-exercises/ l 2019-07-22 14:56:02 ⌚ MacBook-Pro in ~/Documents/code/contino/intro-k8/Exercises/docker-exercises ± |codelou S:6 U:11 ✗| → ls -la total 8 drwxr-xr-x 6 contino staff 192 Jul 22 14:27 . drwxr-xr-x 4 contino staff 128 Jul 22 13:56 .. -rw-r--r-- 1 contino staff 789 Jul 22 14:27 README.md drwxr-xr-x 6 contino staff 192 Jul 22 13:22 conference-details-service drwxr-xr-x 10 contino staff 320 Jul 22 13:22 conference-website drwxr-xr-x 6 contino staff 192 Jul 22 13:22 schedule-service  In order to push images to GCloud Container Registry credentials will be need\nDocker login for GCR\ngcloud auth configure-docker  Run these commands for all three services, conference-details-services, conference-website, schedule-service\nProject ID = us-k8-workshop\nBuild Images Locally\ncd SERVICENAME docker build -t YOURNAME_SERVICE us.gcr.io/us-k8-workshop/SERVICENAME:YOURNAME  Push Images to GCR Registry\ndocker push us.gcr.io/us-k8-workshop/[SERVICENAME]:[YOURNAME]  Navigate to Container Registry in GCloud Console\nhttps://console.cloud.google.com/gcr/images/us-k8-workshop?project=us-k8-workshop\n"
+	"content": " Docker Exercises Docker Katacoda Exercises\n Docker Basics Build an container Update running port  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/cleanup/",

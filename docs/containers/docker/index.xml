@@ -53,18 +53,17 @@
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/cli/</guid>
-      <description>Docker cli  docker ps docker images docker logs docker exec  Official Documentation
-More exercises</description>
+      <description>Docker cli  docker ps docker images docker logs docker exec  Official Documentation</description>
     </item>
     
     <item>
-      <title>Docker Exercises</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/exercise/</link>
+      <title>Docker Exercises on Katacoda</title>
+      <link>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/exercise/</guid>
-      <description>git clone https://github.com/contino/intro-k8  Navigate to the Docker exercises
-MacBook-Pro in ~/Documents/code/contino/intro-k8 ± |codelou S:6 U:11 ✗| → cd Exercises/docker-exercises/ l 2019-07-22 14:56:02 ⌚ MacBook-Pro in ~/Documents/code/contino/intro-k8/Exercises/docker-exercises ± |codelou S:6 U:11 ✗| → ls -la total 8 drwxr-xr-x 6 contino staff 192 Jul 22 14:27 . drwxr-xr-x 4 contino staff 128 Jul 22 13:56 .. -rw-r--r-- 1 contino staff 789 Jul 22 14:27 README.md drwxr-xr-x 6 contino staff 192 Jul 22 13:22 conference-details-service drwxr-xr-x 10 contino staff 320 Jul 22 13:22 conference-website drwxr-xr-x 6 contino staff 192 Jul 22 13:22 schedule-service  In order to push images to GCloud Container Registry credentials will be need</description>
+      <guid>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</guid>
+      <description> Docker Exercises Docker Katacoda Exercises
+ Docker Basics Build an container Update running port  </description>
     </item>
     
   </channel>

@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/exercises_kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/exercises_kata/</guid>
+      <description>Configmaps and Secretes on Katacoda
+   </description>
+    </item>
+    
+    <item>
       <title>Configmaps</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>

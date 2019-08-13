@@ -14,5 +14,4 @@ chapter = true
 
 [Official Documentation](https://docs.docker.com/engine/reference/commandline/cli/)
 
-[More exercises](https://www.katacoda.com/contino/courses/docker/basics) 
 

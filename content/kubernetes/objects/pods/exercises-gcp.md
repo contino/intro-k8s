@@ -1,7 +1,8 @@
 +++
 title = "Exercises"
 date = 2018-12-09T17:00:31-05:00
-weight = 421
+weight = 422
+draft = true
 +++
 
 [Kubernetes github repo](/intro-k8/introduction/requirements/#github-https-github-com)

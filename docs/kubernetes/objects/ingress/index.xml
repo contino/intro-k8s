@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ingress on Introduction to Kubernetes</title>
+    <title>Ingress on Introduction to Kubernetes</title>
     <link>https://contino.github.io/intro-k8/kubernetes/objects/ingress/</link>
-    <description>Recent content in ingress on Introduction to Kubernetes</description>
+    <description>Recent content in Ingress on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Dec 2018 17:05:14 -0500</lastBuildDate>
@@ -31,6 +31,16 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: test-ingress spec: 
       <description>Each http rule contains the following information:
  Host list of paths Backend service  Ingress Rule
 apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-example annotations: nginx.ingress.kubernetes.io/rewrite-target: / spec: rules: - host: foo.bar.com http: paths: - path: /foo backend: serviceName: service1 servicePort: 4200 - path: /bar backend: serviceName: service2 servicePort: 8080  </description>
+    </item>
+    
+    <item>
+      <title>Ingress Exercises</title>
+      <link>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</link>
+      <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
+      
+      <guid>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</guid>
+      <description>Ingress Exercises
+ Deploy an ingress controller Deploy service Create an ingress rule  </description>
     </item>
     
   </channel>

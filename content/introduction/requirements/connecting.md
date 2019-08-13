@@ -1,7 +1,8 @@
 +++
-title = "Connecting"
+title = "Connecting GCP"
 date = 2018-12-09T16:52:57-05:00
 weight = 53
+draft = true
 +++
 
 
