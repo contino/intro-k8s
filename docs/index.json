@@ -32,14 +32,14 @@
 	"title": "Kubernetes",
 	"tags": [],
 	"description": "",
-	"content": "  History   Community   Graduated Projects   Incubating Projects   Involvement   Architecture   Master   Node   Data Flow   Connect   Kubernetes API Objects   Namespaces   Exercises   Pods   Exercises   Labels and Selectors   Resource Quotas   Resource Quotas   Exercises   Controllers   Controllers Updates   Exercises   Storage   Volumes   Persistent Volume   Persistent Volume Claims   Storage Classes   Exercises   Secrets   Secrets Uses - Secret   Secrets Uses - File   Secrets Uses - Env Var   Configmaps   Configmaps   Configmaps - Volume   Configmaps - Env Var   ingress   Ingress Controllers   Ingress Rules   Services   Service Diagram   Exercises   Healthchecks   Liveliness   Readiness   Exercises   Daemonsets   Microservices Exercise   Cleanup   Running   Extras   Monitoring   Logging   Logging - Pod   Logging - Node   Logging - Cluster   Security - Containers   Security - K8   "
+	"content": "  History   Community   Architecture   Connect   Kubernetes API Objects   Microservices Exercise   Cleanup   Running   Extras   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/closing/",
 	"title": "Closing",
 	"tags": [],
 	"description": "",
-	"content": " Closing remarks Contact Us:\n   Henry Gallo James Strong      @strongjz   henry.gallo@contino.io james.strong@contino.io    contino.io\n"
+	"content": " Closing remarks Contact Us:\n   Henry Gallo James Strong Matt Garber      @strongjz    henry.gallo@contino.io james.strong@contino.io matthew.garber@contino.io    contino.io\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/history/",
@@ -74,7 +74,7 @@
 	"title": "Requirements",
 	"tags": [],
 	"description": "",
-	"content": " To complete this workshop you will need the following installed\nRequired: Docker, git, gcloud, kubectl, gmail account, github account\nOptional: devops debate slack account\nGCloud console (recommended) Log into https://console.cloud.google.com\nNavigate to https://console.cloud.google.com/compute/instances?project=us-k8s-workshop\nFind your instance with your name on it\nunder connect click Dropped down and select Open in browser Window\nA New browser window should pop and give your a terminal prompt\nLocal install Docker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.\npython -V  Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n./google-cloud-sdk/install.sh  Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:\n./google-cloud-sdk/bin/gcloud init   kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
+	"content": " To complete this workshop you will need the following installed\nRequired: Docker, git, gcloud, kubectl, gmail account, github account\nOptional: devops debate slack account\nGCloud console (recommended) Log into https://console.cloud.google.com\nNavigate to https://console.cloud.google.com/compute/instances?project=us-k8s-workshop\nFind your instance with your name on it\nunder connect click Dropped down and select Open in browser Window\nA New browser window should pop and give your a terminal prompt\nLocal install Docker Windows  Directions\n Installer\n  Mac  Directions Installer   gcloud Cloud SDK requires Python 2 with a release version of Python 2.7.9 or later. The installer will install all necessary dependencies, including the needed Python version, by default. If you already have Python 2.x.y installed and want to use the existing installation, you can uncheck the option to install Bundled Python. Note: As of Cloud SDK version 206.0.0, the gcloud CLI has experimental support for running using a Python 3.4+ interpreter (run gcloud topic startup for exclusions and more information on configuring your Python interpreter). All other Cloud SDK tools still require a Python 2.7 interpreter. After installation has completed, accept the following options:\nWindows  Download the Cloud SDK installer. The installer is signed by Google Inc.\n Launch the installer and follow the prompts.\n After installation has completed, accept the following options:\nStart Cloud SDK Shell Run gcloud init\n  Mac  Double Check Python 2 is installed.  python -V   Download one of the following:\nmacOS 64-bit\nmacOS 32-bit\nExtract the contents of the file to any location on your file system.\n Install with this script\n  ./google-cloud-sdk/install.sh   Initialize the install. Open a new terminal so that the changes take effect. Run gcloud init to initialize the SDK:  ./google-cloud-sdk/bin/gcloud init  kubectl You can install kubectl as part of the Google Cloud SDK.\nRun the kubectl installation command:\ngcloud components install kubectl  Test to ensure the version you installed is sufficiently up-to-date:\nkubectl version  Git Download git client from Git Scm\nSlack We will be using to ask/answer questions during and after the workshop. Other DevOps engineers are members of this slack community as well\nDevops Debate account\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/requirements/connecting/",
@@ -214,7 +214,7 @@
 	"title": "Kubernetes API Objects",
 	"tags": [],
 	"description": "",
-	"content": " Kubernetes API Objects  Namespaces   Exercises   Pods   Exercises   Labels and Selectors   Resource Quotas   Resource Quotas   Exercises   Controllers   Controllers Updates   Exercises   Storage   Volumes   Persistent Volume   Persistent Volume Claims   Storage Classes   Exercises   Secrets   Secrets Uses - Secret   Secrets Uses - File   Secrets Uses - Env Var   Configmaps   Configmaps   Configmaps - Volume   Configmaps - Env Var   ingress   Ingress Controllers   Ingress Rules   Services   Service Diagram   Exercises   Healthchecks   Liveliness   Readiness   Exercises   Daemonsets   "
+	"content": " Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   ingress   Services   Healthchecks   Daemonsets   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/layers/",
@@ -396,7 +396,7 @@
 	"title": "Configmaps",
 	"tags": [],
 	"description": "",
-	"content": "1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5 lives=3 6 enemies.cheat=true 7 enemies.cheat.level=noGoodRotten 8 secret.code.passphrase=UUDDLRLRBABAS 9 secret.code.allowed=true 10 secret.code.lives=30 11 ui.properties: | 12color.good=purple 13 color.bad=yellow 14 allow.textmode=true 15 how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  "
+	"content": "1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5lives=3 6enemies.cheat=true 7enemies.cheat.level=noGoodRotten 8secret.code.passphrase=UUDDLRLRBABAS 9secret.code.allowed=true 10secret.code.lives=30 11 ui.properties: | 12color.good=purple 13color.bad=yellow 14allow.textmode=true 15how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/configmaps/volumes/",
