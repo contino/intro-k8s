@@ -11,20 +11,5 @@
 	<atom:link href="https://contino.github.io/intro-k8/kubernetes/micro/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Microservices Exercise</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/micro/_index_gcp/</link>
-      <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/micro/_index_gcp/</guid>
-      <description>Git clone Exercises
-Deploying all three services
-cd Exercises/docker-exercises  Make sure we have credentials for the GCP cluster
- gcloud container clusters list gcloud container clusters get-credentials NAME_CLUSTER  Schedule Service
-cd schedule-service kubectl create -f schedule-svc.yaml  Conference web details
-cd ../conference-details-service kubectl create -f conf-details-svc.yaml  Conference Website
-cd ../conference-website kubectl create -f conf-website.yaml  </description>
-    </item>
-    
   </channel>
 </rss>

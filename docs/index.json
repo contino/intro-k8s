@@ -200,7 +200,7 @@
 	"title": "Kubernetes API Objects",
 	"tags": [],
 	"description": "",
-	"content": " Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   Ingress   Services   Healthchecks   Daemonsets   "
+	"content": " Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   Ingress   Ingress   Services   Healthchecks   Daemonsets   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/layers/",
@@ -287,13 +287,6 @@
 	"content": " Deployments  Scaling Rolling\u000b  ReplicaSet  Desired state  Strategies:  Recreate RollingUpdate (default) Blue/Green Canary A/B Testing  "
 },
 {
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/configmaps/exercises_kata/",
-	"title": "Exercises",
-	"tags": [],
-	"description": "",
-	"content": "Configmaps and Secretes on Katacoda\n   "
-},
-{
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/",
 	"title": "Exercises",
 	"tags": [],
@@ -319,14 +312,14 @@
 	"title": "Persistent Volume",
 	"tags": [],
 	"description": "",
-	"content": "Persistent Volumes (PV\u0026rsquo;s) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.\nProvisioning - Static or Dynamic\nTypes of PV\u0026rsquo;s\n GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: \u0026quot;/mnt/data\u0026quot;  "
+	"content": "Persistent Volumes (PV\u0026rsquo;s) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.\nProvisioning - Static or Dynamic\nTypes of PV\u0026rsquo;s\n GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS\nkind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: \u0026quot;/mnt/data\u0026quot;   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/storage/pvc/",
 	"title": "Persistent Volume Claims",
 	"tags": [],
 	"description": "",
-	"content": "Persistent Volume Claims (PVC\u0026rsquo;s) - Allow pods to requests and attache Persistent Volumes available in the cluster.\nWhen used in with Dynamic provision and Storage Classes, PVC\u0026rsquo;s can automatically make storage available on demand.\nTypes of PVC\u0026rsquo;s\n GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: \u0026quot;/var/www/html\u0026quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim  "
+	"content": "Persistent Volume Claims (PVC\u0026rsquo;s) - Allow pods to requests and attache Persistent Volumes available in the cluster.\nWhen used in with Dynamic provision and Storage Classes, PVC\u0026rsquo;s can automatically make storage available on demand.\nTypes of PVC\u0026rsquo;s\n GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS\nkind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: \u0026quot;/var/www/html\u0026quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/storage/classes/",
@@ -375,7 +368,7 @@
 	"title": "Configmaps",
 	"tags": [],
 	"description": "",
-	"content": "1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5lives=3 6enemies.cheat=true 7enemies.cheat.level=noGoodRotten 8secret.code.passphrase=UUDDLRLRBABAS 9secret.code.allowed=true 10secret.code.lives=30 11 ui.properties: | 12color.good=purple 13color.bad=yellow 14allow.textmode=true 15how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  "
+	"content": "1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5 lives=3 6 enemies.cheat=true 7 enemies.cheat.level=noGoodRotten 8 secret.code.passphrase=UUDDLRLRBABAS 9 secret.code.allowed=true 10 secret.code.lives=30 11 ui.properties: | 12color.good=purple 13 color.bad=yellow 14 allow.textmode=true 15 how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/configmaps/volumes/",
@@ -393,6 +386,13 @@
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/ingress/",
+	"title": "Ingress",
+	"tags": [],
+	"description": "",
+	"content": " What Ingress is a K8 object that allows external access to resources inside the cluster\nWhy Services, Pods and other objects are only accessible inside the cluster\n "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/",
 	"title": "Ingress",
 	"tags": [],
 	"description": "",
@@ -417,7 +417,7 @@
 	"title": "Ingress Exercises",
 	"tags": [],
 	"description": "",
-	"content": "Ingress Exercises\n Deploy an ingress controller Deploy service Create an ingress rule  "
+	"content": "Ingress Exercises Link\n Deploy an ingress controller Deploy service Create an ingress rule  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/services/",
@@ -438,7 +438,7 @@
 	"title": "Services Exercise",
 	"tags": [],
 	"description": "",
-	"content": " Services on Katacoda  Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  "
+	"content": "Services on Katacoda Link\n Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/",
@@ -481,13 +481,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Docker  Benefits of Docker   Docker Platform   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises on Katacoda   "
-},
-{
-	"uri": "https://contino.github.io/intro-k8/kubernetes/micro/_index_gcp/",
-	"title": "Microservices Exercise",
-	"tags": [],
-	"description": "",
-	"content": "Git clone Exercises\nDeploying all three services\ncd Exercises/docker-exercises  Make sure we have credentials for the GCP cluster\n gcloud container clusters list gcloud container clusters get-credentials NAME_CLUSTER  Schedule Service\ncd schedule-service kubectl create -f schedule-svc.yaml  Conference web details\ncd ../conference-details-service kubectl create -f conf-details-svc.yaml  Conference Website\ncd ../conference-website kubectl create -f conf-website.yaml  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/benefits/",
@@ -571,7 +564,7 @@
 	"title": "Logging - Pod",
 	"tags": [],
 	"description": "",
-	"content": " Logging  kubectl logs  apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, 'i=0; while true; do echo \u0026quot;$i: $(date)\u0026quot;; i=$((i+1)); sleep 1; done']  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001  "
+	"content": " Logging  kubectl logs\napiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, 'i=0; while true; do echo \u0026quot;$i: $(date)\u0026quot;; i=$((i+1)); sleep 1; done']  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/logging-node/",

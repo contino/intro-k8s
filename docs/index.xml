@@ -204,16 +204,6 @@ Pod Exercises 2
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/exercises_kata/</link>
-      <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/exercises_kata/</guid>
-      <description>Configmaps and Secretes on Katacoda
-   </description>
-    </item>
-    
-    <item>
-      <title>Exercises</title>
       <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
@@ -242,7 +232,8 @@ apiVersion: v1 kind: Pod metadata: name: test-ebs spec: containers: - image: k8s
       <description>Persistent Volumes (PV&amp;rsquo;s) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.
 Provisioning - Static or Dynamic
 Types of PV&amp;rsquo;s
- GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: &amp;quot;/mnt/data&amp;quot;  </description>
+ GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS
+kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: &amp;quot;/mnt/data&amp;quot;   </description>
     </item>
     
     <item>
@@ -254,7 +245,8 @@ Types of PV&amp;rsquo;s
       <description>Persistent Volume Claims (PVC&amp;rsquo;s) - Allow pods to requests and attache Persistent Volumes available in the cluster.
 When used in with Dynamic provision and Storage Classes, PVC&amp;rsquo;s can automatically make storage available on demand.
 Types of PVC&amp;rsquo;s
- GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: &amp;quot;/var/www/html&amp;quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim  </description>
+ GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS
+kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: &amp;quot;/var/www/html&amp;quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim   </description>
     </item>
     
     <item>
@@ -302,7 +294,7 @@ apiVersion: v1 kind: Secret metadata: name: mysecret type: Opaque data: username
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/</guid>
-      <description>1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5lives=3 6enemies.cheat=true 7enemies.cheat.level=noGoodRotten 8secret.code.passphrase=UUDDLRLRBABAS 9secret.code.allowed=true 10secret.code.lives=30 11 ui.properties: | 12color.good=purple 13color.bad=yellow 14allow.textmode=true 15how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  </description>
+      <description>1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5 lives=3 6 enemies.cheat=true 7 enemies.cheat.level=noGoodRotten 8 secret.code.passphrase=UUDDLRLRBABAS 9 secret.code.allowed=true 10 secret.code.lives=30 11 ui.properties: | 12color.good=purple 13 color.bad=yellow 14 allow.textmode=true 15 how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  </description>
     </item>
     
     <item>
@@ -351,7 +343,7 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-examp
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</guid>
-      <description>Ingress Exercises
+      <description>Ingress Exercises Link
  Deploy an ingress controller Deploy service Create an ingress rule  </description>
     </item>
     
@@ -370,7 +362,8 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-examp
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</guid>
-      <description> Services on Katacoda  Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  </description>
+      <description>Services on Katacoda Link
+ Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  </description>
     </item>
     
     <item>
@@ -391,21 +384,6 @@ apiVersion: v1 kind: Pod metadata: labels: test: liveness name: liveness-exec sp
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/readiness/</guid>
       <description> Readiness and Liveliness Readiness Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.
 readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5  </description>
-    </item>
-    
-    <item>
-      <title>Microservices Exercise</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/micro/_index_gcp/</link>
-      <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8/kubernetes/micro/_index_gcp/</guid>
-      <description>Git clone Exercises
-Deploying all three services
-cd Exercises/docker-exercises  Make sure we have credentials for the GCP cluster
- gcloud container clusters list gcloud container clusters get-credentials NAME_CLUSTER  Schedule Service
-cd schedule-service kubectl create -f schedule-svc.yaml  Conference web details
-cd ../conference-details-service kubectl create -f conf-details-svc.yaml  Conference Website
-cd ../conference-website kubectl create -f conf-website.yaml  </description>
     </item>
     
     <item>
@@ -490,7 +468,8 @@ cd ../conference-website kubectl create -f conf-website.yaml  </description>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging-kc/</guid>
-      <description> Logging  kubectl logs  apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, &#39;i=0; while true; do echo &amp;quot;$i: $(date)&amp;quot;; i=$((i+1)); sleep 1; done&#39;]  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001  </description>
+      <description> Logging  kubectl logs
+apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, &#39;i=0; while true; do echo &amp;quot;$i: $(date)&amp;quot;; i=$((i+1)); sleep 1; done&#39;]  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001   </description>
     </item>
     
     <item>

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/intro-k8/images/favicon.png" type="image/png">
 
-    <title>Containers :: Introduction to Kubernetes</title>
+    <title>Ingress :: Introduction to Kubernetes</title>
 
     
     <link href="/intro-k8/css/nucleus.css?1565698273" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/intro-k8/containers/">
+  <body class="" data-url="/intro-k8/kubernetes/objects/jobs_init/">
     <nav id="sidebar" class="">
 
 
@@ -232,8 +232,8 @@
   
     
     <li data-nav-id="/intro-k8/containers/" title="Containers" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/intro-k8/containers/">
@@ -692,7 +692,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/" title="Kubernetes" class="dd-item 
-        
+        parent
         
         
         ">
@@ -925,7 +925,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/" title="Kubernetes API Objects" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1575,8 +1575,8 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/jobs_init/" title="Ingress" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/intro-k8/kubernetes/objects/jobs_init/">
@@ -2073,6 +2073,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -2083,7 +2085,19 @@
             
           
           
-            <a href='/intro-k8/'>Introduction to Kubernetes</a> > Containers
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/kubernetes/'>Kubernetes</a> > <a href='/intro-k8/kubernetes/objects/'>Kubernetes API Objects</a> > Ingress
+          
+         
+          
+         
           
          
           
@@ -2092,6 +2106,28 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#what">What</a></li>
+<li><a href="#why">Why</a></li>
+</ul></li>
+<li><a href="#intro-k8-images-kubernetes-ing-png"><img src="/intro-k8/images/kubernetes/ing.png" alt="" /></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -2099,9 +2135,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Ingress
+            </h1>
           
 
         
@@ -2111,121 +2150,15 @@
 
 	
 
-<h1 id="containers">Containers</h1>
+<h4 id="what">What</h4>
 
+<p>Ingress is a K8 object that allows external access to resources inside the cluster</p>
 
+<h4 id="why">Why</h4>
 
+<p>Services, Pods and other objects are only accessible inside the cluster</p>
 
-
-
-
-
-<ul class="children children-h4">
-	
-
-	
-		
-			
-		
-	
-
-	
-
-	
-		
-	
-		
-			
-				
-					
-					
-
-<h4>
-<a href="/intro-k8/containers/history/" >History</a>
-</h4>
-
-				
-
-				
-			
-			
-		
-	
-		
-			
-				
-					
-					
-
-<h4>
-<a href="/intro-k8/containers/primitives/" >Primitives</a>
-</h4>
-
-				
-
-				
-			
-			
-		
-	
-		
-			
-				
-					
-					
-
-<h4>
-<a href="/intro-k8/containers/network/" >Network</a>
-</h4>
-
-				
-
-				
-			
-			
-		
-	
-		
-			
-				
-					
-					
-
-<h4>
-<a href="/intro-k8/containers/storage/" >Storage</a>
-</h4>
-
-				
-
-				
-			
-			
-		
-	
-		
-			
-				
-					
-					
-
-<h4>
-<a href="/intro-k8/containers/docker/" >Docker Intro</a>
-</h4>
-
-				
-
-				
-			
-			
-		
-	
-
-	
-</ul>
-
-
-
-
+<h3 id="intro-k8-images-kubernetes-ing-png"><img src="/intro-k8/images/kubernetes/ing.png" alt="" /></h3>
 
 
 
@@ -2235,8 +2168,6 @@
 	
 </footer>
 
-        
-            </div> 
         
         </div> 
         
@@ -2369,7 +2300,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2384,9 +2314,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2695,6 +2622,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2709,6 +2637,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2854,6 +2785,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2868,6 +2800,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3052,70 +2987,6 @@
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -3309,6 +3180,19 @@
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -3316,6 +3200,61 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -3631,10 +3570,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/intro-k8/introduction/requirements/" title="Requirements Katacoda"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/intro-k8/kubernetes/objects/ingress/exercises_kata/" title="Ingress Exercises"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/intro-k8/containers/history/" title="History" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/intro-k8/kubernetes/objects/services/" title="Services" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

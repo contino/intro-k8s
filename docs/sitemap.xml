@@ -208,11 +208,6 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/exercises_kata/</loc>
-    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
@@ -288,6 +283,11 @@
   </url>
   
   <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/jobs_init/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/objects/ingress/controller/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
@@ -344,11 +344,6 @@
   
   <url>
     <loc>https://contino.github.io/intro-k8/containers/docker/</loc>
-    <lastmod>2018-12-09T17:21:05-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/micro/_index_gcp/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   

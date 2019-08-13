@@ -39,7 +39,7 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-examp
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</guid>
-      <description>Ingress Exercises
+      <description>Ingress Exercises Link
  Deploy an ingress controller Deploy service Create an ingress rule  </description>
     </item>
     
