@@ -8,6 +8,6 @@ weight = 505
 [Job, CronJobs, and Init Katacoda Exercises](https://www.katacoda.com/contino/courses/kubernetes/jobs-initcontainers-cronjobs)
 
 * Create Count down job
-* Create parrell jobs
+* Create parallel jobs
 * Deploy a cronjob
 * Work with init containers
