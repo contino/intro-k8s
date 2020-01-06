@@ -38,8 +38,7 @@
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging-kc/</guid>
-      <description> Logging  kubectl logs
-apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, &#39;i=0; while true; do echo &amp;quot;$i: $(date)&amp;quot;; i=$((i+1)); sleep 1; done&#39;]  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001   </description>
+      <description> Logging  kubectl logs  apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, &#39;i=0; while true; do echo &amp;quot;$i: $(date)&amp;quot;; i=$((i+1)); sleep 1; done&#39;]  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001  </description>
     </item>
     
     <item>

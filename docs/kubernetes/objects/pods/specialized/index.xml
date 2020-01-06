@@ -62,7 +62,7 @@ Why If your application requires the below artributes, a statefulset would a bet
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/</guid>
       <description>Job, CronJobs, and Init Katacoda Exercises
- Create Count down job Create parrell jobs Deploy a cronjob Work with init containers  </description>
+ Create Count down job Create parallel jobs Deploy a cronjob Work with init containers  </description>
     </item>
     
   </channel>
