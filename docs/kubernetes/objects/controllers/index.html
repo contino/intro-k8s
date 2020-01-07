@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.49" />
+    <meta name="generator" content="Hugo 0.62.1" />
     <meta name="description" content="">
 
 
@@ -12,20 +12,20 @@
     <title>Controllers :: Introduction to Kubernetes</title>
 
     
-    <link href="/intro-k8/css/nucleus.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/fontawesome-all.min.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/hybrid.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/featherlight.min.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/perfect-scrollbar.min.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/auto-complete.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/theme.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/hugo-theme.css?1578355387" rel="stylesheet">
+    <link href="/intro-k8/css/nucleus.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/fontawesome-all.min.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/hybrid.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/featherlight.min.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/perfect-scrollbar.min.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/auto-complete.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/theme.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/hugo-theme.css?1578357645" rel="stylesheet">
     
-      <link href="/intro-k8/css/theme-mine.css?1578355387" rel="stylesheet">
+      <link href="/intro-k8/css/theme-mine.css?1578357645" rel="stylesheet">
     
 
-    <script src="/intro-k8/js/jquery-3.3.1.min.js?1578355387"></script>
+    <script src="/intro-k8/js/jquery-3.3.1.min.js?1578357645"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1578355387"></script>
-<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1578355387"></script>
+<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1578357645"></script>
+<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1578357645"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
     
 </script>
-<script type="text/javascript" src="/intro-k8/js/search.js?1578355387"></script>
+<script type="text/javascript" src="/intro-k8/js/search.js?1578357645"></script>
 
     
   </div>
@@ -910,6 +910,30 @@
           
         
         </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/connect/" title="Connect" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/connect/">
+          Connect
+          
+      </a>
+      
               
     </li>
   
@@ -1859,6 +1883,35 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -1889,6 +1942,30 @@
         ">
       <a href="/intro-k8/kubernetes/micro/">
           Debugging Exercise
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/cleanup/" title="Cleanup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/cleanup/">
+          Cleanup
           
       </a>
       
@@ -2192,15 +2269,13 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#controllers-https-kubernetes-io-docs-concepts-workloads-controllers"><a href="https://kubernetes.io/docs/concepts/workloads/controllers/">Controllers</a></a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#controllershttpskubernetesiodocsconceptsworkloadscontrollers">Controllers</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -2226,23 +2301,14 @@
 
 
 
-	
-
-<h3 id="controllers-https-kubernetes-io-docs-concepts-workloads-controllers"><a href="https://kubernetes.io/docs/concepts/workloads/controllers/">Controllers</a></h3>
-
+	<h3 id="controllershttpskubernetesiodocsconceptsworkloadscontrollers"><a href="https://kubernetes.io/docs/concepts/workloads/controllers/">Controllers</a></h3>
 <p>In Kubernetes, a controller is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired state. There are several in the Kubernetes Architecture that support different functions in the system.</p>
-
 <p><a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/">Namespace controller</a> - Creates and updates the Namespaces in kubernetes</p>
-
 <p><a href="https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/">Serviceaccounts controller</a> - Manages the service accounts in the system, which are for processes to interact with Kubernetes.</p>
-
 <p><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/">Node Controller</a> - Responsible for noticing and responding when nodes go down.
 Service Account &amp; Token Controllers: Create default accounts and API access tokens for new namespaces.</p>
-
 <p><a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/">Deployment Controller</a> - A Deployment controller provides declarative updates for Pods and ReplicaSets.</p>
-
 <p><a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/">Replication Controller</a> - Responsible for maintaining the correct number of pods for every replication controller object in the system.</p>
-
 <p><a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#endpoints-v1-core">Endpoints Controller</a> - Populates the Endpoints object (that is, joins Services &amp; Pods). When services are created, the Endpoint controller manages the connection between services and the pods back the service.</p>
 
 
@@ -2870,6 +2936,22 @@ Service Account &amp; Token Controllers: Create default accounts and API access 
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -3527,8 +3609,40 @@ Service Account &amp; Token Controllers: Create default accounts and API access 
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -3734,20 +3848,20 @@ Service Account &amp; Token Controllers: Create default accounts and API access 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/intro-k8/js/clipboard.min.js?1578355387"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.min.js?1578355387"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1578355387"></script>
-    <script src="/intro-k8/js/jquery.sticky.js?1578355387"></script>
-    <script src="/intro-k8/js/featherlight.min.js?1578355387"></script>
-    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1578355387"></script>
-    <script src="/intro-k8/js/highlight.pack.js?1578355387"></script>
+    <script src="/intro-k8/js/clipboard.min.js?1578357645"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.min.js?1578357645"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1578357645"></script>
+    <script src="/intro-k8/js/jquery.sticky.js?1578357645"></script>
+    <script src="/intro-k8/js/featherlight.min.js?1578357645"></script>
+    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1578357645"></script>
+    <script src="/intro-k8/js/highlight.pack.js?1578357645"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1578355387"></script>
-    <script src="/intro-k8/js/learn.js?1578355387"></script>
-    <script src="/intro-k8/js/hugo-learn.js?1578355387"></script>
+    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1578357645"></script>
+    <script src="/intro-k8/js/learn.js?1578357645"></script>
+    <script src="/intro-k8/js/hugo-learn.js?1578357645"></script>
 
-    <link href="/intro-k8/mermaid/mermaid.css?1578355387" rel="stylesheet" />
-    <script src="/intro-k8/mermaid/mermaid.js?1578355387"></script>
+    <link href="/intro-k8/mermaid/mermaid.css?1578357645" rel="stylesheet" />
+    <script src="/intro-k8/mermaid/mermaid.js?1578357645"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

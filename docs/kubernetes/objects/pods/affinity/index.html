@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.49" />
+    <meta name="generator" content="Hugo 0.62.1" />
     <meta name="description" content="">
 
 
@@ -12,20 +12,20 @@
     <title>Affinity and Anti-Affinity :: Introduction to Kubernetes</title>
 
     
-    <link href="/intro-k8/css/nucleus.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/fontawesome-all.min.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/hybrid.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/featherlight.min.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/perfect-scrollbar.min.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/auto-complete.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/theme.css?1578355387" rel="stylesheet">
-    <link href="/intro-k8/css/hugo-theme.css?1578355387" rel="stylesheet">
+    <link href="/intro-k8/css/nucleus.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/fontawesome-all.min.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/hybrid.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/featherlight.min.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/perfect-scrollbar.min.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/auto-complete.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/theme.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/hugo-theme.css?1578357645" rel="stylesheet">
     
-      <link href="/intro-k8/css/theme-mine.css?1578355387" rel="stylesheet">
+      <link href="/intro-k8/css/theme-mine.css?1578357645" rel="stylesheet">
     
 
-    <script src="/intro-k8/js/jquery-3.3.1.min.js?1578355387"></script>
+    <script src="/intro-k8/js/jquery-3.3.1.min.js?1578357645"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1578355387"></script>
-<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1578355387"></script>
+<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1578357645"></script>
+<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1578357645"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
     
 </script>
-<script type="text/javascript" src="/intro-k8/js/search.js?1578355387"></script>
+<script type="text/javascript" src="/intro-k8/js/search.js?1578357645"></script>
 
     
   </div>
@@ -910,6 +910,30 @@
           
         
         </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/connect/" title="Connect" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/connect/">
+          Connect
+          
+      </a>
+      
               
     </li>
   
@@ -1859,6 +1883,35 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/">
+        Exercises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -1889,6 +1942,30 @@
         ">
       <a href="/intro-k8/kubernetes/micro/">
           Debugging Exercise
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro-k8/kubernetes/cleanup/" title="Cleanup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/intro-k8/kubernetes/cleanup/">
+          Cleanup
           
       </a>
       
@@ -2209,21 +2286,15 @@
 
 
 
-
-
 <h1 id="node-affinity-and-anti-affinity">Node Affinity and Anti-Affinity</h1>
-
 <p>The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are</p>
-
 <ul>
 <li>the language is more expressive (not just “AND of exact match”)</li>
 <li>you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled</li>
 <li>you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located</li>
 </ul>
-
 <p>The manfifest reads as: &ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node&rdquo;</p>
-
-<pre><code class="language-yaml">apiVersion: v1
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">apiVersion: v1
 kind: Pod
 metadata:
   name: happypanda
@@ -2236,7 +2307,7 @@ spec:
   affinity:
     nodeAffinity:
       preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 1
+      - weight: <span style="color:#ae81ff">1</span>
         preference:
           matchExpressions:
           - key: fruit
@@ -2248,10 +2319,9 @@ spec:
     image: redis
     ports:
     - name: redisport
-      containerPort: 6379
+      containerPort: <span style="color:#ae81ff">6379</span>
       protocol: TCP
-</code></pre>
-
+</code></pre></div>
 
 <footer class=" footline" >
 	
@@ -2877,25 +2947,6 @@ spec:
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -2953,11 +3004,10 @@ spec:
 
                     
                     
+                        
+                    
                     
 
-                    
-            
-        
                     
                         
             
@@ -2983,18 +3033,6 @@ spec:
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -3012,37 +3050,8 @@ spec:
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -3051,108 +3060,6 @@ spec:
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -3234,6 +3141,25 @@ spec:
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
                     
@@ -3249,6 +3175,102 @@ spec:
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -3474,6 +3496,70 @@ spec:
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -3538,8 +3624,40 @@ spec:
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -3745,20 +3863,20 @@ spec:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/intro-k8/js/clipboard.min.js?1578355387"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.min.js?1578355387"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1578355387"></script>
-    <script src="/intro-k8/js/jquery.sticky.js?1578355387"></script>
-    <script src="/intro-k8/js/featherlight.min.js?1578355387"></script>
-    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1578355387"></script>
-    <script src="/intro-k8/js/highlight.pack.js?1578355387"></script>
+    <script src="/intro-k8/js/clipboard.min.js?1578357645"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.min.js?1578357645"></script>
+    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1578357645"></script>
+    <script src="/intro-k8/js/jquery.sticky.js?1578357645"></script>
+    <script src="/intro-k8/js/featherlight.min.js?1578357645"></script>
+    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1578357645"></script>
+    <script src="/intro-k8/js/highlight.pack.js?1578357645"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1578355387"></script>
-    <script src="/intro-k8/js/learn.js?1578355387"></script>
-    <script src="/intro-k8/js/hugo-learn.js?1578355387"></script>
+    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1578357645"></script>
+    <script src="/intro-k8/js/learn.js?1578357645"></script>
+    <script src="/intro-k8/js/hugo-learn.js?1578357645"></script>
 
-    <link href="/intro-k8/mermaid/mermaid.css?1578355387" rel="stylesheet" />
-    <script src="/intro-k8/mermaid/mermaid.js?1578355387"></script>
+    <link href="/intro-k8/mermaid/mermaid.css?1578357645" rel="stylesheet" />
+    <script src="/intro-k8/mermaid/mermaid.js?1578357645"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

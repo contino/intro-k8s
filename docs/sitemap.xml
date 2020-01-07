@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -125,6 +125,11 @@
   <url>
     <loc>https://contino.github.io/intro-k8/containers/network/</loc>
     <lastmod>2018-12-09T17:21:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/connect/</loc>
+    <lastmod>2018-12-09T17:04:27-05:00</lastmod>
   </url>
   
   <url>
@@ -343,11 +348,6 @@
   </url>
   
   <url>
-    <loc>https://contino.github.io/intro-k8/kubernetes/objects/daemonsets/</loc>
-    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/liveliness/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
@@ -355,6 +355,16 @@
   <url>
     <loc>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/readiness/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/daemonsets/</loc>
+    <lastmod>2018-12-09T17:05:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/objects/daemonsets/exercises-kata/</loc>
+    <lastmod>2020-01-06T18:52:42-05:00</lastmod>
   </url>
   
   <url>
@@ -400,6 +410,11 @@
   <url>
     <loc>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://contino.github.io/intro-k8/kubernetes/cleanup/</loc>
+    <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
@@ -449,12 +464,10 @@
   
   <url>
     <loc>https://contino.github.io/intro-k8/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://contino.github.io/intro-k8/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker Intro on Introduction to Kubernetes</title>
@@ -17,7 +17,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/benefits/</guid>
-      <description> Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  </description>
+      <description>Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  </description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</guid>
-      <description> Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \ 8	&amp;amp;&amp;amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \ 9	&amp;amp;&amp;amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [&amp;#34;mvn&amp;#34;, &amp;#34;dependency:go-offline&amp;#34;] 15 16ADD [&amp;#34;src&amp;#34;, &amp;#34;/work/src&amp;#34;] 17RUN [&amp;#34;mvn&amp;#34;, &amp;#34;package&amp;#34;] 18 19EXPOSE 8080 20ENTRYPOINT [&amp;#34;java&amp;#34;, &amp;#34;-cp&amp;#34;, &amp;#34;target/classes:target/dependency/*&amp;#34;, &amp;#34;com.kumuluz.ee.EeApplication&amp;#34;] </description>
+      <description>Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \ 8	&amp;amp;&amp;amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \ 9	&amp;amp;&amp;amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [&amp;#34;mvn&amp;#34;, &amp;#34;dependency:go-offline&amp;#34;] 15 16ADD [&amp;#34;src&amp;#34;, &amp;#34;/work/src&amp;#34;] 17RUN [&amp;#34;mvn&amp;#34;, &amp;#34;package&amp;#34;] 18 19EXPOSE 8080 20ENTRYPOINT [&amp;#34;java&amp;#34;, &amp;#34;-cp&amp;#34;, &amp;#34;target/classes:target/dependency/*&amp;#34;, &amp;#34;com.kumuluz.ee.EeApplication&amp;#34;] </description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</guid>
-      <description>Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\”</description>
+      <description>Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\” Use the caching system to your advantage The order of statements is important Add files that are least likely to change first and the ones most likely to change last  </description>
     </item>
     
     <item>

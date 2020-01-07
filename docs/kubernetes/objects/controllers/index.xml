@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Controllers on Introduction to Kubernetes</title>
@@ -17,7 +17,7 @@
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/updates/</guid>
-      <description> Deployments  Scaling Rolling  ReplicaSet  Desired state  Strategies:  Recreate RollingUpdate (default) Blue/Green Canary A/B Testing  </description>
+      <description>Deployments  Scaling Rolling  ReplicaSet  Desired state  Strategies:  Recreate RollingUpdate (default) Blue/Green Canary A/B Testing  </description>
     </item>
     
     <item>

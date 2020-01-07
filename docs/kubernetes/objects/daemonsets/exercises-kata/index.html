@@ -9,23 +9,23 @@
 
     <link rel="icon" href="/intro-k8/images/favicon.png" type="image/png">
 
-    <title>Labels and Selectors :: Introduction to Kubernetes</title>
+    <title>Exercises :: Introduction to Kubernetes</title>
 
     
-    <link href="/intro-k8/css/nucleus.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/fontawesome-all.min.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/hybrid.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/featherlight.min.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/perfect-scrollbar.min.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/auto-complete.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/theme.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/hugo-theme.css?1578357644" rel="stylesheet">
+    <link href="/intro-k8/css/nucleus.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/fontawesome-all.min.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/hybrid.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/featherlight.min.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/perfect-scrollbar.min.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/auto-complete.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/theme.css?1578357645" rel="stylesheet">
+    <link href="/intro-k8/css/hugo-theme.css?1578357645" rel="stylesheet">
     
-      <link href="/intro-k8/css/theme-mine.css?1578357644" rel="stylesheet">
+      <link href="/intro-k8/css/theme-mine.css?1578357645" rel="stylesheet">
     
 
-    <script src="/intro-k8/js/jquery-3.3.1.min.js?1578357644"></script>
+    <script src="/intro-k8/js/jquery-3.3.1.min.js?1578357645"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/intro-k8/kubernetes/objects/pods/labels_selectors/">
+  <body class="" data-url="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/">
     <nav id="sidebar" class="">
 
 
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1578357644"></script>
-<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1578357644"></script>
+<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1578357645"></script>
+<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1578357645"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
     
 </script>
-<script type="text/javascript" src="/intro-k8/js/search.js?1578357644"></script>
+<script type="text/javascript" src="/intro-k8/js/search.js?1578357645"></script>
 
     
   </div>
@@ -1000,7 +1000,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/pods/" title="Pods" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1026,7 +1026,7 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/labels_selectors/" title="Labels and Selectors" class="dd-item active">
+      <li data-nav-id="/intro-k8/kubernetes/objects/pods/labels_selectors/" title="Labels and Selectors" class="dd-item ">
         <a href="/intro-k8/kubernetes/objects/pods/labels_selectors/">
         Labels and Selectors
         
@@ -1874,7 +1874,7 @@
   
     
     <li data-nav-id="/intro-k8/kubernetes/objects/daemonsets/" title="Daemonsets" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1898,7 +1898,7 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/" title="Exercises" class="dd-item ">
+      <li data-nav-id="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/" title="Exercises" class="dd-item active">
         <a href="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/">
         Exercises
         
@@ -2257,7 +2257,7 @@
             
           
           
-            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/kubernetes/'>Kubernetes</a> > <a href='/intro-k8/kubernetes/objects/'>Kubernetes API Objects</a> > <a href='/intro-k8/kubernetes/objects/pods/'>Pods</a> > Labels and Selectors
+            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/kubernetes/'>Kubernetes</a> > <a href='/intro-k8/kubernetes/objects/'>Kubernetes API Objects</a> > <a href='/intro-k8/kubernetes/objects/daemonsets/'>Daemonsets</a> > Exercises
           
          
           
@@ -2274,17 +2274,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#labels">Labels</a></li>
-        <li><a href="#selectors">Selectors</a></li>
-        <li><a href="#demo">Demo</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -2300,7 +2290,7 @@
           
             <h1>
               
-              Labels and Selectors
+              Exercises
             </h1>
           
 
@@ -2308,22 +2298,12 @@
 
 
 
-<h3 id="labels">Labels</h3>
-<p>Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.</p>
-<h3 id="selectors">Selectors</h3>
-<p>Label Selectors help client/user identify a set of objects.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">spec:
-  selector:
-    matchLabels:
-      app: mysql
-  strategy:
-    type: Recreate
-  template:
-    metadata:
-      labels:
-        app: mysql
-</code></pre></div><h3 id="demo">Demo</h3>
-<p>Create labels &amp; use selector to identify set of objects</p>
+<p><a href="https://www.katacoda.com/contino/courses/kubernetes/daemonset">daemonset Exercises</a></p>
+<ul>
+<li>Create daemonset</li>
+<li>Updating daemonset</li>
+<li>Removing daemonset</li>
+</ul>
 
 
 <footer class=" footline" >
@@ -2999,7 +2979,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -3014,7 +2993,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -3031,9 +3009,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3614,6 +3589,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -3627,6 +3603,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -3648,6 +3625,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3848,10 +3828,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/intro-k8/kubernetes/objects/pods/" title="Pods"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/intro-k8/kubernetes/objects/daemonsets/" title="Daemonsets"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/intro-k8/kubernetes/objects/pods/affinity/" title="Affinity and Anti-Affinity" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/intro-k8/kubernetes/micro/" title="Debugging Exercise" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

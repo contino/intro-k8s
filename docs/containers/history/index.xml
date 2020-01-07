@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>History on Introduction to Kubernetes</title>
@@ -17,7 +17,7 @@
       <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/history/history/</guid>
-      <description> In the beginning </description>
+      <description>In the beginning </description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/history/hyper/</guid>
-      <description> The Hypervisor </description>
+      <description>The Hypervisor </description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/history/containers/</guid>
-      <description> Containers </description>
+      <description>Containers </description>
     </item>
     
   </channel>

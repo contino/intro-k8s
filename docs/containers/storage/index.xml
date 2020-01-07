@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Storage on Introduction to Kubernetes</title>
@@ -17,7 +17,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/storage/layers/</guid>
-      <description> Layers </description>
+      <description>Layers </description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/storage/volumes/</guid>
-      <description> Volumes </description>
+      <description>Volumes </description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/storage/benefits/</guid>
-      <description> Benefits of Volumes  De-couple the data that is stored, from the container which created the data Good for sharing data between containers Can setup a data containers which has a volume you mount in other containers Share directories between multiple containers Bypassing the copy on write system to achieve native disk I/O performance Share a host directory with a container Share a single file between the host and container  </description>
+      <description>Benefits of Volumes  De-couple the data that is stored, from the container which created the data Good for sharing data between containers Can setup a data containers which has a volume you mount in other containers Share directories between multiple containers Bypassing the copy on write system to achieve native disk I/O performance Share a host directory with a container Share a single file between the host and container  </description>
     </item>
     
   </channel>

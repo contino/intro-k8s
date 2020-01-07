@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Configmaps on Introduction to Kubernetes</title>
@@ -17,7 +17,7 @@
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/</guid>
-      <description>1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5lives=3 6enemies.cheat=true 7enemies.cheat.level=noGoodRotten 8secret.code.passphrase=UUDDLRLRBABAS 9secret.code.allowed=true 10secret.code.lives=30 11 ui.properties: | 12color.good=purple 13color.bad=yellow 14allow.textmode=true 15how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  </description>
+      <description>1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5 lives=3 6 enemies.cheat=true 7 enemies.cheat.level=noGoodRotten 8 secret.code.passphrase=UUDDLRLRBABAS 9 secret.code.allowed=true 10 secret.code.lives=30 11 ui.properties: | 12color.good=purple 13 color.bad=yellow 14 allow.textmode=true 15 how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  </description>
     </item>
     
     <item>

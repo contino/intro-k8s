@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Healthchecks on Introduction to Kubernetes</title>
@@ -17,8 +17,8 @@
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/liveliness/</guid>
-      <description> Readiness and Liveliness Liveliness Liveliness checks inform the kubelet that the pod is running. If this check fails the kubelet will attempt to restart the pod.
-apiVersion: v1 kind: Pod metadata: labels: test: liveness name: liveness-exec spec: containers: - name: liveness image: k8s.gcr.io/busybox args: - /bin/sh - -c - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600 livenessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5  </description>
+      <description>Readiness and Liveliness Liveliness Liveliness checks inform the kubelet that the pod is running. If this check fails the kubelet will attempt to restart the pod.
+apiVersion: v1 kind: Pod metadata: labels: test: liveness name: liveness-exec spec: containers: - name: liveness image: k8s.gcr.io/busybox args: - /bin/sh - -c - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600 livenessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5 </description>
     </item>
     
     <item>
@@ -27,8 +27,8 @@ apiVersion: v1 kind: Pod metadata: labels: test: liveness name: liveness-exec sp
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/readiness/</guid>
-      <description> Readiness and Liveliness Readiness Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.
-readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5  </description>
+      <description>Readiness and Liveliness Readiness Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.
+readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5 </description>
     </item>
     
   </channel>

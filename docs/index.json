@@ -4,7 +4,7 @@
 	"title": "Introduction to Kubernetes",
 	"tags": [],
 	"description": "",
-	"content": " Introduction to Kubernetes Introduction to Kubernetes is a hands-on, interactive workshop giving attendees a thorough understanding of the fundamentals of Kubernetes. As part of this workshop, you will learn how Kubernetes works, be able to successfully create a kubernetes cluster, deploy microservices to that cluster \u0026amp; also hear about some war stories.\n"
+	"content": "Introduction to Kubernetes Introduction to Kubernetes is a hands-on, interactive workshop giving attendees a thorough understanding of the fundamentals of Kubernetes. As part of this workshop, you will learn how Kubernetes works, be able to successfully create a kubernetes cluster, deploy microservices to that cluster \u0026amp; also hear about some war stories.\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/",
@@ -25,35 +25,35 @@
 	"title": "Containers",
 	"tags": [],
 	"description": "",
-	"content": " Containers  History   Primitives   Network   Storage   Docker Intro   "
+	"content": "Containers  History   Primitives   Network   Storage   Docker Intro   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/",
 	"title": "Kubernetes",
 	"tags": [],
 	"description": "",
-	"content": "  History   Community   Architecture   Kubernetes API Objects   Debugging Exercise   Running   Extras   "
+	"content": "  History   Community   Architecture   Connect   Kubernetes API Objects   Debugging Exercise   Cleanup   Running   Extras   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/closing/",
 	"title": "Closing",
 	"tags": [],
 	"description": "",
-	"content": " Closing remarks Contact Us:\n   Henry Gallo James Strong Matt Garber      @strongjz    henry.gallo@contino.io james.strong@contino.io matthew.garber@contino.io    contino.io\n"
+	"content": "Closing remarks Contact Us:\n   Colin Detwiller James Strong     https://www.linkedin.com/in/cdetwiller/ https://www.linkedin.com/in/strongjz/   colin.detwiller@contino.io james.strong@contino.io    contino.io\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/history/",
 	"title": "History",
 	"tags": [],
 	"description": "",
-	"content": " Kubernetes History Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.\n Kubernetes is heavily influenced by Google’s Borg system Released in 2015 when Google partnered with Linux foundation to form CNCF Often called K8s which is a Numeronym K[ubernete]s → K[8]s → K8s Kubernetes - Greek for helmsman or pilot  “Kubernetes was built to radically change the way that applications are built and deployed in the cloud. Fundamentally, it was designed to give developers more velocity, efficiency, and agility”\nKelsey Hightower, Brendan Burns \u0026amp; Joe Beda -Kubernetes Up and Running Book\n"
+	"content": "Kubernetes History Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.\n  Kubernetes is heavily influenced by Google’s Borg system Released in 2015 when Google partnered with Linux foundation to form CNCF Often called K8s which is a Numeronym K[ubernete]s → K[8]s → K8s Kubernetes - Greek for helmsman or pilot   “Kubernetes was built to radically change the way that applications are built and deployed in the cloud. Fundamentally, it was designed to give developers more velocity, efficiency, and agility”\nKelsey Hightower, Brendan Burns \u0026amp; Joe Beda -Kubernetes Up and Running Book\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/introduction/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": " Please Introduce Yourself\u000b  Name Role \u0026amp; Company\u000b What would you like to learn today?  "
+	"content": "Please Introduce Yourself  Name Role \u0026amp; Company What would you like to learn today?  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/contino/",
@@ -67,7 +67,7 @@
 	"title": "Agenda",
 	"tags": [],
 	"description": "",
-	"content": " Introduction  Requirements Instructors Contino Who are you? Agenda  Containers  Intro History Primitives Docker Network Storage  Kubernetes  History Community  CNCF Graduated Projects CNCF Incubating Projects\n Get Involved  Connect to Cluster Kubernetes Objects  Namespaces Pods Resource Quotas Controllers Storage Secrets ConfigMaps Ingress Service Healthchecks Cleanup  Options for Running Kubernetes Extras  Monitoring Security    "
+	"content": " Introduction  Requirements Instructors Contino Who are you? Agenda   Containers  Intro History Primitives Docker Network Storage   Kubernetes  History Community  CNCF Graduated Projects CNCF Incubating Projects Get Involved   Connect to Cluster Kubernetes Objects  Namespaces Pods Resource Quotas Controllers Storage Secrets ConfigMaps Ingress Service Healthchecks Cleanup   Options for Running Kubernetes Extras  Monitoring Security      "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/introduction/requirements/",
@@ -81,35 +81,35 @@
 	"title": "History",
 	"tags": [],
 	"description": "",
-	"content": " Container History  Beginning   Hypervisor   Containers   "
+	"content": "Container History  Beginning   Hypervisor   Containers   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/history/history/",
 	"title": "Beginning",
 	"tags": [],
 	"description": "",
-	"content": " In the beginning "
+	"content": "In the beginning "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/history/hyper/",
 	"title": "Hypervisor",
 	"tags": [],
 	"description": "",
-	"content": " The Hypervisor "
+	"content": "The Hypervisor "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/history/containers/",
 	"title": "Containers",
 	"tags": [],
 	"description": "",
-	"content": " Containers "
+	"content": "Containers "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/community/",
 	"title": "Community",
 	"tags": [],
 	"description": "",
-	"content": " CNCF Landscape "
+	"content": "CNCF Landscape "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/community/projects_grad/",
@@ -130,126 +130,133 @@
 	"title": "Involvement",
 	"tags": [],
 	"description": "",
-	"content": " Sigs https://github.com/kubernetes/community/blob/master/sig-list.md\n Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes\n Slack\n k8 http://slack.k8s.io/ CNCF https://slack.cncf.io/   "
+	"content": "  Sigs https://github.com/kubernetes/community/blob/master/sig-list.md\n  Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes\n  Slack\n k8 http://slack.k8s.io/ CNCF https://slack.cncf.io/    "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/primitives/",
 	"title": "Primitives",
 	"tags": [],
 	"description": "",
-	"content": " Container Primitives Control Groups Abbreviated cgroups, is a Linux kernel feature that limits, accounts for, and isolates the resource usage\n CPU memory disk I/O network  Namespaces A feature of the Linux kernel that isolate and virtualize system resources of a collection of processes. Examples of resources that can be virtualized include:\n process IDs hostnames user IDs network access interprocess communication filesystems  "
+	"content": "Container Primitives Control Groups Abbreviated cgroups, is a Linux kernel feature that limits, accounts for, and isolates the resource usage\n CPU memory disk I/O network  Namespaces A feature of the Linux kernel that isolate and virtualize system resources of a collection of processes. Examples of resources that can be virtualized include:\n process IDs hostnames user IDs network access interprocess communication filesystems  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/arch/",
 	"title": "Architecture",
 	"tags": [],
 	"description": "",
-	"content": " High level Architecture "
+	"content": "High level Architecture "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/arch/master/",
 	"title": "Master",
 	"tags": [],
 	"description": "",
-	"content": " API data store: Etcd (Cluster State)\n Controller Managers :\n Node Controller Deployment Controller ReplicaSet Controller Replication Controller Endpoints Controller Service Account \u0026amp; Token Controller   Scheduler: Bind pod to Node\n  "
+	"content": "  API data store: Etcd (Cluster State)\n  Controller Managers :\n Node Controller Deployment Controller ReplicaSet Controller Replication Controller Endpoints Controller Service Account \u0026amp; Token Controller    Scheduler: Bind pod to Node\n  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/arch/node/",
 	"title": "Node",
 	"tags": [],
 	"description": "",
-	"content": " Kubelet:\n cAdvisor (metrics, logs\u0026hellip;)  Container Runtime:\n docker containerd  Pod:\n Container (one or more)  Kube-proxy:\n Used to reach services and allow communication between Nodes.   "
+	"content": " Kubelet:   cAdvisor (metrics, logs\u0026hellip;)  Container Runtime:   docker containerd  Pod:   Container (one or more)  Kube-proxy:   Used to reach services and allow communication between Nodes.   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/arch/data/",
 	"title": "Data Flow",
 	"tags": [],
 	"description": "",
-	"content": " Data Flow  CNI: Network Plugin in Kubelet that allows to talk to networking to get IPs for Pods and Services.\n gRPC: API to communicate API Server to ETCD, Controller Manager and Scheduler\n Kubelet - all K8s nodes have a kubelet that ensures that any pod assigned to it are running and configured in the desired state.\n CRI(Container Runtime Interface) gRPC API compiled in kubelet which allows to kubelet to talk to container runtimes by using gRPC API.\n The Container Runtime provider has to adapt it to CRI API to allow kubelet to talk to them by using OCI Standard (runc) Initially, Kubernetes was built on top of Docker as the container runtime. Soon after, CoreOS announced the rkt container runtime and wanted Kubernetes to support it, as well. So, Kubernetes ended up supporting Docker and rkt, although this model wasn\u0026rsquo;t very scalable in terms of adding new features or support for new container runtimes.\n CRI consists of a protocol buffers and gRPC API, and libraries,\n  "
+	"content": "Data Flow   CNI: Network Plugin in Kubelet that allows to talk to networking to get IPs for Pods and Services.\n  gRPC: API to communicate API Server to ETCD, Controller Manager and Scheduler\n  Kubelet - all K8s nodes have a kubelet that ensures that any pod assigned to it are running and configured in the desired state.\n  CRI(Container Runtime Interface) gRPC API compiled in kubelet which allows to kubelet to talk to container runtimes by using gRPC API.\n  The Container Runtime provider has to adapt it to CRI API to allow kubelet to talk to them by using OCI Standard (runc) Initially, Kubernetes was built on top of Docker as the container runtime. Soon after, CoreOS announced the rkt container runtime and wanted Kubernetes to support it, as well. So, Kubernetes ended up supporting Docker and rkt, although this model wasn't very scalable in terms of adding new features or support for new container runtimes.\n  CRI consists of a protocol buffers and gRPC API, and libraries,\n  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/network/",
 	"title": "Network",
 	"tags": [],
 	"description": "",
-	"content": " Container Networking  Docker uses iptables to provide network isolation Explicitly publish a port for connectivity to it Containers do not have a public IPv4 address They are allocated a private address Services running on a container must be exposed port by port Container ports have to be mapped to the host port to avoid conflicts  More information here\n"
+	"content": "Container Networking  Docker uses iptables to provide network isolation Explicitly publish a port for connectivity to it Containers do not have a public IPv4 address They are allocated a private address Services running on a container must be exposed port by port Container ports have to be mapped to the host port to avoid conflicts  More information here\n"
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/connect/",
+	"title": "Connect",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/network/docker0/",
 	"title": "Docker0 ",
 	"tags": [],
 	"description": "",
-	"content": " Container Networking  When Docker starts, it creates a virtual interface called docker0 on the host machine docker0 is assigned a random IP address and subnet from the private range defined by RFC 1918 It passes or switches packets between two connected devices just like a physical bridge or switch  Host to container Container to container  Each new container gets one interface that is automatically attached to the docker0 bridge  "
+	"content": "Container Networking  When Docker starts, it creates a virtual interface called docker0 on the host machine docker0 is assigned a random IP address and subnet from the private range defined by RFC 1918 It passes or switches packets between two connected devices just like a physical bridge or switch  Host to container Container to container   Each new container gets one interface that is automatically attached to the docker0 bridge  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/network/docker0-dig/",
 	"title": "Docker0 Diagram",
 	"tags": [],
 	"description": "",
-	"content": " Container Networking "
+	"content": "Container Networking "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/",
 	"title": "Storage",
 	"tags": [],
 	"description": "",
-	"content": " Storage  Layers   Volumes   Storage   "
+	"content": "Storage  Layers   Volumes   Storage   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/",
 	"title": "Kubernetes API Objects",
 	"tags": [],
 	"description": "",
-	"content": " Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   Ingress   Services   Healthchecks   Daemonsets   "
+	"content": "Kubernetes API Objects  Namespaces   Pods   Resource Quotas   Controllers   Storage   Secrets   Configmaps   Ingress   Services   Healthchecks   Daemonsets   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/layers/",
 	"title": "Layers",
 	"tags": [],
 	"description": "",
-	"content": " Layers "
+	"content": "Layers "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/volumes/",
 	"title": "Volumes",
 	"tags": [],
 	"description": "",
-	"content": " Volumes "
+	"content": "Volumes "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/storage/benefits/",
 	"title": "Storage",
 	"tags": [],
 	"description": "",
-	"content": " Benefits of Volumes  De-couple the data that is stored, from the container which created the data Good for sharing data between containers Can setup a data containers which has a volume you mount in other containers Share directories between multiple containers Bypassing the copy on write system to achieve native disk I/O performance Share a host directory with a container Share a single file between the host and container  "
+	"content": "Benefits of Volumes  De-couple the data that is stored, from the container which created the data Good for sharing data between containers Can setup a data containers which has a volume you mount in other containers Share directories between multiple containers Bypassing the copy on write system to achieve native disk I/O performance Share a host directory with a container Share a single file between the host and container  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/namespaces/",
 	"title": "Namespaces",
 	"tags": [],
 	"description": "",
-	"content": " Namespaces What Namespaces are virtual clusters inside your Kubernetes cluster that provide logically isolation (kinda) from each other.\nWhy Scope of names Organization of Kubernetes resources\n "
+	"content": "Namespaces What Namespaces are virtual clusters inside your Kubernetes cluster that provide logically isolation (kinda) from each other.\nWhy Scope of names Organization of Kubernetes resources\n "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/",
 	"title": "Pods",
 	"tags": [],
 	"description": "",
-	"content": " Pods Pods are a collection of containers that share a namespace, are colocated and scheduled together on Kubenetes nodes.\nA pod is a group of one or more containers, with shared storage/network, and a specification for how to run the containers\n"
+	"content": "Pods Pods are a collection of containers that share a namespace, are colocated and scheduled together on Kubenetes nodes.\nA pod is a group of one or more containers, with shared storage/network, and a specification for how to run the containers\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/",
 	"title": "Labels and Selectors",
 	"tags": [],
 	"description": "",
-	"content": " Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.\nSelectors Label Selectors help client/user identify a set of objects.\nspec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql  Demo Create labels \u0026amp; use selector to identify set of objects\n"
+	"content": "Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.\nSelectors Label Selectors help client/user identify a set of objects.\nspec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql Demo Create labels \u0026amp; use selector to identify set of objects\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/",
 	"title": "Affinity and Anti-Affinity",
 	"tags": [],
 	"description": "",
-	"content": " Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are\n the language is more expressive (not just “AND of exact match”) you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: \u0026ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node\u0026rdquo;\napiVersion: v1 kind: Pod metadata: name: happypanda labels: app: redis segment: backend company: mycompany disk: ssd spec: affinity: nodeAffinity: preferredDuringSchedulingIgnoredDuringExecution: - weight: 1 preference: matchExpressions: - key: fruit operator: In values: - apple containers: - name: redis image: redis ports: - name: redisport containerPort: 6379 protocol: TCP  "
+	"content": "Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are\n the language is more expressive (not just “AND of exact match”) you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: \u0026ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node\u0026rdquo;\napiVersion: v1 kind: Pod metadata: name: happypanda labels: app: redis segment: backend company: mycompany disk: ssd spec: affinity: nodeAffinity: preferredDuringSchedulingIgnoredDuringExecution: - weight: 1 preference: matchExpressions: - key: fruit operator: In values: - apple containers: - name: redis image: redis ports: - name: redisport containerPort: 6379 protocol: TCP "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/",
@@ -263,28 +270,28 @@
 	"title": "Resource Quotas",
 	"tags": [],
 	"description": "",
-	"content": " What Requests - How much does this pod need to run\nLimits - This pod only gets this much to run\nWhy Kubernetes being a multi-tenant environment, some applications may hog resources and starve others, Resource Qoatas discourage this behavior\n "
+	"content": "What Requests - How much does this pod need to run\nLimits - This pod only gets this much to run\nWhy Kubernetes being a multi-tenant environment, some applications may hog resources and starve others, Resource Qoatas discourage this behavior\n "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/",
 	"title": "Details",
 	"tags": [],
 	"description": "",
-	"content": " Compute Resources  CPU Memory Storage  requests.storage persistentvolumeclaims storage-class-name.storageclass.storage.k8s.io/requests.storage storage-class-name.storageclass.storage.k8s.io/persistentvolumeclaims  Object Count\n configmaps persistentvolumeclaims pods replicationcontrollers resourcequotas services services.loadbalancers services.nodeports secrets  Priority - low, medium, high\n  More info\n"
+	"content": "Compute Resources   CPU\n  Memory\n  Storage\n requests.storage persistentvolumeclaims storage-class-name.storageclass.storage.k8s.io/requests.storage storage-class-name.storageclass.storage.k8s.io/persistentvolumeclaims    Object Count\n configmaps persistentvolumeclaims pods replicationcontrollers resourcequotas services services.loadbalancers services.nodeports secrets    Priority - low, medium, high\n  More info\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/controllers/",
 	"title": "Controllers",
 	"tags": [],
 	"description": "",
-	"content": " Controllers In Kubernetes, a controller is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired state. There are several in the Kubernetes Architecture that support different functions in the system.\nNamespace controller - Creates and updates the Namespaces in kubernetes\nServiceaccounts controller - Manages the service accounts in the system, which are for processes to interact with Kubernetes.\nNode Controller - Responsible for noticing and responding when nodes go down. Service Account \u0026amp; Token Controllers: Create default accounts and API access tokens for new namespaces.\nDeployment Controller - A Deployment controller provides declarative updates for Pods and ReplicaSets.\nReplication Controller - Responsible for maintaining the correct number of pods for every replication controller object in the system.\nEndpoints Controller - Populates the Endpoints object (that is, joins Services \u0026amp; Pods). When services are created, the Endpoint controller manages the connection between services and the pods back the service.\n"
+	"content": "Controllers In Kubernetes, a controller is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired state. There are several in the Kubernetes Architecture that support different functions in the system.\nNamespace controller - Creates and updates the Namespaces in kubernetes\nServiceaccounts controller - Manages the service accounts in the system, which are for processes to interact with Kubernetes.\nNode Controller - Responsible for noticing and responding when nodes go down. Service Account \u0026amp; Token Controllers: Create default accounts and API access tokens for new namespaces.\nDeployment Controller - A Deployment controller provides declarative updates for Pods and ReplicaSets.\nReplication Controller - Responsible for maintaining the correct number of pods for every replication controller object in the system.\nEndpoints Controller - Populates the Endpoints object (that is, joins Services \u0026amp; Pods). When services are created, the Endpoint controller manages the connection between services and the pods back the service.\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/controllers/updates/",
 	"title": "Controllers Updates",
 	"tags": [],
 	"description": "",
-	"content": " Deployments  Scaling Rolling\u000b  ReplicaSet  Desired state  Strategies:  Recreate RollingUpdate (default) Blue/Green Canary A/B Testing  "
+	"content": "Deployments  Scaling Rolling  ReplicaSet  Desired state  Strategies:  Recreate RollingUpdate (default) Blue/Green Canary A/B Testing  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/",
@@ -298,112 +305,112 @@
 	"title": "Specialized Objects",
 	"tags": [],
 	"description": "",
-	"content": " Specialized Objects  Init Containers   Jobs   Cron   Statefulsets   Exercises   "
+	"content": "Specialized Objects  Init Containers   Jobs   Cron   Statefulsets   Exercises   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/storage/",
 	"title": "Storage",
 	"tags": [],
 	"description": "",
-	"content": " What Storage like compute is another resource that must be managed. Kubernetes offers 3 types of storage\n Volumes Persistent Volumes Persistent Volume Claims  Why The Ephemeral nature of pods and containers lead to the need for data to be have a decoupled lifecycle outside of containers and pods.\n "
+	"content": "What Storage like compute is another resource that must be managed. Kubernetes offers 3 types of storage\n Volumes Persistent Volumes Persistent Volume Claims  Why The Ephemeral nature of pods and containers lead to the need for data to be have a decoupled lifecycle outside of containers and pods.\n "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/init/",
 	"title": "Init Containers",
 	"tags": [],
 	"description": "",
-	"content": " What Specialized containers that run before app containers in a Pod. Init containers can contain utilities or setup scripts not present in an app image.\nWhy Set up application requirements before application containers starts.\n "
+	"content": "What Specialized containers that run before app containers in a Pod. Init containers can contain utilities or setup scripts not present in an app image.\nWhy Set up application requirements before application containers starts.\n "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/job/",
 	"title": "Jobs",
 	"tags": [],
 	"description": "",
-	"content": " What A Job creates one or more Pods and ensures that a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions.\nWhy Specalized tasks that need to run to commpletion or do some calculation.\n) "
+	"content": "What A Job creates one or more Pods and ensures that a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions.\nWhy Specalized tasks that need to run to commpletion or do some calculation.\n) "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/storage/volumes/",
 	"title": "Volumes",
 	"tags": [],
 	"description": "",
-	"content": "Several volume types are supported\n awsElasticBlockStore azureDisk gcePersistentDisk hostPath secret configmaps  awsElasticBlockStore example yaml:\napiVersion: v1 kind: Pod metadata: name: test-ebs spec: containers: - image: k8s.gcr.io/test-webserver name: test-container volumeMounts: - mountPath: /test-ebs name: test-volume volumes: - name: test-volume # This AWS EBS volume must already exist. awsElasticBlockStore: volumeID: \u0026lt;volume-id\u0026gt; fsType: ext4  "
+	"content": "Several volume types are supported\n awsElasticBlockStore azureDisk gcePersistentDisk hostPath secret configmaps  awsElasticBlockStore example yaml:\napiVersion: v1 kind: Pod metadata: name: test-ebs spec: containers: - image: k8s.gcr.io/test-webserver name: test-container volumeMounts: - mountPath: /test-ebs name: test-volume volumes: - name: test-volume # This AWS EBS volume must already exist. awsElasticBlockStore: volumeID: \u0026lt;volume-id\u0026gt; fsType: ext4 "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/cron/",
 	"title": "Cron",
 	"tags": [],
 	"description": "",
-	"content": " What A Cron Job creates Jobs on a time-based schedule.\nWhy Batch replacement, application or cluster maintenance\n "
+	"content": "What A Cron Job creates Jobs on a time-based schedule.\nWhy Batch replacement, application or cluster maintenance\n "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/storage/pv/",
 	"title": "Persistent Volume",
 	"tags": [],
 	"description": "",
-	"content": "Persistent Volumes (PV\u0026rsquo;s) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.\nProvisioning - Static or Dynamic\nTypes of PV\u0026rsquo;s\n GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: \u0026quot;/mnt/data\u0026quot;  "
+	"content": "Persistent Volumes (PV's) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.\nProvisioning - Static or Dynamic\nTypes of PV's\n GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: \u0026#34;/mnt/data\u0026#34; "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/storage/pvc/",
 	"title": "Persistent Volume Claims",
 	"tags": [],
 	"description": "",
-	"content": "Persistent Volume Claims (PVC\u0026rsquo;s) - Allow pods to requests and attache Persistent Volumes available in the cluster.\nWhen used in with Dynamic provision and Storage Classes, PVC\u0026rsquo;s can automatically make storage available on demand.\nTypes of PVC\u0026rsquo;s\n GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: \u0026quot;/var/www/html\u0026quot; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim  "
+	"content": "Persistent Volume Claims (PVC's) - Allow pods to requests and attache Persistent Volumes available in the cluster.\nWhen used in with Dynamic provision and Storage Classes, PVC's can automatically make storage available on demand.\nTypes of PVC's\n GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: \u0026#34;/var/www/html\u0026#34; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/statefulsets/",
 	"title": "Statefulsets",
 	"tags": [],
 	"description": "",
-	"content": " What Manages the deployment and scaling of a set of Pods , and provides guarantees about the ordering and uniqueness of these Pods.\nWhy If your application requires the below artributes, a statefulset would a better option\n Stable, unique network identifiers. Stable, persistent storage. Ordered, graceful deployment and scaling. Ordered, automated rolling updates.  ) "
+	"content": "What Manages the deployment and scaling of a set of Pods , and provides guarantees about the ordering and uniqueness of these Pods.\nWhy If your application requires the below artributes, a statefulset would a better option\n Stable, unique network identifiers. Stable, persistent storage. Ordered, graceful deployment and scaling. Ordered, automated rolling updates.  ) "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/storage/classes/",
 	"title": "Storage Classes",
 	"tags": [],
 	"description": "",
-	"content": "Storage classes allow cluster administrators to provide varing levels of support and types of storage to applications in a cluster\nExample: Storage class that will provision an AWS EBS Volumes when referenced a PVC\nkind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provisioner: kubernetes.io/aws-ebs parameters: type: gp2 reclaimPolicy: Retain mountOptions: - debug volumeBindingMode: Immediate  "
+	"content": "Storage classes allow cluster administrators to provide varing levels of support and types of storage to applications in a cluster\nExample: Storage class that will provision an AWS EBS Volumes when referenced a PVC\nkind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provisioner: kubernetes.io/aws-ebs parameters: type: gp2 reclaimPolicy: Retain mountOptions: - debug volumeBindingMode: Immediate "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/secrets/",
 	"title": "Secrets",
 	"tags": [],
 	"description": "",
-	"content": " What Kubernetes object to inject sensitive data into containers\nWhy Sensitive data should never be built into the container image, in order to do that, kubernetes offers Secrets.\n "
+	"content": "What Kubernetes object to inject sensitive data into containers\nWhy Sensitive data should never be built into the container image, in order to do that, kubernetes offers Secrets.\n "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/secrets/secret/",
 	"title": "Secrets Uses - Secret",
 	"tags": [],
 	"description": "",
-	"content": "echo -n 'admin' | base64 YWRtaW4= echo -n '1f2d1e2e67df' | base64 MWYyZDFlMmU2N2Rm  Write a Secret that looks like this:\napiVersion: v1 kind: Secret metadata: name: mysecret type: Opaque data: username: YWRtaW4= password: MWYyZDFlMmU2N2Rm  "
+	"content": "echo -n \u0026#39;admin\u0026#39; | base64 YWRtaW4= echo -n \u0026#39;1f2d1e2e67df\u0026#39; | base64 MWYyZDFlMmU2N2Rm Write a Secret that looks like this:\napiVersion: v1 kind: Secret metadata: name: mysecret type: Opaque data: username: YWRtaW4= password: MWYyZDFlMmU2N2Rm "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/secrets/file/",
 	"title": "Secrets Uses - File",
 	"tags": [],
 	"description": "",
-	"content": "apiVersion: v1 kind: Pod metadata: name: mypod spec: containers: - name: mypod image: redis volumeMounts: - name: foo mountPath: \u0026quot;/etc/foo\u0026quot; readOnly: true volumes: - name: foo secret: secretName: mysecret  "
+	"content": "apiVersion: v1 kind: Pod metadata: name: mypod spec: containers: - name: mypod image: redis volumeMounts: - name: foo mountPath: \u0026#34;/etc/foo\u0026#34; readOnly: true volumes: - name: foo secret: secretName: mysecret "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/secrets/env/",
 	"title": "Secrets Uses - Env Var",
 	"tags": [],
 	"description": "",
-	"content": "apiVersion: v1 kind: Pod metadata: name: secret-env-pod spec: containers: - name: mycontainer image: redis env: - name: SECRET_USERNAME valueFrom: secretKeyRef: name: mysecret key: username - name: SECRET_PASSWORD valueFrom: secretKeyRef: name: mysecret key: password restartPolicy: Never  "
+	"content": "apiVersion: v1 kind: Pod metadata: name: secret-env-pod spec: containers: - name: mycontainer image: redis env: - name: SECRET_USERNAME valueFrom: secretKeyRef: name: mysecret key: username - name: SECRET_PASSWORD valueFrom: secretKeyRef: name: mysecret key: password restartPolicy: Never "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/configmaps/",
 	"title": "Configmaps",
 	"tags": [],
 	"description": "",
-	"content": " What In order to keep the immutability of a docker image, the configuration must live outside the container image, K8 config maps enable this.\nWhy Secrets, env variables, and other environment specific items should not be baked into a container image.\n "
+	"content": "What In order to keep the immutability of a docker image, the configuration must live outside the container image, K8 config maps enable this.\nWhy Secrets, env variables, and other environment specific items should not be baked into a container image.\n "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/",
 	"title": "Configmaps",
 	"tags": [],
 	"description": "",
-	"content": "1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5lives=3 6enemies.cheat=true 7enemies.cheat.level=noGoodRotten 8secret.code.passphrase=UUDDLRLRBABAS 9secret.code.allowed=true 10secret.code.lives=30 11 ui.properties: | 12color.good=purple 13color.bad=yellow 14allow.textmode=true 15how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  "
+	"content": "1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5 lives=3 6 enemies.cheat=true 7 enemies.cheat.level=noGoodRotten 8 secret.code.passphrase=UUDDLRLRBABAS 9 secret.code.allowed=true 10 secret.code.lives=30 11 ui.properties: | 12color.good=purple 13 color.bad=yellow 14 allow.textmode=true 15 how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/configmaps/volumes/",
@@ -424,21 +431,21 @@
 	"title": "Ingress",
 	"tags": [],
 	"description": "",
-	"content": " What Ingress is a K8 object that allows external access to resources inside the cluster\nWhy Services, Pods and other objects are only accessible inside the cluster\n "
+	"content": "What Ingress is a K8 object that allows external access to resources inside the cluster\nWhy Services, Pods and other objects are only accessible inside the cluster\n "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/ingress/controller/",
 	"title": "Ingress Controllers",
 	"tags": [],
 	"description": "",
-	"content": " Ingress controllers In order for the ingress resource to work, the cluster must have an ingress controller running. This is unlike other types of controllers, which run as part of the kube-controller-manager binary, and are typically started automatically with a cluster. Choose the ingress controller implementation that best fits your cluster.\nIngress Controller\napiVersion: extensions/v1beta1 kind: Ingress metadata: name: test-ingress spec: backend: serviceName: testsvc servicePort: 80  Kubernetes supported Ingress Controllers:\n GCE nginx  Others that can be deployed:\n HAProxy Kong Contour  Full list is here\n"
+	"content": "Ingress controllers In order for the ingress resource to work, the cluster must have an ingress controller running. This is unlike other types of controllers, which run as part of the kube-controller-manager binary, and are typically started automatically with a cluster. Choose the ingress controller implementation that best fits your cluster.\nIngress Controller\napiVersion: extensions/v1beta1 kind: Ingress metadata: name: test-ingress spec: backend: serviceName: testsvc servicePort: 80 Kubernetes supported Ingress Controllers:\n GCE nginx  Others that can be deployed:\n HAProxy Kong Contour  Full list is here\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/ingress/rules/",
 	"title": "Ingress Rules",
 	"tags": [],
 	"description": "",
-	"content": "Each http rule contains the following information:\n Host list of paths Backend service  Ingress Rule\napiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-example annotations: nginx.ingress.kubernetes.io/rewrite-target: / spec: rules: - host: foo.bar.com http: paths: - path: /foo backend: serviceName: service1 servicePort: 4200 - path: /bar backend: serviceName: service2 servicePort: 8080  "
+	"content": "Each http rule contains the following information:\n Host list of paths Backend service  Ingress Rule\napiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-example annotations: nginx.ingress.kubernetes.io/rewrite-target: / spec: rules: - host: foo.bar.com http: paths: - path: /foo backend: serviceName: service1 servicePort: 4200 - path: /bar backend: serviceName: service2 servicePort: 8080 "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/",
@@ -452,14 +459,14 @@
 	"title": "Services",
 	"tags": [],
 	"description": "",
-	"content": " What Service: a named abstraction of software service, consisting of a port that the proxy listens on, and the selector that determines which pods will answer requests.\nWhy Pods come and go, and with that their IP address change rapidly. Services decouple the IP address from the application and serve as the IP address inside the cluster for an application running multiple pods.\nMore info here\n "
+	"content": "What Service: a named abstraction of software service, consisting of a port that the proxy listens on, and the selector that determines which pods will answer requests.\nWhy Pods come and go, and with that their IP address change rapidly. Services decouple the IP address from the application and serve as the IP address inside the cluster for an application running multiple pods.\nMore info here\n "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/services/diag/",
 	"title": "Service Diagram",
 	"tags": [],
 	"description": "",
-	"content": "  "
+	"content": " "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/",
@@ -473,28 +480,35 @@
 	"title": "Healthchecks",
 	"tags": [],
 	"description": "",
-	"content": " What Healthchecks inform that kubelet that pods are ready to accept traffic\nWhy The distributed nature of kubernetes allows pods to come and go for a number of reasons, and if many are running a application the kubelet needs to know what a \u0026ldquo;healthy\u0026rdquo; pod looks like.\n"
-},
-{
-	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/daemonsets/",
-	"title": "Daemonsets",
-	"tags": [],
-	"description": "",
-	"content": " What Specialized deployments that will deploy pods on every node in the cluster\nWhy  running a cluster storage daemon, such as glusterd, ceph, on each node. running a logs collection daemon on every node, such as fluentd or logstash. running a node monitoring daemon on every node,  Prometheus Node Exporter collectd Dynatrace OneAgent AppDynamics Agent Datadog agent     "
+	"content": "What Healthchecks inform that kubelet that pods are ready to accept traffic\nWhy The distributed nature of kubernetes allows pods to come and go for a number of reasons, and if many are running a application the kubelet needs to know what a \u0026ldquo;healthy\u0026rdquo; pod looks like.\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/liveliness/",
 	"title": "Liveliness",
 	"tags": [],
 	"description": "",
-	"content": " Readiness and Liveliness Liveliness Liveliness checks inform the kubelet that the pod is running. If this check fails the kubelet will attempt to restart the pod.\napiVersion: v1 kind: Pod metadata: labels: test: liveness name: liveness-exec spec: containers: - name: liveness image: k8s.gcr.io/busybox args: - /bin/sh - -c - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600 livenessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5  "
+	"content": "Readiness and Liveliness Liveliness Liveliness checks inform the kubelet that the pod is running. If this check fails the kubelet will attempt to restart the pod.\napiVersion: v1 kind: Pod metadata: labels: test: liveness name: liveness-exec spec: containers: - name: liveness image: k8s.gcr.io/busybox args: - /bin/sh - -c - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600 livenessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5 "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/readiness/",
 	"title": "Readiness",
 	"tags": [],
 	"description": "",
-	"content": " Readiness and Liveliness Readiness Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.\nreadinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5  "
+	"content": "Readiness and Liveliness Readiness Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.\nreadinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5 "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/daemonsets/",
+	"title": "Daemonsets",
+	"tags": [],
+	"description": "",
+	"content": "What Specialized deployments that will deploy pods on every node in the cluster\nWhy  running a cluster storage daemon, such as glusterd, ceph, on each node. running a logs collection daemon on every node, such as fluentd or logstash. running a node monitoring daemon on every node,  Prometheus Node Exporter collectd Dynatrace OneAgent AppDynamics Agent Datadog agent     "
+},
+{
+	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/daemonsets/exercises-kata/",
+	"title": "Exercises",
+	"tags": [],
+	"description": "",
+	"content": "daemonset Exercises\n Create daemonset Updating daemonset Removing daemonset  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/micro/",
@@ -508,14 +522,14 @@
 	"title": "Docker Intro",
 	"tags": [],
 	"description": "",
-	"content": " Docker  Benefits of Docker   Docker Platform   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises   "
+	"content": "Docker  Benefits of Docker   Docker Platform   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/benefits/",
 	"title": "Benefits of Docker",
 	"tags": [],
 	"description": "",
-	"content": " Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  "
+	"content": "Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/platform/",
@@ -529,21 +543,21 @@
 	"title": "Dockerfile Example",
 	"tags": [],
 	"description": "",
-	"content": " Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \\ 8\t\u0026amp;\u0026amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \\ 9\t\u0026amp;\u0026amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [\u0026#34;mvn\u0026#34;, \u0026#34;dependency:go-offline\u0026#34;] 15 16ADD [\u0026#34;src\u0026#34;, \u0026#34;/work/src\u0026#34;] 17RUN [\u0026#34;mvn\u0026#34;, \u0026#34;package\u0026#34;] 18 19EXPOSE 8080 20ENTRYPOINT [\u0026#34;java\u0026#34;, \u0026#34;-cp\u0026#34;, \u0026#34;target/classes:target/dependency/*\u0026#34;, \u0026#34;com.kumuluz.ee.EeApplication\u0026#34;] "
+	"content": "Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \\ 8\t\u0026amp;\u0026amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \\ 9\t\u0026amp;\u0026amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [\u0026#34;mvn\u0026#34;, \u0026#34;dependency:go-offline\u0026#34;] 15 16ADD [\u0026#34;src\u0026#34;, \u0026#34;/work/src\u0026#34;] 17RUN [\u0026#34;mvn\u0026#34;, \u0026#34;package\u0026#34;] 18 19EXPOSE 8080 20ENTRYPOINT [\u0026#34;java\u0026#34;, \u0026#34;-cp\u0026#34;, \u0026#34;target/classes:target/dependency/*\u0026#34;, \u0026#34;com.kumuluz.ee.EeApplication\u0026#34;] "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/",
 	"title": "Dockerfile Best Practices",
 	"tags": [],
 	"description": "",
-	"content": " Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “\u0026amp;\u0026amp;” and “\\”\n Use the caching system to your advantage The order of statements is important Add files that are least likely to change first and the ones most likely to change last  "
+	"content": "Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “\u0026amp;\u0026amp;” and “\\” Use the caching system to your advantage The order of statements is important Add files that are least likely to change first and the ones most likely to change last  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/containers/docker/cli/",
 	"title": "Docker cli",
 	"tags": [],
 	"description": "",
-	"content": " Docker cli  docker ps docker images docker logs docker exec  Official Documentation\n"
+	"content": "Docker cli  docker ps docker images docker logs docker exec  Official Documentation\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/",
@@ -560,11 +574,18 @@
 	"content": "Docker Katacoda Exercises\n Docker Basics Build an container Update running port  "
 },
 {
+	"uri": "https://contino.github.io/intro-k8/kubernetes/cleanup/",
+	"title": "Cleanup",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://contino.github.io/intro-k8/kubernetes/running/",
 	"title": "Running",
 	"tags": [],
 	"description": "",
-	"content": " Options for Running Kubernetes  GKP EKS AKS On prem  "
+	"content": "Options for Running Kubernetes  GKP EKS AKS On prem  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/",
@@ -578,7 +599,7 @@
 	"title": "Monitoring",
 	"tags": [],
 	"description": "",
-	"content": " cAdvisor\n Prometheus\n Datadog\n  "
+	"content": "  cAdvisor\n  Prometheus\n  Datadog\n  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/logging/",
@@ -592,7 +613,7 @@
 	"title": "Logging - Pod",
 	"tags": [],
 	"description": "",
-	"content": " Logging  kubectl logs  apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, 'i=0; while true; do echo \u0026quot;$i: $(date)\u0026quot;; i=$((i+1)); sleep 1; done']  $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001  "
+	"content": "Logging  kubectl logs  apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, \u0026#39;i=0; while true; do echo \u0026#34;$i: $(date)\u0026#34;; i=$((i+1)); sleep 1; done\u0026#39;] $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001 "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/logging-node/",
@@ -613,14 +634,14 @@
 	"title": "Security - Containers",
 	"tags": [],
 	"description": "",
-	"content": " Container security primitives  SElinux AppArmor Seccomp https://docs.docker.com/engine/security/seccomp/#run-without-the-default-seccomp-profile  Container Pipeline  Establish a pipeline to build a standard image Have a versioning policy Allow to only run images based of the standard image Use the same OS as the host Keep the image small Use a private registry Don’t embed secrets into images, use Hashicorp Vault https://www.cisecurity.org/benchmark/docker/ https://github.com/docker/docker-bench-security  "
+	"content": "Container security primitives  SElinux AppArmor Seccomp https://docs.docker.com/engine/security/seccomp/#run-without-the-default-seccomp-profile  Container Pipeline  Establish a pipeline to build a standard image Have a versioning policy Allow to only run images based of the standard image Use the same OS as the host Keep the image small Use a private registry Don’t embed secrets into images, use Hashicorp Vault https://www.cisecurity.org/benchmark/docker/ https://github.com/docker/docker-bench-security  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/extras/security1/",
 	"title": "Security - K8",
 	"tags": [],
 	"description": "",
-	"content": " K8 Security  RBAC NetworkPolicy TLS Image Scanning Aquasec/Twistlock Integrating with HashiCorp Vault other public cloud secret stores Investigate using a container based OS (CoreOS, Atomic Linux) Harden and tweak Make sure to pass https://github.com/dev-sec/linux-baseline  Vendors to add  Aquasec https://www.aquasec.com/ Twistlock https://www.twistlock.com/ Sysdig Falco https://www.sysdig.org/falco/  "
+	"content": "K8 Security  RBAC NetworkPolicy TLS Image Scanning Aquasec/Twistlock Integrating with HashiCorp Vault other public cloud secret stores Investigate using a container based OS (CoreOS, Atomic Linux) Harden and tweak Make sure to pass https://github.com/dev-sec/linux-baseline  Vendors to add  Aquasec https://www.aquasec.com/ Twistlock https://www.twistlock.com/ Sysdig Falco https://www.sysdig.org/falco/  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/categories/",

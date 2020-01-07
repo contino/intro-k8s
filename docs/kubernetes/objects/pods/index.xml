@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pods on Introduction to Kubernetes</title>
@@ -19,7 +19,7 @@
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/</guid>
       <description>Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.
 Selectors Label Selectors help client/user identify a set of objects.
-spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql  Demo Create labels &amp;amp; use selector to identify set of objects</description>
+spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql Demo Create labels &amp;amp; use selector to identify set of objects</description>
     </item>
     
     <item>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Introduction to Kubernetes</title>
@@ -17,7 +17,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:25 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/network/docker0/</guid>
-      <description> Container Networking  When Docker starts, it creates a virtual interface called docker0 on the host machine docker0 is assigned a random IP address and subnet from the private range defined by RFC 1918 It passes or switches packets between two connected devices just like a physical bridge or switch  Host to container Container to container  Each new container gets one interface that is automatically attached to the docker0 bridge  </description>
+      <description>Container Networking  When Docker starts, it creates a virtual interface called docker0 on the host machine docker0 is assigned a random IP address and subnet from the private range defined by RFC 1918 It passes or switches packets between two connected devices just like a physical bridge or switch  Host to container Container to container   Each new container gets one interface that is automatically attached to the docker0 bridge  </description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Sun, 09 Dec 2018 17:21:25 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8/containers/network/docker0-dig/</guid>
-      <description> Container Networking </description>
+      <description>Container Networking </description>
     </item>
     
   </channel>
