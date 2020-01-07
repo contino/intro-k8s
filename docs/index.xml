@@ -179,7 +179,7 @@ spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metad
       <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/</guid>
       <description>Pod Exercises 1
 Pod Exercises 2
- Create pods Set up node selectors Assign nodes to pods with selectors and affinifty  </description>
+ Create pods Set up node selectors Assign nodes to pods with selectors and affinity  </description>
     </item>
     
     <item>

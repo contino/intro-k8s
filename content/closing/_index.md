@@ -13,10 +13,9 @@ pre = "<b>4. </b>"
 
 Contact Us:
 
-| Henry Gallo                                           | James Strong                                              | Matt Garber                                                   |
-| :---                                                  | :----                                                     |:----                                                          |
-|                                                       | [@strongjz](https://twitter.com/strongjz)                 |                                                               |
-|[henry.gallo@contino.io](mailto:henry.gallo@contino.io)| [james.strong@contino.io](mailto:james.strong@contino.io) | [matthew.garber@contino.io](mailto:matthew.garber@contino.io) |
-
+| Colin Detwiller                                           | James Strong                                              |
+| :---                                                  | :----                                                     | 
+| https://www.linkedin.com/in/cdetwiller/               | https://www.linkedin.com/in/strongjz/                                   |
+|[colin.detwiller@contino.io](mailto:colin.detwiller@contino.io)| [james.strong@contino.io](mailto:james.strong@contino.io) | [
 
 [contino.io](https://www.contino.io/)

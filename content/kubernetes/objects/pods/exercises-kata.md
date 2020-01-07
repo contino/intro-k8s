@@ -10,4 +10,4 @@ weight = 423
 
 * Create pods
 * Set up node selectors
-* Assign nodes to pods with selectors and affinifty
+* Assign nodes to pods with selectors and affinity

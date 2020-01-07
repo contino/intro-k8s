@@ -256,7 +256,7 @@
 	"title": "Exercises",
 	"tags": [],
 	"description": "",
-	"content": "Pod Exercises 1\nPod Exercises 2\n Create pods Set up node selectors Assign nodes to pods with selectors and affinifty  "
+	"content": "Pod Exercises 1\nPod Exercises 2\n Create pods Set up node selectors Assign nodes to pods with selectors and affinity  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/",
