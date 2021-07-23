@@ -9,7 +9,8 @@ In Kubernetes, a controller is a control loop that watches the shared state of t
 [Serviceaccounts controller](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/) - Manages the service accounts in the system, which are for processes to interact with Kubernetes.
 
 [Node Controller](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/): Responsible for noticing and responding when nodes go down.
-Service Account & Token Controllers: Create default accounts and API access tokens for new namespaces.
+
+[Service Account](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/#service-account-controller) & [Token Controllers](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/#token-controller): Create default accounts and API access tokens for new namespaces.
 
 [Replication Controller](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/) - Responsible for maintaining the correct number of pods for every replication controller object in the system. **ReplicaSets are the preferred method**
 
