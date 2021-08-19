@@ -21,11 +21,11 @@ Find your instance with your name on it
 
 under connect click Dropped down and select Open in browser Window
 
-![](/intro-k8/images/connect.png)
+![](/intro-k8s/images/connect.png)
 
 A New browser window should pop and give your a terminal prompt 
 
-![](/intro-k8/images/shell.png)
+![](/intro-k8s/images/shell.png)
 
 
 ## Local install 

@@ -5,7 +5,7 @@ weight = 502
 chapter = true
 +++
 
-![](/intro-k8/images/docker/platform.png) 
+![](/intro-k8s/images/docker/platform.png) 
 
 
 

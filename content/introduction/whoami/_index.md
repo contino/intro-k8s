@@ -7,7 +7,7 @@ chapter = true
 
 | Colin Detwiller                                           | James Strong                                              |
 | :---                                                  | :----                                                     | 
-| ![](/intro-k8/images/colin.jpeg)                      | ![](/intro-k8/images/james.png)                           |
+| ![](/intro-k8s/images/colin.jpeg)                      | ![](/intro-k8s/images/james.png)                           |
 | Senior DevOps Engineer @ [Contino](https://contino.io)| Cloud Native Director @ [Contino](https://contino.io)       | 
 | Certified Kubernetes Admin                            | Certified Kubernetes Admin                                            |
 | http://colin.detwiller.me/                                                      | [@strongjz](https://twitter.com/strongjz)   | 

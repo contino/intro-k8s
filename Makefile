@@ -1,5 +1,5 @@
 DOCKER       = docker
-HUGO_VERSION = 0.49
+HUGO_VERSION = 0.87
 DOCKER_IMAGE = k8-hugo
 DOCKER_RUN   = $(DOCKER) run --rm --interactive --tty --volume $(PWD):/src
 

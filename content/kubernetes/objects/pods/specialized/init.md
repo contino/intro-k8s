@@ -13,4 +13,4 @@ Specialized containers that run before app containers in a Pod. Init containers 
 
 Set up application requirements before application containers starts.
 
-### ![](/intro-k8/images/kubernetes/pod.png)
+### ![](/intro-k8s/images/kubernetes/pod.png)

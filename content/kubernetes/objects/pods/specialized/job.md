@@ -13,4 +13,4 @@ A Job creates one or more Pods and ensures that a specified number of them succe
 
 Specalized tasks that need to run to commpletion or do some calculation. 
 
-### ![](/intro-k8/images/kubernetes/job.png) ) 
+### ![](/intro-k8s/images/kubernetes/job.png) ) 

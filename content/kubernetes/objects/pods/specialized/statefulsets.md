@@ -18,4 +18,4 @@ If your application requires the below artributes, a statefulset would a better 
 * Ordered, graceful deployment and scaling.
 * Ordered, automated rolling updates.
 
-### ![](/intro-k8/images/kubernetes/sts.png) ) 
+### ![](/intro-k8s/images/kubernetes/sts.png) ) 

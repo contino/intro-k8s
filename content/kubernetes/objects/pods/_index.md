@@ -11,7 +11,7 @@ Pods are a collection of containers that share a namespace, are colocated and sc
 
 A pod is a group of one or more containers, with shared storage/network, and a specification for how to run the containers
 
-![](/intro-k8/images/pods.png)
+![](/intro-k8s/images/pods.png)
 
 
 

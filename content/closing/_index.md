@@ -9,7 +9,7 @@ pre = "<b>4. </b>"
 # Closing remarks
 
 
-![](/intro-k8/images/partyparrot.gif)
+![](/intro-k8s/images/partyparrot.gif)
 
 Contact Us:
 

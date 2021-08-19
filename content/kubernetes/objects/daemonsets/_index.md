@@ -20,4 +20,4 @@ Specialized deployments that will deploy pods on every node in the cluster
     * Datadog agent
     
 
-### ![](/intro-k8/images/kubernetes/ds.png) 
+### ![](/intro-k8s/images/kubernetes/ds.png) 

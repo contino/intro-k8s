@@ -14,4 +14,4 @@ Ingress is a K8 object that allows external access to resources inside the clust
 Services, Pods and other objects are only accessible inside the cluster
 
 
-### ![](/intro-k8/images/kubernetes/ing.png) 
+### ![](/intro-k8s/images/kubernetes/ing.png) 

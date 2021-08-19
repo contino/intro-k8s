@@ -7,7 +7,7 @@ weight = 203
 
 ## Data Flow
 
-![](/intro-k8/images/arch/flow.png)
+![](/intro-k8s/images/arch/flow.png)
 
 * CNI: Network Plugin in Kubelet that allows to talk to networking to get IPs for Pods and Services.
 

@@ -67,7 +67,7 @@
 	"title": "Agenda",
 	"tags": [],
 	"description": "",
-	"content": " Introduction  Requirements Instructors Contino Who are you? Agenda   Containers  Intro History Primitives Docker Network Storage   Kubernetes  History Community  CNCF Graduated Projects CNCF Incubating Projects Get Involved   Connect to Cluster Kubernetes Objects  Namespaces Pods Resource Quotas Controllers Storage Secrets ConfigMaps Ingress Service Healthchecks Cleanup   Options for Running Kubernetes Extras  Monitoring Security      "
+	"content": " Introduction  Requirements Instructors Contino Who are you? Agenda   Containers  Intro History Primitives Docker Network Storage   Kubernetes  History Community  CNCF Graduated Projects CNCF Incubating Projects Get Involved   Connect to Cluster Kubernetes Objects  Namespaces Pods Resource Quotas Controllers Storage Secrets ConfigMaps Ingress Service Healthchecks   Options for Running Kubernetes Extras  Monitoring Security      "
 },
 {
 	"uri": "https://contino.github.io/intro-k8s/introduction/requirements/",

@@ -13,4 +13,4 @@ A Cron Job creates Jobs on a time-based schedule.
 
 Batch replacement, application or cluster maintenance
 
-### ![](/intro-k8/images/kubernetes/cronjob.png)
+### ![](/intro-k8s/images/kubernetes/cronjob.png)

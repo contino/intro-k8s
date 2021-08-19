@@ -13,4 +13,4 @@ Kubernetes object to inject sensitive data into containers
 
 Sensitive data should never be built into the container image, in order to do that, kubernetes offers Secrets. 
 
-### ![](/intro-k8/images/kubernetes/secret.png) 
+### ![](/intro-k8s/images/kubernetes/secret.png) 

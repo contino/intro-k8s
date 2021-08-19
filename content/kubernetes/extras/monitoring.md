@@ -10,4 +10,4 @@ weight = 801
 
 * [Datadog](https://docs.datadoghq.com/integrations/kubernetes/)
 
-![](/intro-k8/images/pro_dashboard.png)
+![](/intro-k8s/images/pro_dashboard.png)
