@@ -3,29 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.62.1" />
+    <meta name="generator" content="Hugo 0.87.0" />
     <meta name="description" content="">
 
 
-    <link rel="icon" href="/intro-k8/images/favicon.png" type="image/png">
+    <link rel="icon" href="/intro-k8s/images/favicon.png" type="image/png">
 
     <title>Storage :: Introduction to Kubernetes</title>
 
     
-    <link href="/intro-k8/css/nucleus.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/fontawesome-all.min.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/hybrid.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/featherlight.min.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/perfect-scrollbar.min.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/auto-complete.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/atom-one-dark-reasonable.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/theme.css?1578357644" rel="stylesheet">
-    <link href="/intro-k8/css/hugo-theme.css?1578357644" rel="stylesheet">
+    <link href="/intro-k8s/css/nucleus.css?1629398475" rel="stylesheet">
+    <link href="/intro-k8s/css/fontawesome-all.min.css?1629398475" rel="stylesheet">
+    <link href="/intro-k8s/css/hybrid.css?1629398475" rel="stylesheet">
+    <link href="/intro-k8s/css/featherlight.min.css?1629398475" rel="stylesheet">
+    <link href="/intro-k8s/css/perfect-scrollbar.min.css?1629398475" rel="stylesheet">
+    <link href="/intro-k8s/css/auto-complete.css?1629398475" rel="stylesheet">
+    <link href="/intro-k8s/css/atom-one-dark-reasonable.css?1629398475" rel="stylesheet">
+    <link href="/intro-k8s/css/theme.css?1629398475" rel="stylesheet">
+    <link href="/intro-k8s/css/hugo-theme.css?1629398475" rel="stylesheet">
     
-      <link href="/intro-k8/css/theme-mine.css?1578357644" rel="stylesheet">
+      <link href="/intro-k8s/css/theme-mine.css?1629398475" rel="stylesheet">
     
 
-    <script src="/intro-k8/js/jquery-3.3.1.min.js?1578357644"></script>
+    <script src="/intro-k8s/js/jquery-3.3.1.min.js?1629398475"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/intro-k8/containers/storage/">
+  <body class="" data-url="/intro-k8s/containers/storage/">
     <nav id="sidebar" class="">
 
 
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/intro-k8/js/lunr.min.js?1578357644"></script>
-<script type="text/javascript" src="/intro-k8/js/auto-complete.js?1578357644"></script>
+<script type="text/javascript" src="/intro-k8s/js/lunr.min.js?1629398475"></script>
+<script type="text/javascript" src="/intro-k8s/js/auto-complete.js?1629398475"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/contino.github.io\/intro-k8\/";
+        var baseurl = "https:\/\/contino.github.io\/intro-k8s\/";
     
 </script>
-<script type="text/javascript" src="/intro-k8/js/search.js?1578357644"></script>
+<script type="text/javascript" src="/intro-k8s/js/search.js?1629398475"></script>
 
     
   </div>
@@ -77,12 +77,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/intro-k8s/introduction/" title="Introduction" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/introduction/">
+      <a href="/intro-k8s/introduction/">
           <b>1. </b>Introduction
           
       </a>
@@ -104,12 +104,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/introduction/whoami/" title="Instructors" class="dd-item 
+    <li data-nav-id="/intro-k8s/introduction/whoami/" title="Instructors" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/introduction/whoami/">
+      <a href="/intro-k8s/introduction/whoami/">
           Instructors
           
       </a>
@@ -128,12 +128,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/introduction/introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/intro-k8s/introduction/introduction/" title="Introduction" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/introduction/introduction/">
+      <a href="/intro-k8s/introduction/introduction/">
           Introduction
           
       </a>
@@ -152,12 +152,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/introduction/contino/" title="Contino" class="dd-item 
+    <li data-nav-id="/intro-k8s/introduction/contino/" title="Contino" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/introduction/contino/">
+      <a href="/intro-k8s/introduction/contino/">
           Contino
           
       </a>
@@ -176,12 +176,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/introduction/agenda/" title="Agenda" class="dd-item 
+    <li data-nav-id="/intro-k8s/introduction/agenda/" title="Agenda" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/introduction/agenda/">
+      <a href="/intro-k8s/introduction/agenda/">
           Agenda
           
       </a>
@@ -200,12 +200,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/introduction/requirements/" title="Requirements" class="dd-item 
+    <li data-nav-id="/intro-k8s/introduction/requirements/" title="Requirements" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/introduction/requirements/">
+      <a href="/intro-k8s/introduction/requirements/">
           Requirements
           
       </a>
@@ -231,12 +231,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/containers/" title="Containers" class="dd-item 
+    <li data-nav-id="/intro-k8s/containers/" title="Containers" class="dd-item 
         parent
         
         
         ">
-      <a href="/intro-k8/containers/">
+      <a href="/intro-k8s/containers/">
           <b>2. </b>Containers
           
       </a>
@@ -258,12 +258,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/containers/history/" title="History" class="dd-item 
+    <li data-nav-id="/intro-k8s/containers/history/" title="History" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/containers/history/">
+      <a href="/intro-k8s/containers/history/">
           History
           
       </a>
@@ -283,8 +283,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/history/history/" title="Beginning" class="dd-item ">
-        <a href="/intro-k8/containers/history/history/">
+      <li data-nav-id="/intro-k8s/containers/history/history/" title="Beginning" class="dd-item ">
+        <a href="/intro-k8s/containers/history/history/">
         Beginning
         
         </a>
@@ -302,8 +302,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/history/hyper/" title="Hypervisor" class="dd-item ">
-        <a href="/intro-k8/containers/history/hyper/">
+      <li data-nav-id="/intro-k8s/containers/history/hyper/" title="Hypervisor" class="dd-item ">
+        <a href="/intro-k8s/containers/history/hyper/">
         Hypervisor
         
         </a>
@@ -321,8 +321,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/history/containers/" title="Containers" class="dd-item ">
-        <a href="/intro-k8/containers/history/containers/">
+      <li data-nav-id="/intro-k8s/containers/history/containers/" title="Containers" class="dd-item ">
+        <a href="/intro-k8s/containers/history/containers/">
         Containers
         
         </a>
@@ -349,12 +349,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/containers/primitives/" title="Primitives" class="dd-item 
+    <li data-nav-id="/intro-k8s/containers/primitives/" title="Primitives" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/containers/primitives/">
+      <a href="/intro-k8s/containers/primitives/">
           Primitives
           
       </a>
@@ -373,12 +373,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/containers/network/" title="Network" class="dd-item 
+    <li data-nav-id="/intro-k8s/containers/network/" title="Network" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/containers/network/">
+      <a href="/intro-k8s/containers/network/">
           Network
           
       </a>
@@ -398,8 +398,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/network/docker0/" title="Docker0 " class="dd-item ">
-        <a href="/intro-k8/containers/network/docker0/">
+      <li data-nav-id="/intro-k8s/containers/network/docker0/" title="Docker0 " class="dd-item ">
+        <a href="/intro-k8s/containers/network/docker0/">
         Docker0 
         
         </a>
@@ -417,8 +417,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/network/docker0-dig/" title="Docker0 Diagram" class="dd-item ">
-        <a href="/intro-k8/containers/network/docker0-dig/">
+      <li data-nav-id="/intro-k8s/containers/network/docker0-dig/" title="Docker0 Diagram" class="dd-item ">
+        <a href="/intro-k8s/containers/network/docker0-dig/">
         Docker0 Diagram
         
         </a>
@@ -445,12 +445,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/containers/storage/" title="Storage" class="dd-item 
+    <li data-nav-id="/intro-k8s/containers/storage/" title="Storage" class="dd-item 
         parent
         active
         
         ">
-      <a href="/intro-k8/containers/storage/">
+      <a href="/intro-k8s/containers/storage/">
           Storage
           
       </a>
@@ -470,8 +470,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/storage/layers/" title="Layers" class="dd-item ">
-        <a href="/intro-k8/containers/storage/layers/">
+      <li data-nav-id="/intro-k8s/containers/storage/layers/" title="Layers" class="dd-item ">
+        <a href="/intro-k8s/containers/storage/layers/">
         Layers
         
         </a>
@@ -489,8 +489,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/storage/volumes/" title="Volumes" class="dd-item ">
-        <a href="/intro-k8/containers/storage/volumes/">
+      <li data-nav-id="/intro-k8s/containers/storage/volumes/" title="Volumes" class="dd-item ">
+        <a href="/intro-k8s/containers/storage/volumes/">
         Volumes
         
         </a>
@@ -508,8 +508,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/storage/benefits/" title="Storage" class="dd-item ">
-        <a href="/intro-k8/containers/storage/benefits/">
+      <li data-nav-id="/intro-k8s/containers/storage/benefits/" title="Storage" class="dd-item ">
+        <a href="/intro-k8s/containers/storage/benefits/">
         Storage
         
         </a>
@@ -536,12 +536,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/containers/docker/" title="Docker Intro" class="dd-item 
+    <li data-nav-id="/intro-k8s/containers/docker/" title="Docker Intro" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/containers/docker/">
+      <a href="/intro-k8s/containers/docker/">
           Docker Intro
           
       </a>
@@ -561,8 +561,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/benefits/" title="Benefits of Docker" class="dd-item ">
-        <a href="/intro-k8/containers/docker/benefits/">
+      <li data-nav-id="/intro-k8s/containers/docker/benefits/" title="Benefits of Docker" class="dd-item ">
+        <a href="/intro-k8s/containers/docker/benefits/">
         Benefits of Docker
         
         </a>
@@ -580,8 +580,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/platform/" title="Docker Platform" class="dd-item ">
-        <a href="/intro-k8/containers/docker/platform/">
+      <li data-nav-id="/intro-k8s/containers/docker/platform/" title="Docker Platform" class="dd-item ">
+        <a href="/intro-k8s/containers/docker/platform/">
         Docker Platform
         
         </a>
@@ -599,8 +599,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/dockerfile-example/" title="Dockerfile Example" class="dd-item ">
-        <a href="/intro-k8/containers/docker/dockerfile-example/">
+      <li data-nav-id="/intro-k8s/containers/docker/dockerfile-example/" title="Dockerfile Example" class="dd-item ">
+        <a href="/intro-k8s/containers/docker/dockerfile-example/">
         Dockerfile Example
         
         </a>
@@ -618,8 +618,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/dockerfile-best-practices/" title="Dockerfile Best Practices" class="dd-item ">
-        <a href="/intro-k8/containers/docker/dockerfile-best-practices/">
+      <li data-nav-id="/intro-k8s/containers/docker/dockerfile-best-practices/" title="Dockerfile Best Practices" class="dd-item ">
+        <a href="/intro-k8s/containers/docker/dockerfile-best-practices/">
         Dockerfile Best Practices
         
         </a>
@@ -637,8 +637,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/cli/" title="Docker cli" class="dd-item ">
-        <a href="/intro-k8/containers/docker/cli/">
+      <li data-nav-id="/intro-k8s/containers/docker/cli/" title="Docker cli" class="dd-item ">
+        <a href="/intro-k8s/containers/docker/cli/">
         Docker cli
         
         </a>
@@ -656,8 +656,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/containers/docker/exercise-kata/" title="Docker Exercises" class="dd-item ">
-        <a href="/intro-k8/containers/docker/exercise-kata/">
+      <li data-nav-id="/intro-k8s/containers/docker/exercise-kata/" title="Docker Exercises" class="dd-item ">
+        <a href="/intro-k8s/containers/docker/exercise-kata/">
         Docker Exercises
         
         </a>
@@ -691,12 +691,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/" title="Kubernetes" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/" title="Kubernetes" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/">
+      <a href="/intro-k8s/kubernetes/">
           <b>3. </b>Kubernetes
           
       </a>
@@ -718,12 +718,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/history/" title="History" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/history/" title="History" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/history/">
+      <a href="/intro-k8s/kubernetes/history/">
           History
           
       </a>
@@ -742,12 +742,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/community/" title="Community" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/community/" title="Community" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/community/">
+      <a href="/intro-k8s/kubernetes/community/">
           Community
           
       </a>
@@ -767,8 +767,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/community/projects_grad/" title="Graduated Projects" class="dd-item ">
-        <a href="/intro-k8/kubernetes/community/projects_grad/">
+      <li data-nav-id="/intro-k8s/kubernetes/community/projects_grad/" title="Graduated Projects" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/community/projects_grad/">
         Graduated Projects
         
         </a>
@@ -786,8 +786,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/community/projects_inc/" title="Incubating Projects" class="dd-item ">
-        <a href="/intro-k8/kubernetes/community/projects_inc/">
+      <li data-nav-id="/intro-k8s/kubernetes/community/projects_inc/" title="Incubating Projects" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/community/projects_inc/">
         Incubating Projects
         
         </a>
@@ -805,8 +805,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/community/involvement/" title="Involvement" class="dd-item ">
-        <a href="/intro-k8/kubernetes/community/involvement/">
+      <li data-nav-id="/intro-k8s/kubernetes/community/involvement/" title="Involvement" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/community/involvement/">
         Involvement
         
         </a>
@@ -833,12 +833,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/arch/" title="Architecture" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/arch/" title="Architecture" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/arch/">
+      <a href="/intro-k8s/kubernetes/arch/">
           Architecture
           
       </a>
@@ -858,8 +858,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/arch/master/" title="Master" class="dd-item ">
-        <a href="/intro-k8/kubernetes/arch/master/">
+      <li data-nav-id="/intro-k8s/kubernetes/arch/master/" title="Master" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/arch/master/">
         Master
         
         </a>
@@ -877,8 +877,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/arch/node/" title="Node" class="dd-item ">
-        <a href="/intro-k8/kubernetes/arch/node/">
+      <li data-nav-id="/intro-k8s/kubernetes/arch/node/" title="Node" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/arch/node/">
         Node
         
         </a>
@@ -896,8 +896,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/arch/data/" title="Data Flow" class="dd-item ">
-        <a href="/intro-k8/kubernetes/arch/data/">
+      <li data-nav-id="/intro-k8s/kubernetes/arch/data/" title="Data Flow" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/arch/data/">
         Data Flow
         
         </a>
@@ -924,36 +924,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/connect/" title="Connect" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/" title="Kubernetes API Objects" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/connect/">
-          Connect
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/intro-k8/kubernetes/objects/" title="Kubernetes API Objects" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/intro-k8/kubernetes/objects/">
+      <a href="/intro-k8s/kubernetes/objects/">
           Kubernetes API Objects
           
       </a>
@@ -975,12 +951,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/namespaces/" title="Namespaces" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/namespaces/" title="Namespaces" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/namespaces/">
+      <a href="/intro-k8s/kubernetes/objects/namespaces/">
           Namespaces
           
       </a>
@@ -999,12 +975,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/pods/" title="Pods" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/pods/" title="Pods" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/pods/">
+      <a href="/intro-k8s/kubernetes/objects/pods/">
           Pods
           
       </a>
@@ -1026,8 +1002,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/labels_selectors/" title="Labels and Selectors" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/labels_selectors/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/pods/labels_selectors/" title="Labels and Selectors" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/pods/labels_selectors/">
         Labels and Selectors
         
         </a>
@@ -1045,8 +1021,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/affinity/" title="Affinity and Anti-Affinity" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/affinity/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/pods/affinity/" title="Affinity and Anti-Affinity" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/pods/affinity/">
         Affinity and Anti-Affinity
         
         </a>
@@ -1064,8 +1040,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/exercises-kata/" title="Exercises" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/exercises-kata/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/pods/exercises-kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/pods/exercises-kata/">
         Exercises
         
         </a>
@@ -1083,12 +1059,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/" title="Specialized Objects" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/pods/specialized/" title="Specialized Objects" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/pods/specialized/">
+      <a href="/intro-k8s/kubernetes/objects/pods/specialized/">
           Specialized Objects
           
       </a>
@@ -1108,8 +1084,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/init/" title="Init Containers" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/specialized/init/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/pods/specialized/init/" title="Init Containers" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/pods/specialized/init/">
         Init Containers
         
         </a>
@@ -1127,8 +1103,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/job/" title="Jobs" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/specialized/job/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/pods/specialized/job/" title="Jobs" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/pods/specialized/job/">
         Jobs
         
         </a>
@@ -1146,8 +1122,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/cron/" title="Cron" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/specialized/cron/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/pods/specialized/cron/" title="Cron" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/pods/specialized/cron/">
         Cron
         
         </a>
@@ -1165,8 +1141,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/statefulsets/" title="Statefulsets" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/specialized/statefulsets/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/pods/specialized/statefulsets/" title="Statefulsets" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/pods/specialized/statefulsets/">
         Statefulsets
         
         </a>
@@ -1184,8 +1160,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/" title="Exercises" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/pods/specialized/exercises-jobs-kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/pods/specialized/exercises-jobs-kata/">
         Exercises
         
         </a>
@@ -1221,12 +1197,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/resourcequotas/" title="Resource Quotas" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/resourcequotas/" title="Resource Quotas" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/resourcequotas/">
+      <a href="/intro-k8s/kubernetes/objects/resourcequotas/">
           Resource Quotas
           
       </a>
@@ -1246,8 +1222,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/resourcequotas/resources/" title="Details" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/resourcequotas/resources/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/resourcequotas/resources/" title="Details" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/resourcequotas/resources/">
         Details
         
         </a>
@@ -1274,12 +1250,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/controllers/" title="Controllers" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/controllers/" title="Controllers" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/controllers/">
+      <a href="/intro-k8s/kubernetes/objects/controllers/">
           Controllers
           
       </a>
@@ -1299,8 +1275,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/controllers/updates/" title="Controllers Updates" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/controllers/updates/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/controllers/updates/" title="Controllers Updates" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/controllers/updates/">
         Controllers Updates
         
         </a>
@@ -1318,8 +1294,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/controllers/exercises_kata/" title="Exercises" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/controllers/exercises_kata/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/controllers/exercises_kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/controllers/exercises_kata/">
         Exercises
         
         </a>
@@ -1346,12 +1322,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/storage/" title="Storage" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/storage/" title="Storage" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/storage/">
+      <a href="/intro-k8s/kubernetes/objects/storage/">
           Storage
           
       </a>
@@ -1371,8 +1347,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/storage/volumes/" title="Volumes" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/storage/volumes/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/storage/volumes/" title="Volumes" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/storage/volumes/">
         Volumes
         
         </a>
@@ -1390,8 +1366,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/storage/pv/" title="Persistent Volume" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/storage/pv/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/storage/pv/" title="Persistent Volume" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/storage/pv/">
         Persistent Volume
         
         </a>
@@ -1409,8 +1385,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/storage/pvc/" title="Persistent Volume Claims" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/storage/pvc/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/storage/pvc/" title="Persistent Volume Claims" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/storage/pvc/">
         Persistent Volume Claims
         
         </a>
@@ -1428,8 +1404,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/storage/classes/" title="Storage Classes" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/storage/classes/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/storage/classes/" title="Storage Classes" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/storage/classes/">
         Storage Classes
         
         </a>
@@ -1456,12 +1432,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/secrets/" title="Secrets" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/secrets/" title="Secrets" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/secrets/">
+      <a href="/intro-k8s/kubernetes/objects/secrets/">
           Secrets
           
       </a>
@@ -1481,8 +1457,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/secrets/secret/" title="Secrets Uses - Secret" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/secrets/secret/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/secrets/secret/" title="Secrets Uses - Secret" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/secrets/secret/">
         Secrets Uses - Secret
         
         </a>
@@ -1500,8 +1476,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/secrets/file/" title="Secrets Uses - File" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/secrets/file/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/secrets/file/" title="Secrets Uses - File" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/secrets/file/">
         Secrets Uses - File
         
         </a>
@@ -1519,8 +1495,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/secrets/env/" title="Secrets Uses - Env Var" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/secrets/env/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/secrets/env/" title="Secrets Uses - Env Var" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/secrets/env/">
         Secrets Uses - Env Var
         
         </a>
@@ -1547,12 +1523,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/" title="Configmaps" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/configmaps/" title="Configmaps" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/configmaps/">
+      <a href="/intro-k8s/kubernetes/objects/configmaps/">
           Configmaps
           
       </a>
@@ -1572,8 +1548,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/configmap/" title="Configmaps" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/configmaps/configmap/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/configmaps/configmap/" title="Configmaps" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/configmaps/configmap/">
         Configmaps
         
         </a>
@@ -1591,8 +1567,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/volumes/" title="Configmaps - Volume" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/configmaps/volumes/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/configmaps/volumes/" title="Configmaps - Volume" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/configmaps/volumes/">
         Configmaps - Volume
         
         </a>
@@ -1610,8 +1586,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/configmaps/envvar/" title="Configmaps - Env Var" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/configmaps/envvar/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/configmaps/envvar/" title="Configmaps - Env Var" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/configmaps/envvar/">
         Configmaps - Env Var
         
         </a>
@@ -1638,12 +1614,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/ingress/" title="Ingress" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/ingress/" title="Ingress" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/ingress/">
+      <a href="/intro-k8s/kubernetes/objects/ingress/">
           Ingress
           
       </a>
@@ -1663,8 +1639,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/ingress/controller/" title="Ingress Controllers" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/ingress/controller/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/ingress/controller/" title="Ingress Controllers" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/ingress/controller/">
         Ingress Controllers
         
         </a>
@@ -1682,8 +1658,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/ingress/rules/" title="Ingress Rules" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/ingress/rules/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/ingress/rules/" title="Ingress Rules" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/ingress/rules/">
         Ingress Rules
         
         </a>
@@ -1701,8 +1677,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/ingress/exercises_kata/" title="Ingress Exercises" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/ingress/exercises_kata/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/ingress/exercises_kata/" title="Ingress Exercises" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/ingress/exercises_kata/">
         Ingress Exercises
         
         </a>
@@ -1729,12 +1705,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/services/" title="Services" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/services/" title="Services" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/services/">
+      <a href="/intro-k8s/kubernetes/objects/services/">
           Services
           
       </a>
@@ -1754,8 +1730,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/services/diag/" title="Service Diagram" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/services/diag/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/services/diag/" title="Service Diagram" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/services/diag/">
         Service Diagram
         
         </a>
@@ -1773,8 +1749,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/services/exercises_kata/" title="Services Exercise" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/services/exercises_kata/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/services/exercises_kata/" title="Services Exercise" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/services/exercises_kata/">
         Services Exercise
         
         </a>
@@ -1801,12 +1777,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/healthchecks/" title="Healthchecks" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/healthchecks/" title="Healthchecks" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/healthchecks/">
+      <a href="/intro-k8s/kubernetes/objects/healthchecks/">
           Healthchecks
           
       </a>
@@ -1826,8 +1802,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/healthchecks/liveliness/" title="Liveliness" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/healthchecks/liveliness/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/healthchecks/liveliness/" title="Liveliness" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/healthchecks/liveliness/">
         Liveliness
         
         </a>
@@ -1845,8 +1821,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/healthchecks/readiness/" title="Readiness" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/healthchecks/readiness/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/healthchecks/readiness/" title="Readiness" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/healthchecks/readiness/">
         Readiness
         
         </a>
@@ -1873,12 +1849,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/objects/daemonsets/" title="Daemonsets" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/objects/daemonsets/" title="Daemonsets" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/objects/daemonsets/">
+      <a href="/intro-k8s/kubernetes/objects/daemonsets/">
           Daemonsets
           
       </a>
@@ -1898,8 +1874,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/" title="Exercises" class="dd-item ">
-        <a href="/intro-k8/kubernetes/objects/daemonsets/exercises-kata/">
+      <li data-nav-id="/intro-k8s/kubernetes/objects/daemonsets/exercises-kata/" title="Exercises" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/objects/daemonsets/exercises-kata/">
         Exercises
         
         </a>
@@ -1935,12 +1911,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/micro/" title="Debugging Exercise" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/micro/" title="Debugging Exercise" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/micro/">
+      <a href="/intro-k8s/kubernetes/micro/">
           Debugging Exercise
           
       </a>
@@ -1959,36 +1935,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/cleanup/" title="Cleanup" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/running/" title="Running" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/cleanup/">
-          Cleanup
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/intro-k8/kubernetes/running/" title="Running" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/intro-k8/kubernetes/running/">
+      <a href="/intro-k8s/kubernetes/running/">
           Running
           
       </a>
@@ -2007,12 +1959,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/kubernetes/extras/" title="Extras" class="dd-item 
+    <li data-nav-id="/intro-k8s/kubernetes/extras/" title="Extras" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/kubernetes/extras/">
+      <a href="/intro-k8s/kubernetes/extras/">
           Extras
           
       </a>
@@ -2032,8 +1984,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/extras/monitoring/" title="Monitoring" class="dd-item ">
-        <a href="/intro-k8/kubernetes/extras/monitoring/">
+      <li data-nav-id="/intro-k8s/kubernetes/extras/monitoring/" title="Monitoring" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/extras/monitoring/">
         Monitoring
         
         </a>
@@ -2051,8 +2003,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/extras/logging/" title="Logging" class="dd-item ">
-        <a href="/intro-k8/kubernetes/extras/logging/">
+      <li data-nav-id="/intro-k8s/kubernetes/extras/logging/" title="Logging" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/extras/logging/">
         Logging
         
         </a>
@@ -2070,8 +2022,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/extras/logging-kc/" title="Logging - Pod" class="dd-item ">
-        <a href="/intro-k8/kubernetes/extras/logging-kc/">
+      <li data-nav-id="/intro-k8s/kubernetes/extras/logging-kc/" title="Logging - Pod" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/extras/logging-kc/">
         Logging - Pod
         
         </a>
@@ -2089,8 +2041,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/extras/logging-node/" title="Logging - Node" class="dd-item ">
-        <a href="/intro-k8/kubernetes/extras/logging-node/">
+      <li data-nav-id="/intro-k8s/kubernetes/extras/logging-node/" title="Logging - Node" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/extras/logging-node/">
         Logging - Node
         
         </a>
@@ -2108,8 +2060,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/extras/logging-cluster/" title="Logging - Cluster" class="dd-item ">
-        <a href="/intro-k8/kubernetes/extras/logging-cluster/">
+      <li data-nav-id="/intro-k8s/kubernetes/extras/logging-cluster/" title="Logging - Cluster" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/extras/logging-cluster/">
         Logging - Cluster
         
         </a>
@@ -2127,8 +2079,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/extras/security/" title="Security - Containers" class="dd-item ">
-        <a href="/intro-k8/kubernetes/extras/security/">
+      <li data-nav-id="/intro-k8s/kubernetes/extras/security/" title="Security - Containers" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/extras/security/">
         Security - Containers
         
         </a>
@@ -2146,8 +2098,8 @@
  
   
     
-      <li data-nav-id="/intro-k8/kubernetes/extras/security1/" title="Security - K8" class="dd-item ">
-        <a href="/intro-k8/kubernetes/extras/security1/">
+      <li data-nav-id="/intro-k8s/kubernetes/extras/security1/" title="Security - K8" class="dd-item ">
+        <a href="/intro-k8s/kubernetes/extras/security1/">
         Security - K8
         
         </a>
@@ -2181,12 +2133,12 @@
  
   
     
-    <li data-nav-id="/intro-k8/closing/" title="Closing" class="dd-item 
+    <li data-nav-id="/intro-k8s/closing/" title="Closing" class="dd-item 
         
         
         
         ">
-      <a href="/intro-k8/closing/">
+      <a href="/intro-k8s/closing/">
           <b>4. </b>Closing
           
       </a>
@@ -2247,7 +2199,7 @@
             
           
           
-            <a href='/intro-k8/'>Introduction to Kubernetes</a> > <a href='/intro-k8/containers/'>Containers</a> > Storage
+            <a href='/intro-k8s/'>Introduction to Kubernetes</a> > <a href='/intro-k8s/containers/'>Containers</a> > Storage
           
          
           
@@ -2302,7 +2254,7 @@
 					
 
 <h3>
-<a href="/intro-k8/containers/storage/layers/" >Layers</a>
+<a href="/intro-k8s/containers/storage/layers/" >Layers</a>
 </h3>
 
 				
@@ -2319,7 +2271,7 @@
 					
 
 <h3>
-<a href="/intro-k8/containers/storage/volumes/" >Volumes</a>
+<a href="/intro-k8s/containers/storage/volumes/" >Volumes</a>
 </h3>
 
 				
@@ -2336,7 +2288,7 @@
 					
 
 <h3>
-<a href="/intro-k8/containers/storage/benefits/" >Storage</a>
+<a href="/intro-k8s/containers/storage/benefits/" >Storage</a>
 </h3>
 
 				
@@ -2990,22 +2942,6 @@
 
                     
                     
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                         
                     
                     
@@ -3668,22 +3604,6 @@
                     
             
         
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -3876,10 +3796,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/intro-k8/containers/network/docker0-dig/" title="Docker0 Diagram"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/intro-k8s/containers/network/docker0-dig/" title="Docker0 Diagram"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/intro-k8/containers/storage/layers/" title="Layers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/intro-k8s/containers/storage/layers/" title="Layers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -3889,20 +3809,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/intro-k8/js/clipboard.min.js?1578357645"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.min.js?1578357645"></script>
-    <script src="/intro-k8/js/perfect-scrollbar.jquery.min.js?1578357645"></script>
-    <script src="/intro-k8/js/jquery.sticky.js?1578357645"></script>
-    <script src="/intro-k8/js/featherlight.min.js?1578357645"></script>
-    <script src="/intro-k8/js/html5shiv-printshiv.min.js?1578357645"></script>
-    <script src="/intro-k8/js/highlight.pack.js?1578357645"></script>
+    <script src="/intro-k8s/js/clipboard.min.js?1629398475"></script>
+    <script src="/intro-k8s/js/perfect-scrollbar.min.js?1629398475"></script>
+    <script src="/intro-k8s/js/perfect-scrollbar.jquery.min.js?1629398475"></script>
+    <script src="/intro-k8s/js/jquery.sticky.js?1629398475"></script>
+    <script src="/intro-k8s/js/featherlight.min.js?1629398475"></script>
+    <script src="/intro-k8s/js/html5shiv-printshiv.min.js?1629398475"></script>
+    <script src="/intro-k8s/js/highlight.pack.js?1629398475"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/intro-k8/js/modernizr.custom-3.6.0.js?1578357645"></script>
-    <script src="/intro-k8/js/learn.js?1578357645"></script>
-    <script src="/intro-k8/js/hugo-learn.js?1578357645"></script>
+    <script src="/intro-k8s/js/modernizr.custom-3.6.0.js?1629398475"></script>
+    <script src="/intro-k8s/js/learn.js?1629398475"></script>
+    <script src="/intro-k8s/js/hugo-learn.js?1629398475"></script>
 
-    <link href="/intro-k8/mermaid/mermaid.css?1578357645" rel="stylesheet" />
-    <script src="/intro-k8/mermaid/mermaid.js?1578357645"></script>
+    <link href="/intro-k8s/mermaid/mermaid.css?1629398475" rel="stylesheet" />
+    <script src="/intro-k8s/mermaid/mermaid.js?1629398475"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Specialized Objects on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/</link>
+    <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/</link>
     <description>Recent content in Specialized Objects on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 17:05:14 -0500</lastBuildDate>
-    
-	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Dec 2018 17:05:14 -0500</lastBuildDate><atom:link href="https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Init Containers</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/init/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/init/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/init/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/init/</guid>
       <description>What Specialized containers that run before app containers in a Pod. Init containers can contain utilities or setup scripts not present in an app image.
 Why Set up application requirements before application containers starts.
  </description>
@@ -24,10 +20,10 @@ Why Set up application requirements before application containers starts.
     
     <item>
       <title>Jobs</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/job/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/job/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/job/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/job/</guid>
       <description>What A Job creates one or more Pods and ensures that a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions.
 Why Specalized tasks that need to run to commpletion or do some calculation.
 ) </description>
@@ -35,10 +31,10 @@ Why Specalized tasks that need to run to commpletion or do some calculation.
     
     <item>
       <title>Cron</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/cron/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/cron/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/cron/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/cron/</guid>
       <description>What A Cron Job creates Jobs on a time-based schedule.
 Why Batch replacement, application or cluster maintenance
  </description>
@@ -46,10 +42,10 @@ Why Batch replacement, application or cluster maintenance
     
     <item>
       <title>Statefulsets</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/statefulsets/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/statefulsets/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/statefulsets/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/statefulsets/</guid>
       <description>What Manages the deployment and scaling of a set of Pods , and provides guarantees about the ordering and uniqueness of these Pods.
 Why If your application requires the below artributes, a statefulset would a better option
  Stable, unique network identifiers. Stable, persistent storage. Ordered, graceful deployment and scaling. Ordered, automated rolling updates.  ) </description>
@@ -57,10 +53,10 @@ Why If your application requires the below artributes, a statefulset would a bet
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/exercises-jobs-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/exercises-jobs-kata/</guid>
       <description>Job, CronJobs, and Init Katacoda Exercises
  Create Count down job Create parallel jobs Deploy a cronjob Work with init containers  </description>
     </item>

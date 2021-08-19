@@ -2,66 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker Intro on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/containers/docker/</link>
+    <link>https://contino.github.io/intro-k8s/containers/docker/</link>
     <description>Recent content in Docker Intro on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 17:21:05 -0500</lastBuildDate>
-    
-	<atom:link href="https://contino.github.io/intro-k8/containers/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Dec 2018 17:21:05 -0500</lastBuildDate><atom:link href="https://contino.github.io/intro-k8s/containers/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Benefits of Docker</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/benefits/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/benefits/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/benefits/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/benefits/</guid>
       <description>Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  </description>
     </item>
     
     <item>
       <title>Docker Platform</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/platform/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/platform/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/platform/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/platform/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dockerfile Example</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/dockerfile-example/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</guid>
-      <description>Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \ 8	&amp;amp;&amp;amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \ 9	&amp;amp;&amp;amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [&amp;#34;mvn&amp;#34;, &amp;#34;dependency:go-offline&amp;#34;] 15 16ADD [&amp;#34;src&amp;#34;, &amp;#34;/work/src&amp;#34;] 17RUN [&amp;#34;mvn&amp;#34;, &amp;#34;package&amp;#34;] 18 19EXPOSE 8080 20ENTRYPOINT [&amp;#34;java&amp;#34;, &amp;#34;-cp&amp;#34;, &amp;#34;target/classes:target/dependency/*&amp;#34;, &amp;#34;com.kumuluz.ee.EeApplication&amp;#34;] </description>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/dockerfile-example/</guid>
+      <description>Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong  3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \ 8	&amp;amp;&amp;amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \ 9	&amp;amp;&amp;amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [&amp;#34;mvn&amp;#34;, &amp;#34;dependency:go-offline&amp;#34;] 15 16ADD [&amp;#34;src&amp;#34;, &amp;#34;/work/src&amp;#34;] 17RUN [&amp;#34;mvn&amp;#34;, &amp;#34;package&amp;#34;] 18 19EXPOSE 8080  20ENTRYPOINT [&amp;#34;java&amp;#34;, &amp;#34;-cp&amp;#34;, &amp;#34;target/classes:target/dependency/*&amp;#34;, &amp;#34;com.kumuluz.ee.EeApplication&amp;#34;] </description>
     </item>
     
     <item>
       <title>Dockerfile Best Practices</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/dockerfile-best-practices/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/dockerfile-best-practices/</guid>
       <description>Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\” Use the caching system to your advantage The order of statements is important Add files that are least likely to change first and the ones most likely to change last  </description>
     </item>
     
     <item>
       <title>Docker cli</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/cli/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/cli/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/cli/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/cli/</guid>
       <description>Docker cli  docker ps docker images docker logs docker exec  Official Documentation</description>
     </item>
     
     <item>
       <title>Docker Exercises</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/exercise-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/exercise-kata/</guid>
       <description>Docker Katacoda Exercises
  Docker Basics Build an container Update running port  </description>
     </item>

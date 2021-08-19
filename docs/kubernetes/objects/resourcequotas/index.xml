@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resource Quotas on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/</link>
+    <link>https://contino.github.io/intro-k8s/kubernetes/objects/resourcequotas/</link>
     <description>Recent content in Resource Quotas on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
-    
-	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate><atom:link href="https://contino.github.io/intro-k8s/kubernetes/objects/resourcequotas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Details</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/resourcequotas/resources/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/resourcequotas/resources/</guid>
       <description>Compute Resources   CPU
   Memory
   Storage

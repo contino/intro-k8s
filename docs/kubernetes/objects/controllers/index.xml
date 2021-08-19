@@ -2,30 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Controllers on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/</link>
+    <link>https://contino.github.io/intro-k8s/kubernetes/objects/controllers/</link>
     <description>Recent content in Controllers on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
-    
-	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/controllers/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate><atom:link href="https://contino.github.io/intro-k8s/kubernetes/objects/controllers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Controllers Updates</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/updates/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/controllers/updates/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/updates/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/controllers/updates/</guid>
       <description>Deployments  Scaling Rolling  ReplicaSet  Desired state  Strategies:  Recreate RollingUpdate (default) Blue/Green Canary A/B Testing  </description>
     </item>
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/controllers/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/controllers/exercises_kata/</guid>
       <description>Deployments on Katacoda
  Create a deployment Scale up a deployment Work with replica sets  </description>
     </item>

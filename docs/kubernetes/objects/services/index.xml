@@ -2,30 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/kubernetes/objects/services/</link>
+    <link>https://contino.github.io/intro-k8s/kubernetes/objects/services/</link>
     <description>Recent content in Services on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
-    
-	<atom:link href="https://contino.github.io/intro-k8/kubernetes/objects/services/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate><atom:link href="https://contino.github.io/intro-k8s/kubernetes/objects/services/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Service Diagram</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/services/diag/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/services/diag/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Services Exercise</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/services/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/services/exercises_kata/</guid>
       <description>Services on Katacoda Link
  Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  </description>
     </item>

@@ -2,66 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/</link>
+    <link>https://contino.github.io/intro-k8s/</link>
     <description>Recent content on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate>
-    
-	<atom:link href="https://contino.github.io/intro-k8/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:31 -0500</lastBuildDate><atom:link href="https://contino.github.io/intro-k8s/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beginning</title>
-      <link>https://contino.github.io/intro-k8/containers/history/history/</link>
+      <link>https://contino.github.io/intro-k8s/containers/history/history/</link>
       <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/history/history/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/history/history/</guid>
       <description>In the beginning </description>
     </item>
     
     <item>
       <title>Hypervisor</title>
-      <link>https://contino.github.io/intro-k8/containers/history/hyper/</link>
+      <link>https://contino.github.io/intro-k8s/containers/history/hyper/</link>
       <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/history/hyper/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/history/hyper/</guid>
       <description>The Hypervisor </description>
     </item>
     
     <item>
       <title>Containers</title>
-      <link>https://contino.github.io/intro-k8/containers/history/containers/</link>
+      <link>https://contino.github.io/intro-k8s/containers/history/containers/</link>
       <pubDate>Sun, 09 Dec 2018 17:20:59 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/history/containers/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/history/containers/</guid>
       <description>Containers </description>
     </item>
     
     <item>
       <title>Graduated Projects</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/community/projects_grad/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/community/projects_grad/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:43 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/community/projects_grad/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/community/projects_grad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Incubating Projects</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/community/projects_inc/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/community/projects_inc/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:43 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/community/projects_inc/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/community/projects_inc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Involvement</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/community/involvement/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/community/involvement/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:43 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/community/involvement/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/community/involvement/</guid>
       <description>  Sigs https://github.com/kubernetes/community/blob/master/sig-list.md
   Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes
   Slack
@@ -70,10 +66,10 @@
     
     <item>
       <title>Master</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/arch/master/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/arch/master/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:54 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/arch/master/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/arch/master/</guid>
       <description>  API data store: Etcd (Cluster State)
   Controller Managers :
  Node Controller Deployment Controller ReplicaSet Controller Replication Controller Endpoints Controller Service Account &amp;amp; Token Controller    Scheduler: Bind pod to Node
@@ -82,19 +78,19 @@
     
     <item>
       <title>Node</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/arch/node/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/arch/node/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:54 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/arch/node/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/arch/node/</guid>
       <description> Kubelet:   cAdvisor (metrics, logs&amp;hellip;)  Container Runtime:   docker containerd  Pod:   Container (one or more)  Kube-proxy:   Used to reach services and allow communication between Nodes.   </description>
     </item>
     
     <item>
       <title>Data Flow</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/arch/data/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/arch/data/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:54 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/arch/data/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/arch/data/</guid>
       <description>Data Flow   CNI: Network Plugin in Kubelet that allows to talk to networking to get IPs for Pods and Services.
   gRPC: API to communicate API Server to ETCD, Controller Manager and Scheduler
   Kubelet - all K8s nodes have a kubelet that ensures that any pod assigned to it are running and configured in the desired state.
@@ -103,55 +99,55 @@
     
     <item>
       <title>Docker0 </title>
-      <link>https://contino.github.io/intro-k8/containers/network/docker0/</link>
+      <link>https://contino.github.io/intro-k8s/containers/network/docker0/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:25 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/network/docker0/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/network/docker0/</guid>
       <description>Container Networking  When Docker starts, it creates a virtual interface called docker0 on the host machine docker0 is assigned a random IP address and subnet from the private range defined by RFC 1918 It passes or switches packets between two connected devices just like a physical bridge or switch  Host to container Container to container   Each new container gets one interface that is automatically attached to the docker0 bridge  </description>
     </item>
     
     <item>
       <title>Docker0 Diagram</title>
-      <link>https://contino.github.io/intro-k8/containers/network/docker0-dig/</link>
+      <link>https://contino.github.io/intro-k8s/containers/network/docker0-dig/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:25 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/network/docker0-dig/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/network/docker0-dig/</guid>
       <description>Container Networking </description>
     </item>
     
     <item>
       <title>Layers</title>
-      <link>https://contino.github.io/intro-k8/containers/storage/layers/</link>
+      <link>https://contino.github.io/intro-k8s/containers/storage/layers/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/storage/layers/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/storage/layers/</guid>
       <description>Layers </description>
     </item>
     
     <item>
       <title>Volumes</title>
-      <link>https://contino.github.io/intro-k8/containers/storage/volumes/</link>
+      <link>https://contino.github.io/intro-k8s/containers/storage/volumes/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/storage/volumes/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/storage/volumes/</guid>
       <description>Volumes </description>
     </item>
     
     <item>
       <title>Storage</title>
-      <link>https://contino.github.io/intro-k8/containers/storage/benefits/</link>
+      <link>https://contino.github.io/intro-k8s/containers/storage/benefits/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:32 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/storage/benefits/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/storage/benefits/</guid>
       <description>Benefits of Volumes  De-couple the data that is stored, from the container which created the data Good for sharing data between containers Can setup a data containers which has a volume you mount in other containers Share directories between multiple containers Bypassing the copy on write system to achieve native disk I/O performance Share a host directory with a container Share a single file between the host and container  </description>
     </item>
     
     <item>
       <title>Labels and Selectors</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/labels_selectors/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/labels_selectors/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/labels_selectors/</guid>
       <description>Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.
 Selectors Label Selectors help client/user identify a set of objects.
 spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql Demo Create labels &amp;amp; use selector to identify set of objects</description>
@@ -159,20 +155,20 @@ spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metad
     
     <item>
       <title>Affinity and Anti-Affinity</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/affinity/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/affinity/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/affinity/</guid>
       <description>Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are
  the language is more expressive (not just “AND of exact match”) you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: &amp;ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node&amp;rdquo;</description>
     </item>
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/exercises-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/exercises-kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/exercises-kata/</guid>
       <description>Pod Exercises 1
 Pod Exercises 2
  Create pods Set up node selectors Assign nodes to pods with selectors and affinity  </description>
@@ -180,10 +176,10 @@ Pod Exercises 2
     
     <item>
       <title>Details</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/resourcequotas/resources/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/resourcequotas/resources/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/resourcequotas/resources/</guid>
       <description>Compute Resources   CPU
   Memory
   Storage
@@ -194,29 +190,29 @@ Pod Exercises 2
     
     <item>
       <title>Controllers Updates</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/updates/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/controllers/updates/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/updates/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/controllers/updates/</guid>
       <description>Deployments  Scaling Rolling  ReplicaSet  Desired state  Strategies:  Recreate RollingUpdate (default) Blue/Green Canary A/B Testing  </description>
     </item>
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/controllers/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/controllers/exercises_kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/controllers/exercises_kata/</guid>
       <description>Deployments on Katacoda
  Create a deployment Scale up a deployment Work with replica sets  </description>
     </item>
     
     <item>
       <title>Init Containers</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/init/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/init/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/init/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/init/</guid>
       <description>What Specialized containers that run before app containers in a Pod. Init containers can contain utilities or setup scripts not present in an app image.
 Why Set up application requirements before application containers starts.
  </description>
@@ -224,10 +220,10 @@ Why Set up application requirements before application containers starts.
     
     <item>
       <title>Jobs</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/job/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/job/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/job/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/job/</guid>
       <description>What A Job creates one or more Pods and ensures that a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions.
 Why Specalized tasks that need to run to commpletion or do some calculation.
 ) </description>
@@ -235,10 +231,10 @@ Why Specalized tasks that need to run to commpletion or do some calculation.
     
     <item>
       <title>Volumes</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/volumes/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/storage/volumes/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/volumes/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/storage/volumes/</guid>
       <description>Several volume types are supported
  awsElasticBlockStore azureDisk gcePersistentDisk hostPath secret configmaps  awsElasticBlockStore example yaml:
 apiVersion: v1 kind: Pod metadata: name: test-ebs spec: containers: - image: k8s.gcr.io/test-webserver name: test-container volumeMounts: - mountPath: /test-ebs name: test-volume volumes: - name: test-volume # This AWS EBS volume must already exist. awsElasticBlockStore: volumeID: &amp;lt;volume-id&amp;gt; fsType: ext4 </description>
@@ -246,10 +242,10 @@ apiVersion: v1 kind: Pod metadata: name: test-ebs spec: containers: - image: k8s
     
     <item>
       <title>Cron</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/cron/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/cron/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/cron/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/cron/</guid>
       <description>What A Cron Job creates Jobs on a time-based schedule.
 Why Batch replacement, application or cluster maintenance
  </description>
@@ -257,34 +253,34 @@ Why Batch replacement, application or cluster maintenance
     
     <item>
       <title>Persistent Volume</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/pv/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/storage/pv/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/pv/</guid>
-      <description>Persistent Volumes (PV&#39;s) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/storage/pv/</guid>
+      <description>Persistent Volumes (PV&amp;rsquo;s) are a piece of storage provisioned in a cluster and can be used/reference in the cluster like another other resource.
 Provisioning - Static or Dynamic
-Types of PV&#39;s
+Types of PV&amp;rsquo;s
  GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: PersistentVolume apiVersion: v1 metadata: name: task-pv-volume labels: type: local spec: storageClassName: manual capacity: storage: 10Gi accessModes: - ReadWriteOnce hostPath: path: &amp;#34;/mnt/data&amp;#34; </description>
     </item>
     
     <item>
       <title>Persistent Volume Claims</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/pvc/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/storage/pvc/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/pvc/</guid>
-      <description>Persistent Volume Claims (PVC&#39;s) - Allow pods to requests and attache Persistent Volumes available in the cluster.
-When used in with Dynamic provision and Storage Classes, PVC&#39;s can automatically make storage available on demand.
-Types of PVC&#39;s
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/storage/pvc/</guid>
+      <description>Persistent Volume Claims (PVC&amp;rsquo;s) - Allow pods to requests and attache Persistent Volumes available in the cluster.
+When used in with Dynamic provision and Storage Classes, PVC&amp;rsquo;s can automatically make storage available on demand.
+Types of PVC&amp;rsquo;s
  GCEPersistentDisk AWSElasticBlockStore AzureFile CephFS  kind: Pod apiVersion: v1 metadata: name: mypod spec: containers: - name: myfrontend image: nginx volumeMounts: - mountPath: &amp;#34;/var/www/html&amp;#34; name: mypd volumes: - name: mypd persistentVolumeClaim: claimName: myclaim </description>
     </item>
     
     <item>
       <title>Statefulsets</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/statefulsets/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/statefulsets/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/statefulsets/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/statefulsets/</guid>
       <description>What Manages the deployment and scaling of a set of Pods , and provides guarantees about the ordering and uniqueness of these Pods.
 Why If your application requires the below artributes, a statefulset would a better option
  Stable, unique network identifiers. Stable, persistent storage. Ordered, graceful deployment and scaling. Ordered, automated rolling updates.  ) </description>
@@ -292,10 +288,10 @@ Why If your application requires the below artributes, a statefulset would a bet
     
     <item>
       <title>Storage Classes</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/storage/classes/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/storage/classes/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/storage/classes/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/storage/classes/</guid>
       <description>Storage classes allow cluster administrators to provide varing levels of support and types of storage to applications in a cluster
 Example: Storage class that will provision an AWS EBS Volumes when referenced a PVC
 kind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provisioner: kubernetes.io/aws-ebs parameters: type: gp2 reclaimPolicy: Retain mountOptions: - debug volumeBindingMode: Immediate </description>
@@ -303,65 +299,65 @@ kind: StorageClass apiVersion: storage.k8s.io/v1 metadata: name: standard provis
     
     <item>
       <title>Secrets Uses - Secret</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/secrets/secret/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/secrets/secret/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/secrets/secret/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/secrets/secret/</guid>
       <description>echo -n &amp;#39;admin&amp;#39; | base64 YWRtaW4= echo -n &amp;#39;1f2d1e2e67df&amp;#39; | base64 MWYyZDFlMmU2N2Rm Write a Secret that looks like this:
 apiVersion: v1 kind: Secret metadata: name: mysecret type: Opaque data: username: YWRtaW4= password: MWYyZDFlMmU2N2Rm </description>
     </item>
     
     <item>
       <title>Secrets Uses - File</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/secrets/file/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/secrets/file/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/secrets/file/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/secrets/file/</guid>
       <description>apiVersion: v1 kind: Pod metadata: name: mypod spec: containers: - name: mypod image: redis volumeMounts: - name: foo mountPath: &amp;#34;/etc/foo&amp;#34; readOnly: true volumes: - name: foo secret: secretName: mysecret </description>
     </item>
     
     <item>
       <title>Secrets Uses - Env Var</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/secrets/env/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/secrets/env/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/secrets/env/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/secrets/env/</guid>
       <description>apiVersion: v1 kind: Pod metadata: name: secret-env-pod spec: containers: - name: mycontainer image: redis env: - name: SECRET_USERNAME valueFrom: secretKeyRef: name: mysecret key: username - name: SECRET_PASSWORD valueFrom: secretKeyRef: name: mysecret key: password restartPolicy: Never </description>
     </item>
     
     <item>
       <title>Configmaps</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/configmaps/configmap/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/configmap/</guid>
-      <description>1apiVersion: v1 2data: 3 game.properties: | 4enemies=aliens 5 lives=3 6 enemies.cheat=true 7 enemies.cheat.level=noGoodRotten 8 secret.code.passphrase=UUDDLRLRBABAS 9 secret.code.allowed=true 10 secret.code.lives=30 11 ui.properties: | 12color.good=purple 13 color.bad=yellow 14 allow.textmode=true 15 how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  </description>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/configmaps/configmap/</guid>
+      <description>1apiVersion: v1 2data: 3 game.properties: |4enemies=aliens 5lives=3 6enemies.cheat=true 7enemies.cheat.level=noGoodRotten 8secret.code.passphrase=UUDDLRLRBABAS 9secret.code.allowed=true 10secret.code.lives=30 11 ui.properties: |12color.good=purple 13color.bad=yellow 14allow.textmode=true 15how.nice.to.look=fairlyNice 16kind: ConfigMap 17metadata: 18 name: game-config 19 namespace: default 20  </description>
     </item>
     
     <item>
       <title>Configmaps - Volume</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/volumes/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/configmaps/volumes/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/volumes/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/configmaps/volumes/</guid>
       <description>1apiVersion: v1 2kind: Pod 3metadata: 4 name: dapi-test-pod 5spec: 6 containers: 7 - name: test-container 8 image: k8s.gcr.io/busybox 9 command: [ &amp;#34;/bin/sh&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;ls /etc/config/&amp;#34; ] 10 volumeMounts: 11 - name: config-volume 12 mountPath: /etc/config 13 volumes: 14 - name: config-volume 15 configMap: 16 name: special-config 17 restartPolicy: Never </description>
     </item>
     
     <item>
       <title>Configmaps - Env Var</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/envvar/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/configmaps/envvar/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/configmaps/envvar/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/configmaps/envvar/</guid>
       <description>1apiVersion: v1 2kind: Pod 3metadata: 4 name: dapi-test-pod 5spec: 6 containers: 7 - name: test-container 8 image: k8s.gcr.io/busybox 9 command: [ &amp;#34;/bin/sh&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;echo $(SPECIAL_LEVEL_KEY) $(SPECIAL_TYPE_KEY)&amp;#34; ] 10 env: 11 - name: SPECIAL_LEVEL_KEY 12 valueFrom: 13 configMapKeyRef: 14 name: special-config 15 key: SPECIAL_LEVEL 16 - name: SPECIAL_TYPE_KEY 17 valueFrom: 18 configMapKeyRef: 19 name: special-config 20 key: SPECIAL_TYPE 21 restartPolicy: Never </description>
     </item>
     
     <item>
       <title>Ingress Controllers</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/ingress/controller/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/ingress/controller/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/ingress/controller/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/ingress/controller/</guid>
       <description>Ingress controllers In order for the ingress resource to work, the cluster must have an ingress controller running. This is unlike other types of controllers, which run as part of the kube-controller-manager binary, and are typically started automatically with a cluster. Choose the ingress controller implementation that best fits your cluster.
 Ingress Controller
 apiVersion: extensions/v1beta1 kind: Ingress metadata: name: test-ingress spec: backend: serviceName: testsvc servicePort: 80 Kubernetes supported Ingress Controllers:</description>
@@ -369,10 +365,10 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: test-ingress spec: 
     
     <item>
       <title>Ingress Rules</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/ingress/rules/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/ingress/rules/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/ingress/rules/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/ingress/rules/</guid>
       <description>Each http rule contains the following information:
  Host list of paths Backend service  Ingress Rule
 apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-example annotations: nginx.ingress.kubernetes.io/rewrite-target: / spec: rules: - host: foo.bar.com http: paths: - path: /foo backend: serviceName: service1 servicePort: 4200 - path: /bar backend: serviceName: service2 servicePort: 8080 </description>
@@ -380,134 +376,134 @@ apiVersion: extensions/v1beta1 kind: Ingress metadata: name: simple-fanout-examp
     
     <item>
       <title>Ingress Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/ingress/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/ingress/exercises_kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/ingress/exercises_kata/</guid>
       <description>Ingress Exercises Link
  Deploy an ingress controller Deploy service Create an ingress rule  </description>
     </item>
     
     <item>
       <title>Service Diagram</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/services/diag/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/diag/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/services/diag/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Services Exercise</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/services/exercises_kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/services/exercises_kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/services/exercises_kata/</guid>
       <description>Services on Katacoda Link
  Create all three types of services Deploy a Cloud Loadbalancer Create a deployment  </description>
     </item>
     
     <item>
       <title>Liveliness</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/liveliness/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/healthchecks/liveliness/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/liveliness/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/healthchecks/liveliness/</guid>
       <description>Readiness and Liveliness Liveliness Liveliness checks inform the kubelet that the pod is running. If this check fails the kubelet will attempt to restart the pod.
 apiVersion: v1 kind: Pod metadata: labels: test: liveness name: liveness-exec spec: containers: - name: liveness image: k8s.gcr.io/busybox args: - /bin/sh - -c - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600 livenessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5 </description>
     </item>
     
     <item>
       <title>Readiness</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/readiness/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/healthchecks/readiness/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:31 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/healthchecks/readiness/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/healthchecks/readiness/</guid>
       <description>Readiness and Liveliness Readiness Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.
 readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 periodSeconds: 5 </description>
     </item>
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/daemonsets/exercises-kata/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/daemonsets/exercises-kata/</link>
       <pubDate>Mon, 06 Jan 2020 18:52:42 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/daemonsets/exercises-kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/daemonsets/exercises-kata/</guid>
       <description>daemonset Exercises
  Create daemonset Updating daemonset Removing daemonset  </description>
     </item>
     
     <item>
       <title>Benefits of Docker</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/benefits/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/benefits/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/benefits/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/benefits/</guid>
       <description>Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  </description>
     </item>
     
     <item>
       <title>Docker Platform</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/platform/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/platform/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/platform/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/platform/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dockerfile Example</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/dockerfile-example/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-example/</guid>
-      <description>Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong 3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \ 8	&amp;amp;&amp;amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \ 9	&amp;amp;&amp;amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [&amp;#34;mvn&amp;#34;, &amp;#34;dependency:go-offline&amp;#34;] 15 16ADD [&amp;#34;src&amp;#34;, &amp;#34;/work/src&amp;#34;] 17RUN [&amp;#34;mvn&amp;#34;, &amp;#34;package&amp;#34;] 18 19EXPOSE 8080 20ENTRYPOINT [&amp;#34;java&amp;#34;, &amp;#34;-cp&amp;#34;, &amp;#34;target/classes:target/dependency/*&amp;#34;, &amp;#34;com.kumuluz.ee.EeApplication&amp;#34;] </description>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/dockerfile-example/</guid>
+      <description>Dockerfile Example 1FROM openjdk:8-jdk-alpine 2MAINTAINER James Strong  3 4ENV MAVEN_VERSION 3.3.9 5 6RUN apk --no-cache add curl 7RUN curl -fsSLk https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \ 8	&amp;amp;&amp;amp; mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \ 9	&amp;amp;&amp;amp; ln -s /usr/share/maven/bin/mvn /usr/bin/mvn 10ENV MAVEN_HOME /usr/share/maven 11 12ADD pom.xml /work/pom.xml 13WORKDIR /work 14RUN [&amp;#34;mvn&amp;#34;, &amp;#34;dependency:go-offline&amp;#34;] 15 16ADD [&amp;#34;src&amp;#34;, &amp;#34;/work/src&amp;#34;] 17RUN [&amp;#34;mvn&amp;#34;, &amp;#34;package&amp;#34;] 18 19EXPOSE 8080  20ENTRYPOINT [&amp;#34;java&amp;#34;, &amp;#34;-cp&amp;#34;, &amp;#34;target/classes:target/dependency/*&amp;#34;, &amp;#34;com.kumuluz.ee.EeApplication&amp;#34;] </description>
     </item>
     
     <item>
       <title>Dockerfile Best Practices</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/dockerfile-best-practices/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/dockerfile-best-practices/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/dockerfile-best-practices/</guid>
       <description>Dockerfile  Instructions specify what to do when building the image FROM instruction specifies what the base image should be RUN instruction specifies a command to execute Comments start with “#” Remember, each line in a Dockerfile creates a new layer if it changes the state of the image You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile Don’t install unnecessary packages One ENTRYPOINT per Dockerfile Combine similar commands into one by using “&amp;amp;&amp;amp;” and “\” Use the caching system to your advantage The order of statements is important Add files that are least likely to change first and the ones most likely to change last  </description>
     </item>
     
     <item>
       <title>Docker cli</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/cli/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/cli/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/cli/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/cli/</guid>
       <description>Docker cli  docker ps docker images docker logs docker exec  Official Documentation</description>
     </item>
     
     <item>
       <title>Exercises</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/exercises-jobs-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:05:14 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/objects/pods/specialized/exercises-jobs-kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/specialized/exercises-jobs-kata/</guid>
       <description>Job, CronJobs, and Init Katacoda Exercises
  Create Count down job Create parallel jobs Deploy a cronjob Work with init containers  </description>
     </item>
     
     <item>
       <title>Docker Exercises</title>
-      <link>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</link>
+      <link>https://contino.github.io/intro-k8s/containers/docker/exercise-kata/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/containers/docker/exercise-kata/</guid>
+      <guid>https://contino.github.io/intro-k8s/containers/docker/exercise-kata/</guid>
       <description>Docker Katacoda Exercises
  Docker Basics Build an container Update running port  </description>
     </item>
     
     <item>
       <title>Monitoring</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/extras/monitoring/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/extras/monitoring/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/extras/monitoring/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/extras/monitoring/</guid>
       <description>  cAdvisor
   Prometheus
   Datadog
@@ -516,55 +512,55 @@ readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 perio
     
     <item>
       <title>Logging</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/extras/logging/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/extras/logging/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/extras/logging/</guid>
       <description> kubectl logs Node level Cluster Level Side Car  </description>
     </item>
     
     <item>
       <title>Logging - Pod</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/extras/logging-kc/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/extras/logging-kc/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging-kc/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/extras/logging-kc/</guid>
       <description>Logging  kubectl logs  apiVersion: v1 kind: Pod metadata: name: counter spec: containers: - name: count image: busybox args: [/bin/sh, -c, &amp;#39;i=0; while true; do echo &amp;#34;$i: $(date)&amp;#34;; i=$((i+1)); sleep 1; done&amp;#39;] $ kubectl logs counter 0: Mon Jan 1 00:00:00 UTC 2001 1: Mon Jan 1 00:00:01 UTC 2001 2: Mon Jan 1 00:00:02 UTC 2001 </description>
     </item>
     
     <item>
       <title>Logging - Node</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/extras/logging-node/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/extras/logging-node/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging-node/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/extras/logging-node/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Logging - Cluster</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/extras/logging-cluster/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/extras/logging-cluster/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:55 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/extras/logging-cluster/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/extras/logging-cluster/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Security - Containers</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/extras/security/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/extras/security/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:49 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/extras/security/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/extras/security/</guid>
       <description>Container security primitives  SElinux AppArmor Seccomp https://docs.docker.com/engine/security/seccomp/#run-without-the-default-seccomp-profile  Container Pipeline  Establish a pipeline to build a standard image Have a versioning policy Allow to only run images based of the standard image Use the same OS as the host Keep the image small Use a private registry Don’t embed secrets into images, use Hashicorp Vault https://www.cisecurity.org/benchmark/docker/ https://github.com/docker/docker-bench-security  </description>
     </item>
     
     <item>
       <title>Security - K8</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/extras/security1/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/extras/security1/</link>
       <pubDate>Sun, 09 Dec 2018 17:13:49 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/extras/security1/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/extras/security1/</guid>
       <description>K8 Security  RBAC NetworkPolicy TLS Image Scanning Aquasec/Twistlock Integrating with HashiCorp Vault other public cloud secret stores Investigate using a container based OS (CoreOS, Atomic Linux) Harden and tweak Make sure to pass https://github.com/dev-sec/linux-baseline  Vendors to add  Aquasec https://www.aquasec.com/ Twistlock https://www.twistlock.com/ Sysdig Falco https://www.sysdig.org/falco/  </description>
     </item>
     

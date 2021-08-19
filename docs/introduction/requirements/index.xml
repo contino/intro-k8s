@@ -2,14 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Requirements on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/introduction/requirements/</link>
+    <link>https://contino.github.io/intro-k8s/introduction/requirements/</link>
     <description>Recent content in Requirements on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 16:52:57 -0500</lastBuildDate>
-    
-	<atom:link href="https://contino.github.io/intro-k8/introduction/requirements/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Dec 2018 16:52:57 -0500</lastBuildDate><atom:link href="https://contino.github.io/intro-k8s/introduction/requirements/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

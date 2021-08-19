@@ -2,39 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community on Introduction to Kubernetes</title>
-    <link>https://contino.github.io/intro-k8/kubernetes/community/</link>
+    <link>https://contino.github.io/intro-k8s/kubernetes/community/</link>
     <description>Recent content in Community on Introduction to Kubernetes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 17:00:43 -0500</lastBuildDate>
-    
-	<atom:link href="https://contino.github.io/intro-k8/kubernetes/community/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Dec 2018 17:00:43 -0500</lastBuildDate><atom:link href="https://contino.github.io/intro-k8s/kubernetes/community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graduated Projects</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/community/projects_grad/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/community/projects_grad/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:43 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/community/projects_grad/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/community/projects_grad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Incubating Projects</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/community/projects_inc/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/community/projects_inc/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:43 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/community/projects_inc/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/community/projects_inc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Involvement</title>
-      <link>https://contino.github.io/intro-k8/kubernetes/community/involvement/</link>
+      <link>https://contino.github.io/intro-k8s/kubernetes/community/involvement/</link>
       <pubDate>Sun, 09 Dec 2018 17:00:43 -0500</pubDate>
       
-      <guid>https://contino.github.io/intro-k8/kubernetes/community/involvement/</guid>
+      <guid>https://contino.github.io/intro-k8s/kubernetes/community/involvement/</guid>
       <description>  Sigs https://github.com/kubernetes/community/blob/master/sig-list.md
   Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes
   Slack
