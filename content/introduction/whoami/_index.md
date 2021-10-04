@@ -5,17 +5,13 @@ weight = 10
 chapter = true
 +++
 
-| Colin Detwiller                                           | James Strong                                              |
-| :---                                                  | :----                                                     | 
-| ![](/intro-k8s/images/colin.jpeg)                      | ![](/intro-k8s/images/james.png)                           |
-| Senior DevOps Engineer @ [Contino](https://contino.io)| Cloud Native Director @ [Contino](https://contino.io)       | 
-| Certified Kubernetes Admin                            | Certified Kubernetes Admin                                            |
-| http://colin.detwiller.me/                                                      | [@strongjz](https://twitter.com/strongjz)   | 
-| https://www.linkedin.com/in/cdetwiller/               | https://jamesstrong.dev                                   |
+- [AWS Ambassador](https://aws.amazon.com/partners/ambassadors/)
+- [O'Reilly Author - Networking and Kubernetes: A Layer Approach](https://learning.oreilly.com/library/view/networking-and-kubernetes/9781492081647/)
+- [A Cloud Guru Instructor - Advanced Networking with Kubernetes on AWS](https://acloud.guru/overview/advanced-networking-with-kubernetes-for-aws)
+- [Kubernetes Ingress NGINX Maintainer](https://github.com/kubernetes/ingress-nginx/blob/main/OWNERS_ALIASES#L17)
+- [Kube Philly Organizer](https://www.meetup.com/Kubernetes-Philly)
+- Cloud Native Director @ [Contino](https://contino.io)
+- [@strongjz](https://twitter.com/strongjz) 
 
-
-
-
-
-
+![](/intro-k8s/images/james.png)
 
