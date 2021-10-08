@@ -8,14 +8,16 @@ pre = "<b>4. </b>"
 
 # Closing remarks
 
+Complete survey for a chance to win hard copy of Kubernetes and Networking 
+
+https://forms.gle/GrifrR2sa7guCRXQ6
 
 ![](/intro-k8s/images/partyparrot.gif)
 
 Contact Us:
 
-| Colin Detwiller                                           | James Strong                                              |
-| :---                                                  | :----                                                     | 
-| https://www.linkedin.com/in/cdetwiller/               | https://www.linkedin.com/in/strongjz/                                   |
-|[colin.detwiller@contino.io](mailto:colin.detwiller@contino.io)| [james.strong@contino.io](mailto:james.strong@contino.io) | [
+https://www.linkedin.com/in/strongjz/              
+ 
+[james.strong@contino.io](mailto:james.strong@contino.io)
 
 [contino.io](https://www.contino.io/)

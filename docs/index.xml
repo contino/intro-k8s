@@ -58,10 +58,7 @@
       <pubDate>Sun, 09 Dec 2018 17:00:43 -0500</pubDate>
       
       <guid>https://contino.github.io/intro-k8s/kubernetes/community/involvement/</guid>
-      <description>  Sigs https://github.com/kubernetes/community/blob/master/sig-list.md
-  Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes
-  Slack
- k8 http://slack.k8s.io/ CNCF https://slack.cncf.io/    </description>
+      <description> Sigs https://github.com/kubernetes/community/blob/master/sig-list.md Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes Slack  k8s http://slack.k8s.io/  sig-contribute   CNCF https://slack.cncf.io/   Community education, answering questions on Discuss, StackOverflow, and Slack Outward facing community work such as hosting meetups and events Writing project documentation  </description>
     </item>
     
     <item>
@@ -150,7 +147,7 @@
       <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/labels_selectors/</guid>
       <description>Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.
 Selectors Label Selectors help client/user identify a set of objects.
-spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql Demo Create labels &amp;amp; use selector to identify set of objects</description>
+spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql </description>
     </item>
     
     <item>
@@ -160,7 +157,7 @@ spec: selector: matchLabels: app: mysql strategy: type: Recreate template: metad
       
       <guid>https://contino.github.io/intro-k8s/kubernetes/objects/pods/affinity/</guid>
       <description>Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are
- the language is more expressive (not just “AND of exact match”) you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: &amp;ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node&amp;rdquo;</description>
+ the language is more expressive (not just “AND of exact match”) Indicate that a rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled Constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: &amp;ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node&amp;rdquo;</description>
     </item>
     
     <item>
@@ -440,15 +437,6 @@ readinessProbe: exec: command: - cat - /tmp/healthy initialDelaySeconds: 5 perio
       
       <guid>https://contino.github.io/intro-k8s/containers/docker/benefits/</guid>
       <description>Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  </description>
-    </item>
-    
-    <item>
-      <title>Docker Platform</title>
-      <link>https://contino.github.io/intro-k8s/containers/docker/platform/</link>
-      <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8s/containers/docker/platform/</guid>
-      <description></description>
     </item>
     
     <item>

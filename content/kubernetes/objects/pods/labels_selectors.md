@@ -25,7 +25,3 @@ spec:
       labels:
         app: mysql
 ```
-   
-### Demo 
-
-Create labels & use selector to identify set of objects

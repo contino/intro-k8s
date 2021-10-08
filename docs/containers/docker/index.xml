@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>Docker Platform</title>
-      <link>https://contino.github.io/intro-k8s/containers/docker/platform/</link>
-      <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>
-      
-      <guid>https://contino.github.io/intro-k8s/containers/docker/platform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Dockerfile Example</title>
       <link>https://contino.github.io/intro-k8s/containers/docker/dockerfile-example/</link>
       <pubDate>Sun, 09 Dec 2018 17:21:05 -0500</pubDate>

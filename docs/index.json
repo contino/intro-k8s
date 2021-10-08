@@ -39,7 +39,7 @@
 	"title": "Closing",
 	"tags": [],
 	"description": "",
-	"content": "Closing remarks Contact Us:\n   Colin Detwiller James Strong     https://www.linkedin.com/in/cdetwiller/ https://www.linkedin.com/in/strongjz/   colin.detwiller@contino.io james.strong@contino.io    contino.io\n"
+	"content": "Closing remarks Complete survey for a chance to win hard copy of Kubernetes and Networking\nhttps://forms.gle/GrifrR2sa7guCRXQ6\nContact Us:\nhttps://www.linkedin.com/in/strongjz/\njames.strong@contino.io\ncontino.io\n"
 },
 {
 	"uri": "https://contino.github.io/intro-k8s/kubernetes/history/",
@@ -130,7 +130,7 @@
 	"title": "Involvement",
 	"tags": [],
 	"description": "",
-	"content": "  Sigs https://github.com/kubernetes/community/blob/master/sig-list.md\n  Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes\n  Slack\n k8 http://slack.k8s.io/ CNCF https://slack.cncf.io/    "
+	"content": " Sigs https://github.com/kubernetes/community/blob/master/sig-list.md Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes Slack  k8s http://slack.k8s.io/  sig-contribute   CNCF https://slack.cncf.io/   Community education, answering questions on Discuss, StackOverflow, and Slack Outward facing community work such as hosting meetups and events Writing project documentation  "
 },
 {
 	"uri": "https://contino.github.io/intro-k8s/containers/primitives/",
@@ -242,14 +242,14 @@
 	"title": "Labels and Selectors",
 	"tags": [],
 	"description": "",
-	"content": "Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.\nSelectors Label Selectors help client/user identify a set of objects.\nspec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql Demo Create labels \u0026amp; use selector to identify set of objects\n"
+	"content": "Labels Labels are key/value pairs that are attached to objects, such as pods that help to identify that object.\nSelectors Label Selectors help client/user identify a set of objects.\nspec: selector: matchLabels: app: mysql strategy: type: Recreate template: metadata: labels: app: mysql "
 },
 {
 	"uri": "https://contino.github.io/intro-k8s/kubernetes/objects/pods/affinity/",
 	"title": "Affinity and Anti-Affinity",
 	"tags": [],
 	"description": "",
-	"content": "Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are\n the language is more expressive (not just “AND of exact match”) you can indicate that the rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled you can constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: \u0026ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node\u0026rdquo;\napiVersion: v1 kind: Pod metadata: name: happypanda labels: app: redis segment: backend company: mycompany disk: ssd spec: affinity: nodeAffinity: preferredDuringSchedulingIgnoredDuringExecution: - weight: 1 preference: matchExpressions: - key: fruit operator: In values: - apple containers: - name: redis image: redis ports: - name: redisport containerPort: 6379 protocol: TCP "
+	"content": "Node Affinity and Anti-Affinity The affinity/anti-affinity feature, greatly expands the types of constraints you can express. The key enhancements are\n the language is more expressive (not just “AND of exact match”) Indicate that a rule is “soft”/“preference” rather than a hard requirement, so if the scheduler can’t satisfy it, the pod will still be scheduled Constrain against labels on other pods running on the node (or other topological domain), rather than against labels on the node itself, which allows rules about which pods can and cannot be co-located  The manfifest reads as: \u0026ldquo;If there are no nodes labelled as apple, then still schedule the pod to a node\u0026rdquo;\napiVersion: v1 kind: Pod metadata: name: happypanda labels: app: redis segment: backend company: mycompany disk: ssd spec: affinity: nodeAffinity: preferredDuringSchedulingIgnoredDuringExecution: - weight: 1 preference: matchExpressions: - key: fruit operator: In values: - apple containers: - name: redis image: redis ports: - name: redisport containerPort: 6379 protocol: TCP "
 },
 {
 	"uri": "https://contino.github.io/intro-k8s/kubernetes/objects/pods/exercises-kata/",
@@ -515,7 +515,7 @@
 	"title": "Docker Intro",
 	"tags": [],
 	"description": "",
-	"content": "Docker  Benefits of Docker   Docker Platform   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises   "
+	"content": "Docker  Benefits of Docker   Dockerfile Example   Dockerfile Best Practices   Docker cli   Docker Exercises   "
 },
 {
 	"uri": "https://contino.github.io/intro-k8s/containers/docker/benefits/",
@@ -523,13 +523,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Docker Benefits  Separation of concerns Developers focus on building their apps System admins focus on deployment Fast development cycle Application portability Build in one environment, ship to another Scalability Easily spin up new containers if needed Run more apps on one host machine  "
-},
-{
-	"uri": "https://contino.github.io/intro-k8s/containers/docker/platform/",
-	"title": "Docker Platform",
-	"tags": [],
-	"description": "",
-	"content": ""
 },
 {
 	"uri": "https://contino.github.io/intro-k8s/containers/docker/dockerfile-example/",
